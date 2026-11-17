@@ -1,0 +1,24 @@
+{
+  "file": "01-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
+  "sha256": "abe1b3ad7f6cf439a911238d85a2d5046a6d50fe179672e7839a17dca65f0e99",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    143.8,
+    55.1
+  ],
+  "material_g": [
+    18.63,
+    6.61
+  ]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "file": "01-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
+    "sha256": "abe1b3ad7f6cf439a911238d85a2d5046a6d50fe179672e7839a17dca65f0e99",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      143.8,
+      55.1
+    ],
+    "material_g": [
+      18.63,
+      6.61
+    ]
+  },
+  {
+    "file": "02-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+    "sha256": "81c6dc1f4990c39b07968395e3a35935464084b5467c158740e5a757b4fe58f1",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      134.8,
+      55.3
+    ],
+    "material_g": [
+      17.01,
+      6.66
+    ]
+  },
+  {
+    "file": "03-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
+    "sha256": "99df62f66654ac293ebd22ff017555a73ea928c1a97c1a26b6c158412061ec01",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      135.4,
+      55.0
+    ],
+    "material_g": [
+      16.55,
+      6.57
+    ]
+  },
+  {
+    "file": "04-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+    "sha256": "a1c6585efe89b7485f08d4ea97f9dcb8318f7306eaaf64e473c3b320870e2d6b",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      141.7,
+      58.4
+    ],
+    "material_g": [
+      16.9,
+      7.05
+    ]
+  },
+  {
+    "file": "05-Botanical-Garland-Instax-Mini-3-Magnets.3mf",
+    "sha256": "907f1ccdcbc1c7bf2299e9369ab4741551ec35c5c4966035c8be50b5b3c6e0d0",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      161.7,
+      58.8
+    ],
+    "material_g": [
+      18.18,
+      7.11
+    ]
+  },
+  {
+    "file": "06-Acanthus-Gallery-Instax-Mini-3-Magnets.3mf",
+    "sha256": "a9e8afe9b7422a7ea7df221f6a8127b04dc8e99ff56dbbcad93f7e015b1a1914",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      175.0,
+      59.0
+    ],
+    "material_g": [
+      19.98,
+      7.11
+    ]
+  },
+  {
+    "file": "PLA-Clip-Fit-Test.3mf",
+    "sha256": "2b58aa254a3d1e17ca8d041f2c241d0c41a71e0d4bd27bd3b9112d7d9fd150ea",
+    "slicer": "BambuStudio02.09.01.70",
+    "return_code": 0,
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warning_messages": [
+      "",
+      ""
+    ],
+    "physical_test": false,
+    "estimated_minutes": [
+      14.0,
+      11.5
+    ],
+    "material_g": [
+      0.74,
+      0.3
+    ]
+  }
+]

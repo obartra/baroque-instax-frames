@@ -1,0 +1,24 @@
+{
+  "file": "03-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
+  "sha256": "99df62f66654ac293ebd22ff017555a73ea928c1a97c1a26b6c158412061ec01",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    135.4,
+    55.0
+  ],
+  "material_g": [
+    16.55,
+    6.57
+  ]
+}

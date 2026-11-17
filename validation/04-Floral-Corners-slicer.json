@@ -1,0 +1,24 @@
+{
+  "file": "04-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+  "sha256": "a1c6585efe89b7485f08d4ea97f9dcb8318f7306eaaf64e473c3b320870e2d6b",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    141.7,
+    58.4
+  ],
+  "material_g": [
+    16.9,
+    7.05
+  ]
+}

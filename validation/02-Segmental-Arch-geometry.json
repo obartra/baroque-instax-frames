@@ -1,0 +1,113 @@
+{
+  "id": "02-Segmental-Arch",
+  "name": "Segmental Arch",
+  "orientation": "portrait",
+  "shape": "arch",
+  "front_dimensions_mm": [
+    93.99991607666016,
+    119.10709762573242,
+    6.111690044403076
+  ],
+  "front_bounds_mm": [
+    [
+      -47.060604095458984,
+      -56.58193588256836,
+      0.36000001430511475
+    ],
+    [
+      46.93931198120117,
+      62.52516174316406,
+      6.111690044403076
+    ]
+  ],
+  "back_dimensions_mm": [
+    81.19999694824219,
+    98.75,
+    8.0
+  ],
+  "assembled_depth_mm": 9.711690044403076,
+  "mat_width_mm": 6.5,
+  "mat_height_mm": 0.36,
+  "mat_perpendicular_offset": true,
+  "film_uncut_mm": [
+    54,
+    86
+  ],
+  "aperture_bounds_mm": [
+    -22.4,
+    -30.4,
+    22.4,
+    30.4
+  ],
+  "image_area_visible_percent": 93.69145684322432,
+  "full_film_concealed": true,
+  "nominal_edge_overlap_mm": 0.6,
+  "misalignment_checked_mm": 0.4,
+  "magnet_centers_mm": [
+    [
+      0,
+      47
+    ],
+    [
+      -36,
+      -27
+    ],
+    [
+      36,
+      -27
+    ]
+  ],
+  "magnet_pockets_mm": [
+    6.3,
+    3.1
+  ],
+  "magnet_floor_mm": 0.5,
+  "snap_positions_mm": [
+    [
+      32.5,
+      -40.0
+    ],
+    [
+      -32.5,
+      -40.0
+    ],
+    [
+      32.5,
+      40.0
+    ],
+    [
+      -32.5,
+      40.0
+    ]
+  ],
+  "snap_tip_height_mm": 8,
+  "snap_stem_mm": [
+    3.5,
+    2
+  ],
+  "snap_slot_radius_mm": 0.7,
+  "snap_head_width_mm": 3.88,
+  "socket_neck_width_mm": 3.65,
+  "photo_spring_length_mm": 15,
+  "front_print_color_changes": 1,
+  "watertight_parts": true,
+  "insertion_positions_checked": 28,
+  "physical_test": false,
+  "ornament_source": "fresh AI drawing from historical descriptions, no original MakerWorld mesh or collection reference photo",
+  "relief_method": "drawing-guided tonal bas-relief with explicit CAD mouldings; not full multi-view reconstruction",
+  "drawing_uniform_growth": 1.0,
+  "drawing_mm_per_pixel": 0.12129032258064516,
+  "drawing_center_px": [
+    473.5,
+    527.0
+  ],
+  "snap_axial_relaxation_mm": 0.15,
+  "snap_per_arm_deflection_mm": 0.115,
+  "snap_arm_section_mm": [
+    1.05,
+    2.0
+  ],
+  "back_projection_hidden": true,
+  "print_profile_filaments": 2,
+  "closed_socket_roofs_checked": true
+}

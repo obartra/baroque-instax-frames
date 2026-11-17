@@ -1,0 +1,24 @@
+{
+  "file": "02-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+  "sha256": "81c6dc1f4990c39b07968395e3a35935464084b5467c158740e5a757b4fe58f1",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    134.8,
+    55.3
+  ],
+  "material_g": [
+    17.01,
+    6.66
+  ]
+}

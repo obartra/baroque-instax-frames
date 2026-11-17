@@ -1,0 +1,24 @@
+{
+  "file": "PLA-Clip-Fit-Test.3mf",
+  "sha256": "2b58aa254a3d1e17ca8d041f2c241d0c41a71e0d4bd27bd3b9112d7d9fd150ea",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    14.0,
+    11.5
+  ],
+  "material_g": [
+    0.74,
+    0.3
+  ]
+}

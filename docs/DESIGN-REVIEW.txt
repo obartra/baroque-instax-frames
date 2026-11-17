@@ -1,0 +1,46 @@
+DESIGN REVIEW
+
+The family is held together by a white internal mat, a narrow sight-edge
+roll, a recessed channel, a broad rising cove, fleshy leaf relief and an
+opaque outer surround. The outer carving varies in density and balance.
+The rectangles progress from quiet corner flowers to a botanical garland
+to fuller acanthus. There are no identical repeated corner rosettes or
+repetitive laurel stamps in the revised floral designs.
+
+These are contemporary Baroque-inspired compositions. Historical research
+supports architectural mouldings, corner/center ornament, foliate bunches,
+and both quiet and densely carved frame treatments; it does not establish
+that these new compositions are exact period reproductions.
+Reference: National Portrait Gallery, Other studies — Northern European:
+https://www.npg.org.uk/collections/research/programmes/the-art-of-the-picture-frame/other-studies-northern-european
+
+FILM CONCEALMENT AND PICTURE RETENTION
+The octagon clips small corners; the shallow arch clips only upper corners;
+the cushion preserves most of a rectangular image while rounding corners.
+All three retain about94% of the nominal image. The three rectangles retain
+95.5%. The whole film is intact, and no white film is exposed beyond the
+surround in the computed front projection. Wider corner lands improve
+concealment efficiency compared with a pure elliptical outer contour.
+
+The mat is a true6.5 mm parallel offset of the aperture, with deliberate
+mitred corners for the rectangular/octagonal types. All four cushion corner
+radii agree. Magnet locations are adjusted within the carving before
+enlarging a whole frame. Final fronts are94–122 mm wide and about93–119 mm
+high, depending on orientation; precise dimensions are in validation/.
+
+MECHANICAL REVIEW
+Each clip has a3.5 x2 mm stem with a1.4 mm round-ended slot; the two arms
+are1.05 mm wide. The earlier arms were0.7 mm wide and1.4 mm deep. Tip height
+increases from6.2 to8 mm. A3.88 mm head enters a3.65 mm socket neck: nominal
+inward deflection is0.115 mm per arm, reduced from0.15 mm previously.
+There is0.15 mm axial relaxation after seating. Flared bases and the
+0.7 mm slot-end radius address the old sharp internal notch.
+These are geometric changes intended to improve PLA durability, not a
+measured fatigue or strength rating. Use the supplied1 g coupon first.
+
+VISUAL QA
+The first rectangular meshes exposed square clip caps in the architectural
+corner moulding. The final rectangular snaps move outward behind the floral
+masses and use rounded relief roofs, preserving a continuous inner moulding.
+Actual mesh views are supplied alongside the design drawings so the
+printable interpretation can be judged independently from ideal AI shading.

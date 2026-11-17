@@ -1,0 +1,113 @@
+{
+  "id": "03-Cushion-Cartouche",
+  "name": "Cushion Cartouche",
+  "orientation": "landscape",
+  "shape": "cushion",
+  "front_dimensions_mm": [
+    117.99991989135742,
+    94.08855438232422,
+    6.161705493927002
+  ],
+  "front_bounds_mm": [
+    [
+      -59.111175537109375,
+      -46.32139587402344,
+      0.36000001430511475
+    ],
+    [
+      58.88874435424805,
+      47.76715850830078,
+      6.161705493927002
+    ]
+  ],
+  "back_dimensions_mm": [
+    90.30000305175781,
+    81.5999984741211,
+    8.0
+  ],
+  "assembled_depth_mm": 9.761705493927002,
+  "mat_width_mm": 6.5,
+  "mat_height_mm": 0.36,
+  "mat_perpendicular_offset": true,
+  "film_uncut_mm": [
+    86,
+    54
+  ],
+  "aperture_bounds_mm": [
+    -30.4,
+    -22.4,
+    30.4,
+    22.4
+  ],
+  "image_area_visible_percent": 94.0276353418407,
+  "full_film_concealed": true,
+  "nominal_edge_overlap_mm": 0.6,
+  "misalignment_checked_mm": 0.4,
+  "magnet_centers_mm": [
+    [
+      0,
+      38.0
+    ],
+    [
+      -27,
+      -34.39999999999998
+    ],
+    [
+      27,
+      -34.39999999999998
+    ]
+  ],
+  "magnet_pockets_mm": [
+    6.3,
+    3.1
+  ],
+  "magnet_floor_mm": 0.5,
+  "snap_positions_mm": [
+    [
+      -40.0,
+      -32.5
+    ],
+    [
+      -40.0,
+      32.5
+    ],
+    [
+      40.0,
+      -32.5
+    ],
+    [
+      40.0,
+      32.5
+    ]
+  ],
+  "snap_tip_height_mm": 8,
+  "snap_stem_mm": [
+    3.5,
+    2
+  ],
+  "snap_slot_radius_mm": 0.7,
+  "snap_head_width_mm": 3.88,
+  "socket_neck_width_mm": 3.65,
+  "photo_spring_length_mm": 15,
+  "front_print_color_changes": 1,
+  "watertight_parts": true,
+  "insertion_positions_checked": 28,
+  "physical_test": false,
+  "ornament_source": "fresh AI drawing from historical descriptions, no original MakerWorld mesh or collection reference photo",
+  "relief_method": "drawing-guided tonal bas-relief with explicit CAD mouldings; not full multi-view reconstruction",
+  "drawing_uniform_growth": 1.0,
+  "drawing_mm_per_pixel": 0.1112158341187559,
+  "drawing_center_px": [
+    550.0,
+    443.0
+  ],
+  "snap_axial_relaxation_mm": 0.15,
+  "snap_per_arm_deflection_mm": 0.115,
+  "snap_arm_section_mm": [
+    1.05,
+    2.0
+  ],
+  "back_projection_hidden": true,
+  "print_profile_filaments": 2,
+  "closed_socket_roofs_checked": true
+}

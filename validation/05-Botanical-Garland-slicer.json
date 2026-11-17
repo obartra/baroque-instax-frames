@@ -1,0 +1,24 @@
+{
+  "file": "05-Botanical-Garland-Instax-Mini-3-Magnets.3mf",
+  "sha256": "907f1ccdcbc1c7bf2299e9369ab4741551ec35c5c4966035c8be50b5b3c6e0d0",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    161.7,
+    58.8
+  ],
+  "material_g": [
+    18.18,
+    7.11
+  ]
+}

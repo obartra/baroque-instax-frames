@@ -1,0 +1,24 @@
+{
+  "file": "06-Acanthus-Gallery-Instax-Mini-3-Magnets.3mf",
+  "sha256": "a9e8afe9b7422a7ea7df221f6a8127b04dc8e99ff56dbbcad93f7e015b1a1914",
+  "slicer": "BambuStudio02.09.01.70",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "physical_test": false,
+  "estimated_minutes": [
+    175.0,
+    59.0
+  ],
+  "material_g": [
+    19.98,
+    7.11
+  ]
+}
