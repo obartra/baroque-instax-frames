@@ -54,6 +54,19 @@ def main():
         for view,p in r['views'].items():
             data=(ROOT/p).read_bytes()
             require(data[:8]==b'\x89PNG\r\n\x1a\n' and min(struct.unpack('>II',data[16:24]))>=400,r['name']+': missing/undersized '+view)
+        stl=ROOT/r['stl']['archive']
+        require(hashlib.sha256(stl.read_bytes()).hexdigest()==r['stl']['sha256'],r['name']+': STL archive hash')
+        with ZipFile(stl) as z:
+            require(z.testzip() is None,r['name']+': corrupt STL archive')
+            record=json.loads(z.read('export-record.json'))
+            require(record['source_sha256']==digest and record['source_3mf']==r['model'],r['name']+': stale STL export')
+            require(set(record['parts'])=={'mat.stl','front-ornament.stl','back.stl'},r['name']+': STL parts')
+            for name,part in record['parts'].items():
+                data=z.read(name)
+                require(hashlib.sha256(data).hexdigest()==part['sha256'],r['name']+': STL part hash '+name)
+                count=struct.unpack_from('<I',data,80)[0]
+                require(count==part['triangles'] and len(data)==84+50*count,r['name']+': STL triangles '+name)
+            require(abs(record['parts']['mat.stl']['bounds_mm'][1][2]-.68)<1e-6,r['name']+': STL mat reinforcement')
         print('PASS',r['name'])
     for d in designs:
         for key in ('concept_file','depth_file','normal_file','surface_file','final_surface_file','refinement_record'):

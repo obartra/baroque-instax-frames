@@ -109,7 +109,15 @@ Cached final height fields and master drawings are referenced in the
 new image generation, depth inference or API credentials. The slicer step needs
 local Bambu Studio; set `BAMBU_STUDIO` if its executable has another path.
 
-To check the distributed current projects and documentation without rebuilding:
+Regenerate the aligned STL downloads from the checked current 3MFs with the CAD
+environment, then refresh the catalog links:
+
+```sh
+python tools/export_stl_downloads.py
+python source/write_current_readme.py
+```
+
+To check the distributed current projects, STL exports and documentation:
 
 ```sh
 python tools/verify_current_catalog.py

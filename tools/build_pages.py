@@ -66,7 +66,7 @@ def build():
                 attrs += f' width="{info["width"]}" height="{info["height"]}" loading="lazy" decoding="async" style="--canvas:{info["canvas"]}"'
                 if path.endswith('project-icon.png'):
                     attrs = attrs.replace('loading="lazy"', 'fetchpriority="high"')
-        elif path.endswith('.3mf'):
+        elif path.endswith(('.3mf', '-stl.zip')):
             target = REPO.replace('github.com', 'raw.githubusercontent.com') + '/main/' + quote(path)
             attrs += ' class="download-link"'
         else:
@@ -147,7 +147,7 @@ def build():
 def verify():
     class Links(HTMLParser):
         def __init__(self):
-            super().__init__(); self.targets=[]; self.ids=set(); self.downloads=[]
+            super().__init__(); self.targets=[]; self.ids=set(); self.downloads=[]; self.stls=[]
         def handle_starttag(self, tag, pairs):
             attrs=dict(pairs)
             assert '/' not in attrs, 'Malformed self-closing image'
@@ -155,6 +155,7 @@ def verify():
             for key in ('src', 'href', 'poster'):
                 if key in attrs: self.targets.append(attrs[key])
             if attrs.get('href','').endswith('.3mf'): self.downloads.append(attrs['href'])
+            if attrs.get('href','').endswith('-stl.zip'): self.stls.append(attrs['href'])
     doc=Links(); doc.feed((OUT/'index.html').read_text())
     for target in doc.targets:
         if target.startswith('#'):
@@ -163,6 +164,7 @@ def verify():
             assert (OUT/target).is_file(), 'Missing site asset: '+target
     assert len(doc.downloads)==8, 'Expected eight model downloads'
     assert all('/main/models/current/' in p for p in doc.downloads), 'Stale model download'
+    assert len(doc.stls)==8 and all('/main/models/current/stl/' in p for p in doc.stls), 'Expected eight current STL archives'
     assert '{{' not in (OUT/'index.html').read_text(), 'Unresolved template'
     print('PASS site assets, internal anchors and all eight current model links')
 

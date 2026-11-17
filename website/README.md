@@ -22,7 +22,8 @@ above the collection. Front, Angled, Back and Photo fit update all eight preview
 and their enlargement links together. Native radio controls support keyboard
 navigation. Without JavaScript, the individual image links and downloads remain
 available. JavaScript also starts the intro animation.
-3MF downloads always point to `models/current/` on `main`. Source and detailed
+3MF downloads always point to `models/current/` on `main`; the matching STL ZIPs
+point to `models/current/stl/`. Both use direct file links. Source and detailed
 documentation links open the corresponding repository files.
 
 ## Build locally

@@ -10,7 +10,7 @@ def main():
     for r in c['frames']:
         front,angle,back,fit=[r['views'][v] for v in ('front','angle','back','fit')]
         w,h=r['dimensions_mm'][:2]
-        rows.append(f'| [<img src="{angle}" width="200" alt="{r["name"]} angled view">]({angle}) | **{r["name"]}**<br>{r["orientation"].title()} · {w:.1f} × {h:.1f} mm<br>**[Download 3MF]({r["model"]})** | [Front]({front}) · [Angled]({angle})<br>[Back]({back}) · [Photo fit]({fit}) |')
+        rows.append(f'| [<img src="{angle}" width="200" alt="{r["name"]} angled view">]({angle}) | **{r["name"]}**<br>{r["orientation"].title()} · {w:.1f} × {h:.1f} mm<br>**[Download 3MF]({r["model"]})** · [STL ZIP]({r["stl"]["archive"]}) | [Front]({front}) · [Angled]({angle})<br>[Back]({back}) · [Photo fit]({fit}) |')
     table='\n'.join(rows)
     text=f'''# Floral Instax Frames
 
@@ -39,6 +39,10 @@ use example materials; the model dimensions and geometry are the actual files.
 The previews show each frame upright, viewed from the side in perspective to show the
 carving and depth. Click to enlarge, or use the view links for straight-on, rear
 and photo-fit views.
+
+For other slicers, download the **STL ZIP**: ornament, mat and matching back.
+Keep the mat and ornament aligned as one front, and choose your own print
+settings. [STL import details](docs/PRINTING.md#using-the-stl-downloads).
 
 | Preview | Design & files | More views |
 | --- | --- | --- |

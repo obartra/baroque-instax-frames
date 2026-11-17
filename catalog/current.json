@@ -40,6 +40,10 @@
         "angle": "renders/current/canted-octagon-side-perspective-v2.png",
         "back": "renders/current/canted-octagon-back.png",
         "fit": "renders/current/canted-octagon-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/canted-octagon-stl.zip",
+        "sha256": "b655edd1529e76001419374dfb1a570f0f9c8ca2f3fd14615c2b9dbaa39d65bb"
       }
     },
     {
@@ -69,6 +73,10 @@
         "angle": "renders/current/segmental-arch-side-perspective-v2.png",
         "back": "renders/current/segmental-arch-back.png",
         "fit": "renders/current/segmental-arch-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/segmental-arch-stl.zip",
+        "sha256": "ecc0516419b2b1d6089b0413e115559860019cdbd133b2c2d3b2bba71247404b"
       }
     },
     {
@@ -98,6 +106,10 @@
         "angle": "renders/current/cushion-cartouche-side-perspective-v2.png",
         "back": "renders/current/cushion-cartouche-back.png",
         "fit": "renders/current/cushion-cartouche-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/cushion-cartouche-stl.zip",
+        "sha256": "865278c5de8520bbcf5604ea55b2f9d6c4531475b3c5bc5bcf3ca620479b6183"
       }
     },
     {
@@ -127,6 +139,10 @@
         "angle": "renders/current/floral-corners-side-perspective-v2.png",
         "back": "renders/current/floral-corners-back.png",
         "fit": "renders/current/floral-corners-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/floral-corners-stl.zip",
+        "sha256": "cc83a0a18ebcc9ebcdbee677ec32426f14b3c0fc3f165c602ff40804039da934"
       }
     },
     {
@@ -156,6 +172,10 @@
         "angle": "renders/current/botanical-garland-side-perspective-v2.png",
         "back": "renders/current/botanical-garland-back.png",
         "fit": "renders/current/botanical-garland-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/botanical-garland-stl.zip",
+        "sha256": "9aba63d8a482a50517fabca73ffd9eac3fc624b364091bad72c427f65e95cfa3"
       }
     },
     {
@@ -185,6 +205,10 @@
         "angle": "renders/current/acanthus-gallery-side-perspective-v2.png",
         "back": "renders/current/acanthus-gallery-back.png",
         "fit": "renders/current/acanthus-gallery-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/acanthus-gallery-stl.zip",
+        "sha256": "3f96694b1e5876b7574f365bc0a9cf03c8363debd6e9abbfebc228bcca8dcf96"
       }
     },
     {
@@ -214,6 +238,10 @@
         "angle": "renders/current/portrait-oval-side-perspective-v2.png",
         "back": "renders/current/portrait-oval-back.png",
         "fit": "renders/current/portrait-oval-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/portrait-oval-stl.zip",
+        "sha256": "ef678e2bcb5636f1ddf4a06c73ff57dd8674b34f632bef2c00b545cd90ec2177"
       }
     },
     {
@@ -243,6 +271,10 @@
         "angle": "renders/current/landscape-oval-side-perspective-v2.png",
         "back": "renders/current/landscape-oval-back.png",
         "fit": "renders/current/landscape-oval-rear-fit.png"
+      },
+      "stl": {
+        "archive": "models/current/stl/landscape-oval-stl.zip",
+        "sha256": "612e81bc0c8e997faa4b4d3ca05f7893afce169efce9079d3acf6f927954fb1c"
       }
     }
   ]

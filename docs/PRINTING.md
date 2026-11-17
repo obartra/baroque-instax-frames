@@ -21,6 +21,24 @@ Open the `.3mf` **as a project** in Bambu Studio so its plates, parts and color 
 
 The mat is **0.68 mm high**: a 0.20 mm first layer plus six 0.08 mm layers (seven total). This reinforcement replaces the earlier three-layer mat after prints showed bending and stress during removal. Retain all seven mat layers. With separate colors, the front then changes to the ornament filament. With one filament, that color change is unnecessary. The front is one fused piece, so there is no separate mat to glue or assemble.
 
+## Using the STL downloads
+
+Each catalog entry also offers an **STL ZIP**, exported directly from its current
+reinforced-mat 3MF. Dimensions are in **millimeters**. Extract the ZIP first.
+
+1. Import `mat.stl` and `front-ornament.stl` together as **parts of one object**.
+   Preserve their shared origin; do not center, arrange or drop them separately.
+   The ornament starts above the 0.68 mm mat and prints onto it.
+2. Assign the same filament to both regions for a single-color front, or assign
+   separate colors. Slice them together as **one physical front**, not as two
+   separately printed pieces.
+3. Import `back.stl` on a separate plate, flat side down and clips up.
+   Use the settings above and check the slice for your printer and filament.
+
+STL does not retain units, material assignments, plate layouts or print profiles.
+The 3MF project preserves these and is the simpler option for Bambu Studio.
+Each ZIP contains an export record tying its meshes to the checked 3MF revision.
+
 ## 1. Print the matching pair
 
 Print both plates from the same frame project. Plate 1 is the front; plate 2 is its matching back. Assign the materials you want for each. Earlier backs have different clips: do not mix generations or pair parts from different frame projects.
