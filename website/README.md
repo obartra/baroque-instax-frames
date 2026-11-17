@@ -13,7 +13,9 @@ sections are not copied into a second set of page content. Edit
 project's generated documentation; a direct README edit is also reflected in
 the next site build.
 
-The theme and navigation live here. JavaScript only enhances the frame-view
+The theme and navigation live here. The hero uses a small pre-rendered actual-mesh
+video with pause/replay controls. It plays once when visible and holds the finished frame;
+reduced-motion visitors get a still poster until they choose to play. JavaScript only enhances the frame-view
 links; without it the links still open their images and the downloads work.
 3MF downloads always point to `models/current/` on `main`. Source and detailed
 documentation links open the corresponding repository files.

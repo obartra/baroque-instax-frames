@@ -85,6 +85,18 @@ def build():
     hero = re.search(r'<p align="center">.*?</p>', source, re.S).group(0)
     hero = hero.replace('align="center"', 'class="hero-image"')
     hero = render(hero)
+    poster = asset('assets/demo/photo-insertion-poster.png')
+    for name in ['photo-insertion.mp4', 'photo-insertion.webm']:
+        target = OUT / 'media/assets/demo' / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / 'assets/demo' / name, target)
+    video = f'''<video id="insertion-demo" class="insertion-video" width="720" height="720" controls muted playsinline preload="metadata" poster="{poster['url']}" aria-label="A whole Instax Mini photo slides into the assembled Segmental Arch frame from below">
+      <source src="media/assets/demo/photo-insertion.webm" type="video/webm">
+      <source src="media/assets/demo/photo-insertion.mp4" type="video/mp4">
+      <a href="media/assets/demo/photo-insertion.mp4">Watch the photo insertion animation</a>
+    </video><button class="motion-control" type="button" aria-controls="insertion-demo" hidden>Play animation</button>'''
+    hero = re.sub(r'<img[^>]*>', lambda _: video, hero, count=1)
+    hero = hero.replace('Segmental Arch · actual frame mesh, simulated photo', 'Actual 3D model · whole photo slides in from below')
     intro_html = render(intro)
     # The README supplies section headings, text, tables, illustrations, licenses
     # and download/view links. Site-specific content is presentation/navigation.
@@ -127,7 +139,7 @@ def verify():
             attrs=dict(pairs)
             assert '/' not in attrs, 'Malformed self-closing image'
             if 'id' in attrs: self.ids.add(attrs['id'])
-            for key in ('src', 'href'):
+            for key in ('src', 'href', 'poster'):
                 if key in attrs: self.targets.append(attrs[key])
             if attrs.get('href','').endswith('.3mf'): self.downloads.append(attrs['href'])
     doc=Links(); doc.feed((OUT/'index.html').read_text())

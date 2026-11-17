@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 """Relief renderer with actual-mesh terrain shadows; legacy renderer unchanged."""
 from render_utils import *
-def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False,camera_roll=0,perspective_distance=None):
+def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False,camera_roll=0,perspective_distance=None,return_buffers=False):
  eye,u,v,T=camera(elev,azim)
  if camera_roll:
   r=np.radians(camera_roll);u,v=np.cos(r)*u-np.sin(r)*v,np.sin(r)*u+np.cos(r)*v
@@ -60,3 +60,6 @@ def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False
   np.maximum.at(zbuf,flat,dep);nearest=abs(dep-zbuf[flat])<1e-8;rgb[flat[nearest]]=cc[ids[nearest]]
  ax.imshow(rgb.reshape(height,width,3),extent=(lo[0],hi[0],lo[1],hi[1]),origin='lower',interpolation='none')
  ax.set_aspect('equal');ax.axis('off')
+
+ if return_buffers:
+  return dict(rgb=rgb.reshape(height,width,3),depth=zbuf.reshape(height,width),lo=lo,hi=hi,camera=T)

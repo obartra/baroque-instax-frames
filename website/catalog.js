@@ -25,3 +25,40 @@ document.querySelectorAll('.frame-catalog tbody tr').forEach(row => {
     });
   });
 });
+
+// A single play-through, then hold the finished frame. Reduced-motion visitors
+// see the still poster until they choose to play. The control also supports pause.
+const demo = document.querySelector('#insertion-demo');
+const motionButton = document.querySelector('.motion-control');
+if (demo && motionButton) {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let complete = false;
+  let started = false;
+  demo.controls = false;
+  motionButton.hidden = false;
+  const play = () => {
+    started = true;
+    if (complete) { demo.currentTime = 0; complete = false; }
+    demo.play().then(() => { motionButton.textContent = 'Pause animation'; })
+      .catch(() => { motionButton.textContent = 'Play animation'; });
+  };
+  demo.addEventListener('pause', () => {
+    motionButton.textContent = complete ? 'Replay animation' : 'Play animation';
+  });
+  demo.addEventListener('timeupdate', () => {
+    if (demo.currentTime >= 5.7) {
+      complete = true;
+      demo.pause();
+      motionButton.textContent = 'Replay animation';
+    }
+  });
+  motionButton.addEventListener('click', () => {
+    if (demo.paused) play(); else demo.pause();
+  });
+  reduced.addEventListener('change', event => { if (event.matches) demo.pause(); });
+  new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      if (!started && !reduced.matches) play();
+    } else if (!demo.paused) demo.pause();
+  }, {threshold: .25}).observe(demo);
+}

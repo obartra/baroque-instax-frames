@@ -5,6 +5,11 @@
     "assets/brand/README.md": "37c83fb14b0c7945d925fab940afe03e176fa1c2cad09116f6fb2856cc910f54",
     "assets/brand/generation-record.json": "25ca2802629952c3b457be3ec60735028fab53f4dd8d83446aa46a882d663a0c",
     "assets/brand/simulated-coastal-photo.png": "b1667f6e5cde987ccd72750614b1fffdab7876f9b02887c95c77934e6d89d50d",
+    "assets/demo/README.md": "1e7a2159b6deb01e1ae50ae274f6a6feede66cef2d22c8bc7e2983363fffec81",
+    "assets/demo/photo-insertion-poster.png": "ee5a5952eff5b4150aeb17e0997df71c32bfbd3aa12655ff562fb0ca322dbf21",
+    "assets/demo/photo-insertion.mp4": "40ae57599f60f5013c686fd25db76b1a54a203ff77547dce08880f442347002d",
+    "assets/demo/photo-insertion.webm": "6acdc4277254c4767d0e1a296a2cef82a90c18f85b54f128bba8677a8d843f60",
+    "assets/demo/render-record.json": "570ad42c46c4e78d960c51d270bdb41677cb37e2b2cbf62c5c75a2f0b09bdfb2",
     "source/assembly_steps.py": "7942ab08362e6b436c615c4e8263e5454ba2850b7017fa399ef2747217ece8cf",
     "source/build_catalog.py": "4b6dca97002663f3aeec39c80560c16f9cd4a677ad4b0287d25c59dd5821c3c4",
     "source/build_floral_rococo.py": "bc91d8dba7d77041b087bc3cad5abc3342fe4dd11cd00d8cea61b567c279d8d2",
@@ -28,7 +33,8 @@
     "source/relief_lighting.py": "649469b5a0f5cd4d397ad2afba0964bb08ce8851baffb1b2753b0dd94fb10191",
     "source/render_current_catalog.py": "e8cb61789a3ac0fe09d675ece29028d792919ecc775629514ba8c51bbc180fec",
     "source/render_floral_rococo.py": "aaf491b036b417ced07efe2a5764112863683a80aa61c06424ac9f79113b193e",
-    "source/render_floral_utils.py": "48a4f78826b59182890d9044b523e190a749fa81b5e0cae81d62c9772cd2d199",
+    "source/render_floral_utils.py": "33fe1f0fdd12043cbc1020124c0a107684d2988610c17e4f1964666858f0c64b",
+    "source/render_insertion_animation.py": "66be61e546d35b10fe7ee547baecbf7edf24a03cc381b27ed81913d99fe5eb0d",
     "source/render_project_icon.py": "ca332387695b3f7ab6bbe83e9dbb8c6ae488af578c5b586fd8015a1bc7538d2b",
     "source/render_utils.py": "a35cc6cad965304777d0e7ce6819eaa206909bd5ceb74cbf6fad62ea2cc747cf",
     "source/requirements-depth.txt": "c45af376d4452234a6359c90859a3710fbf23131e86b2833b50641257ae4868c",
@@ -89,11 +95,11 @@
     "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg": "bd0fa3b921a0f67f1ad7341b95315d34ac443980e3ff51be5634c1205905ef67",
     "studies/period-grounded-ovals/sculpture-master-v1.png": "7cdb7b24d82b8ccc0f09b3eb8c7d228a84ec48417fa550fd9d4c4da065438d85",
     "studies/period-grounded-ovals/sculpture-normals-v1.png": "2628e92a3f27dccbca38bb6e872ada4b5e3922159f4bf611e92595e8fec3b246",
-    "tools/build_pages.py": "dc02a45b97acdbbd043f334745fec7bd157e4c58c61e993f5392e007bd904f27",
-    "website/README.md": "117a3709ada6434874caa6367cde6a145a86b2e6c618ae77998a7a12af804647",
-    "website/catalog.js": "983408ec6cc0b4cde3bb87e8a167212d94db46798e37e985a016fa650f5cad6c",
+    "tools/build_pages.py": "750a173df641ad8a1345199ade946e5a2495d2da806dd92ef2d0f4546b16be8d",
+    "website/README.md": "a0814443ae43c52d4fef7161b259befb1533c56797aca24adca3ff30c5464eb6",
+    "website/catalog.js": "e8e02ac3f9e04f3e2627c15d788055749e0ace414d800c2bf4c9b6462f52a993",
     "website/index.template.html": "29be87481859d653cbb4b8f0cd7b633d9106adc7d2f0d1560d5bb7d5f02358e9",
     "website/requirements.txt": "70e64550ca5a770e6ab742574a48b51000065016c4087b2f7ec4fd94ca6aff0c",
-    "website/style.css": "455675abd864ea88b0180d86f256ec10b4b82ba4a09ea84474ab3c88c2420ce1"
+    "website/style.css": "a77a0278c9388f59eb546dc73dc81c9e38f365a6526884dbee1d526af972d8a1"
   }
 }
