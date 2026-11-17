@@ -1,6 +1,6 @@
 # Printing and assembly details
 
-Follow the [five-step illustrated guide](../README.md#print-and-assemble). The examples use actual silhouettes from the released Floral Corners and Segmental Arch projects. The same assembly sequence applies to the matching two-piece designs; keep each front with its own back. Choose your own print colors; the illustrations only demonstrate contrasting materials.
+Follow the [five-step illustrated guide](../README.md#print-and-assemble). The examples use actual silhouettes from the released Floral Corners and Segmental Arch projects. The same assembly sequence applies to the matching two-piece designs; keep each front with its own back. The illustrations show different mat and frame colors; a single filament also works.
 
 ## Materials and profile
 
@@ -8,23 +8,22 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 | --- | --- |
 | Printer | Bambu P2S, 0.4 mm nozzle |
 | Build surface | Textured PEI |
-| Material | PLA; two contrasting materials for the front |
+| Filament | Your chosen filament; supplied profiles use PLA |
 | Layers | 0.08 mm; first layer 0.20 mm |
-| Front material 1 | Inner mat |
-| Front material 2 | Ornament |
-| Plate 1 | One fused multicolor front: reinforced mat, then ornament |
+| Mat and ornament | Assign the same filament, or optional separate colors |
+| Plate 1 | One fused front: reinforced mat, then ornament |
 | Plate 2 | Matching back; choose its material separately |
 | Supports / prime tower | Disabled in the supplied profile |
 | Magnets | Three round magnets, 6 mm diameter × 3 mm thick |
-| Adhesive | Suitable for both your PLA and magnets; follow its preparation and curing instructions |
+| Adhesive | Suitable for both your printed material and magnets; follow its preparation and curing instructions |
 
-Open the `.3mf` **as a project** in Bambu Studio so its plates, parts and color assignments are retained. For another printer, choose the appropriate machine and review the resulting slice and clearances. Check purge requirements for your own multicolor setup.
+Open the `.3mf` **as a project** in Bambu Studio so its plates, parts and color assignments are retained. For another printer, choose the appropriate machine and review the resulting slice and clearances. Set a profile for your filament. For a single-color front, assign the mat and ornament to the same filament before slicing. Separate colors require a filament change; check the resulting purge requirements.
 
-The mat is **0.68 mm high**: a 0.20 mm first layer plus six 0.08 mm layers (seven total). This reinforcement replaces the earlier three-layer mat after prints showed bending and stress during removal. Retain all seven mat layers. The front then makes one transition to the ornament material. The front is one fused piece, so there is no separate mat to glue or assemble.
+The mat is **0.68 mm high**: a 0.20 mm first layer plus six 0.08 mm layers (seven total). This reinforcement replaces the earlier three-layer mat after prints showed bending and stress during removal. Retain all seven mat layers. With separate colors, the front then changes to the ornament filament. With one filament, that color change is unnecessary. The front is one fused piece, so there is no separate mat to glue or assemble.
 
 ## 1. Print the matching pair
 
-Print both plates from the same frame project. Plate 1 is the multicolor front; plate 2 is its matching back. Assign the materials you want for each. Earlier backs have different clips: do not mix generations or pair parts from different frame projects.
+Print both plates from the same frame project. Plate 1 is the front; plate 2 is its matching back. Assign the materials you want for each. Earlier backs have different clips: do not mix generations or pair parts from different frame projects.
 
 Let the plate cool, then flex the plate away from the frame. Avoid lifting the print by pulling on the inner mat. The reinforcement still needs a physical print check.
 

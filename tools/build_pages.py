@@ -35,7 +35,8 @@ def build():
         original = (ROOT / path).resolve()
         if not original.is_relative_to(ROOT) or not original.is_file():
             raise ValueError('Missing or unsafe image: ' + path)
-        target = Path('media') / Path(path).with_suffix('.webp')
+        digest = hashlib.sha256(original.read_bytes()).hexdigest()[:12]
+        target = Path('media') / Path(path).with_name(Path(path).stem + '-' + digest + '.webp')
         (OUT / target).parent.mkdir(parents=True, exist_ok=True)
         with Image.open(original) as im:
             im = im.convert('RGB')
@@ -86,17 +87,22 @@ def build():
     hero = hero.replace('align="center"', 'class="hero-image"')
     hero = render(hero)
     poster = asset('assets/demo/photo-insertion-poster.png')
+    videos = {}
     for name in ['photo-insertion.mp4', 'photo-insertion.webm']:
-        target = OUT / 'media/assets/demo' / name
+        original = ROOT / 'assets/demo' / name
+        digest = hashlib.sha256(original.read_bytes()).hexdigest()[:12]
+        filename = Path(name).stem + '-' + digest + Path(name).suffix
+        target = OUT / 'media/assets/demo' / filename
         target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(ROOT / 'assets/demo' / name, target)
-    video = f'''<video id="insertion-demo" class="insertion-video" width="720" height="720" controls muted playsinline preload="metadata" poster="{poster['url']}" aria-label="A whole Instax Mini photo slides into the assembled Segmental Arch frame from below">
-      <source src="media/assets/demo/photo-insertion.webm" type="video/webm">
-      <source src="media/assets/demo/photo-insertion.mp4" type="video/mp4">
-      <a href="media/assets/demo/photo-insertion.mp4">Watch the photo insertion animation</a>
-    </video><button class="motion-control" type="button" aria-controls="insertion-demo" hidden>Play animation</button>'''
+        shutil.copy2(original, target)
+        videos[name] = target.relative_to(OUT).as_posix()
+    video = f'''<video id="insertion-demo" class="insertion-video" width="720" height="720" muted playsinline preload="metadata" poster="{poster['url']}" aria-label="A whole Instax Mini photo loads from below at a rear angle, then the frame turns to a close front view">
+      <source src="{videos['photo-insertion.webm']}" type="video/webm">
+      <source src="{videos['photo-insertion.mp4']}" type="video/mp4">
+      <a href="{videos['photo-insertion.mp4']}">Watch the photo insertion animation</a>
+    </video>'''
     hero = re.sub(r'<img[^>]*>', lambda _: video, hero, count=1)
-    hero = hero.replace('Segmental Arch · actual frame mesh, simulated photo', 'Actual 3D model · whole photo slides in from below')
+    hero = hero.replace('Segmental Arch · actual frame mesh, simulated photo', 'Actual 3D model · rear loading view to front display')
     intro_html = render(intro)
     # The README supplies section headings, text, tables, illustrations, licenses
     # and download/view links. Site-specific content is presentation/navigation.
@@ -110,13 +116,18 @@ def build():
             html = html.replace('<table>', '<table class="frame-catalog">', 1)
         content += f'<section id="{escape(anchor)}" class="readme-section">{html}</section>'
     count = len(json.loads((ROOT / 'catalog/current.json').read_text())['frames'])
+    resources = {}
+    for name in ['style.css', 'catalog.js']:
+        original = ROOT / 'website' / name
+        digest = hashlib.sha256(original.read_bytes()).hexdigest()[:12]
+        filename = Path(name).stem + '-' + digest + Path(name).suffix
+        shutil.copy2(original, OUT / filename)
+        resources[name] = filename
     template = (ROOT / 'website/index.template.html').read_text()
     for key, value in {'TITLE': escape(title), 'HEADING': escape(title).replace('Instax Frames', '<br><em>Instax Frames.</em>'), 'HERO': hero, 'INTRO': intro_html, 'CONTENT': content,
-                       'REPO': REPO, 'URL': URL, 'COUNT': str(count)}.items():
+                       'REPO': REPO, 'URL': URL, 'COUNT': str(count), 'STYLE': resources['style.css'], 'SCRIPT': resources['catalog.js']}.items():
         template = template.replace('{{' + key + '}}', value)
     (OUT / 'index.html').write_text(template)
-    for name in ['style.css', 'catalog.js']:
-        shutil.copy2(ROOT / 'website' / name, OUT / name)
     icon = asset('assets/brand/project-icon.png')
     with Image.open(OUT / icon['url']) as im:
         im.resize((96, 96), Image.Resampling.LANCZOS).save(OUT / 'favicon.png')

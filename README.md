@@ -7,7 +7,7 @@
 
 Eight floral frames for **whole, [uncut Instax Mini photos](https://www.instaxus.com/film/mini-white-film/)**. Print a front and
 matching back, slide in your photo, and display it on a magnetic surface.
-Each frame holds **three Ø6 × 3 mm magnets**. Choose your own print colors.
+Each frame holds **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets)**.
 
 **[Explore the collection on the website →](https://obartra.github.io/baroque-instax-frames/)**
 
@@ -45,9 +45,9 @@ Always keep each of the other designs with its own matching back.
 
 ## 🧩 Print and assemble
 
-You need PLA, two contrasting materials for the front, a multicolor-capable
-setup, **three Ø6 × 3 mm magnets**, and suitable glue. The back prints separately,
-so its material is your choice. The reinforced inner mat is **0.68 mm thick**—seven layers at the supplied settings.
+You need filament, **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets)**, and suitable glue.
+Use one filament for the whole frame, or choose separate mat and frame colors.
+The back prints separately. The reinforced inner mat is **0.68 mm thick**—seven layers at the supplied settings.
 
 ![Steps 1–2: print the matching front and back on two plates, then glue three magnets into the rear pockets and let cure.](docs/assembly/01-print-and-magnets-v3.png)
 
@@ -86,14 +86,16 @@ Square or Instax Wide. [Dimensions, crop percentages and checks](catalog/current
 | Check | Included setting / what you need |
 | --- | --- |
 | **Printer & nozzle** | Bambu P2S · 0.4 mm nozzle |
-| **Material** | PLA · choose your own colors and assign your spools |
+| **Filament** | One filament, or optional separate mat and frame colors |
 | **Build plate** | Textured PEI |
 | **Layer height** | 0.20 mm first layer, then 0.08 mm |
 | **Reinforced mat** | 0.68 mm · seven mat layers |
 | **Magnets** | Three discs per frame: **6 mm diameter × 3 mm thick** · [Search Amazon](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets) |
 
 **Open as a project** to keep the matching parts, plates and material assignments.
-Using another printer or nozzle? Choose its profile and reslice before printing.
+Set the printer, nozzle and filament profiles before slicing. For a single-color
+front, assign the mat and ornament to the same filament; different colors need
+a setup that can change filament during the print.
 
 **Let the plate cool**, then flex it away from the frame. Avoid pulling on the
 inner mat or projecting flowers.

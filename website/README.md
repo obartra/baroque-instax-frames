@@ -14,9 +14,10 @@ project's generated documentation; a direct README edit is also reflected in
 the next site build.
 
 The theme and navigation live here. The hero uses a small pre-rendered actual-mesh
-video with pause/replay controls. It plays once when visible and holds the finished frame;
-reduced-motion visitors get a still poster until they choose to play. JavaScript only enhances the frame-view
-links; without it the links still open their images and the downloads work.
+video: the photo loads at a rear angle, then the frame turns to a close front view.
+It plays once when visible and holds the finished frame. Reduced-motion visitors
+get a still poster. There are no animation buttons or native video controls.
+JavaScript enhances the frame-view links and starts the intro animation; without it the links still open their images and the downloads work.
 3MF downloads always point to `models/current/` on `main`. Source and detailed
 documentation links open the corresponding repository files.
 
@@ -31,6 +32,8 @@ python -m http.server 8000 --directory dist
 
 Open `http://localhost:8000`. The generated `dist/` folder is ignored by Git.
 The build validates image files, section anchors and all eight model links.
+Image, video, CSS and JavaScript filenames include their content hashes to avoid
+serving an older cached version after a new deployment.
 Only the used image assets are packaged, as lossless WebP derivatives; original
 renders and model files remain unchanged. The page paper is the same
 `#f6f4ee` as the front/angled render canvases. Rear and rear-fit views use that same canvas; assembly illustrations

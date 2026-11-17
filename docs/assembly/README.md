@@ -1,6 +1,6 @@
 # Illustrated assembly guide
 
-The five steps are grouped into three sheets. Each SVG is editable; its PNG preview is used in the main README. The illustrated materials are examples; choose your own print colors.
+The five steps are grouped into three sheets. Each SVG is editable; its PNG preview is used in the main README. The illustrations show contrasting mat and frame colors; a single filament also works.
 
 | Steps | SVG | PNG |
 | --- | --- | --- |

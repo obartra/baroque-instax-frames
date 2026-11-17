@@ -23,7 +23,7 @@ def draw(g, project, portrait_project, report, out):
     body+=g.text(200,581,f'{mat_height:.2f} mm inner mat','small','middle')
     body+=g.text(555,534,'Matching back','small','middle')
     body+=g.text(555,575,'Two pieces in total','small','middle')
-    p1=g.panel(1,'Print two plates','One multicolor front + its matching back.',body)
+    p1=g.panel(1,'Print two plates','One front + its matching back.',body)
 
     # 2: magnets and adhesive, no preliminary coupon/fit-test stage.
     body=g.back(385,365,3.0,rear=True)
@@ -38,7 +38,7 @@ def draw(g, project, portrait_project, report, out):
     body+=g.text(135,573,'Seat flush · let the glue cure','small')
     p2=g.panel(2,'Glue three magnets','Keep the photo channel clear.',body)
     g.canvas('01-print','PRINT & PREPARE · two pieces',p1,p2,760,
-        '1 Print the multicolor front on one plate and its matching back on the other. 2 Glue three six by three millimeter magnets into the rear pockets, seat flush and let the adhesive cure.')
+        '1 Print the front on one plate and its matching back on the other. 2 Glue three six by three millimeter magnets into the rear pockets, seat flush and let the adhesive cure.')
 
     # 3: supported empty-frame assembly; a permanent glued joint is permitted.
     body=g.text(70,178,'BACK · forks down','small')

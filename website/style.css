@@ -9,6 +9,5 @@ footer{text-align:center;border-top:1px solid var(--line);padding:55px 5% 35px;m
 /* The demo uses the actual render canvas; motion remains optional. */
 .hero-image{position:relative}
 .insertion-video{mix-blend-mode:darken;display:block;width:100%;max-width:540px;height:auto;margin:auto;background:var(--paper)}
-.motion-control{display:block;position:absolute;top:8px;right:8px;z-index:1;margin:0;padding:4px 12px;border:1px solid var(--line);border-radius:0;background:var(--paper);color:var(--ink);font-size:11px;cursor:pointer;line-height:1.6}
-.motion-control:hover{border-color:var(--gold)}
-.motion-control[hidden]{display:none}
+
+.hero-copy a[href*="amazon"]{white-space:nowrap}

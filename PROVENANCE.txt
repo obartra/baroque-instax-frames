@@ -20,7 +20,8 @@ uses the actual Segmental Arch mesh with an AI-generated simulated coastal
 photograph as a material; no printable geometry was changed for that image.
 The exact prompt and cached input are recorded in assets/brand/.
 The insertion animation in assets/demo/ reuses that material with actual mesh
-depth occlusion and an uncut translating film plane; no model geometry changes.
+depth occlusion and an uncut translating film box. The revised sequence loads
+at a rear angle, then orbits to a close front view; no model geometry changes.
 
 The masters and generated surface-normal guidance were interpreted into
 continuous supported relief using cached depth/normal-derived height fields,

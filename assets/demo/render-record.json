@@ -2,22 +2,30 @@
   "model": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
   "model_sha256": "fdc77998a07e4fc0259b65eca4fbab76aca84645aec31fa05b634ace9f162c1a",
   "geometry_changes": false,
-  "frame_camera": {
-    "elevation": 70,
-    "azimuth": 0,
-    "roll": 90,
-    "projection": "orthographic"
+  "camera": {
+    "projection": "orthographic",
+    "upright_y_axis": true,
+    "initial_yaw_degrees": 150.0,
+    "final_yaw_degrees": 15.0,
+    "orbit_start_seconds": 3.1,
+    "orbit_end_seconds": 5.1,
+    "zoom_end_seconds": 5.6
   },
   "film_mm": [
     54,
-    86
+    86,
+    1.02
   ],
-  "photo_plane_z_mm": 3.505,
-  "entry": "from below, narrow border first; wide border trails below",
+  "film_z_bounds_mm": [
+    2.485,
+    3.505
+  ],
   "film_y_translation_mm": [
     -105,
     0
   ],
+  "entry": "from below, narrow border first; wide border trails below",
+  "film_fully_seated_seconds": 2.8,
   "display_canvas_rgb": [
     246,
     244,
@@ -29,15 +37,15 @@
     241
   ],
   "video_css_blend": "darken against page paper",
-  "duration_seconds": 6.4,
+  "duration_seconds": 7.2,
   "fps": 30,
   "image_material": "assets/brand/simulated-coastal-photo.png",
   "render_source": "source/render_insertion_animation.py",
-  "occlusion": "Photo plane depth-tested against actual assembled front and matching back meshes",
-  "settling_motion": "A 1.2% damped camera pulse is an editorial effect, not a model deformation or a photo latch",
+  "occlusion": "Full-thickness film box depth-tested against actual assembled meshes at every orbit view",
+  "motion": "Load at a rear three-quarter angle, then turn to the front and move closer. No deformation, overshoot or invented latch.",
   "outputs": {
-    "photo-insertion.webm": "6acdc4277254c4767d0e1a296a2cef82a90c18f85b54f128bba8677a8d843f60",
-    "photo-insertion.mp4": "40ae57599f60f5013c686fd25db76b1a54a203ff77547dce08880f442347002d",
-    "photo-insertion-poster.png": "ee5a5952eff5b4150aeb17e0997df71c32bfbd3aa12655ff562fb0ca322dbf21"
+    "photo-insertion.webm": "f4f03b4f10ffb2d0ba8f01341d29206862fa93f166de3d72e393645c710833a2",
+    "photo-insertion.mp4": "2e76bf0c0438845c8c4c0c42db3bbf37f61210367a21df402bd288ce6c4f0865",
+    "photo-insertion-poster.png": "7c47a73ea26d1d34e00a8b64a1787d6e87b0af5bc894e908fedbf9a0071e4f19"
   }
 }
