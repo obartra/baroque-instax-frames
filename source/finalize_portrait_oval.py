@@ -5,6 +5,7 @@ Run after build_floral_rococo.py with the portrait-oval build/design variables.
 This changes project material assignments only; no print is submitted.
 """
 import json
+import os
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
@@ -43,7 +44,8 @@ def palette(project):
             obj.find("metadata[@key='extruder']").set('value', '3')
         for part in obj.findall('part'):
             if part.get('id') == '1':
-                part.find("metadata[@key='name']").set('value', 'Gray internal mat, 0.36 mm')
+                height=max(b.read_project_mesh(project,1).vertices[:,2])
+                part.find("metadata[@key='name']").set('value', f'Internal mat, {height:.2f} mm')
             elif part.get('id') == '4':
                 part.find("metadata[@key='extruder']").set('value', '3')
     for plate in config.findall('plate'):
@@ -74,6 +76,9 @@ def main():
                       print_profile_filaments=3, colors=['gray mat', 'black ornament', 'white back'])
         for path in (P/design['id']/'validation.json', P/'validation'/(design['id']+'-geometry.json')):
             path.write_text(json.dumps(report, indent=2)+'\n')
+        if os.environ.get('BAROQUE_SKIP_RENDER')=='1':
+            print('FINALIZED', project, flush=True)
+            continue
         original_load = render.load
         def gray_mat(d):
             report, front, pic, rear, assembly, gilt = original_load(d)

@@ -3,11 +3,11 @@
   "source_projects": [
     {
       "path": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
-      "sha256": "42d21533141adabcdf29c9307599fa090fcd09375c4b6c30b19409c45c09c839"
+      "sha256": "89fdb0fe91720c598258cb9e25ba71904056c3b2f5d368937bf9394ee5058916"
     },
     {
       "path": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
-      "sha256": "8c1914a855c44c23a3409d14b17a19b517310744c1dfe2608406ad95b766708d"
+      "sha256": "fdc77998a07e4fc0259b65eca4fbab76aca84645aec31fa05b634ace9f162c1a"
     }
   ],
   "geometry": "Actual native 3MF underside silhouettes, simplified by 0.10mm for illustration only; mechanics unchanged.",
@@ -22,7 +22,7 @@
     86,
     54
   ],
-  "mat_height_mm": 0.36,
+  "mat_height_mm": 0.68,
   "magnet_mm": [
     6,
     3

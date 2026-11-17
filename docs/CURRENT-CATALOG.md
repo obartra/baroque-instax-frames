@@ -8,28 +8,40 @@ remain the earlier release; their integrity records are unchanged.
 The current set comprises Canted Octagon, Segmental Arch, Cushion Cartouche,
 Floral Corners, Botanical Garland, Acanthus Gallery, Portrait Oval and Landscape
 Oval. Botanical Garland uses the latest explicit sculpted-petal v3 revision.
-Only that design's preceding matching back is verified compatible with its new
-front. Keep other fronts and backs paired by project.
+The mat reinforcement preserves each design's preceding matching back geometry.
+Keep fronts and backs paired by design.
 
 ## Fit and manufacturing
 
 Every design accepts a full uncut 86 × 54 mm Instax Mini sheet. Landscape entry
 is from the left; portrait entry is from the bottom. The narrow border leads,
 with the wide caption border trailing. The inner mat has a 6.5 mm normal offset
-and is 0.36 mm thick. Shaped openings mask more of the nominal 62 × 46 mm image;
+and is 0.68 mm thick (a 0.20 mm first layer plus six 0.08 mm layers). Shaped openings mask more of the nominal 62 × 46 mm image;
 per-design visible-area percentages are in the [manifest](../catalog/current.json).
 
 The editable projects retain example material assignments. Assign your own
 spools. Plate 1 has a mat-to-ornament material change; plate 2 is the back.
 The supplied slice records use Bambu P2S / 0.4 mm nozzle / PLA / textured PEI,
 0.20 mm first layer and 0.08 mm following layers, two walls, 15% gyroid and no
-supports. Reslice for other equipment. No print was submitted for this update.
+supports. Reslice for other equipment. Opening a project does not start a print.
+
+All eight current projects have a reinforced mat: 0.68 mm instead of 0.36 mm.
+The wider mat had shown bending and stress during plate removal; four additional
+mat layers address that observation without changing the artwork, aperture,
+photo channel or matching back. The visible mat rises 0.32 mm toward the viewer;
+the maximum frame depth stays the same. Physical improvement still needs testing.
 
 Three Ø6 × 3 mm magnets glue into Ø6.3 × 3.1 mm rear pockets with closed floors.
 The four rounded-root fork clips only need to engage once for the intended
 glued assembly. Glue the seated joints if needed, keep the channel clear, and
 let adhesive cure before inserting film. The magnetic surface can be a fridge,
 locker, display board or another surface that attracts magnets.
+
+The individual upright previews share one 60° side camera, 220 mm camera distance,
+upright vertical axis, lighting and fixed viewport. They use a common physical
+scale and photo-center position; no per-frame auto-fit or recentering is applied.
+Photo-fit diagrams are rear views. Their carrier outlines follow actual CAD
+underside edges, and entry arrows are mirrored appropriately from the front view.
 
 ## Checks and reviews
 

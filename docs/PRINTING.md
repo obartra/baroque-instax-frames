@@ -12,7 +12,7 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 | Layers | 0.08 mm; first layer 0.20 mm |
 | Front material 1 | Inner mat |
 | Front material 2 | Ornament |
-| Plate 1 | One fused multicolor front: thin mat, then ornament |
+| Plate 1 | One fused multicolor front: reinforced mat, then ornament |
 | Plate 2 | Matching back; choose its material separately |
 | Supports / prime tower | Disabled in the supplied profile |
 | Magnets | Three round magnets, 6 mm diameter × 3 mm thick |
@@ -20,11 +20,13 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 
 Open the `.3mf` **as a project** in Bambu Studio so its plates, parts and color assignments are retained. For another printer, choose the appropriate machine and review the resulting slice and clearances. Check purge requirements for your own multicolor setup.
 
-The mat is **0.36 mm high**: a 0.20 mm first layer plus two 0.08 mm layers. Retain those mat layers. The front then makes one transition to the ornament material. The front is one fused piece, so there is no separate mat to glue or assemble.
+The mat is **0.68 mm high**: a 0.20 mm first layer plus six 0.08 mm layers (seven total). This reinforcement replaces the earlier three-layer mat after prints showed bending and stress during removal. Retain all seven mat layers. The front then makes one transition to the ornament material. The front is one fused piece, so there is no separate mat to glue or assemble.
 
 ## 1. Print the matching pair
 
 Print both plates from the same frame project. Plate 1 is the multicolor front; plate 2 is its matching back. Assign the materials you want for each. Earlier backs have different clips: do not mix generations or pair parts from different frame projects.
+
+Let the plate cool, then flex the plate away from the frame. Avoid lifting the print by pulling on the inner mat. The reinforcement still needs a physical print check.
 
 ## 2. Glue the magnets
 
@@ -59,4 +61,4 @@ Place the magnet side against a magnet-attracting surface, such as a fridge, loc
 
 ## Illustration sources
 
-[Editable diagrams and source records](assembly/README.md) · [Geometry reports](../validation/) · [Build instructions](BUILDING.md)
+[Editable diagrams and source records](assembly/README.md) · [Geometry reports](../validation/current/) · [Build instructions](CURRENT-CATALOG.md#rebuild)

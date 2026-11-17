@@ -1,7 +1,7 @@
 {
   "id": "17-Rocaille-Acanthus-Gallery",
   "file": "17-Rocaille-Acanthus-Gallery-Instax-Mini-3-Magnets.3mf",
-  "sha256": "8fb9847f90929fc510556eef489e9a8ef3a4309fc6c1300d54b1c415ca317946",
+  "sha256": "b38a16892d1a0516d91320f1a289a94fc3d8d98b83d7177fb38dc7b3875fe837",
   "slicer": "BambuStudio local CLI",
   "printer": "Bambu P2S 0.4 mm",
   "return_code": 0,
@@ -15,15 +15,15 @@
     ""
   ],
   "estimated_minutes": [
-    169.9,
+    170.5,
     56.3
   ],
   "material_g": [
-    16.1,
+    16.63,
     6.62
   ],
   "sliced_project": "17-Rocaille-Acanthus-Gallery/slice-final/17-Rocaille-Acanthus-Gallery-P2S-Sliced.3mf",
-  "sliced_sha256": "a234225d64c9fe6b9a43305b4423e739cbf9d85d678ba5515e010a35e55790a6",
+  "sliced_sha256": "2f751dabd6c2a8a5d287e0bc1ec0604f7fe9f2d0c130613983bcc23c3d8b92d6",
   "print_submitted": false,
   "print_started": false,
   "physical_test": false

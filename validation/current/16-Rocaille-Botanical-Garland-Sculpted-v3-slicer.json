@@ -1,7 +1,7 @@
 {
   "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
   "file": "16-Rocaille-Botanical-Garland-Sculpted-v3-Instax-Mini-3-Magnets.3mf",
-  "sha256": "a48cc5570a1b2229d179778cfff3b7a7dd75b910dd1e5371c7ba822c7fac0936",
+  "sha256": "570f25c17ba57ef735c038b28fb3ffcd3cb1e7db142554f1f79823d00904f8ca",
   "slicer": "BambuStudio local CLI",
   "printer": "Bambu P2S 0.4 mm",
   "return_code": 0,
@@ -15,15 +15,15 @@
     ""
   ],
   "estimated_minutes": [
-    167.9,
+    168.5,
     56.3
   ],
   "material_g": [
-    16.59,
+    17.16,
     6.62
   ],
   "sliced_project": "16-Rocaille-Botanical-Garland-Sculpted-v3/slice-final/16-Rocaille-Botanical-Garland-Sculpted-v3-P2S-Sliced.3mf",
-  "sliced_sha256": "da5074f6f716da8f4d8a77a8e485213357d34fcbe76a555932a5c0b877c06799",
+  "sliced_sha256": "dcb7b894a0a2942eac4dd4b87678d2208d9d8821be24d4812cd81175eac0a024",
   "print_submitted": false,
   "print_started": false,
   "physical_test": false

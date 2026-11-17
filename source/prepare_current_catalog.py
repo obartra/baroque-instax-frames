@@ -6,21 +6,23 @@ This adds the eight current prototypes under models/current/.
 """
 import hashlib
 import json
+import os
 import shutil
 from pathlib import Path
 from paths import ROOT
 
 
 def main():
-    designs=json.loads((ROOT/'source/designs-period-eight.json').read_text())
+    designs=json.loads(Path(os.environ.get('BAROQUE_DESIGNS_FILE',ROOT/'source/designs-period-eight.json')).read_text())
     revised=json.loads((ROOT/'source/designs-botanical-sculpture-v3.json').read_text())[0]
     records=[];current=[]
     def copy(f,relative):
         to=ROOT/relative;to.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,to)
     for original in designs:
         is_new=original['id'].startswith('16-')
-        d=revised if is_new else original
-        build=ROOT/'build'/('botanical-sculpture-v3' if is_new else 'period-catalog-six')
+        single_build=os.environ.get('BAROQUE_CATALOG_BUILD_DIR')
+        d=original if single_build else (revised if is_new else original)
+        build=Path(single_build).resolve() if single_build else ROOT/'build'/('botanical-sculpture-v3' if is_new else 'period-catalog-six')
         did=d['id'];q=build/did
         report=json.loads((q/'validation.json').read_text())
         sliced=json.loads((build/'validation'/(did+'-slicer.json')).read_text())
@@ -45,9 +47,10 @@ def main():
             geometry=geo,slicer=sl,back_toolpaths=back,orientation=d['orientation'],
             dimensions_mm=report['front_dimensions_mm'],depth_mm=report['assembled_depth_mm'],
             image_visible_percent=report['image_area_visible_percent'],
+            mat_height_mm=report['mat_height_mm'],mat_layers=round((report['mat_height_mm']-.2)/.08)+1,
             front_minutes=sliced['estimated_minutes'][0],back_minutes=sliced['estimated_minutes'][1],
-            revision='Sculpted petals v3' if is_new else 'Period floral catalog',
-            views={v:f'renders/current/{slug}-{"side-perspective" if v=="angle" else v}.png' for v in ['front','angle','back','fit']}))
+            revision=('Reinforced mat · ' if report['mat_height_mm']>.36 else '')+('Sculpted petals v3' if is_new else 'Period floral catalog'),
+            views={v:f'renders/current/{slug}-{"side-perspective-v2" if v=="angle" else "rear-fit" if v=="fit" else v}.png' for v in ['front','angle','back','fit']}))
         current.append(d)
     catalog=dict(title='Eight floral Instax Mini frames',schema_version=1,
         status='Digital prototypes; physical fit and surface detail need testing',

@@ -1,0 +1,97 @@
+{
+  "reason": "Reported mat bending and stress during plate removal",
+  "first_layer_mm": 0.2,
+  "following_layer_mm": 0.08,
+  "additional_mat_layers": 4,
+  "physical_improvement_tested": false,
+  "frames": [
+    {
+      "id": "12-Rocaille-Canted-Octagon",
+      "previous_native_sha256": "12d5dcac4cf0a7dc3abd98f1ab3d708e9d80cc12c03edddd56d9feba94425477",
+      "reinforced_native_sha256": "0d15817e44362653f350cc70b224114f7c88853545ccbea291d406efc785b58f",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "13-Rocaille-Segmental-Arch",
+      "previous_native_sha256": "8c1914a855c44c23a3409d14b17a19b517310744c1dfe2608406ad95b766708d",
+      "reinforced_native_sha256": "fdc77998a07e4fc0259b65eca4fbab76aca84645aec31fa05b634ace9f162c1a",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "14-Rocaille-Cushion-Cartouche",
+      "previous_native_sha256": "2e9b9900c24f757202964b37cd533cefb581aa2aa723bd96fcb107b3b5e23f05",
+      "reinforced_native_sha256": "97e0999c18874260aeedfb01e38f49f8eb1bb2b3e447abb645db9867240ac037",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "15-Rocaille-Floral-Corners",
+      "previous_native_sha256": "42d21533141adabcdf29c9307599fa090fcd09375c4b6c30b19409c45c09c839",
+      "reinforced_native_sha256": "89fdb0fe91720c598258cb9e25ba71904056c3b2f5d368937bf9394ee5058916",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+      "previous_native_sha256": "a48cc5570a1b2229d179778cfff3b7a7dd75b910dd1e5371c7ba822c7fac0936",
+      "reinforced_native_sha256": "570f25c17ba57ef735c038b28fb3ffcd3cb1e7db142554f1f79823d00904f8ca",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "17-Rocaille-Acanthus-Gallery",
+      "previous_native_sha256": "8fb9847f90929fc510556eef489e9a8ef3a4309fc6c1300d54b1c415ca317946",
+      "reinforced_native_sha256": "b38a16892d1a0516d91320f1a289a94fc3d8d98b83d7177fb38dc7b3875fe837",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "11-Period-Floral-Portrait-Oval",
+      "previous_native_sha256": "657cf6678484732c28e8f70f04695d4c92e0931a6ccfd35513d60ec0ad9c5bc7",
+      "reinforced_native_sha256": "e5472ce692a8760fe03829cfccbac9c5c894c1803685e9bef046fc875cf8c2b4",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    },
+    {
+      "id": "18-Rocaille-Landscape-Oval",
+      "previous_native_sha256": "d5909f846c8054800f9b92f30366bb5200b818fb9332e2e35af01b6532fb385d",
+      "reinforced_native_sha256": "1e66aa90217a75013e67fc88b43d3e7351f9f8e2733fc6dfcedb4392ef939bc7",
+      "previous_mat_height_mm": 0.36,
+      "mat_height_mm": 0.68,
+      "mat_layers": 7,
+      "matching_back_mesh_byte_identical": true,
+      "aperture_and_mechanics_unchanged": true,
+      "maximum_frame_depth_unchanged": true
+    }
+  ]
+}

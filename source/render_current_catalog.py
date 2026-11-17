@@ -20,6 +20,9 @@ BG=np.array([.965,.956,.934])
 renderer.BG=BG
 CAT=json.loads((ROOT/'catalog/current.json').read_text())
 LIMITS=((-66,-66),(66,66))
+# Shared camera and viewport for every upright catalog preview. Photo centers
+# stay in the same screen position and real millimeters use the same scale.
+SIDE_LIMITS=((-38,-72),(38,72))
 
 
 def load(record):
@@ -32,13 +35,24 @@ def load(record):
 
 
 def fit(ax,record,report):
+    # Fine technical edges distinguish the same-colored retaining carrier from
+    # the mat underside and photo back. These are actual underside CAD edges.
+    from make_assembly_instructions import bottom_shape
+    carrier=bottom_shape(ROOT/record['model'],4)
+    for poly in (list(carrier.geoms) if hasattr(carrier,'geoms') else [carrier]):
+        for ring in [poly.exterior,*poly.interiors]:
+            xy=np.asarray(ring.coords)
+            ax.plot(-xy[:,0],xy[:,1],color='#687c89',lw=.85)
     if record['orientation']=='portrait':
         film=[[-27,-47],[27,-47],[27,39],[-27,39]]
     else:film=[[-47,-27],[39,-27],[39,27],[-47,27]]
+    # Seen from behind, X is mirrored; portrait Y stays upright.
+    film=[[-x,y] for x,y in film]
     ax.add_patch(Patch(film,closed=True,fill=False,edgecolor='#b94f3c',lw=1.65,ls=(0,(4,2.5))))
     for x,y in report['magnet_centers_mm']:
-        ax.add_patch(Circle((x,y),3,facecolor='#edf2f2',edgecolor='#355d76',lw=1.2,alpha=.94))
-        ax.add_patch(Circle((x,y),.65,color='#355d76'))
+        ax.add_patch(Circle((-x,y),3,facecolor='none',edgecolor='#355d76',lw=1.2))
+    start,end=((0,-63),(0,-48)) if record['orientation']=='portrait' else ((63,0),(48,0))
+    ax.annotate('',xy=end,xytext=start,arrowprops=dict(arrowstyle='-|>',lw=2,color='#b94f3c'))
 
 
 def single(record):
@@ -46,41 +60,49 @@ def single(record):
     out=ROOT/'renders/current';out.mkdir(parents=True,exist_ok=True)
     # Side turn of 60 degrees from head-on; roll keeps the frame's Y axis
     # vertical on screen, as it would be when mounted on a vertical surface.
-    for view,items,elev,azim in [('front',assembly,90,-90),('angle',assembly,30,0),('back',rear,-90,90),('fit',assembly,90,-90)]:
+    for view,items,elev,azim in [('front',assembly,90,-90),('angle',assembly,30,0),('back',rear,-90,90),('fit',assembly,-90,90)]:
         if os.environ.get('BAROQUE_RENDER_VIEW') not in (None,view):continue
-        renderer.BG=np.array([.72,.77,.81]) if view=='back' else BG
+        renderer.BG=np.array([.72,.77,.81]) if view in ('back','fit') else BG
         fig,ax=plt.subplots(figsize=(6,6),dpi=150)
         fig.patch.set_facecolor(renderer.BG)
-        renderer.render(ax,items,elev,azim,limits=LIMITS if view!='angle' else None,width=850,relief_shadows=True,camera_roll=90 if view=='angle' else 0,perspective_distance=220 if view=='angle' else None)
+        renderer.render(ax,items,elev,azim,limits=SIDE_LIMITS if view=='angle' else LIMITS,width=850,relief_shadows=True,camera_roll=90 if view=='angle' else 0,perspective_distance=220 if view=='angle' else None)
         if view=='fit':fit(ax,record,report)
-        titles={'front':'Front','angle':'Upright · side perspective','back':'Back · three magnet pockets','fit':'Hidden film & magnet positions'}
+        titles={'front':'Front','angle':'Upright · side perspective','back':'Back · three magnet pockets','fit':'Rear · full uncut film & entry'}
         ax.set_title(record['name']+'\n'+titles[view],fontsize=15,weight='bold',pad=14)
-        if view=='fit':fig.text(.5,.025,'Dashed = full uncut sheet behind the frame',ha='center',fontsize=10)
+        if view=='fit':fig.text(.5,.025,'Rear view · dashed = whole sheet · arrow = slide-in direction',ha='center',fontsize=9)
         fig.subplots_adjust(left=.02,right=.98,top=.88,bottom=.055)
         fig.savefig(ROOT/record['views'][view],facecolor=fig.get_facecolor())
         plt.close(fig)
+        # Keep previously shared URLs aligned with the active catalog views.
+        aliases=['angle','upright-angle','side-perspective'] if view=='angle' else ['fit'] if view=='fit' else []
+        for suffix in aliases:
+            target=out/f"{record['slug']}-{suffix}.png"
+            if target!=ROOT/record['views'][view]:shutil.copy2(ROOT/record['views'][view],target)
     print('RENDERED',record['name'],flush=True)
 
 
 def overview(concealment=False):
+    renderer.BG=np.array([.72,.77,.81]) if concealment else BG
     fig,axes=plt.subplots(2,4,figsize=(18,11.3),dpi=170)
     fig.patch.set_facecolor(renderer.BG)
     for ax,r in zip(axes.flat,CAT['frames']):
         assembly,rear,report=load(r)
-        renderer.render(ax,assembly,90,-90,limits=LIMITS,width=820,relief_shadows=True)
+        renderer.render(ax,assembly,-90 if concealment else 90,90 if concealment else -90,limits=LIMITS,width=820,relief_shadows=True)
         if concealment:fit(ax,r,report)
         label=r['name']
-        if concealment:label+=f"\n{r['image_visible_percent']:.1f}% of image visible"
+        if concealment:label+='\nRear view · slide in '+('from below' if r['orientation']=='portrait' else 'from the right')
         ax.set_title(label,fontsize=13,weight='bold',pad=9)
-    title='WHOLE PHOTO, HIDDEN BEHIND THE FRAME' if concealment else 'EIGHT FLORAL INSTAX MINI FRAMES'
+    title='HOW THE WHOLE PHOTO FITS · REAR VIEWS' if concealment else 'EIGHT FLORAL INSTAX MINI FRAMES'
     fig.suptitle(title,fontsize=23,weight='bold',y=.975,color='#302c28')
-    footer=('Dashed = full uncut 86 × 54 mm sheet · Circles = three concealed magnets\nOverlay shows hidden positions; none of these marks are printed.' if concealment else
+    footer=('Dashed = full uncut 86 × 54 mm sheet beneath the retaining edges · Discs = three magnets\nArrows show entry directions when viewed from behind. Diagram markings are not printed.' if concealment else
             'Actual printable meshes at the same scale · Uncut Instax Mini · Two pieces · Three concealed magnets\nIllustration colors are examples — choose your own print materials.')
     fig.text(.5,.027,footer,ha='center',fontsize=11,color='#4d4943',linespacing=1.5)
     fig.subplots_adjust(left=.012,right=.988,top=.90,bottom=.09,wspace=.015,hspace=.08)
     target=ROOT/'renders'/('Full-film-concealment.png' if concealment else 'Eight-frames-current.png')
     fig.savefig(target,facecolor=fig.get_facecolor());plt.close(fig)
-    if concealment:shutil.copy2(target,ROOT/'renders/Eight-frames-film-fit.png')
+    if concealment:
+        shutil.copy2(target,ROOT/'renders/Eight-frames-film-fit.png')
+        shutil.copy2(target,ROOT/'renders/Eight-frames-rear-film-fit.png')
     if not concealment:shutil.copy2(target,ROOT/'renders/Six-new-frames-actual-fronts.png')
     print('WROTE',target,flush=True)
 

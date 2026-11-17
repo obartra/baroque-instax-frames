@@ -19,7 +19,8 @@ def draw(g, project, portrait_project, report, out):
     body+=g.front(200,291,2.24,image=False)+g.back(555,291,2.3,pegs=True)
     body+=g.text(200,465,'PLATE 1 · FRONT','label','middle')+g.text(555,465,'PLATE 2 · BACK','label','middle')
     body+=g.rect(85,518,235,21,g.GOLD,g.INK)+g.rect(85,539,235,6,'#fff',g.INK,0,1)
-    body+=g.text(200,581,'0.36 mm inner mat','small','middle')
+    mat_height=g.REPORT['mat_height_mm']
+    body+=g.text(200,581,f'{mat_height:.2f} mm inner mat','small','middle')
     body+=g.text(555,534,'Matching back','small','middle')
     body+=g.text(555,575,'Two pieces in total','small','middle')
     p1=g.panel(1,'Print two plates','One multicolor front + its matching back.',body)
@@ -104,7 +105,7 @@ def draw(g, project, portrait_project, report, out):
         source_projects=[dict(path=str(p.relative_to(g.ROOT)),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in (project,portrait_project)],
         geometry='Actual native 3MF underside silhouettes, simplified by 0.10mm for illustration only; mechanics unchanged.',
         sequence=['print matching two plates','glue three magnets and cure','snap empty frame; glue joints if needed','slide in full uncut photo','place on a magnet-attracting surface'],
-        film_mm=[86,54],mat_height_mm=.36,magnet_mm=[6,3],magnet_count=3,
+        film_mm=[86,54],mat_height_mm=mat_height,magnet_mm=[6,3],magnet_count=3,
         illustration_colors_are_examples=True,color_names_in_labels=False,
         context_reference_mm=[600,1700],context_pixels_per_mm=sc,
         context_frame_width_px=(g.FRONT.bounds[2]-g.FRONT.bounds[0])*sc,

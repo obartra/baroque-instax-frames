@@ -1,7 +1,7 @@
 {
   "id": "12-Rocaille-Canted-Octagon",
   "file": "12-Rocaille-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
-  "sha256": "12d5dcac4cf0a7dc3abd98f1ab3d708e9d80cc12c03edddd56d9feba94425477",
+  "sha256": "0d15817e44362653f350cc70b224114f7c88853545ccbea291d406efc785b58f",
   "slicer": "BambuStudio local CLI",
   "printer": "Bambu P2S 0.4 mm",
   "return_code": 0,
@@ -15,15 +15,15 @@
     ""
   ],
   "estimated_minutes": [
-    128.0,
+    129.2,
     54.7
   ],
   "material_g": [
-    11.5,
+    12.06,
     5.86
   ],
   "sliced_project": "12-Rocaille-Canted-Octagon/slice-final/12-Rocaille-Canted-Octagon-P2S-Sliced.3mf",
-  "sliced_sha256": "cab9bb3a551a904adadfec92983b365d19523eeaa3168214e05d549e819b4dcd",
+  "sliced_sha256": "6052cdb16be3b7ce686240778b8142ae6b05d33d85e0020af62647fc53ca1c6e",
   "print_submitted": false,
   "print_started": false,
   "physical_test": false

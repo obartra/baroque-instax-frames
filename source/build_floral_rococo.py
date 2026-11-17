@@ -358,6 +358,8 @@ def finalize_and_validate(d, outer, aperture, white, black, back, loaded, positi
 def build(d):
     q = P / d["id"]
     q.mkdir(exist_ok=True)
+    mat_height = float(d.get("mat_height_mm", .36))
+    assert .36 <= mat_height < 1.3, "Mat must remain below the ornament foundation"
     rgb, gold, solid, pix, cx, cy, initial_scale = drawing(d)
     aperture = aperture_for(d)
     outer, positions, base_positions, centers, filmshape, factor, growth, join = choose_geometry(d, pix, initial_scale, aperture)
@@ -365,16 +367,16 @@ def build(d):
     inner = aperture.buffer(MAT, join_style=join)
     petals = petal_overlap(d,gold,cx,cy,factor,inner,aperture)
     art = sculpt(d, rgb, gold, solid, cx, cy, factor, inner, outer, positions, petals=petals)
-    white = b.extrude(outer.buffer(-UNDERLAY_INSET).difference(aperture), 0, .36)
+    white = b.extrude(outer.buffer(-UNDERLAY_INSET).difference(aperture), 0, mat_height)
     layers = []
-    zz = np.linspace(.36, 1.3, 13)
+    zz = np.linspace(mat_height, 1.3, 13)
     for z0, z1 in zip(zz[:-1], zz[1:]):
-        inset = UNDERLAY_INSET * (1 - (z0 - .36) / .94)
+        inset = UNDERLAY_INSET * (1 - (z0 - mat_height) / (1.3 - mat_height))
         layers.append(b.extrude(outer.buffer(-inset).difference(inner), z0, z1 - z0 + .00002))
     if not petals.is_empty:
         # The black petals grow directly from the printed light layer, with
         # no floating air gap and no circular pad around their contours.
-        layers.append(b.extrude(petals, .36, .94002))
+        layers.append(b.extrude(petals, mat_height, 1.3 - mat_height + .00002))
         assert petals.intersection(aperture.buffer(.84,join_style=join)).area < .001
     if d.get("sculpted_moulding"):
         from refine_shell_acanthus import sculpted_moulding
@@ -402,7 +404,7 @@ def build(d):
     report = dict(id=d["id"], name=d["name"], orientation=d["orientation"], shape=d["shape"],
         front_dimensions_mm=np.ptp(black.bounds, axis=0).tolist(), front_bounds_mm=black.bounds.tolist(),
         back_dimensions_mm=np.ptp(back.bounds, axis=0).tolist(), assembled_depth_mm=float(b.MATE + black.bounds[1, 2]),
-        mat_width_mm=MAT, mat_height_mm=.36, mat_perpendicular_offset=True, white_exterior_inset_mm=UNDERLAY_INSET,
+        mat_width_mm=MAT, mat_height_mm=mat_height, mat_perpendicular_offset=True, white_exterior_inset_mm=UNDERLAY_INSET,
         film_uncut_mm=[54, 86] if portrait else [86, 54], aperture_bounds_mm=list(aperture.bounds),
         image_area_visible_percent=100 * aperture.area / (62 * 46), full_film_concealed=True,
         nominal_edge_overlap_mm=1.0, misalignment_checked_mm=.6, magnet_centers_mm=centers,
@@ -417,7 +419,7 @@ def build(d):
         relief_method="Estimated sculpture depth with integrated surface normals and exact CAD mouldings; not multi-view reconstruction" if d.get("surface_file") else "Rejected direct-brightness relief experiment",
         drawing_uniform_growth=growth, drawing_mm_per_pixel=factor, drawing_center_px=[float(cx), float(cy)])
     if not petals.is_empty:
-        report.update(petal_overlap_area_mm2=petals.area,petal_overlap_supported_from_layer_mm=.36,
+        report.update(petal_overlap_area_mm2=petals.area,petal_overlap_supported_from_layer_mm=mat_height,
                       clear_aperture_preserved=True,local_cover_repair=True)
     if d.get("allow_underlay_islands"):
         report.update(hidden_underlay_components=len(white.split()),fused_front_single_volume=True)

@@ -41,13 +41,13 @@ Always keep each of the other designs with its own matching back.
 
 You need PLA, two contrasting materials for the front, a multicolor-capable
 setup, **three Ø6 × 3 mm magnets**, and suitable glue. The back prints separately,
-so its material is your choice. The inner mat is only **0.36 mm thick**.
+so its material is your choice. The reinforced inner mat is **0.68 mm thick**—seven layers at the supplied settings.
 
-![Steps 1–2: print the matching front and back on two plates, then glue three magnets into the rear pockets and let cure.](docs/assembly/01-print-and-magnets-v2.png)
+![Steps 1–2: print the matching front and back on two plates, then glue three magnets into the rear pockets and let cure.](docs/assembly/01-print-and-magnets-v3.png)
 
-![Steps 3–4: snap the empty frame together, glue joints if needed, then slide in the full photo, narrow border first.](docs/assembly/02-snap-and-load-v2.png)
+![Steps 3–4: snap the empty frame together, glue joints if needed, then slide in the full photo, narrow border first.](docs/assembly/02-snap-and-load-v3.png)
 
-![Step 5: place on a magnet-attracting surface. The frame is shown at realistic relative size on the fridge; a separate enlarged detail shows it clearly.](docs/assembly/03-magnetic-display-v2.png)
+![Step 5: place on a magnet-attracting surface. The frame is shown at realistic relative size on the fridge; a separate enlarged detail shows it clearly.](docs/assembly/03-magnetic-display-v3.png)
 
 Landscape photos enter from the **left**; portrait photos enter from the
 **bottom**. The wide caption border trails behind. Keep the instant film whole.
@@ -59,11 +59,14 @@ cure before loading the photo. [Print settings and assembly details](docs/PRINTI
 
 The whole **86 × 54 mm sheet** and back are concealed **when viewed from the
 front**; the carrier can be visible at shallow angles. The opening deliberately
-masks a little of the image; the ovals mask
-more. In the diagram below, the dashed outline traces the hidden sheet and
-the circles mark the three magnets behind the frame.
+masks a little of the image; the ovals mask more.
 
-![All eight latest complete frame meshes, with the full uncut film footprint and hidden magnet positions overlaid](renders/Eight-frames-film-fit.png)
+These **rear views** show the retaining supports, three magnets and full sheet.
+The dashed outline follows the uncut film beneath the retaining edges; arrows
+show how it slides in. Viewed from behind, landscape entry appears on the
+**right** (the left when seen from the front); portrait entry stays below.
+
+![Rear views of all eight frames, showing the full uncut sheet, retaining carrier, three magnets and photo insertion direction](renders/Eight-frames-rear-film-fit.png)
 
 These fit **Instax Mini**, rather than Polaroid Go, full-size Polaroid, Instax
 Square or Instax Wide. [Dimensions, crop percentages and checks](catalog/current.json).

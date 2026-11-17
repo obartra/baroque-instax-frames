@@ -6,13 +6,13 @@
   "front_dimensions_mm": [
     114.25285720825195,
     96.02960968017578,
-    8.667162537574768
+    8.347162544727325
   ],
   "front_bounds_mm": [
     [
       -56.795921325683594,
       -45.465450286865234,
-      0.36000001430511475
+      0.6800000071525574
     ],
     [
       57.45693588256836,
@@ -27,7 +27,7 @@
   ],
   "assembled_depth_mm": 12.627162551879882,
   "mat_width_mm": 6.5,
-  "mat_height_mm": 0.36,
+  "mat_height_mm": 0.68,
   "mat_perpendicular_offset": true,
   "white_exterior_inset_mm": 0.55,
   "film_uncut_mm": [

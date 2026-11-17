@@ -32,6 +32,7 @@ def main():
         back=json.loads((ROOT/r['back_toolpaths']).read_text())
         require(digest==r['sha256']==sliced['sha256'],r['name']+': native file differs from its checked slice')
         require(r['id']==geo['id']==sliced['id']==back['id'],r['name']+': record identity mismatch')
+        require(r['mat_height_mm']==geo['mat_height_mm']==.68 and r['mat_layers']==7,r['name']+': reinforced mat missing')
         require(sliced['return_code']==0 and sliced['plates']==2 and sliced['filament_changes']==[1,0],r['name']+': missing two-plate slice result')
         require(not any(sliced['warning_messages']),r['name']+': per-plate warning')
         require(geo['watertight_parts'] and geo['fused_front_single_volume'] and geo['full_film_concealed'] and geo['closed_socket_roofs_checked'],r['name']+': missing geometry gate')
@@ -45,6 +46,9 @@ def main():
             config=E.fromstring(z.read('Metadata/model_settings.config'))
             require(model.get('unit')=='millimeter' and len(model.findall('m:build/m:item',NS))==2,r['name']+': units/two pieces')
             require(len(config.findall('plate'))==2 and len(settings['filament_colour'])==3,r['name']+': plates/material slots')
+            mat=E.fromstring(z.read('3D/Objects/object_1.model'))
+            mat_top=max(float(v.get('z')) for v in mat.findall('.//m:vertex',NS))
+            require(abs(mat_top-geo['mat_height_mm'])<1e-6,r['name']+': actual mat mesh height differs')
             parts={p.get('id'):{m.get('key'):m.get('value') for m in p.findall('metadata')} for p in config.findall('object/part')}
             require({n:parts[n]['extruder'] for n in ('1','2','4')}=={'1':'1','2':'2','4':'3'},r['name']+': mat/ornament/back roles')
         for view,p in r['views'].items():

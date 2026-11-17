@@ -161,6 +161,7 @@ def canvas(name, title, left, right, height=760, description=''):
              '02-assemble':'02-snap-and-load-v2.png',
              '03-load-and-display':'03-magnetic-display-v2.png'}
     shutil.copy2(target.with_suffix('.png'),OUT/aliases[name])
+    shutil.copy2(target.with_suffix('.png'),OUT/aliases[name].replace('-v2.png','-v3.png'))
 
 
 def main():
