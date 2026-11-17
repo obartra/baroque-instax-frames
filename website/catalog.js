@@ -14,6 +14,7 @@ document.querySelectorAll('.frame-catalog').forEach(catalog => {
   const controls = document.createElement('fieldset');
   controls.className = 'catalog-view-controls';
   const legend = document.createElement('legend');
+  legend.className = 'view-announcement';
   legend.textContent = 'View all frames';
   controls.append(legend);
   const live = document.createElement('span');
