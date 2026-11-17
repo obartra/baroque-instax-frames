@@ -10,7 +10,7 @@ def main():
     for r in c['frames']:
         front,angle,back,fit=[r['views'][v] for v in ('front','angle','back','fit')]
         w,h=r['dimensions_mm'][:2]
-        rows.append(f'| [<img src="{front}" width="200" alt="{r["name"]} front view">]({front}) | **{r["name"]}**<br>{r["orientation"].title()} · {w:.1f} × {h:.1f} mm<br>**[Download 3MF]({r["model"]})** | [Front]({front}) · [Angled]({angle})<br>[Back]({back}) · [Photo fit]({fit}) |')
+        rows.append(f'| [<img src="{angle}" width="200" alt="{r["name"]} angled view">]({angle}) | **{r["name"]}**<br>{r["orientation"].title()} · {w:.1f} × {h:.1f} mm<br>**[Download 3MF]({r["model"]})** | [Front]({front}) · [Angled]({angle})<br>[Back]({back}) · [Photo fit]({fit}) |')
     table='\n'.join(rows)
     text=f'''# Floral Instax Frames
 
@@ -25,7 +25,8 @@ Each frame holds **three Ø6 × 3 mm magnets**. Choose your own print colors.
 Each **3MF includes both matching parts on two plates**. Open it as a project
 in Bambu Studio to retain the assembly and material assignments. The previews
 use example materials; the model dimensions and geometry are the actual files.
-Click an image to inspect it, or use the view links to see its relief and back.
+The angled previews show the carving and depth. Click to enlarge, or use the
+view links for straight-on, rear and photo-fit views.
 
 | Preview | Design & files | More views |
 | --- | --- | --- |
