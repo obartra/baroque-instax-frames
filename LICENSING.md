@@ -2,7 +2,7 @@
 
 Baroque Instax Frames uses two licenses:
 
-1. Python source code and automation in source/, tools/ and .github/:
+1. Source code and automation in source/, tools/, website/ and .github/:
    MIT. Copyright (c) 2026 obartra.
    Full text: LICENSES/MIT.txt
 

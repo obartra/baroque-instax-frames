@@ -9,6 +9,8 @@ Eight floral frames for **whole, uncut Instax Mini photos**. Print a front and
 matching back, slide in your photo, and display it on a magnetic surface.
 Each frame holds **three Ø6 × 3 mm magnets**. Choose your own print colors.
 
+**[Explore the collection on the website →](https://obartra.github.io/baroque-instax-frames/)**
+
 [Frames](#choose-a-frame) · [Assembly](#print-and-assemble) · [Photo fit](#how-the-whole-photo-fits) · [Print setup](#before-you-print) · [Source & license](#design-source-and-license)
 
 ![All eight current frames, rendered from their actual printable meshes at the same scale](renders/Eight-frames-current.png)
