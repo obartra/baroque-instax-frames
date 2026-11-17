@@ -25,7 +25,7 @@ Each frame holds **three Ø6 × 3 mm magnets**. Choose your own print colors.
 Each **3MF includes both matching parts on two plates**. Open it as a project
 in Bambu Studio to retain the assembly and material assignments. The previews
 use example materials; the model dimensions and geometry are the actual files.
-The previews show each frame upright, viewed from the side at 35° to show the
+The previews show each frame upright, viewed from the side in perspective to show the
 carving and depth. Click to enlarge, or use the view links for straight-on, rear
 and photo-fit views.
 

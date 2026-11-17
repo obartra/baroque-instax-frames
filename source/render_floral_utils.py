@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 """Relief renderer with actual-mesh terrain shadows; legacy renderer unchanged."""
 from render_utils import *
-def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False,camera_roll=0):
+def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False,camera_roll=0,perspective_distance=None):
  eye,u,v,T=camera(elev,azim)
  if camera_roll:
   r=np.radians(camera_roll);u,v=np.cos(r)*u-np.sin(r)*v,np.sin(r)*u+np.cos(r)*v
@@ -13,7 +13,12 @@ def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False
   shade=sampler(items,light)
  triangles=[];colors=[]
  for m,base in items:
-  n=m.face_normals;keep=n@eye>.0001;t=m.triangles[keep]@T;n=n[keep]
+  n=m.face_normals
+  if perspective_distance is None:keep=n@eye>.0001
+  else:
+   toward_camera=eye*perspective_distance-m.triangles_center
+   keep=np.einsum('ij,ij->i',n,toward_camera)>.0001
+  t=m.triangles[keep]@T;n=n[keep]
   diffuse=.23+.77*np.maximum(0,n@light)
   ornamental=(np.ptp(base)<.06 and np.mean(base)<.4) or (base[0]>.75 and base[1]<.7 and base[2]<.3)
   if shade is not None and ornamental:
@@ -24,6 +29,13 @@ def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False
   c=np.clip(base[None,:]*diffuse[:,None]+.035+specular*spec[:,None],0,1)
   triangles.append(t);colors.append(c)
  t=np.concatenate(triangles);c=np.concatenate(colors)
+ if perspective_distance is not None:
+  # Pinhole projection with reciprocal camera distance for the depth buffer.
+  # Geometry and assembly thickness remain at their real proportions.
+  depth=perspective_distance-t[:,:,2]
+  if np.any(depth<=0):raise ValueError('Camera intersects the rendered geometry')
+  t[:,:,:2]*=(perspective_distance/depth)[:,:,None]
+  t[:,:,2]=1/depth
  if limits is None:
   pts=t[:,:,:2].reshape(-1,2);lo=pts.min(0)-1;hi=pts.max(0)+1
  else:lo=np.array(limits[0],float);hi=np.array(limits[1],float)
