@@ -20,7 +20,7 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 
 Open the `.3mf` **as a project** in Bambu Studio so its plates, parts and color assignments are retained. For another printer, choose the appropriate machine and review the resulting slice and clearances. Set a profile for your filament. For a single-color front, assign the mat and ornament to the same filament before slicing. Separate colors require a filament change; check the resulting purge requirements.
 
-The mat is **0.68 mm high**: a 0.20 mm first layer plus six 0.08 mm layers (seven total). This reinforcement replaces the earlier three-layer mat after prints showed bending and stress during removal. Retain all seven mat layers. With separate colors, the front then changes to the ornament filament. With one filament, that color change is unnecessary. The front is one fused piece, so there is no separate mat to glue or assemble.
+The mat is **0.68 mm high**: a 0.20 mm first layer plus six 0.08 mm layers (seven total). This reinforcement replaces the earlier three-layer mat after prints showed bending and stress during removal. Preserve the full 0.68 mm mat thickness when choosing other layer heights. With separate colors, the front then changes to the ornament filament. With one filament, that color change is unnecessary. The front is one fused piece, so there is no separate mat to glue or assemble.
 
 ## Using the STL downloads
 
