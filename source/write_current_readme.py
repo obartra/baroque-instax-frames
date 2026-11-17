@@ -29,6 +29,8 @@ Each frame holds **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+
 
 ![All eight current frames, rendered from their actual printable meshes at the same scale](renders/Eight-frames-current.png)
 
+[Download on Printables](https://www.printables.com/model/1920140-rococo-instax-mini-magnetic-frames-8-designs) · [Read the design story](https://github.com/obartra/notes/tree/master/baroqueInstaxFrames)
+
 <a name="choose-a-frame"></a>
 
 ## 🖼️ Choose a frame
