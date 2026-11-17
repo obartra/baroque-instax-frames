@@ -43,7 +43,7 @@
       },
       "stl": {
         "archive": "models/current/stl/canted-octagon-stl.zip",
-        "sha256": "b655edd1529e76001419374dfb1a570f0f9c8ca2f3fd14615c2b9dbaa39d65bb"
+        "sha256": "e5f75096b3004db2b5549d63b4d57d27c93a6cae5b4179b861f778c7fba32924"
       }
     },
     {
@@ -76,7 +76,7 @@
       },
       "stl": {
         "archive": "models/current/stl/segmental-arch-stl.zip",
-        "sha256": "ecc0516419b2b1d6089b0413e115559860019cdbd133b2c2d3b2bba71247404b"
+        "sha256": "c1da7a4fb67b8b4f8a4e54a854b710f834518b5342c7b4b600a28b3ad1bcdc38"
       }
     },
     {
@@ -109,7 +109,7 @@
       },
       "stl": {
         "archive": "models/current/stl/cushion-cartouche-stl.zip",
-        "sha256": "865278c5de8520bbcf5604ea55b2f9d6c4531475b3c5bc5bcf3ca620479b6183"
+        "sha256": "7a03d0762cc72a9dbc2326cf7137d9166abda1f27e2c298fb373ae0bd835d58e"
       }
     },
     {
@@ -142,7 +142,7 @@
       },
       "stl": {
         "archive": "models/current/stl/floral-corners-stl.zip",
-        "sha256": "cc83a0a18ebcc9ebcdbee677ec32426f14b3c0fc3f165c602ff40804039da934"
+        "sha256": "aed40f5bf8cfe2365adc80a10b14c72199335454709f53be1365f26df03e03c8"
       }
     },
     {
@@ -175,7 +175,7 @@
       },
       "stl": {
         "archive": "models/current/stl/botanical-garland-stl.zip",
-        "sha256": "9aba63d8a482a50517fabca73ffd9eac3fc624b364091bad72c427f65e95cfa3"
+        "sha256": "ab51dec4c19bd09cfc9cbb6f60f1f6b3542e7061e040bd5c69386bd942891719"
       }
     },
     {
@@ -208,7 +208,7 @@
       },
       "stl": {
         "archive": "models/current/stl/acanthus-gallery-stl.zip",
-        "sha256": "3f96694b1e5876b7574f365bc0a9cf03c8363debd6e9abbfebc228bcca8dcf96"
+        "sha256": "51f9f4958bd6c31aa022e701d310bfdbbc3400ba0fb1ee51422539bfbae023dd"
       }
     },
     {
@@ -241,7 +241,7 @@
       },
       "stl": {
         "archive": "models/current/stl/portrait-oval-stl.zip",
-        "sha256": "ef678e2bcb5636f1ddf4a06c73ff57dd8674b34f632bef2c00b545cd90ec2177"
+        "sha256": "6e3c1bd5c6b10c003f4a9f312d0458e4d7325ae979fcb5a4f39b5969c6e62b3c"
       }
     },
     {
@@ -274,7 +274,7 @@
       },
       "stl": {
         "archive": "models/current/stl/landscape-oval-stl.zip",
-        "sha256": "612e81bc0c8e997faa4b4d3ca05f7893afce169efce9079d3acf6f927954fb1c"
+        "sha256": "770b9c4cb01f3ad1e4c6312e450bb0068cecbd4164b16b3a786f6f2200545b06"
       }
     }
   ]

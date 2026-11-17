@@ -45,6 +45,16 @@ Keep their original coordinates; do not center, arrange or drop them separately.
 Assign the same filament or separate colors. These regions print as ONE front.
 The ornament starts above the 0.68 mm mat; it is not a separate physical piece.
 
+TWO COLORS
+STL stores geometry, not colors. Assign a filament to each aligned front part
+in a multicolor slicer; it schedules the change automatically.
+For a manual swap with 0.20 mm first layer, then 0.08 mm layers:
+finish layer 7 at Z=0.68 mm, then change BEFORE layer 8 at Z=0.76 mm.
+Use your printer's supported pause/change feature. With different or adaptive
+layer heights, find the first ornament layer in the preview instead of reusing
+layer 8. Use a layer schedule that ends a layer at the 0.68 mm boundary.
+For one color, assign both parts the same filament; no swap is needed.
+
 Print back.stl separately, flat side down, with the clips pointing up.
 The finished assembly has two physical pieces: front and matching back.
 STLs do not store units, colors, plates or slicer settings. Use the project 3MF

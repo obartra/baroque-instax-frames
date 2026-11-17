@@ -28,7 +28,7 @@ and photo-fit views.
 
 For other slicers, download the **STL ZIP**: ornament, mat and matching back.
 Keep the mat and ornament aligned as one front, and choose your own print
-settings. [STL import details](docs/PRINTING.md#using-the-stl-downloads).
+settings. [STL import and color-change guide](docs/PRINTING.md#using-the-stl-downloads).
 
 | Preview | Design & files | More views |
 | --- | --- | --- |
@@ -89,16 +89,21 @@ Square or Instax Wide. [Dimensions, crop percentages and checks](catalog/current
 
 | Check | Included setting / what you need |
 | --- | --- |
-| **Printer & nozzle** | Bambu P2S · 0.4 mm nozzle |
+| **Printer settings** | **3MF:** supplied Bambu P2S · 0.4 mm profile. **STL:** use your own printer, nozzle and filament profiles |
 | **Filament** | Up to two colors: one for the mat, one for the frame and back |
-| **Layer height** | 0.20 mm first layer, then 0.08 mm |
-| **Reinforced mat** | 0.68 mm · seven mat layers |
+| **Layer height** | Supplied 3MF: 0.20 mm first layer, then 0.08 mm |
+| **Reinforced mat** | 0.68 mm · seven layers with the supplied settings |
 | **Magnets** | Three discs per frame: **[6 mm diameter × 3 mm thick](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets)** |
 
 **Open as a project** to keep the matching parts, plates and material assignments.
-Set the printer, nozzle and filament profiles before slicing. For a single-color
-front, assign the mat and ornament to the same filament; different colors need
-a setup that can change filament during the print.
+Use profiles for your printer and filament before slicing. For a single-color
+front, assign the mat and ornament to the same filament.
+
+**Two-color STL front:** assign filaments to the aligned mat and ornament parts,
+or use a manual swap. With the supplied layer heights, finish **layer 7 at
+0.68 mm**, then change filament **before layer 8 at 0.76 mm**. Different layer
+heights need a different layer number; check the first ornament layer in the
+preview. [Color-change instructions](docs/PRINTING.md#changing-colors-with-stls).
 
 **Let the plate cool**, then flex it away from the frame. Avoid pulling on the
 inner mat or projecting flowers.

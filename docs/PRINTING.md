@@ -6,10 +6,11 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 
 | Item | Supplied project setting or requirement |
 | --- | --- |
-| Printer | Bambu P2S, 0.4 mm nozzle |
+| 3MF printer profile | Supplied Bambu P2S, 0.4 mm nozzle settings |
+| STL printer setup | Use profiles for your own printer, nozzle and filament |
 | Build surface | Textured PEI |
 | Filament | Your chosen filament; supplied profiles use PLA |
-| Layers | 0.08 mm; first layer 0.20 mm |
+| Supplied 3MF layer heights | 0.08 mm; first layer 0.20 mm |
 | Mat and ornament | Assign the same filament, or optional separate colors |
 | Plate 1 | One fused front: reinforced mat, then ornament |
 | Plate 2 | Matching back; choose its material separately |
@@ -38,6 +39,29 @@ reinforced-mat 3MF. Dimensions are in **millimeters**. Extract the ZIP first.
 STL does not retain units, material assignments, plate layouts or print profiles.
 The 3MF project preserves these and is the simpler option for Bambu Studio.
 Each ZIP contains an export record tying its meshes to the checked 3MF revision.
+
+### Changing colors with STLs
+
+STL files contain geometry, not color instructions. `mat.stl` and
+`front-ornament.stl` identify the two regions: the mat ends at **0.68 mm** and
+the ornament begins there. Keep both aligned as one object.
+
+- **Multicolor setup:** assign a filament to each part. The slicer schedules
+  the change from the geometry; no additional pause or manual layer selection
+  is needed.
+- **Manual filament swap:** with a **0.20 mm first layer and 0.08 mm subsequent
+  layers**, finish the mat through **layer 7, Z = 0.68 mm**, then pause/change
+  **before layer 8, Z = 0.76 mm**, the first ornament layer. Use your printer's
+  supported pause or filament-change feature and confirm the placement in the
+  sliced preview before printing.
+- **Single color:** assign both parts the same filament; no change is needed.
+
+The layer-8 instruction applies only to those layer heights and the supplied
+flat print orientation. If you change layer heights or use adaptive layers,
+locate the first ornament toolpath in the preview and put the change immediately
+before it. For a clean manual color boundary, use a layer schedule that finishes
+a layer at 0.68 mm; do not blindly reuse layer 8 with another profile.
+The separately printed back uses one chosen filament.
 
 ## 1. Print the matching pair
 
