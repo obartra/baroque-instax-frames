@@ -35,7 +35,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/canted-octagon-front.png",
-        "angle": "renders/current/canted-octagon-angle.png",
+        "angle": "renders/current/canted-octagon-upright-angle.png",
         "back": "renders/current/canted-octagon-back.png",
         "fit": "renders/current/canted-octagon-fit.png"
       }
@@ -62,7 +62,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/segmental-arch-front.png",
-        "angle": "renders/current/segmental-arch-angle.png",
+        "angle": "renders/current/segmental-arch-upright-angle.png",
         "back": "renders/current/segmental-arch-back.png",
         "fit": "renders/current/segmental-arch-fit.png"
       }
@@ -89,7 +89,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/cushion-cartouche-front.png",
-        "angle": "renders/current/cushion-cartouche-angle.png",
+        "angle": "renders/current/cushion-cartouche-upright-angle.png",
         "back": "renders/current/cushion-cartouche-back.png",
         "fit": "renders/current/cushion-cartouche-fit.png"
       }
@@ -116,7 +116,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/floral-corners-front.png",
-        "angle": "renders/current/floral-corners-angle.png",
+        "angle": "renders/current/floral-corners-upright-angle.png",
         "back": "renders/current/floral-corners-back.png",
         "fit": "renders/current/floral-corners-fit.png"
       }
@@ -143,7 +143,7 @@
       "revision": "Sculpted petals v3",
       "views": {
         "front": "renders/current/botanical-garland-front.png",
-        "angle": "renders/current/botanical-garland-angle.png",
+        "angle": "renders/current/botanical-garland-upright-angle.png",
         "back": "renders/current/botanical-garland-back.png",
         "fit": "renders/current/botanical-garland-fit.png"
       }
@@ -170,7 +170,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/acanthus-gallery-front.png",
-        "angle": "renders/current/acanthus-gallery-angle.png",
+        "angle": "renders/current/acanthus-gallery-upright-angle.png",
         "back": "renders/current/acanthus-gallery-back.png",
         "fit": "renders/current/acanthus-gallery-fit.png"
       }
@@ -197,7 +197,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/portrait-oval-front.png",
-        "angle": "renders/current/portrait-oval-angle.png",
+        "angle": "renders/current/portrait-oval-upright-angle.png",
         "back": "renders/current/portrait-oval-back.png",
         "fit": "renders/current/portrait-oval-fit.png"
       }
@@ -224,7 +224,7 @@
       "revision": "Period floral catalog",
       "views": {
         "front": "renders/current/landscape-oval-front.png",
-        "angle": "renders/current/landscape-oval-angle.png",
+        "angle": "renders/current/landscape-oval-upright-angle.png",
         "back": "renders/current/landscape-oval-back.png",
         "fit": "renders/current/landscape-oval-fit.png"
       }

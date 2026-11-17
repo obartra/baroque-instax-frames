@@ -44,14 +44,16 @@ def fit(ax,record,report):
 def single(record):
     assembly,rear,report=load(record)
     out=ROOT/'renders/current';out.mkdir(parents=True,exist_ok=True)
-    for view,items,elev,azim in [('front',assembly,90,-90),('angle',assembly,38,-68),('back',rear,-90,90),('fit',assembly,90,-90)]:
+    # Side turn of 35 degrees from head-on; roll keeps the frame's Y axis
+    # vertical on screen, as it would be when mounted on a vertical surface.
+    for view,items,elev,azim in [('front',assembly,90,-90),('angle',assembly,55,0),('back',rear,-90,90),('fit',assembly,90,-90)]:
         if os.environ.get('BAROQUE_RENDER_VIEW') not in (None,view):continue
         renderer.BG=np.array([.72,.77,.81]) if view=='back' else BG
         fig,ax=plt.subplots(figsize=(6,6),dpi=150)
         fig.patch.set_facecolor(renderer.BG)
-        renderer.render(ax,items,elev,azim,limits=LIMITS if view!='angle' else None,width=850,relief_shadows=True)
+        renderer.render(ax,items,elev,azim,limits=LIMITS if view!='angle' else None,width=850,relief_shadows=True,camera_roll=90 if view=='angle' else 0)
         if view=='fit':fit(ax,record,report)
-        titles={'front':'Front','angle':'Angled view','back':'Back · three magnet pockets','fit':'Hidden film & magnet positions'}
+        titles={'front':'Front','angle':'Upright · 35° side view','back':'Back · three magnet pockets','fit':'Hidden film & magnet positions'}
         ax.set_title(record['name']+'\n'+titles[view],fontsize=15,weight='bold',pad=14)
         if view=='fit':fig.text(.5,.025,'Dashed = full uncut sheet behind the frame',ha='center',fontsize=10)
         fig.subplots_adjust(left=.02,right=.98,top=.88,bottom=.055)

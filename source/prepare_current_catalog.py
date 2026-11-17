@@ -47,7 +47,7 @@ def main():
             image_visible_percent=report['image_area_visible_percent'],
             front_minutes=sliced['estimated_minutes'][0],back_minutes=sliced['estimated_minutes'][1],
             revision='Sculpted petals v3' if is_new else 'Period floral catalog',
-            views={v:f'renders/current/{slug}-{v}.png' for v in ['front','angle','back','fit']}))
+            views={v:f'renders/current/{slug}-{"upright-angle" if v=="angle" else v}.png' for v in ['front','angle','back','fit']}))
         current.append(d)
     catalog=dict(title='Eight floral Instax Mini frames',schema_version=1,
         status='Digital prototypes; physical fit and surface detail need testing',

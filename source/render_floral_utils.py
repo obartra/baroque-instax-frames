@@ -1,8 +1,12 @@
 # SPDX-License-Identifier: MIT
 """Relief renderer with actual-mesh terrain shadows; legacy renderer unchanged."""
 from render_utils import *
-def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False):
- eye,u,v,T=camera(elev,azim);light=-.36*u+.48*v+.80*eye;light/=np.linalg.norm(light);half=(light+eye);half/=np.linalg.norm(half)
+def render(ax,items,elev=90,azim=-90,limits=None,width=1200,relief_shadows=False,camera_roll=0):
+ eye,u,v,T=camera(elev,azim)
+ if camera_roll:
+  r=np.radians(camera_roll);u,v=np.cos(r)*u-np.sin(r)*v,np.sin(r)*u+np.cos(r)*v
+  T=np.vstack([u,v,eye]).T
+ light=-.36*u+.48*v+.80*eye;light/=np.linalg.norm(light);half=(light+eye);half/=np.linalg.norm(half)
  shade=None
  if relief_shadows and elev>0:
   from relief_lighting import sampler
