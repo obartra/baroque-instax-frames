@@ -15,7 +15,10 @@ Frames1610–1792 informed research. See docs/CURRENT-CATALOG.md for direct link
 
 This differs from the first six text-led designs: the current masters have
 historical image input. No personal photograph is used in this catalog.
-The photo inside rendered frames is a synthetic CAD landscape placeholder.
+Catalog views use a synthetic CAD landscape placeholder. The project icon
+uses the actual Segmental Arch mesh with an AI-generated simulated coastal
+photograph as a material; no printable geometry was changed for that image.
+The exact prompt and cached input are recorded in assets/brand/.
 
 The masters and generated surface-normal guidance were interpreted into
 continuous supported relief using cached depth/normal-derived height fields,

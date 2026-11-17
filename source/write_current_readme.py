@@ -14,13 +14,22 @@ def main():
     table='\n'.join(rows)
     text=f'''# Floral Instax Frames
 
+<p align="center">
+  <img src="assets/brand/project-icon.png" width="240" alt="Segmental Arch frame, rendered from its actual mesh with a simulated coastal photo">
+  <br><sub>Segmental Arch · actual frame mesh, simulated photo</sub>
+</p>
+
 Eight floral frames for **whole, uncut Instax Mini photos**. Print a front and
 matching back, slide in your photo, and display it on a magnetic surface.
 Each frame holds **three Ø6 × 3 mm magnets**. Choose your own print colors.
 
+[Frames](#choose-a-frame) · [Assembly](#print-and-assemble) · [Photo fit](#how-the-whole-photo-fits) · [Print setup](#before-you-print) · [Source & license](#design-source-and-license)
+
 ![All eight current frames, rendered from their actual printable meshes at the same scale](renders/Eight-frames-current.png)
 
-## Choose a frame
+<a name="choose-a-frame"></a>
+
+## 🖼️ Choose a frame
 
 Each **3MF includes both matching parts on two plates**. Open it as a project
 in Bambu Studio to retain the assembly and material assignments. The previews
@@ -37,7 +46,9 @@ The Botanical Garland includes the latest sculpted petal and flower-center
 revision. Its preceding matching three-magnet back remains compatible.
 Always keep each of the other designs with its own matching back.
 
-## Print and assemble
+<a name="print-and-assemble"></a>
+
+## 🧩 Print and assemble
 
 You need PLA, two contrasting materials for the front, a multicolor-capable
 setup, **three Ø6 × 3 mm magnets**, and suitable glue. The back prints separately,
@@ -55,7 +66,9 @@ The joints only need to engage once and may be glued after seating; let adhesive
 cure before loading the photo. [Print settings and assembly details](docs/PRINTING.md)
 · [Editable diagrams](docs/assembly/README.md).
 
-## How the whole photo fits
+<a name="how-the-whole-photo-fits"></a>
+
+## 📷 How the whole photo fits
 
 The whole **86 × 54 mm sheet** and back are concealed **when viewed from the
 front**; the carrier can be visible at shallow angles. The opening deliberately
@@ -71,35 +84,71 @@ show how it slides in. Viewed from behind, landscape entry appears on the
 These fit **Instax Mini**, rather than Polaroid Go, full-size Polaroid, Instax
 Square or Instax Wide. [Dimensions, crop percentages and checks](catalog/current.json).
 
-## Before you print
+<a name="before-you-print"></a>
 
-The supplied projects were checked and sliced for **Bambu P2S, 0.4 mm nozzle,
-PLA and textured PEI**, using a 0.20 mm first layer and 0.08 mm following layers.
-Reslice for your printer and assign your actual materials. No print is started
-by opening these files.
+## 🖨️ Before you print
 
-These are **prototypes**. Digital checks cover closed meshes, four clip/socket
-engagements, photo clearance, front-view concealment and three magnet pockets. All back
-layers have extrusion-path checks. Physical fit, adhesive hold and fine surface
-detail still need testing. [Current build and review notes](docs/CURRENT-CATALOG.md)
-· [Geometry and slicer records](validation/current/).
+| Check | Included setting / what you need |
+| --- | --- |
+| **Printer & nozzle** | Bambu P2S · 0.4 mm nozzle |
+| **Material** | PLA · choose your own colors and assign your spools |
+| **Build plate** | Textured PEI |
+| **Layer height** | 0.20 mm first layer, then 0.08 mm |
+| **Reinforced mat** | 0.68 mm · seven mat layers |
+| **Magnets** | Three discs per frame: **6 mm diameter × 3 mm thick** · [Search Amazon](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets) |
 
-## Design, source and license
+**Open as a project** to keep the matching parts, plates and material assignments.
+Using another printer or nozzle? Choose its profile and reslice before printing.
 
-Modern miniatures informed by French Louis XV floral Rococo, approximately
-1735–1750. They use supported printable relief rather than full carved undercuts
-and are new compositions, rather than replicas of documented antique frames.
-[Historical sources and design limits](docs/CURRENT-CATALOG.md#historical-basis).
+**Let the plate cool**, then flex it away from the frame. Avoid pulling on the
+inner mat or projecting flowers.
 
-**Models, renders and documentation: CC0-1.0**, to the extent rights exist.
-**Code: MIT.** Use, modify, share and sell your prints.
-[License scope](LICENSING.md) · [Current CAD inputs](source/designs-current.json)
-· [Rebuild instructions](docs/CURRENT-CATALOG.md#rebuild).
+**Prototype status:** fit, adhesive hold and fine surface detail are still being
+tested. Opening a file never starts a print.
 
-The earlier six-frame release remains available in the repository history and
-original model paths. The table above links to the current eight prototypes.
-Renders use a drawn photo placeholder; contributed print photos can be added
-with their [permission record](photos/README.md).
+<details>
+<summary>✅ What has been checked?</summary>
+
+Closed meshes, one fused front, four clip/socket engagements, photo clearance,
+front-view concealment and three magnet pockets. Every back layer has an
+extrusion-path check. These digital checks do not establish physical durability.
+
+[Build and review notes](docs/CURRENT-CATALOG.md) · [Geometry and slicer records](validation/current/)
+
+</details>
+
+<a name="design-source-and-license"></a>
+
+## 🌿 Design, source and license
+
+**French floral Rococo, made miniature.** New compositions informed by Louis XV
+frames, approximately **1735–1750**, adapted to supported printable relief and
+whole Instax Mini sheets. [Historical references & design notes](docs/CURRENT-CATALOG.md#historical-basis).
+
+**Make them yours:** use, modify, share, and sell your prints.
+
+| What | License |
+| --- | --- |
+| **Models, renders & documentation** | [CC0-1.0](LICENSES/CC0-1.0.txt) |
+| **Code** | [MIT](LICENSES/MIT.txt) |
+
+CC0 applies to the rights we can waive. [License scope & third-party materials](LICENSING.md).
+
+<details>
+<summary>🛠️ Explore the source and earlier releases</summary>
+
+- [Current CAD inputs](source/designs-current.json)
+- [Rebuild the frames](docs/CURRENT-CATALOG.md#rebuild)
+- [Creation and provenance record](PROVENANCE.txt)
+- [Project icon & simulated photo](assets/brand/README.md)
+
+The earlier six-frame release remains in the repository history and original
+model paths. The table above links to the current eight prototypes.
+
+</details>
+
+Catalog views use a drawn photo placeholder; the project icon uses an AI-simulated
+photo. Share your own print photos with a [permission record](photos/README.md).
 '''
     (ROOT/'README.md').write_text(text)
     print('Wrote eight-frame visual README',flush=True)

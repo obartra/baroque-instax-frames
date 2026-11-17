@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "tool": "Built-in image_gen image generation",
+  "purpose": "Simulated photograph used only as a material inside the project icon",
+  "prompt": "Use case: photorealistic-natural. Asset type: a simulated instant-camera photograph used as the image texture inside a small 3D-printed ornamental picture frame and project icon. Generate only the photograph, NOT a frame or a product mockup. A quiet Mediterranean coastal cove with clear turquoise-blue sea, pale stone waterfront buildings in the distance, and a small natural pink bougainvillea branch near one foreground edge; warm late-afternoon sunlight, believable candid holiday snapshot, subtle instant-film grain and gently softened highlights. Portrait composition, approximately 46:62 width-to-height, central scene readable when cropped to a shallow segmental arch. Full bleed: no paper border, no lettering, no logos, no watermark, no people. Natural photographic colors, not illustration or oversaturated HDR.",
+  "generated_photo": "assets/brand/simulated-coastal-photo.png",
+  "photo_sha256": "b1667f6e5cde987ccd72750614b1fffdab7876f9b02887c95c77934e6d89d50d",
+  "frame_model": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+  "frame_model_sha256": "fdc77998a07e4fc0259b65eca4fbab76aca84645aec31fa05b634ace9f162c1a",
+  "geometry_changes": false,
+  "render_script": "source/render_project_icon.py",
+  "output": "assets/brand/project-icon.png",
+  "license": "CC0-1.0 to the extent rights exist and can be waived"
+}
