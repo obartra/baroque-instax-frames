@@ -86,11 +86,10 @@ Square or Instax Wide. [Dimensions, crop percentages and checks](catalog/current
 | Check | Included setting / what you need |
 | --- | --- |
 | **Printer & nozzle** | Bambu P2S · 0.4 mm nozzle |
-| **Filament** | One filament, or optional separate mat and frame colors |
-| **Build plate** | Textured PEI |
+| **Filament** | Up to two colors: one for the mat, one for the frame and back |
 | **Layer height** | 0.20 mm first layer, then 0.08 mm |
 | **Reinforced mat** | 0.68 mm · seven mat layers |
-| **Magnets** | Three discs per frame: **6 mm diameter × 3 mm thick** · [Search Amazon](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets) |
+| **Magnets** | Three discs per frame: **[6 mm diameter × 3 mm thick](https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets)** |
 
 **Open as a project** to keep the matching parts, plates and material assignments.
 Set the printer, nozzle and filament profiles before slicing. For a single-color
