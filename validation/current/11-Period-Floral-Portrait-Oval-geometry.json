@@ -1,0 +1,126 @@
+{
+  "id": "11-Period-Floral-Portrait-Oval",
+  "name": "Period Floral Portrait Oval",
+  "orientation": "portrait",
+  "shape": "oval",
+  "front_dimensions_mm": [
+    100.60132217407227,
+    118.38312911987305,
+    9.52429735660553
+  ],
+  "front_bounds_mm": [
+    [
+      -49.927581787109375,
+      -58.75634765625,
+      0.36000001430511475
+    ],
+    [
+      50.67374038696289,
+      59.62678146362305,
+      9.884297370910645
+    ]
+  ],
+  "back_dimensions_mm": [
+    74.19999694824219,
+    96.75,
+    8.0
+  ],
+  "assembled_depth_mm": 13.484297370910644,
+  "mat_width_mm": 6.5,
+  "mat_height_mm": 0.36,
+  "mat_perpendicular_offset": true,
+  "white_exterior_inset_mm": 0.55,
+  "film_uncut_mm": [
+    54,
+    86
+  ],
+  "aperture_bounds_mm": [
+    -22.0,
+    -30.0,
+    22.0,
+    30.0
+  ],
+  "image_area_visible_percent": 72.70084225882984,
+  "full_film_concealed": true,
+  "nominal_edge_overlap_mm": 1.0,
+  "misalignment_checked_mm": 0.6,
+  "magnet_centers_mm": [
+    [
+      0,
+      45
+    ],
+    [
+      -32.5,
+      -27
+    ],
+    [
+      32.5,
+      -27
+    ]
+  ],
+  "magnet_pockets_mm": [
+    6.3,
+    3.1
+  ],
+  "magnet_floor_mm": 0.5,
+  "snap_positions_mm": [
+    [
+      30,
+      -38.5
+    ],
+    [
+      -30,
+      -38.5
+    ],
+    [
+      30,
+      38.5
+    ],
+    [
+      -30,
+      38.5
+    ]
+  ],
+  "snap_tip_height_mm": 8,
+  "snap_stem_mm": [
+    3.5,
+    2
+  ],
+  "snap_slot_radius_mm": 0.7,
+  "snap_head_width_mm": 3.88,
+  "socket_neck_width_mm": 3.65,
+  "snap_arm_section_mm": [
+    1.05,
+    2.0
+  ],
+  "snap_axial_relaxation_mm": 0.15,
+  "snap_per_arm_deflection_mm": 0.115,
+  "photo_spring_length_mm": 15,
+  "front_print_color_changes": 1,
+  "watertight_parts": true,
+  "insertion_positions_checked": 28,
+  "closed_socket_roofs_checked": true,
+  "back_projection_hidden": true,
+  "assembly_interference_mm3": 0.0,
+  "physical_test": false,
+  "ornament_source": "studies/period-grounded-ovals/portrait-oval-period-study-v1.png",
+  "provenance": "New floral oval composition informed by The Met public-domain photograph of frame 1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+  "relief_method": "Replace the single exposed upper-left flat socket cap with existing leaf/scroll folds over a smooth oval support envelope; preserve all other final sculpture",
+  "drawing_uniform_growth": 1.0,
+  "drawing_mm_per_pixel": 0.12434782608695653,
+  "drawing_center_px": [
+    766.0,
+    493.0
+  ],
+  "hidden_underlay_components": 1,
+  "fused_front_single_volume": true,
+  "refinement_record": "studies/period-catalog-six/11-Period-Floral-Portrait-Oval-roof-refinement.json",
+  "authored_surface": true,
+  "clear_aperture_preserved": true,
+  "print_profile_filaments": 3,
+  "colors": [
+    "gray mat",
+    "black ornament",
+    "white back"
+  ]
+}

@@ -1,24 +1,22 @@
 {
-  "generator": "source/make_assembly_instructions.py",
+  "generator": "source/make_assembly_instructions.py + source/assembly_steps.py",
   "source_projects": [
     {
-      "path": "models/04-Floral-Corners-Instax-Mini-3-Magnets.3mf",
-      "sha256": "a1c6585efe89b7485f08d4ea97f9dcb8318f7306eaaf64e473c3b320870e2d6b"
+      "path": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+      "sha256": "42d21533141adabcdf29c9307599fa090fcd09375c4b6c30b19409c45c09c839"
     },
     {
-      "path": "models/02-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
-      "sha256": "81c6dc1f4990c39b07968395e3a35935464084b5467c158740e5a757b4fe58f1"
+      "path": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+      "sha256": "8c1914a855c44c23a3409d14b17a19b517310744c1dfe2608406ad95b766708d"
     }
   ],
-  "geometry": "Flat underside silhouettes extracted from native 3MF mesh triangles; simplified by 0.10 mm for illustration only.",
-  "schematic_details": "Exploded fork/socket section, tools, plate icons and photograph placeholders are illustrative, not manufacturing drawings.",
+  "geometry": "Actual native 3MF underside silhouettes, simplified by 0.10mm for illustration only; mechanics unchanged.",
   "sequence": [
-    "coupon",
     "print matching two plates",
     "glue three magnets and cure",
-    "snap empty frame",
-    "slide full uncut film into assembled channel",
-    "mount on fridge"
+    "snap empty frame; glue joints if needed",
+    "slide in full uncut photo",
+    "place on a magnet-attracting surface"
   ],
   "film_mm": [
     86,
@@ -30,6 +28,16 @@
     3
   ],
   "magnet_count": 3,
+  "illustration_colors_are_examples": true,
+  "color_names_in_labels": false,
+  "context_reference_mm": [
+    600,
+    1700
+  ],
+  "context_pixels_per_mm": 0.335,
+  "context_frame_width_px": 38.602084371000004,
+  "context_appliance_width_px": 201.0,
+  "detail_enlarged_and_labeled": true,
   "landscape_insertion": "left, narrow border first, caption border trailing left",
-  "portrait_insertion": "bottom, narrow border first, caption border trailing bottom"
+  "portrait_insertion": "bottom, narrow border first, caption border trailing below"
 }

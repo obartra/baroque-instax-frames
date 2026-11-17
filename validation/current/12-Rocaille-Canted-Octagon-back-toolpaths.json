@@ -1,0 +1,810 @@
+{
+  "id": "12-Rocaille-Canted-Octagon",
+  "plate": 2,
+  "layers_checked": 98,
+  "gcode_sha256": "231a12f70b46f7b0974bc1160d58e059ed13d7c96cd7521667b6ffdf173a9f23",
+  "back_stl_sha256": "afe09c5054303c0df95f7e2f712689a449b4a172de403002999f970379fa7771",
+  "geometry_report_sha256": "bda3d62112f85bf61de367ae17f3495b4d0a68284907443a0b7d3ca5aecf37df",
+  "orientation": "landscape",
+  "xy_offset_mm": [
+    128.0,
+    128.0
+  ],
+  "functional_regions": [
+    {
+      "name": "fork 1 (-34,-29.5)",
+      "bounds_mm": [
+        -36.3,
+        -32.0,
+        -31.7,
+        -27.0
+      ]
+    },
+    {
+      "name": "fork 2 (-34,29.5)",
+      "bounds_mm": [
+        -36.3,
+        27.0,
+        -31.7,
+        32.0
+      ]
+    },
+    {
+      "name": "fork 3 (34,-29.5)",
+      "bounds_mm": [
+        31.7,
+        -32.0,
+        36.3,
+        -27.0
+      ]
+    },
+    {
+      "name": "fork 4 (34,29.5)",
+      "bounds_mm": [
+        31.7,
+        27.0,
+        36.3,
+        32.0
+      ]
+    },
+    {
+      "name": "magnet 1 (0,33)",
+      "bounds_mm": [
+        -4.6,
+        28.4,
+        4.6,
+        37.6
+      ]
+    },
+    {
+      "name": "magnet 2 (-24,-32.2)",
+      "bounds_mm": [
+        -28.6,
+        -36.800000000000004,
+        -19.4,
+        -27.6
+      ]
+    },
+    {
+      "name": "magnet 3 (24,-32.2)",
+      "bounds_mm": [
+        19.4,
+        -36.800000000000004,
+        28.6,
+        -27.6
+      ]
+    },
+    {
+      "name": "spring 1",
+      "bounds_mm": [
+        -26.799999237060547,
+        27.224409103393555,
+        -9.699999809265137,
+        31.0
+      ]
+    },
+    {
+      "name": "spring 2",
+      "bounds_mm": [
+        -20.399999618530273,
+        -31.0,
+        -9.699999809265137,
+        -27.224409103393555
+      ]
+    },
+    {
+      "name": "spring 3",
+      "bounds_mm": [
+        9.699999809265137,
+        -31.0,
+        20.399999618530273,
+        -27.224409103393555
+      ]
+    },
+    {
+      "name": "spring 4",
+      "bounds_mm": [
+        9.699999809265137,
+        27.224409103393555,
+        26.799999237060547,
+        31.0
+      ]
+    }
+  ],
+  "spring_region_source": "elongated moat-hole bounds in actual back section at 3.160 mm, expanded 1 mm",
+  "missing_cross_section_components": [],
+  "missing_functional_regions": [],
+  "minimum_functional_coverage": 0.8376942628782702,
+  "path_buffer_radius_mm": 0.27,
+  "component_area_threshold_mm2": 0.12,
+  "source": "Delivered plate_2.gcode compared with actual back.stl at each mid-layer height",
+  "limitation": "Checks omitted islands and functional-region path presence; not a strength or exact extrusion-volume test",
+  "layers": [
+    {
+      "layer": 1,
+      "z": 0.2,
+      "components": 1,
+      "extrusion_segments": 1937,
+      "minimum_functional_coverage": 0.8695383731567893
+    },
+    {
+      "layer": 2,
+      "z": 0.28,
+      "components": 1,
+      "extrusion_segments": 2077,
+      "minimum_functional_coverage": 0.9966742681496884
+    },
+    {
+      "layer": 3,
+      "z": 0.36,
+      "components": 1,
+      "extrusion_segments": 2116,
+      "minimum_functional_coverage": 0.9962624777969058
+    },
+    {
+      "layer": 4,
+      "z": 0.44,
+      "components": 1,
+      "extrusion_segments": 2092,
+      "minimum_functional_coverage": 0.9949494338186455
+    },
+    {
+      "layer": 5,
+      "z": 0.52,
+      "components": 1,
+      "extrusion_segments": 2110,
+      "minimum_functional_coverage": 0.9966505627764969
+    },
+    {
+      "layer": 6,
+      "z": 0.6,
+      "components": 1,
+      "extrusion_segments": 2083,
+      "minimum_functional_coverage": 0.9951737102508198
+    },
+    {
+      "layer": 7,
+      "z": 0.68,
+      "components": 1,
+      "extrusion_segments": 2139,
+      "minimum_functional_coverage": 0.9966292408094811
+    },
+    {
+      "layer": 8,
+      "z": 0.76,
+      "components": 1,
+      "extrusion_segments": 2066,
+      "minimum_functional_coverage": 0.8753231296592549
+    },
+    {
+      "layer": 9,
+      "z": 0.84,
+      "components": 1,
+      "extrusion_segments": 2049,
+      "minimum_functional_coverage": 0.865492684804254
+    },
+    {
+      "layer": 10,
+      "z": 0.92,
+      "components": 1,
+      "extrusion_segments": 2066,
+      "minimum_functional_coverage": 0.8774589785929321
+    },
+    {
+      "layer": 11,
+      "z": 1.0,
+      "components": 1,
+      "extrusion_segments": 2082,
+      "minimum_functional_coverage": 0.8660456938770377
+    },
+    {
+      "layer": 12,
+      "z": 1.08,
+      "components": 1,
+      "extrusion_segments": 2073,
+      "minimum_functional_coverage": 0.8542670832604287
+    },
+    {
+      "layer": 13,
+      "z": 1.16,
+      "components": 1,
+      "extrusion_segments": 2017,
+      "minimum_functional_coverage": 0.8489406067025056
+    },
+    {
+      "layer": 14,
+      "z": 1.24,
+      "components": 1,
+      "extrusion_segments": 1992,
+      "minimum_functional_coverage": 0.8462063197950754
+    },
+    {
+      "layer": 15,
+      "z": 1.32,
+      "components": 9,
+      "extrusion_segments": 2030,
+      "minimum_functional_coverage": 0.8392102079454268
+    },
+    {
+      "layer": 16,
+      "z": 1.4,
+      "components": 9,
+      "extrusion_segments": 2015,
+      "minimum_functional_coverage": 0.8383143233138213
+    },
+    {
+      "layer": 17,
+      "z": 1.48,
+      "components": 9,
+      "extrusion_segments": 2066,
+      "minimum_functional_coverage": 0.8379031894828353
+    },
+    {
+      "layer": 18,
+      "z": 1.56,
+      "components": 9,
+      "extrusion_segments": 2057,
+      "minimum_functional_coverage": 0.8376942628782702
+    },
+    {
+      "layer": 19,
+      "z": 1.64,
+      "components": 9,
+      "extrusion_segments": 2205,
+      "minimum_functional_coverage": 0.8636518509333908
+    },
+    {
+      "layer": 20,
+      "z": 1.72,
+      "components": 9,
+      "extrusion_segments": 2075,
+      "minimum_functional_coverage": 0.8930537499974175
+    },
+    {
+      "layer": 21,
+      "z": 1.8,
+      "components": 9,
+      "extrusion_segments": 2002,
+      "minimum_functional_coverage": 0.9023888001713509
+    },
+    {
+      "layer": 22,
+      "z": 1.88,
+      "components": 9,
+      "extrusion_segments": 2009,
+      "minimum_functional_coverage": 0.9025229634424001
+    },
+    {
+      "layer": 23,
+      "z": 1.96,
+      "components": 9,
+      "extrusion_segments": 2008,
+      "minimum_functional_coverage": 0.9077967009672809
+    },
+    {
+      "layer": 24,
+      "z": 2.04,
+      "components": 9,
+      "extrusion_segments": 2052,
+      "minimum_functional_coverage": 0.9081987589986474
+    },
+    {
+      "layer": 25,
+      "z": 2.12,
+      "components": 9,
+      "extrusion_segments": 2082,
+      "minimum_functional_coverage": 0.9089531274761762
+    },
+    {
+      "layer": 26,
+      "z": 2.2,
+      "components": 9,
+      "extrusion_segments": 2061,
+      "minimum_functional_coverage": 0.9094617038408414
+    },
+    {
+      "layer": 27,
+      "z": 2.28,
+      "components": 9,
+      "extrusion_segments": 2083,
+      "minimum_functional_coverage": 0.9103530729610293
+    },
+    {
+      "layer": 28,
+      "z": 2.36,
+      "components": 9,
+      "extrusion_segments": 2082,
+      "minimum_functional_coverage": 0.9108378763001896
+    },
+    {
+      "layer": 29,
+      "z": 2.44,
+      "components": 9,
+      "extrusion_segments": 2001,
+      "minimum_functional_coverage": 0.9047168611804945
+    },
+    {
+      "layer": 30,
+      "z": 2.52,
+      "components": 9,
+      "extrusion_segments": 1687,
+      "minimum_functional_coverage": 0.9026007911665984
+    },
+    {
+      "layer": 31,
+      "z": 2.6,
+      "components": 9,
+      "extrusion_segments": 1711,
+      "minimum_functional_coverage": 0.9015799202891457
+    },
+    {
+      "layer": 32,
+      "z": 2.68,
+      "components": 9,
+      "extrusion_segments": 1763,
+      "minimum_functional_coverage": 0.9006705586294306
+    },
+    {
+      "layer": 33,
+      "z": 2.76,
+      "components": 9,
+      "extrusion_segments": 1763,
+      "minimum_functional_coverage": 0.8996911261757943
+    },
+    {
+      "layer": 34,
+      "z": 2.84,
+      "components": 9,
+      "extrusion_segments": 1848,
+      "minimum_functional_coverage": 0.907996265342625
+    },
+    {
+      "layer": 35,
+      "z": 2.92,
+      "components": 9,
+      "extrusion_segments": 1810,
+      "minimum_functional_coverage": 0.9873560096922672
+    },
+    {
+      "layer": 36,
+      "z": 3.0,
+      "components": 9,
+      "extrusion_segments": 1964,
+      "minimum_functional_coverage": 0.9960941646053751
+    },
+    {
+      "layer": 37,
+      "z": 3.08,
+      "components": 9,
+      "extrusion_segments": 1972,
+      "minimum_functional_coverage": 0.9965270582863323
+    },
+    {
+      "layer": 38,
+      "z": 3.16,
+      "components": 9,
+      "extrusion_segments": 1864,
+      "minimum_functional_coverage": 0.9954982858122331
+    },
+    {
+      "layer": 39,
+      "z": 3.24,
+      "components": 9,
+      "extrusion_segments": 1613,
+      "minimum_functional_coverage": 0.998856203262719
+    },
+    {
+      "layer": 40,
+      "z": 3.32,
+      "components": 9,
+      "extrusion_segments": 1609,
+      "minimum_functional_coverage": 0.9984557360106998
+    },
+    {
+      "layer": 41,
+      "z": 3.4,
+      "components": 9,
+      "extrusion_segments": 1613,
+      "minimum_functional_coverage": 0.9985602801452674
+    },
+    {
+      "layer": 42,
+      "z": 3.48,
+      "components": 9,
+      "extrusion_segments": 1494,
+      "minimum_functional_coverage": 0.9976110461026478
+    },
+    {
+      "layer": 43,
+      "z": 3.56,
+      "components": 9,
+      "extrusion_segments": 1488,
+      "minimum_functional_coverage": 0.9958996007165025
+    },
+    {
+      "layer": 44,
+      "z": 3.64,
+      "components": 8,
+      "extrusion_segments": 891,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 45,
+      "z": 3.72,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 46,
+      "z": 3.8,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 47,
+      "z": 3.88,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 48,
+      "z": 3.96,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 49,
+      "z": 4.04,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 50,
+      "z": 4.12,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 51,
+      "z": 4.2,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 52,
+      "z": 4.28,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 53,
+      "z": 4.36,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 54,
+      "z": 4.44,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 55,
+      "z": 4.52,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 56,
+      "z": 4.6,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 57,
+      "z": 4.68,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 58,
+      "z": 4.76,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 59,
+      "z": 4.84,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 60,
+      "z": 4.92,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 61,
+      "z": 5.0,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 62,
+      "z": 5.08,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 63,
+      "z": 5.16,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 64,
+      "z": 5.24,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 65,
+      "z": 5.32,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 66,
+      "z": 5.4,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 67,
+      "z": 5.48,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 68,
+      "z": 5.56,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 69,
+      "z": 5.64,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 70,
+      "z": 5.72,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 71,
+      "z": 5.8,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 72,
+      "z": 5.88,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 73,
+      "z": 5.96,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 74,
+      "z": 6.04,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 75,
+      "z": 6.12,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514752
+    },
+    {
+      "layer": 76,
+      "z": 6.2,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 77,
+      "z": 6.28,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 78,
+      "z": 6.36,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 79,
+      "z": 6.44,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514757
+    },
+    {
+      "layer": 80,
+      "z": 6.52,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 81,
+      "z": 6.6,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 82,
+      "z": 6.68,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 83,
+      "z": 6.76,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982686205514755
+    },
+    {
+      "layer": 84,
+      "z": 6.84,
+      "components": 8,
+      "extrusion_segments": 66,
+      "minimum_functional_coverage": 0.998533963861159
+    },
+    {
+      "layer": 85,
+      "z": 6.92,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.998533963861159
+    },
+    {
+      "layer": 86,
+      "z": 7.0,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.998533963861159
+    },
+    {
+      "layer": 87,
+      "z": 7.08,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9984934720284465
+    },
+    {
+      "layer": 88,
+      "z": 7.16,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9984489513296025
+    },
+    {
+      "layer": 89,
+      "z": 7.24,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9984011515253534
+    },
+    {
+      "layer": 90,
+      "z": 7.32,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9983497027510579
+    },
+    {
+      "layer": 91,
+      "z": 7.4,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9982941773441106
+    },
+    {
+      "layer": 92,
+      "z": 7.48,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9981872190755835
+    },
+    {
+      "layer": 93,
+      "z": 7.56,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.9981202864990376
+    },
+    {
+      "layer": 94,
+      "z": 7.64,
+      "components": 8,
+      "extrusion_segments": 40,
+      "minimum_functional_coverage": 0.998047365648191
+    },
+    {
+      "layer": 95,
+      "z": 7.72,
+      "components": 8,
+      "extrusion_segments": 32,
+      "minimum_functional_coverage": 0.9979676247054914
+    },
+    {
+      "layer": 96,
+      "z": 7.8,
+      "components": 8,
+      "extrusion_segments": 32,
+      "minimum_functional_coverage": 0.9978800703124475
+    },
+    {
+      "layer": 97,
+      "z": 7.88,
+      "components": 8,
+      "extrusion_segments": 32,
+      "minimum_functional_coverage": 0.9977246912641032
+    },
+    {
+      "layer": 98,
+      "z": 7.96,
+      "components": 8,
+      "extrusion_segments": 32,
+      "minimum_functional_coverage": 0.9976148923183071
+    }
+  ]
+}

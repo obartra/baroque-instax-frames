@@ -1,0 +1,33 @@
+{
+  "design_direction": "New compact French floral Rococo compositions informed by early/mid Louis XV carving, approximately1735–1750",
+  "primary_visual_reference": {
+    "museum": "The Metropolitan Museum of Art",
+    "object": "Picture frame (cadre),1971.206.34",
+    "attribution": "Design attributed to Juste Aurèle Meissonnier",
+    "date": "ca.1735",
+    "material": "Carved and gilded beechwood",
+    "url": "https://www.metmuseum.org/art/collection/search/209073",
+    "image_rights": "Public Domain, as identified by The Met",
+    "local_image": "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg",
+    "use": "Carving vocabulary and hierarchy only, not a literal facsimile of its outline, scale or heraldic program"
+  },
+  "curatorial_reference": {
+    "title": "Louis Style: French Frames1610–1792",
+    "institution": "The J. Paul Getty Museum",
+    "url": "https://www.getty.edu/art/exhibitions/french_frames/LFF_Online_Gallery_Graphics.pdf",
+    "sections": "Louis XV, especially floral/scroll/shell relationships and PA.683 large flowers and stems",
+    "rights": "Getty text and illustrations retain their own rights; linked as research, not relicensed or bundled"
+  },
+  "modern_adaptations": [
+    "Miniature size for full uncut86×54mm Instax Mini film",
+    "Exact shape-constrained photo openings and constant6.5mm gray inner mats",
+    "Black/gray PLA instead of carved gessoed and gilded wood",
+    "Closed, column-supported relief instead of historic full carved undercuts",
+    "Four rounded-root fork clips and three concealed6×3mm magnets"
+  ],
+  "claims": "Historically grounded new designs, not scans, facsimiles, authenticated antique designs or museum-endorsed products",
+  "no_makerworld_mesh_used": true,
+  "no_personal_photo_used": true,
+  "new_assets_license": "CC0-1.0 to the extent rights exist",
+  "code_license": "MIT"
+}

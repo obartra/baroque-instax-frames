@@ -1,0 +1,77 @@
+{
+  "id": "16-Rocaille-Botanical-Garland",
+  "method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+  "features": [
+    {
+      "ellipse": [
+        0.17,
+        0.21,
+        0.1,
+        0.12
+      ],
+      "feature": "upper left open flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.23,
+        0.13,
+        0.07,
+        0.07
+      ],
+      "feature": "upper left turned flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.88,
+        0.66,
+        0.09,
+        0.09
+      ],
+      "feature": "lower right open flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.5,
+        0.14,
+        0.1,
+        0.09
+      ],
+      "feature": "upper folded shell",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.51,
+        0.79,
+        0.09,
+        0.065
+      ],
+      "feature": "lower offset shell",
+      "fold_gain": 0.35
+    }
+  ],
+  "local_roundover_radius_mm": 0.65,
+  "edit_bounds_mm": [
+    -0.8686984011664505,
+    0.5235673067036632
+  ],
+  "roundover_bounds_mm": [
+    -0.9500000000000002,
+    0.20000000000000018
+  ],
+  "height_bounds_mm": [
+    1.301,
+    8.4024452023618
+  ],
+  "construction": "Closed column-supported relief; no free-standing stamens or true undercuts",
+  "preserved": [
+    "exact photo aperture",
+    "constant 6.5mm mat offset",
+    "motif arrangement",
+    "closed socket roofs",
+    "rounded-root fork mechanics"
+  ]
+}

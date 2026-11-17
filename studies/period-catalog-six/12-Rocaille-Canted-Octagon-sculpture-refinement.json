@@ -1,0 +1,77 @@
+{
+  "id": "12-Rocaille-Canted-Octagon",
+  "method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+  "features": [
+    {
+      "ellipse": [
+        0.16,
+        0.5,
+        0.075,
+        0.1
+      ],
+      "feature": "left open flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.275,
+        0.15,
+        0.055,
+        0.07
+      ],
+      "feature": "upper left flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.79,
+        0.23,
+        0.075,
+        0.11
+      ],
+      "feature": "upper right flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.2,
+        0.8,
+        0.07,
+        0.08
+      ],
+      "feature": "lower left bloom",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.5,
+        0.09,
+        0.12,
+        0.085
+      ],
+      "feature": "curled upper shell",
+      "fold_gain": 0.35
+    }
+  ],
+  "local_roundover_radius_mm": 0.65,
+  "edit_bounds_mm": [
+    -0.7643699914072069,
+    0.5480928145945736
+  ],
+  "roundover_bounds_mm": [
+    -0.9500000000000002,
+    0.4422686046061677
+  ],
+  "height_bounds_mm": [
+    1.3009999999999997,
+    9.111971234605583
+  ],
+  "construction": "Closed column-supported relief; no free-standing stamens or true undercuts",
+  "preserved": [
+    "exact photo aperture",
+    "constant 6.5mm mat offset",
+    "motif arrangement",
+    "closed socket roofs",
+    "rounded-root fork mechanics"
+  ]
+}

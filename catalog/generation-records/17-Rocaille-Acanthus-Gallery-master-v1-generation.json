@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "args": {
+    "referenced_image_paths": [
+      "studies/period-grounded-ovals/sculpture-master-v1.png",
+      "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: historical-scene. Asset: ONE orthographic front carving master. Create a 1024x1024 SQUARE CANVAS, NOT wide landscape canvas. Landscape straight rectangular sight moulding, richest carved architecture at compact footprint. Strong folded acanthus corners supporting varied substantial flowers growing out of scrolling stems. Broad rolled asymmetrical upper shell, smaller different lower shell/leaf response. Scrolling leaves carried continuously across hollow rails. Busy hierarchy of high flowers, medium folded C/S scrolls, low textured recessed grounds. No equal top/bottom fans, no matching badges.\nImage1 is approved floral French Rococo carving quality only, not its oval outline. Image2 is The Met public-domain French ca1735 carving reference, not literal outline to copy.\nCRITICAL PROPORTION: the central solid BLUE photo aperture is600 pixels wide and440 pixels tall, a1.364 ratio. Do NOT make it a wide2:1 landscape. Locate blue bounds x212 to812,y292 to732 on this1024x1024 canvas. Crisp rectangular photo hole. Around blue leave a clean BLACK mat reserve of65pixels constant normal width, then a narrow white continuous sight moulding. The ENTIRE frame silhouette should be~990px wide by~810px tall, with black margin all around. The aperture is60% of entire frame width; whole frame aspect~1.22. Preserve individual flowers' natural proportions while adjusting stem lengths/curves and rails, NOT stretching sculpture to fit canvas.\nFrench Louis XV floral Rococo ca1735\u20131750, tapering connected C/S scrolls, folded acanthus, rolled irregular shells, LARGE varied flowers with LOW irregular granular disks and broad rolled petals, partly turned blooms, stems connected continuously, high-medium-low carving hierarchy, textured recessed grounds. Globally balanced with local asymmetry. NEUTRAL WHITE PLASTER and neutral gray shadows on pure BLACK. No gold tint. Mat BLACK, photo solid BLUE. All carving outside mat with clean boundary, no round mounting pads, no repetitive badges, no wiry stamens, no holes, no detached petals, no second view or perspective, no text."
+  },
+  "selected_asset": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-master-v1.png",
+  "publication_note": "Prompt preserved; local cache locations omitted and repository input paths made relative."
+}

@@ -1,0 +1,51 @@
+PROVENANCE — INDEPENDENT SIX-DESIGN COLLECTION
+
+This repository contains six new designs. Their ornamental geometry does
+not import the WLM-named files, biyou's MakerWorld model, previous rectangular
+remixes or previous oval projects. No photograph of that earlier collection
+was supplied to the image generator for these six designs.
+
+01, 02, 03 and 06: new concept sheets generated from text descriptions.
+04 and 05: revised sheets using only the new 06 concept sheet as a coherence
+reference. That reference was itself generated from text. The rejected
+ripple and repetitive laurel/rosette studies are not part of this collection.
+
+The built-in imagegen tool generated the raster concepts. Prompts, relative
+concept filenames and generation-input records are in source/designs-final.json.
+Machine-specific generation-cache paths have been removed for publication.
+
+The front relief is constructed from the master front drawings using uniform
+XY scaling, image-guided heights, opaque foundations, explicit CAD mouldings
+and exact photo apertures. Ornament is not independently stretched along
+different axes. Other concept views guide aesthetic review; this is not a
+multi-view volumetric scan or photogrammetric reconstruction. Actual mesh
+renders are provided separately from the ideal concept sheets.
+
+Backs are rebuilt from CAD primitives. Functional dimensions and some custom
+code carry forward from our own photo channels, guide fingers and snap
+mechanism. The clips are revised. No earlier ornamental mesh or rear-support
+mesh is read by the builder. Printer/process/filament settings are a resolved
+configuration snapshot for Bambu P2S PLA. Project XML is generated afresh.
+
+The project began with a separate MakerWorld remix investigation. Those older
+files are excluded here; their source/license notice is not applied as a
+blanket restriction to these newly constructed designs.
+
+For this public release, code is licensed under MIT and design assets and
+documentation are dedicated under CC0 1.0 to the extent rights can be waived.
+See LICENSING.md, LICENSE and LICENSES/. This records the creation process; it does not
+certify copyrightability of AI output or guarantee against coincidental
+similarity to historical or contemporary ornament.
+
+Historical research was descriptive; no images from these sources were traced:
+https://www.museothyssen.org/en/exhibitions/pictures-frames/room-texts
+https://www.npg.org.uk/collections/research/programmes/the-art-of-the-picture-frame/other-studies-northern-european
+
+No personal photographs are included. Rendered photographs are schematic
+landscape illustrations built from CAD primitives. Physical print photos
+and a separate permission record may be added later.
+
+The subsequent research-assisted historical assessment is recorded in
+docs/HISTORICAL-REVIEW.md. It distinguishes Baroque and Rococo influences
+and modern photographic features. Those comparisons are review judgments,
+not new generation inputs or evidence of historical workshop provenance.

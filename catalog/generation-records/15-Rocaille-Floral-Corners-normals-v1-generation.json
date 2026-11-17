@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "args": {
+    "referenced_image_paths": [
+      "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v2.png"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Convert this EXACT orthographic carving master to an OPENGL SURFACE NORMAL MAP. Preserve exact image resolution, all geometry, silhouette, pixel coordinates, every flower, shell, rail and aperture. No redesign, no crop or change in aspect ratio. RGB128,128,255 on up-facing planes. Right-positiveX red, up-positiveY green, outwardZ blue. The curved folded petal/leaf/shell surfaces encode their slopes precisely, recessed ground and broad stems encode lower sculpted geometry. No diffuse shading, no shadows or lighting, no tinted photograph. All exterior background, black inner mat and solid-blue photo opening become uniform RGB128,128,255. Only the existing sculpture band has varied normals. No text, no perspective or extra views."
+  },
+  "selected_asset": "studies/period-catalog-six/15-Rocaille-Floral-Corners-normals-v1.png",
+  "publication_note": "Prompt preserved; local cache locations omitted and repository input paths made relative."
+}

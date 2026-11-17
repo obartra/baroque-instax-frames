@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "args": {
+    "referenced_image_paths": [
+      "studies/period-catalog-six/18-Rocaille-Landscape-Oval-master-v1.png"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Convert this exact orthographic sculptural frame into an OpenGL surface NORMAL MAP, without redesign. Preserve source resolution/aspect, every pixel position, silhouette, all folds, flowers, scrolls, shell and photo aperture. RGB128,128,255 for flat front-facing plane. RightX positive red, upY positive green, outwardZ blue. Precisely encode curved/folded petal and leaf surface slopes, carved low grounds and rolled shell. NO diffuse lighting, shadows, gold, tinted photograph or color decoration. Exterior background, black inner mat and central blue ellipse all become uniform RGB128,128,255. Only the existing white carved solid band varies. No second view, no text."
+  },
+  "selected_asset": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-normals-v1.png",
+  "publication_note": "Prompt preserved; local cache locations omitted and repository input paths made relative."
+}

@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "args": {
+    "referenced_image_paths": [
+      "studies/period-catalog-six/12-Rocaille-Canted-Octagon-master-v1.png"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Convert this exact orthographic sculpture master to a tangent-space OPENGL SURFACE NORMAL MAP. Preserve every pixel position, flower, shell, rail, aperture, silhouette, image resolution and camera without redesign or crop. Neutral up-facing surface RGB128,128,255; X-positive right is red, Y-positive up is green, Z outward blue. Every petal's normals follow its 3D curved and folded surface, stem ribs and recessed carved ground. NOT a purple tinted photograph, no shading, no diffuse lighting, no ambient shadows. All outside background, inner black mat annulus and central blue photo opening become perfectly uniform RGB128,128,255. Only the carved solid band encodes surface slopes. No text or second view."
+  },
+  "selected_asset": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-normals-v1.png",
+  "publication_note": "Prompt preserved; local cache locations omitted and repository input paths made relative."
+}

@@ -1,0 +1,1184 @@
+[
+  {
+    "id": "12-Rocaille-Canted-Octagon",
+    "name": "Rocaille Canted Octagon",
+    "orientation": "landscape",
+    "shape": "octagon",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-master-v1.png",
+    "depth_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-master-v1.png",
+    "normal_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -34,
+        -29.5
+      ],
+      [
+        -34,
+        29.5
+      ],
+      [
+        34,
+        -29.5
+      ],
+      [
+        34,
+        29.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.06,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 35,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New octagon floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Canted Octagon \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New octagon composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Genuinely eight-sided landscape silhouette with long horizontal and vertical rails and four equal diagonal clipped corners; eight-sided aperture. Diagonal corner lands part of continuous octagonal moulding. Unequal large floral/acanthus clusters bridge the clipped corners, long rails carry tapered scrolling stems and recessed grounds. A single broad low curled shell near the top, a smaller foliated curl beneath; no crown. Clearly an octagon, never an oval.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.16,
+          0.5,
+          0.075,
+          0.1
+        ],
+        "feature": "left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.275,
+          0.15,
+          0.055,
+          0.07
+        ],
+        "feature": "upper left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.79,
+          0.23,
+          0.075,
+          0.11
+        ],
+        "feature": "upper right flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.2,
+          0.8,
+          0.07,
+          0.08
+        ],
+        "feature": "lower left bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.09,
+          0.12,
+          0.085
+        ],
+        "feature": "curled upper shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true
+  },
+  {
+    "id": "13-Rocaille-Segmental-Arch",
+    "name": "Rocaille Segmental Arch",
+    "orientation": "portrait",
+    "shape": "arch",
+    "opening": [
+      44,
+      60
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-master-v1.png",
+    "depth_file": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-master-v1.png",
+    "normal_file": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -43,
+        -37
+      ],
+      [
+        -43,
+        37
+      ],
+      [
+        41,
+        -37
+      ],
+      [
+        41,
+        37
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        45
+      ],
+      [
+        -32.5,
+        -27
+      ],
+      [
+        32.5,
+        -27
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.06,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New arch floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Segmental Arch \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New arch composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Portrait frame with broad SHALLOW segmental-arched head, upright sides and straight bottom, not semicircular or pointed. Gently arched photo aperture with straight sides/bottom. Large different floral shoulder groups and folded shell flow into shallow arch; climbing stems in gently swept side rails, lower center compact curled leaf. No pilasters or plinths. Solid shoulder/spandrel areas hide the film corners. Balanced contour, no lopsided bulge.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.29,
+          0.21,
+          0.065,
+          0.09
+        ],
+        "feature": "upper left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.72,
+          0.23,
+          0.075,
+          0.1
+        ],
+        "feature": "upper right flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.3,
+          0.47,
+          0.07,
+          0.11
+        ],
+        "feature": "left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.69,
+          0.62,
+          0.06,
+          0.08
+        ],
+        "feature": "right closed bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.09,
+          0.08,
+          0.09
+        ],
+        "feature": "upper shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true
+  },
+  {
+    "id": "14-Rocaille-Cushion-Cartouche",
+    "name": "Rocaille Cushion Cartouche",
+    "orientation": "landscape",
+    "shape": "cushion",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-master-v2.png",
+    "depth_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-master-v2.png",
+    "normal_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 0.96,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New cushion floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Cushion Cartouche \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New cushion composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape four-shouldered cushion cartouche, almost rectangular with convex swelling corners linked by continuous concave and convex sweeps. Rounded rectangular aperture with four identical circular corner radii and near-straight sides. Two diagonal large blooms and two varied smaller floral groups grow from scrolling rails. Off-folded upper shell, lower foliated curl. Neither ellipse nor pointed diamond, no pillow with pasted flowers.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.15,
+          0.66,
+          0.095,
+          0.12
+        ],
+        "feature": "lower left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.85,
+          0.31,
+          0.105,
+          0.105
+        ],
+        "feature": "upper right flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.13,
+          0.23,
+          0.07,
+          0.08
+        ],
+        "feature": "upper left turned bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.86,
+          0.61,
+          0.065,
+          0.08
+        ],
+        "feature": "lower right closed flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.16,
+          0.12,
+          0.105
+        ],
+        "feature": "curled upper shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.79,
+          0.12,
+          0.11
+        ],
+        "feature": "lower foliate curl",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true
+  },
+  {
+    "id": "15-Rocaille-Floral-Corners",
+    "name": "Rocaille Floral Corners",
+    "orientation": "landscape",
+    "shape": "rectangle",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v2.png",
+    "depth_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v2.png",
+    "normal_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 0.96,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New rectangle floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Floral Corners \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New rectangle composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape rectangular inner architecture, corner-and-center composition. Four DIFFERENT flower-and-leaf groups: upper-left open broad bloom, upper-right turned irregular bloom, lower-right smaller open flower, lower-left folded leaf and bud. Petals extend enough to hide every circular mounting base. Linked tapering tendrils and textured recessed rail fields. Low modest shell at top, not tall crown. Busy detailed carving with clear hierarchy and rested stretches of rail, not equal repeated badges.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.17,
+          0.22,
+          0.105,
+          0.12
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.83,
+          0.24,
+          0.09,
+          0.11
+        ],
+        "feature": "upper right turned bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.85,
+          0.74,
+          0.07,
+          0.075
+        ],
+        "feature": "lower right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.16,
+          0.09,
+          0.065
+        ],
+        "feature": "upper modest shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.79,
+          0.1,
+          0.08
+        ],
+        "feature": "lower foliate curl",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/15-Rocaille-Floral-Corners-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true
+  },
+  {
+    "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+    "name": "Botanical Garland \u00b7 Sculpted Petals v3",
+    "orientation": "landscape",
+    "shape": "rectangle",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-master-v1.png",
+    "depth_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-master-v1.png",
+    "normal_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.0,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat",
+    "provenance": "New rectangle floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Botanical Garland \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New rectangle composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape rectangular inner moulding with expressive diagonal floral movement: dominant open flower group upper left, different slightly smaller open/half-closed group lower right, a third modest bloom at upper right. Stems visibly continue along rails; opposite lower-left corner folded acanthus and buds. Modest off-center lower shell sustains diagonal flow. Rich varied foliage, no neoclassical ribbon swag, no repeated laurel rows, no identical corner rosettes.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.17,
+          0.21,
+          0.1,
+          0.12
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.23,
+          0.13,
+          0.07,
+          0.07
+        ],
+        "feature": "upper left turned flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.88,
+          0.66,
+          0.09,
+          0.09
+        ],
+        "feature": "lower right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.14,
+          0.1,
+          0.09
+        ],
+        "feature": "upper folded shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.79,
+          0.09,
+          0.065
+        ],
+        "feature": "lower offset shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/botanical-sculpture-v3/16-Rocaille-Botanical-Garland-Sculpted-v3-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/botanical-sculpture-v3/refinement.json",
+    "relief_method": "Explicit traced unequal petal bowls and curved overlap channels in CAD height geometry",
+    "integrated_socket_roofs": true
+  },
+  {
+    "id": "17-Rocaille-Acanthus-Gallery",
+    "name": "Rocaille Acanthus Gallery",
+    "orientation": "landscape",
+    "shape": "rectangle",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-master-v1.png",
+    "depth_file": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-master-v1.png",
+    "normal_file": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.0,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New rectangle floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Acanthus Gallery \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New rectangle composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape straight rectangular sight moulding with most exuberant carved architecture at compact footprint. Strong folded acanthus at corners supporting varied substantial flowers that grow from the scrolling stems. Broad rolled asymmetrical upper shell, smaller different lower shell/leaf response, scrolling leaves carried continuously across hollow rail. Dense busy yet hierarchical: high floral masses, medium folded C and S scrolls, low textured recessed grounds. No same top and bottom fan and no row of matching badges.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.24,
+          0.16,
+          0.07,
+          0.075
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.08,
+          0.42,
+          0.07,
+          0.085
+        ],
+        "feature": "left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.91,
+          0.43,
+          0.075,
+          0.095
+        ],
+        "feature": "right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.22,
+          0.83,
+          0.065,
+          0.065
+        ],
+        "feature": "lower left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.14,
+          0.13,
+          0.12
+        ],
+        "feature": "grand curled upper shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.83,
+          0.095,
+          0.08
+        ],
+        "feature": "lower rolled shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "integrated_socket_roofs": true,
+    "final_surface_file": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/17-Rocaille-Acanthus-Gallery-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief"
+  },
+  {
+    "id": "11-Period-Floral-Portrait-Oval",
+    "name": "Period Floral Portrait Oval",
+    "orientation": "portrait",
+    "shape": "oval",
+    "opening": [
+      44,
+      60
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-grounded-ovals/portrait-oval-period-study-v1.png",
+    "depth_file": "studies/period-grounded-ovals/sculpture-master-v1.png",
+    "normal_file": "studies/period-grounded-ovals/sculpture-normals-v1.png",
+    "surface_file": "studies/period-grounded-ovals/11-Period-Floral-Portrait-Oval-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -38.5,
+        -30
+      ],
+      [
+        -38.5,
+        30
+      ],
+      [
+        38.5,
+        -30
+      ],
+      [
+        38.5,
+        30
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        45
+      ],
+      [
+        -32.5,
+        -27
+      ],
+      [
+        32.5,
+        -27
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.04,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 60,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New floral oval composition informed by The Met public-domain photograph of frame 1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Period Floral Portrait Oval \u2014 Instax Mini frame",
+    "project_description": "Historically grounded French floral Rococo oval adapted for uncut Instax Mini. Modern supported sculptural relief, four rounded-root PLA clips, three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art, 1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New oval composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "final_surface_file": "studies/period-catalog-six/11-Period-Floral-Portrait-Oval-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/11-Period-Floral-Portrait-Oval-roof-refinement.json",
+    "relief_method": "Replace the single exposed upper-left flat socket cap with existing leaf/scroll folds over a smooth oval support envelope; preserve all other final sculpture",
+    "max_relief_mm": 12,
+    "integrated_socket_roofs": true
+  },
+  {
+    "id": "18-Rocaille-Landscape-Oval",
+    "name": "Rocaille Landscape Oval",
+    "orientation": "landscape",
+    "shape": "oval",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/independent-horizontal-oval/horizontal-oval-diagonal-v1.png",
+    "depth_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-master-v1.png",
+    "normal_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -39,
+        -29.5
+      ],
+      [
+        -39,
+        29.5
+      ],
+      [
+        39,
+        -29.5
+      ],
+      [
+        39,
+        29.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.04,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 90,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New floral oval composition informed by The Met public-domain photograph of frame 1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Landscape Oval \u2014 Instax Mini",
+    "project_description": "Approved independent diagonal landscape-oval composition in French floral Rococo vocabulary; full uncut Instax Mini, supported relief, four PLA clips, three6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art, 1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New oval composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "integrated_socket_roofs": true,
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.2,
+          0.26,
+          0.13,
+          0.14
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.34,
+          0.11,
+          0.1,
+          0.095
+        ],
+        "feature": "upper turned flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.82,
+          0.74,
+          0.12,
+          0.12
+        ],
+        "feature": "lower right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.19,
+          0.73,
+          0.08,
+          0.08
+        ],
+        "feature": "lower left small cup",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.39,
+          0.88,
+          0.12,
+          0.09
+        ],
+        "feature": "low off-center shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief"
+  }
+]

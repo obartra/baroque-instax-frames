@@ -1,0 +1,30 @@
+{
+  "id": "11-Period-Floral-Portrait-Oval",
+  "file": "11-Period-Floral-Portrait-Oval-Instax-Mini-3-Magnets.3mf",
+  "sha256": "657cf6678484732c28e8f70f04695d4c92e0931a6ccfd35513d60ec0ad9c5bc7",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    193.3,
+    55.2
+  ],
+  "material_g": [
+    18.91,
+    6.02
+  ],
+  "sliced_project": "11-Period-Floral-Portrait-Oval/slice-final/11-Period-Floral-Portrait-Oval-P2S-Sliced.3mf",
+  "sliced_sha256": "5d49082729dd7f3b54b6029504e565b9246b825d040e9815ff7160ac3a967787",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}

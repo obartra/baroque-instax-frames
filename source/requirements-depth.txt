@@ -1,0 +1,5 @@
+# Optional separate environment; original CAD requirements remain unchanged.
+torch==2.15.0
+transformers==5.23.0
+Pillow==13.0.0
+numpy==2.5.5

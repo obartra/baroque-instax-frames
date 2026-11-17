@@ -1,0 +1,126 @@
+{
+  "id": "13-Rocaille-Segmental-Arch",
+  "name": "Rocaille Segmental Arch",
+  "orientation": "portrait",
+  "shape": "arch",
+  "front_dimensions_mm": [
+    102.56433486938477,
+    114.46229553222656,
+    8.865444779396057
+  ],
+  "front_bounds_mm": [
+    [
+      -50.984683990478516,
+      -54.37567138671875,
+      0.36000001430511475
+    ],
+    [
+      51.57965087890625,
+      60.08662414550781,
+      9.225444793701172
+    ]
+  ],
+  "back_dimensions_mm": [
+    81.5999984741211,
+    96.75,
+    8.0
+  ],
+  "assembled_depth_mm": 12.825444793701172,
+  "mat_width_mm": 6.5,
+  "mat_height_mm": 0.36,
+  "mat_perpendicular_offset": true,
+  "white_exterior_inset_mm": 0.55,
+  "film_uncut_mm": [
+    54,
+    86
+  ],
+  "aperture_bounds_mm": [
+    -22.0,
+    -30.0,
+    22.0,
+    30.0
+  ],
+  "image_area_visible_percent": 90.78481391977867,
+  "full_film_concealed": true,
+  "nominal_edge_overlap_mm": 1.0,
+  "misalignment_checked_mm": 0.6,
+  "magnet_centers_mm": [
+    [
+      0,
+      45
+    ],
+    [
+      -32.5,
+      -27
+    ],
+    [
+      32.5,
+      -27
+    ]
+  ],
+  "magnet_pockets_mm": [
+    6.3,
+    3.1
+  ],
+  "magnet_floor_mm": 0.5,
+  "snap_positions_mm": [
+    [
+      37,
+      -43
+    ],
+    [
+      -37,
+      -43
+    ],
+    [
+      37,
+      41
+    ],
+    [
+      -37,
+      41
+    ]
+  ],
+  "snap_tip_height_mm": 8,
+  "snap_stem_mm": [
+    3.5,
+    2
+  ],
+  "snap_slot_radius_mm": 0.7,
+  "snap_head_width_mm": 3.88,
+  "socket_neck_width_mm": 3.65,
+  "snap_arm_section_mm": [
+    1.05,
+    2.0
+  ],
+  "snap_axial_relaxation_mm": 0.15,
+  "snap_per_arm_deflection_mm": 0.115,
+  "photo_spring_length_mm": 15,
+  "front_print_color_changes": 1,
+  "watertight_parts": true,
+  "insertion_positions_checked": 28,
+  "closed_socket_roofs_checked": true,
+  "back_projection_hidden": true,
+  "assembly_interference_mm3": 0.0,
+  "physical_test": false,
+  "ornament_source": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-master-v1.png",
+  "provenance": "New arch floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+  "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+  "drawing_uniform_growth": 1.0,
+  "drawing_mm_per_pixel": 0.1189795918367347,
+  "drawing_center_px": [
+    766.0,
+    517.5
+  ],
+  "hidden_underlay_components": 1,
+  "fused_front_single_volume": true,
+  "refinement_record": "studies/period-catalog-six/13-Rocaille-Segmental-Arch-sculpture-refinement.json",
+  "authored_surface": true,
+  "clear_aperture_preserved": true,
+  "print_profile_filaments": 3,
+  "colors": [
+    "gray mat",
+    "black ornament",
+    "white back"
+  ]
+}

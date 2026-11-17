@@ -1,0 +1,154 @@
+[
+  {
+    "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+    "name": "Botanical Garland \u00b7 Sculpted Petals v3",
+    "orientation": "landscape",
+    "shape": "rectangle",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-master-v1.png",
+    "depth_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-master-v1.png",
+    "normal_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/16-Rocaille-Botanical-Garland-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.0,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat",
+    "provenance": "New rectangle floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Botanical Garland \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New rectangle composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape rectangular inner moulding with expressive diagonal floral movement: dominant open flower group upper left, different slightly smaller open/half-closed group lower right, a third modest bloom at upper right. Stems visibly continue along rails; opposite lower-left corner folded acanthus and buds. Modest off-center lower shell sustains diagonal flow. Rich varied foliage, no neoclassical ribbon swag, no repeated laurel rows, no identical corner rosettes.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.17,
+          0.21,
+          0.1,
+          0.12
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.23,
+          0.13,
+          0.07,
+          0.07
+        ],
+        "feature": "upper left turned flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.88,
+          0.66,
+          0.09,
+          0.09
+        ],
+        "feature": "lower right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.14,
+          0.1,
+          0.09
+        ],
+        "feature": "upper folded shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.79,
+          0.09,
+          0.065
+        ],
+        "feature": "lower offset shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/botanical-sculpture-v3/16-Rocaille-Botanical-Garland-Sculpted-v3-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/botanical-sculpture-v3/refinement.json",
+    "relief_method": "Explicit traced unequal petal bowls and curved overlap channels in CAD height geometry",
+    "integrated_socket_roofs": true
+  }
+]

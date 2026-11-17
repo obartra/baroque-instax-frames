@@ -1,0 +1,77 @@
+{
+  "id": "15-Rocaille-Floral-Corners",
+  "method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+  "features": [
+    {
+      "ellipse": [
+        0.17,
+        0.22,
+        0.105,
+        0.12
+      ],
+      "feature": "upper left open flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.83,
+        0.24,
+        0.09,
+        0.11
+      ],
+      "feature": "upper right turned bloom",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.85,
+        0.74,
+        0.07,
+        0.075
+      ],
+      "feature": "lower right open flower",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.5,
+        0.16,
+        0.09,
+        0.065
+      ],
+      "feature": "upper modest shell",
+      "fold_gain": 0.35
+    },
+    {
+      "ellipse": [
+        0.5,
+        0.79,
+        0.1,
+        0.08
+      ],
+      "feature": "lower foliate curl",
+      "fold_gain": 0.35
+    }
+  ],
+  "local_roundover_radius_mm": 0.65,
+  "edit_bounds_mm": [
+    -0.9530346808878745,
+    0.5163250694165065
+  ],
+  "roundover_bounds_mm": [
+    -0.9500000000000002,
+    0.20000000000000018
+  ],
+  "height_bounds_mm": [
+    1.301,
+    8.995704593975981
+  ],
+  "construction": "Closed column-supported relief; no free-standing stamens or true undercuts",
+  "preserved": [
+    "exact photo aperture",
+    "constant 6.5mm mat offset",
+    "motif arrangement",
+    "closed socket roofs",
+    "rounded-root fork mechanics"
+  ]
+}

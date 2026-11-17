@@ -1,0 +1,233 @@
+{
+  "title": "Eight floral Instax Mini frames",
+  "schema_version": 1,
+  "status": "Digital prototypes; physical fit and surface detail need testing",
+  "film_mm": [
+    86,
+    54
+  ],
+  "magnets_mm": [
+    6,
+    3
+  ],
+  "magnets_per_frame": 3,
+  "illustration_palette_is_example": true,
+  "frames": [
+    {
+      "id": "12-Rocaille-Canted-Octagon",
+      "name": "Canted Octagon",
+      "slug": "canted-octagon",
+      "model": "models/current/12-Rocaille-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
+      "sha256": "12d5dcac4cf0a7dc3abd98f1ab3d708e9d80cc12c03edddd56d9feba94425477",
+      "geometry": "validation/current/12-Rocaille-Canted-Octagon-geometry.json",
+      "slicer": "validation/current/12-Rocaille-Canted-Octagon-slicer.json",
+      "back_toolpaths": "validation/current/12-Rocaille-Canted-Octagon-back-toolpaths.json",
+      "orientation": "landscape",
+      "dimensions_mm": [
+        104.66580200195312,
+        81.90205383300781,
+        8.749955773353577
+      ],
+      "depth_mm": 12.709955787658691,
+      "image_visible_percent": 90.81346423562412,
+      "front_minutes": 128.0,
+      "back_minutes": 54.7,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/canted-octagon-front.png",
+        "angle": "renders/current/canted-octagon-angle.png",
+        "back": "renders/current/canted-octagon-back.png",
+        "fit": "renders/current/canted-octagon-fit.png"
+      }
+    },
+    {
+      "id": "13-Rocaille-Segmental-Arch",
+      "name": "Segmental Arch",
+      "slug": "segmental-arch",
+      "model": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+      "sha256": "8c1914a855c44c23a3409d14b17a19b517310744c1dfe2608406ad95b766708d",
+      "geometry": "validation/current/13-Rocaille-Segmental-Arch-geometry.json",
+      "slicer": "validation/current/13-Rocaille-Segmental-Arch-slicer.json",
+      "back_toolpaths": "validation/current/13-Rocaille-Segmental-Arch-back-toolpaths.json",
+      "orientation": "portrait",
+      "dimensions_mm": [
+        102.56433486938477,
+        114.46229553222656,
+        8.865444779396057
+      ],
+      "depth_mm": 12.825444793701172,
+      "image_visible_percent": 90.78481391977867,
+      "front_minutes": 205.6,
+      "back_minutes": 58.9,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/segmental-arch-front.png",
+        "angle": "renders/current/segmental-arch-angle.png",
+        "back": "renders/current/segmental-arch-back.png",
+        "fit": "renders/current/segmental-arch-fit.png"
+      }
+    },
+    {
+      "id": "14-Rocaille-Cushion-Cartouche",
+      "name": "Cushion Cartouche",
+      "slug": "cushion-cartouche",
+      "model": "models/current/14-Rocaille-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
+      "sha256": "2e9b9900c24f757202964b37cd533cefb581aa2aa723bd96fcb107b3b5e23f05",
+      "geometry": "validation/current/14-Rocaille-Cushion-Cartouche-geometry.json",
+      "slicer": "validation/current/14-Rocaille-Cushion-Cartouche-slicer.json",
+      "back_toolpaths": "validation/current/14-Rocaille-Cushion-Cartouche-back-toolpaths.json",
+      "orientation": "landscape",
+      "dimensions_mm": [
+        111.4495735168457,
+        98.34385681152344,
+        8.850303292274475
+      ],
+      "depth_mm": 12.81030330657959,
+      "image_visible_percent": 91.08794389724042,
+      "front_minutes": 174.3,
+      "back_minutes": 56.3,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/cushion-cartouche-front.png",
+        "angle": "renders/current/cushion-cartouche-angle.png",
+        "back": "renders/current/cushion-cartouche-back.png",
+        "fit": "renders/current/cushion-cartouche-fit.png"
+      }
+    },
+    {
+      "id": "15-Rocaille-Floral-Corners",
+      "name": "Floral Corners",
+      "slug": "floral-corners",
+      "model": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+      "sha256": "42d21533141adabcdf29c9307599fa090fcd09375c4b6c30b19409c45c09c839",
+      "geometry": "validation/current/15-Rocaille-Floral-Corners-geometry.json",
+      "slicer": "validation/current/15-Rocaille-Floral-Corners-slicer.json",
+      "back_toolpaths": "validation/current/15-Rocaille-Floral-Corners-back-toolpaths.json",
+      "orientation": "landscape",
+      "dimensions_mm": [
+        116.33224105834961,
+        92.18149185180664,
+        8.614952683448792
+      ],
+      "depth_mm": 12.574952697753906,
+      "image_visible_percent": 92.56661991584853,
+      "front_minutes": 179.6,
+      "back_minutes": 56.3,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/floral-corners-front.png",
+        "angle": "renders/current/floral-corners-angle.png",
+        "back": "renders/current/floral-corners-back.png",
+        "fit": "renders/current/floral-corners-fit.png"
+      }
+    },
+    {
+      "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+      "name": "Botanical Garland",
+      "slug": "botanical-garland",
+      "model": "models/current/16-Rocaille-Botanical-Garland-Sculpted-v3-Instax-Mini-3-Magnets.3mf",
+      "sha256": "a48cc5570a1b2229d179778cfff3b7a7dd75b910dd1e5371c7ba822c7fac0936",
+      "geometry": "validation/current/16-Rocaille-Botanical-Garland-Sculpted-v3-geometry.json",
+      "slicer": "validation/current/16-Rocaille-Botanical-Garland-Sculpted-v3-slicer.json",
+      "back_toolpaths": "validation/current/16-Rocaille-Botanical-Garland-Sculpted-v3-back-toolpaths.json",
+      "orientation": "landscape",
+      "dimensions_mm": [
+        114.25285720825195,
+        96.02960968017578,
+        8.667162537574768
+      ],
+      "depth_mm": 12.627162551879882,
+      "image_visible_percent": 92.56661991584853,
+      "front_minutes": 167.9,
+      "back_minutes": 56.3,
+      "revision": "Sculpted petals v3",
+      "views": {
+        "front": "renders/current/botanical-garland-front.png",
+        "angle": "renders/current/botanical-garland-angle.png",
+        "back": "renders/current/botanical-garland-back.png",
+        "fit": "renders/current/botanical-garland-fit.png"
+      }
+    },
+    {
+      "id": "17-Rocaille-Acanthus-Gallery",
+      "name": "Acanthus Gallery",
+      "slug": "acanthus-gallery",
+      "model": "models/current/17-Rocaille-Acanthus-Gallery-Instax-Mini-3-Magnets.3mf",
+      "sha256": "8fb9847f90929fc510556eef489e9a8ef3a4309fc6c1300d54b1c415ca317946",
+      "geometry": "validation/current/17-Rocaille-Acanthus-Gallery-geometry.json",
+      "slicer": "validation/current/17-Rocaille-Acanthus-Gallery-slicer.json",
+      "back_toolpaths": "validation/current/17-Rocaille-Acanthus-Gallery-back-toolpaths.json",
+      "orientation": "landscape",
+      "dimensions_mm": [
+        107.18792724609375,
+        98.73992538452148,
+        8.129982590675354
+      ],
+      "depth_mm": 12.089982604980468,
+      "image_visible_percent": 92.56661991584853,
+      "front_minutes": 169.9,
+      "back_minutes": 56.3,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/acanthus-gallery-front.png",
+        "angle": "renders/current/acanthus-gallery-angle.png",
+        "back": "renders/current/acanthus-gallery-back.png",
+        "fit": "renders/current/acanthus-gallery-fit.png"
+      }
+    },
+    {
+      "id": "11-Period-Floral-Portrait-Oval",
+      "name": "Portrait Oval",
+      "slug": "portrait-oval",
+      "model": "models/current/11-Period-Floral-Portrait-Oval-Instax-Mini-3-Magnets.3mf",
+      "sha256": "657cf6678484732c28e8f70f04695d4c92e0931a6ccfd35513d60ec0ad9c5bc7",
+      "geometry": "validation/current/11-Period-Floral-Portrait-Oval-geometry.json",
+      "slicer": "validation/current/11-Period-Floral-Portrait-Oval-slicer.json",
+      "back_toolpaths": "validation/current/11-Period-Floral-Portrait-Oval-back-toolpaths.json",
+      "orientation": "portrait",
+      "dimensions_mm": [
+        100.60132217407227,
+        118.38312911987305,
+        9.52429735660553
+      ],
+      "depth_mm": 13.484297370910644,
+      "image_visible_percent": 72.70084225882984,
+      "front_minutes": 193.3,
+      "back_minutes": 55.2,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/portrait-oval-front.png",
+        "angle": "renders/current/portrait-oval-angle.png",
+        "back": "renders/current/portrait-oval-back.png",
+        "fit": "renders/current/portrait-oval-fit.png"
+      }
+    },
+    {
+      "id": "18-Rocaille-Landscape-Oval",
+      "name": "Landscape Oval",
+      "slug": "landscape-oval",
+      "model": "models/current/18-Rocaille-Landscape-Oval-Instax-Mini-3-Magnets.3mf",
+      "sha256": "d5909f846c8054800f9b92f30366bb5200b818fb9332e2e35af01b6532fb385d",
+      "geometry": "validation/current/18-Rocaille-Landscape-Oval-geometry.json",
+      "slicer": "validation/current/18-Rocaille-Landscape-Oval-slicer.json",
+      "back_toolpaths": "validation/current/18-Rocaille-Landscape-Oval-back-toolpaths.json",
+      "orientation": "landscape",
+      "dimensions_mm": [
+        116.99404907226562,
+        91.35118103027344,
+        8.586897492408752
+      ],
+      "depth_mm": 12.546897506713867,
+      "image_visible_percent": 72.70084225882988,
+      "front_minutes": 159.9,
+      "back_minutes": 54.7,
+      "revision": "Period floral catalog",
+      "views": {
+        "front": "renders/current/landscape-oval-front.png",
+        "angle": "renders/current/landscape-oval-angle.png",
+        "back": "renders/current/landscape-oval-back.png",
+        "fit": "renders/current/landscape-oval-fit.png"
+      }
+    }
+  ]
+}

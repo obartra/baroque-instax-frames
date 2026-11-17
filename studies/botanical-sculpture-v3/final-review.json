@@ -1,0 +1,25 @@
+{
+  "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+  "historian": "accepted_for_prototype",
+  "printing": "accepted_for_prototype",
+  "reviewers": "Two separate AI-role reviewers; not human historical authentication or physical testing",
+  "iterations": [
+    "v2 explicit traced petal bowls; rejected button-like centers and duplicate outlines",
+    "v3 low irregular integrated centers, local doubled-lip cleanup; accepted"
+  ],
+  "project_sha256": "a48cc5570a1b2229d179778cfff3b7a7dd75b910dd1e5371c7ba822c7fac0936",
+  "render_sha256": {
+    "16-Rocaille-Botanical-Garland-Sculpted-v3-Back-Toolpath-Sections.png": "83e8f58afa2ce048f1a5a246661e1378f70ed66ee6e032c1062bc6eb719ba010",
+    "16-Rocaille-Botanical-Garland-Sculpted-v3-actual-detail.png": "ee2feac50330948d1862c8a45d8219fb98061f953f7bd3ffdceb74f12a071f72",
+    "16-Rocaille-Botanical-Garland-Sculpted-v3-actual-multiview.png": "4f0cc71b257b58bc49b81fe6ae0c4924f1a2a39098f1e39ce8b718ab7d78da55",
+    "Back-Toolpath-Sections.png": "83e8f58afa2ce048f1a5a246661e1378f70ed66ee6e032c1062bc6eb719ba010",
+    "Botanical-Garland-Before-After.png": "c0436f27718ca98ecbd0f57debbbcf855383f6a7be669d26ba31783fb8a0c27f"
+  },
+  "review_sha256": {
+    "historian": "167107cda86d299e85579fe9684c204fe54253d07f0115750854c81a06f7a6a2",
+    "printing": "701d689623665df72d154770dab910fb3bd9b00a255e40e0cf09bf60b8cc2b3e"
+  },
+  "physical_test": false,
+  "print_started": false,
+  "accepted_scope": "One Botanical Garland prototype, preserving preceding compatible back; not an eight-model release"
+}

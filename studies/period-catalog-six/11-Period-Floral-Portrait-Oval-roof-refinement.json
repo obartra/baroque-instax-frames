@@ -1,0 +1,28 @@
+{
+  "id": "11-Period-Floral-Portrait-Oval",
+  "method": "Replace the single exposed upper-left flat socket cap with existing leaf/scroll folds over a smooth oval support envelope; preserve all other final sculpture",
+  "region_center_mm": [
+    -30,
+    38.5
+  ],
+  "region_radii_mm": [
+    8.5,
+    9.0
+  ],
+  "original_height_file": "studies/period-grounded-ovals/11-Period-Floral-Portrait-Oval-final-height.npy",
+  "outside_region_unchanged": true,
+  "delta_bounds_mm": [
+    -0.2538926808278066,
+    3.157666940845578
+  ],
+  "preserved": [
+    "approved outer silhouette",
+    "exact oval aperture",
+    "constant mat",
+    "all flower positions",
+    "three magnet centers",
+    "four snap positions",
+    "fork cross section",
+    "other final carving"
+  ]
+}

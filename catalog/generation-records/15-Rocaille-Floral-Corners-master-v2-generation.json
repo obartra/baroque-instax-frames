@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "args": {
+    "referenced_image_paths": [
+      "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v1.png"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Asset: ONE orthographic front carving master. Create a 1024x1024 SQUARE CANVAS, NOT wide landscape canvas. Landscape rectangular inner architecture, corner-and-center composition. Four DIFFERENT flower and leaf groups: upper-left broad open bloom, upper-right turned irregular bloom, lower-right smaller open flower, lower-left folded leaf and bud. Petals hide all mounting bases. Linked tapering tendrils and textured recessed rail fields. Low modest top shell. Dense carving with hierarchy and rested rail stretches, no equal repeated badges.\nEdit target image1: keep its specific flowers, stem directions, carving vocabulary and hierarchy. Recompose the rails around a TALLER photo aperture; do NOT stretch flowers. The current aperture is too wide relative to its height.\nCRITICAL PROPORTION: the central solid BLUE photo aperture is600 pixels wide and440 pixels tall, a1.364 ratio. Do NOT make it a wide2:1 landscape. Locate blue bounds x212 to812,y292 to732 on this1024x1024 canvas. Crisp rectangular photo hole. Around blue leave a clean BLACK mat reserve of65pixels constant normal width, then a narrow white continuous sight moulding. The ENTIRE frame silhouette should be~990px wide by~810px tall, with black margin all around. The aperture is60% of entire frame width; whole frame aspect~1.22. Preserve individual flowers' natural proportions while adjusting stem lengths/curves and rails, NOT stretching sculpture to fit canvas.\nFrench Louis XV floral Rococo ca1735\u20131750, tapering connected C/S scrolls, folded acanthus, rolled irregular shells, LARGE varied flowers with LOW irregular granular disks and broad rolled petals, partly turned blooms, stems connected continuously, high-medium-low carving hierarchy, textured recessed grounds. Globally balanced with local asymmetry. NEUTRAL WHITE PLASTER and neutral gray shadows on pure BLACK. No gold tint. Mat BLACK, photo solid BLUE. All carving outside mat with clean boundary, no round mounting pads, no repetitive badges, no wiry stamens, no holes, no detached petals, no second view or perspective, no text."
+  },
+  "selected_asset": "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v2.png",
+  "publication_note": "Prompt preserved; local cache locations omitted and repository input paths made relative."
+}

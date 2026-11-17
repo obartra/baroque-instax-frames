@@ -1,0 +1,30 @@
+{
+  "id": "15-Rocaille-Floral-Corners",
+  "file": "15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+  "sha256": "42d21533141adabcdf29c9307599fa090fcd09375c4b6c30b19409c45c09c839",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    179.6,
+    56.3
+  ],
+  "material_g": [
+    17.14,
+    6.62
+  ],
+  "sliced_project": "15-Rocaille-Floral-Corners/slice-final/15-Rocaille-Floral-Corners-P2S-Sliced.3mf",
+  "sliced_sha256": "38d025ee3cc309d3f8a0648c0e5fced58a3ce4107bfa183e1acfe53d902c89b5",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}

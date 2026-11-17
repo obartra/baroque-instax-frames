@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "args": {
+    "referenced_image_paths": [
+      "studies/independent-horizontal-oval/horizontal-oval-diagonal-v1.png",
+      "studies/period-grounded-ovals/sculpture-master-v1.png",
+      "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Asset: faithful orthographic sculpture master of the APPROVED HORIZONTAL OVAL frame in IMAGE1. Make ONE single front elevation of its large left frame, square to camera, 1280x1024 canvas. Preserve its actual horizontal oval silhouette and diagonal composition: large open/turned flower group upper LEFT, different large open flower lower RIGHT, quieter flowing upper-right arc, small blooms/closed buds on the lower-left response, LOW off-center curled shell at bottom LEFT of center. NO top crest, NO rotation/stretch of the portrait oval, NO rectangular corners. Image2 supplies matching family's carved flower quality; image3 supplies documented French ca1735 tapering C/S scroll and folded-acanthus grammar only. Retain approved composition while clarifying continuous stems, broad rolled irregular petal lips and low textured recessed grounds in French floral Rococo ca1735\u20131750 vocabulary. Large flower centers LOW granular carved disks, not stems, balls or perfect geometric spirals. All petals solid-backed and joined to rail, no true holes or dangling wires. Single neutral WHITE PLASTER sculpture with neutral gray shadows, on pure BLACK background. Flat solid BLUE central horizontal ELLIPSE exactly600px wide440px tall, centered x640y512. Around blue leave a clean uninterrupted BLACK mat reserve65px constant normal offset, followed by a narrow white continuous sight moulding. The whole frame should be~1120px wide~890px high, aperture ratio60:44. Keep natural flower proportions and truly oval outline; no pointy top, no lopsided outer mass, no petals intruding into black mat/blue picture. No gold tint, photo, text, second view, floor shadow or backing."
+  },
+  "selected_asset": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-master-v1.png",
+  "publication_note": "Prompt preserved; local cache locations omitted and repository input paths made relative."
+}

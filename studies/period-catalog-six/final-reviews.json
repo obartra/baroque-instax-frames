@@ -1,0 +1,112 @@
+{
+  "reviewers": [
+    "historian AI reviewer",
+    "product-design AI reviewer"
+  ],
+  "method": "Qualitative independent-role reviews of carving studies and actual printable mesh detail/multiview renders; revisions followed by fresh review",
+  "historical_sources": "historical-sources.json",
+  "not_human_authentication": true,
+  "shared_limitations": [
+    "Closed supported2.5D relief, not full historic undercut carving",
+    "White carrier visible obliquely though front projection is hidden",
+    "Physical fit, strength and magnetic stability need prototype testing"
+  ],
+  "designs": {
+    "12-Rocaille-Canted-Octagon": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Diagonal octagonal corner structure preserved; visible mechanical pads removed.",
+      "remaining_limitation": "Some flower folds remain softened.",
+      "detail_render_sha256": "e491a9a3f0e53f0fc1a8a22d2b7bff88e6400d5fa2cf6688ecf25268502ca233",
+      "multiview_render_sha256": "1bc7731fc7633e2a553df10d71fae225679c167b2a293d626f6fe769237c5365",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8376942628782702,
+      "native_project_sha256": "12d5dcac4cf0a7dc3abd98f1ab3d708e9d80cc12c03edddd56d9feba94425477"
+    },
+    "13-Rocaille-Segmental-Arch": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Floral shoulders, climbing rails and shallow arch preserved; exposed lower socket caps resolved.",
+      "remaining_limitation": "Supported relief and miniature scale simplify fine petals.",
+      "detail_render_sha256": "b02924291130990d3fbd44f8e9a65dee60ecebfcc77d59087b791e0a73eaaa4c",
+      "multiview_render_sha256": "1c10935eb0235cce513a6add82d436eb50e0e1c6ac9ca4bd5ef23b49ce291191",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8317146842175774,
+      "native_project_sha256": "8c1914a855c44c23a3409d14b17a19b517310744c1dfe2608406ad95b766708d"
+    },
+    "14-Rocaille-Cushion-Cartouche": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Continuous swelling shoulders and diagonal flowers remain coherent.",
+      "remaining_limitation": "Fine petal separation reduced relative to study.",
+      "detail_render_sha256": "a2d973174930a1e67b861c4bb1e9ef98b2286684f3c471580f6719d25d71e217",
+      "multiview_render_sha256": "cf4b0ad2d9b759c45e582dfdb0fa6244312e22ae510e3b572f2c98c76494bec6",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8432233309699637,
+      "native_project_sha256": "2e9b9900c24f757202964b37cd533cefb581aa2aa723bd96fcb107b3b5e23f05"
+    },
+    "15-Rocaille-Floral-Corners": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Distinct flower/leaf corner groups and rectangular sight moulding remain legible.",
+      "remaining_limitation": "Upper-right flower partly merges into acanthus.",
+      "detail_render_sha256": "9f35f9c00794416b5aeddf7407a168b1066749cc90f8eebb89f273b639968516",
+      "multiview_render_sha256": "426a082ade79dc706a0e0ee2b295b28a0103e38af701aecc8df5a8e9fa02ca22",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8432233309699637,
+      "native_project_sha256": "42d21533141adabcdf29c9307599fa090fcd09375c4b6c30b19409c45c09c839"
+    },
+    "16-Rocaille-Botanical-Garland": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Diagonal bouquets and quieter opposing corners differentiate this rectangle.",
+      "remaining_limitation": "Some neighboring petals merge in the relief.",
+      "detail_render_sha256": "3b27a156795e390b9cf4e1fbd7a6ec082f9fefb2f9372818cc8c11b91c5e9454",
+      "multiview_render_sha256": "74f1c23e02fdd8e341afcdfc7dccd4571837091cd57bffa75886362abbccd202",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8432233309699637,
+      "native_project_sha256": "0a4f446cc6a04907d4e729e122e7e0aa3c44ecdf9cbaf571863bd7eeec476c85"
+    },
+    "17-Rocaille-Acanthus-Gallery": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Formal center/corner architecture, side flowers and different upper/lower shells remain distinct.",
+      "remaining_limitation": "Small floral articulation softer than study.",
+      "detail_render_sha256": "1ee0fcad8bcd18d18eb223a252487a7f3dbab6d47457d36446e56449eca474c6",
+      "multiview_render_sha256": "0e50c78eb504d60027a5ab839b39ed6cfab9861ca5f89890727207927b7f3828",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8432233309699637,
+      "native_project_sha256": "8fb9847f90929fc510556eef489e9a8ef3a4309fc6c1300d54b1c415ca317946"
+    },
+    "11-Period-Floral-Portrait-Oval": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Approved portrait composition retained; small upper-left exposed mechanical cap replaced locally by continuous folded leaf volume, then accepted by both reviewers.",
+      "remaining_limitation": "Bowls remain steeper than the study.",
+      "detail_render_sha256": "17613a9606be319d1b2473cebed0d6de097e542e79576c5c28f7af0ab8dd168c",
+      "multiview_render_sha256": "ec36e27a171ad4151bb71fd32514bc584c8a77fb30fdd5d96668f8f4da53d839",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8314797073361779,
+      "native_project_sha256": "657cf6678484732c28e8f70f04695d4c92e0931a6ccfd35513d60ec0ad9c5bc7"
+    },
+    "18-Rocaille-Landscape-Oval": {
+      "historian": "accepted_for_prototype",
+      "product_design": "accepted_for_prototype",
+      "accepted_result": "Independent diagonal landscape composition, quiet upper-right arc, low offset shell and clean ellipse preserved.",
+      "remaining_limitation": "Upper-left cup inner lip is steep; oval aperture masks picture corners.",
+      "detail_render_sha256": "625e3fafd37008ace567fa241f58d05303a9fe954d749f821c31743c986f2907",
+      "multiview_render_sha256": "480fbf42ddde58354de99124c65628d2fd01be9032e0a218a6ce40c54d83b6d1",
+      "final_slice_audit_required": false,
+      "back_layers_checked": 98,
+      "minimum_functional_path_coverage": 0.8376337286704645,
+      "native_project_sha256": "d5909f846c8054800f9b92f30366bb5200b818fb9332e2e35af01b6532fb385d"
+    }
+  }
+}

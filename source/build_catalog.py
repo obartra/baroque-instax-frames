@@ -79,11 +79,11 @@ def get_drawing(d):
  fig,ax=plt.subplots();loops=ax.contour(solid.astype(float),levels=[.5]).allsegs[0];plt.close(fig)
  poly=max([Polygon(np.c_[q[:,0]-cx,cy-q[:,1]]).buffer(0) for q in loops if len(q)>8],key=lambda q:q.area)
  return rgb,dark,solid,poly,cx,cy
-def moulding(aperture,join_style=1):
+def moulding(aperture,join_style=1,profile=None):
  # Same polar rays for every parallel offset, so profiles follow each aperture.
  N=1024;t=np.linspace(0,2*np.pi,N,endpoint=False)
  rays=[LineString([(0,0),(250*np.cos(a),250*np.sin(a))]) for a in t]
- profile=[(0,1.8),(.35,1.8),(.7,2.35),(1.1,2.65),(1.5,2.35),(1.9,1.95),(2.3,1.95),(2.7,2.4),(3.2,3.15),(3.7,3.55),(4.25,3.25),(4.8,2.45),(5.4,1.301)]
+ if profile is None:profile=[(0,1.8),(.35,1.8),(.7,2.35),(1.1,2.65),(1.5,2.35),(1.9,1.95),(2.3,1.95),(2.7,2.4),(3.2,3.15),(3.7,3.55),(4.25,3.25),(4.8,2.45),(5.4,1.301)]
  vv=[]
  for off,z in profile:
   shape=aperture.buffer(6.5+off,join_style=join_style)
@@ -135,12 +135,11 @@ def back_geometry(portrait,outer,centers,base_positions=None):
    strap=rect(x-4.6,27.15,x+4.6,y) if y>0 else rect(x-4.6,y,x+4.6,-27.15)
   body=union([body,extrude(strap.union(Point(x,y).buffer(4.6,quad_segs=48)),0,3.6)])
   body=diff(body,cyl(x,y,3.15,-.02,3.12))
- # Portrait lateral straps must not span the film; crop inward to side guides.
- if portrait:
-  # Side bosses are already connected to the side-wall. Remove channel-height
-  # additions in the film region; preserve the 2.4mm supporting lip.
-  filmchannel=rect(-27.15,-55,27.15,39.15)
-  body=diff(body,extrude(filmchannel,2.4,1.21))
+ # Bosses and compact snap lands must not refill the sliding film channel.
+ # Keep their supporting lip below the film, in both orientations. The fork
+ # stems themselves remain outside this channel and retain their full roots.
+ filmchannel=rect(-27.15,-55,27.15,39.15) if portrait else rect(-55,-27.15,39.15,27.15)
+ body=diff(body,extrude(filmchannel,2.4,1.21))
  clip=extrude(outer.buffer(-.5),-.05,10)
  body=check(inter(body,clip),'concealed body')
  back=check(union([body]+[inter(m,clip) for _,_,m in springs]),'back')
@@ -168,7 +167,7 @@ def read_project_mesh(path,num):
 def write_project(d,white,black,back):
  uid=lambda:str(uuid.uuid4())
  root=E.Element('model',nsmap={None:NS,'p':PROD,'BambuStudio':'http://schemas.bambulab.com/package/2021'},unit='millimeter',requiredextensions='p')
- for name,value in [('Application','BambuStudio-02.09.01.70'),('BambuStudio:3mfVersion','1'),('Title',d['name']+' — independent Instax Mini frame'),('Description','Fresh AI concept drawing interpreted as relief; original custom CAD photo channel and rounded-root PLA forks. Uncut Instax Mini,3 concealed magnets.'),('Provenance','No original MakerWorld mesh or collection photograph used for this design. Historical descriptive vocabulary and fresh drawings. See PROVENANCE.txt.')]:
+ for name,value in [('Application','BambuStudio-02.09.01.70'),('BambuStudio:3mfVersion','1'),('Title',d.get('project_title',d['name']+' — independent Instax Mini frame')),('Description',d.get('project_description','Fresh AI concept drawing interpreted as relief; original custom CAD photo channel and rounded-root PLA forks. Uncut Instax Mini,3 concealed magnets.')),('Provenance',d.get('project_provenance','No original MakerWorld mesh or collection photograph used for this design. Historical descriptive vocabulary and fresh drawings. See PROVENANCE.txt.'))]:
   E.SubElement(root,'metadata',name=name).text=value
  res=E.SubElement(root,'resources');build=E.SubElement(root,'build');config=E.Element('config');rel=E.Element('Relationships',nsmap={None:REL})
  for objid,parts,title,tx,plate in [(3,[(1,white,1,'White internal mat'),(2,black,2,'Black floral ornament')],d['name']+' — multicolor front',128,1),(5,[(4,back,1,'White flexible-clip back')],d['name']+' — three-magnet back',435.2,2)]:

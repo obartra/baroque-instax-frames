@@ -1,0 +1,30 @@
+{
+  "id": "18-Rocaille-Landscape-Oval",
+  "file": "18-Rocaille-Landscape-Oval-Instax-Mini-3-Magnets.3mf",
+  "sha256": "d5909f846c8054800f9b92f30366bb5200b818fb9332e2e35af01b6532fb385d",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    159.9,
+    54.7
+  ],
+  "material_g": [
+    16.72,
+    6.02
+  ],
+  "sliced_project": "18-Rocaille-Landscape-Oval/slice-final/18-Rocaille-Landscape-Oval-P2S-Sliced.3mf",
+  "sliced_sha256": "acc5dc5a7854b2c4aff4aba1d38e646f2a6e7abeeb7c6dc007497e1ec55690ea",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}
