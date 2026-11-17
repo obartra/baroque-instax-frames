@@ -37,17 +37,15 @@ The straight aperture edges overlap the nominal image by 0.6 mm. Geometry checks
 
 ## Print and assemble
 
-You need PLA in white and black, a multicolor-capable setup for the front, **three 6 mm diameter × 3 mm thick round magnets**, and an adhesive suitable for your PLA and magnets.
+Follow the six steps below. You need white and black PLA, a multicolor-capable setup for the front, **three Ø6 × 3 mm magnets**, and suitable glue. [Detailed print settings, assembly notes and safety](docs/PRINTING.md).
 
-1. Print both plates of the **clip coupon** and check the fit with your filament. Align the socket squarely above the fork and press evenly.
-2. Open a frame's 3MF as a project. The supplied profile targets a **Bambu P2S, 0.4 mm nozzle, textured PEI, PLA, 0.08 mm layers and a 0.20 mm first layer**. If using another machine, select its profile and inspect the resulting slice and clearances.
-3. Map **filament 1 to white** and **filament 2 to black**. Plate 1 prints the white inner mat and black ornament as **one fused front**. Plate 2 prints its **matching white back**. No supports or prime tower are enabled.
-4. Keep the first white layers: the mat is **0.36 mm high**, using the 0.20 mm first layer plus two 0.08 mm layers. The front then has one white-to-black transition; the back is single color. Review your machine's purge requirements when adapting the profile.
-5. Glue the three magnets into the rear pockets, seating their exposed faces evenly at the rear plane. The pockets are 6.3 mm diameter × 3.1 mm deep with a 0.5 mm closed floor. Let the adhesive cure before inserting film. Keep loose magnets away from children and pets.
-6. Align all four forks and press near each corner in turn to attach the matching back. These clips differ from the earlier collection: print **both new parts**, and keep each front with its own back.
-7. Check insertion with a paper dummy first. For landscape frames, slide in from the **left**, narrow border first, leaving the wide caption border at the left. For the portrait arch, slide in from the **bottom**, narrow border first, caption border at the bottom. Slide gently to the firm stop; do not force the film.
+![Steps 1–2: print and test both coupon pieces, then print the fused white/black front on plate 1 and its matching white back on plate 2. The thin white mat is 0.36 mm.](docs/assembly/01-print.png)
 
-The carrier has three guide sides and compliant edge fingers. The revised forks have longer flex arms, broader sections, flared bases, round-ended slots and a smaller retention lip. These changes are intended to reduce brittleness; no fatigue-life claim has been established.
+![Steps 3–4: glue three magnets into the rear pockets and let the adhesive cure. Put the front ornament-side down on a soft cloth, align all four back forks and press at each corner to join the empty frame.](docs/assembly/02-assemble.png)
+
+![Steps 5–6: slide a whole uncut Instax Mini sheet into the assembled channel, narrow edge first. Landscape: enter from the left, wide caption border trailing left. Portrait: enter from the bottom, caption border trailing below. Place the magnet side against the fridge.](docs/assembly/03-load-and-display.png)
+
+Use a paper dummy before inserting film. **Keep the instant film whole.** [Editable SVG diagrams and geometry sources](docs/assembly/README.md).
 
 ## Files and verification
 
