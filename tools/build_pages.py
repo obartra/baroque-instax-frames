@@ -114,6 +114,8 @@ def build():
         html = render(text)
         if anchor == 'choose-a-frame':
             html = html.replace('<table>', '<table class="frame-catalog">', 1)
+            html = html.replace('Click to enlarge, or use the view links for straight-on, rear\nand photo-fit views.',
+                                'Choose a view to compare all eight frames from the same angle. Click any preview to enlarge.')
         content += f'<section id="{escape(anchor)}" class="readme-section">{html}</section>'
     count = len(json.loads((ROOT / 'catalog/current.json').read_text())['frames'])
     resources = {}

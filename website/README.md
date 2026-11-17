@@ -17,7 +17,11 @@ The theme and navigation live here. The hero uses a small pre-rendered actual-me
 video: the photo loads at a rear angle, then the frame turns to a close front view.
 It plays once when visible and holds the finished frame. Reduced-motion visitors
 get a still poster. There are no animation buttons or native video controls.
-JavaScript enhances the frame-view links and starts the intro animation; without it the links still open their images and the downloads work.
+JavaScript turns the README's individual view links into one shared selector
+above the collection. Front, Angled, Back and Photo fit update all eight previews
+and their enlargement links together. Native radio controls support keyboard
+navigation. Without JavaScript, the individual image links and downloads remain
+available. JavaScript also starts the intro animation.
 3MF downloads always point to `models/current/` on `main`. Source and detailed
 documentation links open the corresponding repository files.
 

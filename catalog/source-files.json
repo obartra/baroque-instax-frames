@@ -95,11 +95,11 @@
     "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg": "bd0fa3b921a0f67f1ad7341b95315d34ac443980e3ff51be5634c1205905ef67",
     "studies/period-grounded-ovals/sculpture-master-v1.png": "7cdb7b24d82b8ccc0f09b3eb8c7d228a84ec48417fa550fd9d4c4da065438d85",
     "studies/period-grounded-ovals/sculpture-normals-v1.png": "2628e92a3f27dccbca38bb6e872ada4b5e3922159f4bf611e92595e8fec3b246",
-    "tools/build_pages.py": "19bdc3df04610df6a5d8f55feba8ed49d08e409d89028dddda6f15f83f3b9c98",
-    "website/README.md": "6bebbc0989dbb4149f624bee0a6672353f56cb33e3f9aacd1c70fae584345efc",
-    "website/catalog.js": "05089e9008a4892117d91c102cad512b7468f025fac6c5c8a1b55f37e866eff1",
+    "tools/build_pages.py": "6d519172b8c6b2a5ef68f4c484deba5985139097d4000fc5010eb3e6628ab8f2",
+    "website/README.md": "80c6a3bd0d7e2aa3bfc912a8c015c5615e2c0103f20a7f0148cac8fb2ff1d19b",
+    "website/catalog.js": "8ec5221be6ad3cbb9d6eb5d102cd3930567abaa1be69ffed1fd300e88b8c8108",
     "website/index.template.html": "0edc846259e314637e9fa34ef9f97792c0ef42e62177a7c939997ee0cd4e4189",
     "website/requirements.txt": "70e64550ca5a770e6ab742574a48b51000065016c4087b2f7ec4fd94ca6aff0c",
-    "website/style.css": "99beebbd39b6073a08832cb3c497eaec2f97f17b1f94af7434db2519968c96b7"
+    "website/style.css": "9db1076dcf5d2da433c3ad67c5ee762ffacd54026af80707562136f9211844d8"
   }
 }
