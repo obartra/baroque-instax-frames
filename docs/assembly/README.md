@@ -4,9 +4,9 @@ The five steps are grouped into three sheets. Each SVG is editable; its PNG prev
 
 | Steps | SVG | PNG |
 | --- | --- | --- |
-| 1–2: print two plates and glue magnets | [Print and prepare](01-print.svg) | [Preview](01-print.png) |
-| 3–4: snap the empty frame and slide in the photo | [Assemble and load](02-assemble.svg) | [Preview](02-assemble.png) |
-| 5: place on a magnet-attracting surface | [Display](03-load-and-display.svg) | [Preview](03-load-and-display.png) |
+| 1–2: print two plates and glue magnets | [Print and prepare](01-print.svg) | [Preview](01-print-and-magnets-v2.png) |
+| 3–4: snap the empty frame and slide in the photo | [Assemble and load](02-assemble.svg) | [Preview](02-snap-and-load-v2.png) |
+| 5: place on a magnet-attracting surface | [Display](03-load-and-display.svg) | [Preview](03-magnetic-display-v2.png) |
 
 The front and back outlines come from native meshes in the released **Floral Corners** 3MF; the portrait silhouette comes from the released **Segmental Arch** 3MF. The photo/mat geometry, magnet count and fork locations follow their geometry records. Outlines are simplified by 0.10 mm for illustration only. Exploded sections, clip close-ups and tools are schematic, rather than manufacturing drawings. The sample photos are drawn placeholders.
 

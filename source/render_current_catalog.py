@@ -78,6 +78,7 @@ def overview(concealment=False):
     fig.subplots_adjust(left=.012,right=.988,top=.90,bottom=.09,wspace=.015,hspace=.08)
     target=ROOT/'renders'/('Full-film-concealment.png' if concealment else 'Eight-frames-current.png')
     fig.savefig(target,facecolor=fig.get_facecolor());plt.close(fig)
+    if concealment:shutil.copy2(target,ROOT/'renders/Eight-frames-film-fit.png')
     if not concealment:shutil.copy2(target,ROOT/'renders/Six-new-frames-actual-fronts.png')
     print('WROTE',target,flush=True)
 

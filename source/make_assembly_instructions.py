@@ -9,6 +9,7 @@ from zipfile import ZipFile
 import hashlib
 import json
 import subprocess
+import shutil
 import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape
 
@@ -155,6 +156,11 @@ def canvas(name, title, left, right, height=760, description=''):
     target = OUT / (name+'.svg')
     target.write_text(svg)
     subprocess.run(['rsvg-convert', str(target), '-o', str(target.with_suffix('.png'))], check=True)
+    # Fresh URLs avoid a previously viewed GitHub/raw image staying in cache.
+    aliases={'01-print':'01-print-and-magnets-v2.png',
+             '02-assemble':'02-snap-and-load-v2.png',
+             '03-load-and-display':'03-magnetic-display-v2.png'}
+    shutil.copy2(target.with_suffix('.png'),OUT/aliases[name])
 
 
 def main():
