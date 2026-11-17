@@ -33,7 +33,7 @@ blanket restriction to these newly constructed designs.
 
 For this public release, code is licensed under MIT and design assets and
 documentation are dedicated under CC0 1.0 to the extent rights can be waived.
-See LICENSE and LICENSES/. This records the creation process; it does not
+See LICENSING.md, LICENSE and LICENSES/. This records the creation process; it does not
 certify copyrightability of AI output or guarantee against coincidental
 similarity to historical or contemporary ornament.
 
@@ -44,3 +44,8 @@ https://www.npg.org.uk/collections/research/programmes/the-art-of-the-picture-fr
 No personal photographs are included. Rendered photographs are schematic
 landscape illustrations built from CAD primitives. Physical print photos
 and a separate permission record may be added later.
+
+The subsequent research-assisted historical assessment is recorded in
+docs/HISTORICAL-REVIEW.md. It distinguishes Baroque and Rococo influences
+and modern photographic features. Those comparisons are review judgments,
+not new generation inputs or evidence of historical workshop provenance.

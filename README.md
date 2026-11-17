@@ -1,10 +1,12 @@
 # Baroque Instax Frames
 
-Six printable, Baroque-inspired fridge frames for **uncut Instax Mini photos**: a thin white inner mat, black floral relief, a matching snap-on back, and **three concealed 6 × 3 mm magnets**.
+Six printable, Baroque-inspired fridge frames **with Rococo influences**, for **uncut Instax Mini photos**: a thin white inner mat, black floral relief, a matching snap-on back, and **three concealed 6 × 3 mm magnets**.
+
+**Free to use, modify, share and sell prints.** Models and design assets use **CC0 1.0**; code uses **MIT**. No noncommercial restriction. [License scope](LICENSING.md).
 
 ![Actual CAD renders of the six frame designs](renders/Six-new-frames-actual-fronts.png)
 
-**[Download the complete collection](https://github.com/obartra/baroque-instax-frames/releases/tag/v0.1.0)** · [Models](models/) · [Renders](renders/) · [Build from source](docs/BUILDING.md) · [Share a print](CONTRIBUTING.md)
+**[Download the complete collection](https://github.com/obartra/baroque-instax-frames/releases/tag/v0.1.1)** · [Models](models/) · [Renders](renders/) · [Build from source](docs/BUILDING.md) · [Share a print](CONTRIBUTING.md)
 
 **Prototype release.** All seven projects passed geometry checks and two-plate Bambu Studio slicing. These new designs and revised clips have **not yet been physically printed or durability tested**. Start with the small clip coupon; real print photos and fit reports will be added as they become available. The images here are renders with schematic photo placeholders.
 
@@ -68,10 +70,10 @@ This verifies the distributed file hashes, native 3MF structure, material assign
 
 ## Design process and reuse
 
-These are contemporary Baroque-inspired designs built from **new AI concept drawings and custom CAD**. The ornamental surface is drawing-guided tonal bas-relief; the mouldings, apertures, carrier and snap geometry are explicitly constructed. Secondary concept angles are visual guidance, not a volumetric reconstruction. See [PROVENANCE.txt](PROVENANCE.txt), [the recorded prompts](source/designs-final.json) and [the design review](docs/DESIGN-REVIEW.txt).
+These are contemporary designs built from **new AI concept drawings and custom CAD**. Their architecture and ornament draw on Baroque and Rococo vocabulary; they are not period reproductions. The ornamental surface is drawing-guided tonal bas-relief; the mouldings, apertures, carrier and snap geometry are explicitly constructed. Secondary concept angles are visual guidance, not a volumetric reconstruction. See [PROVENANCE.txt](PROVENANCE.txt), [the recorded prompts](source/designs-final.json) and [the historical review of all six models](docs/HISTORICAL-REVIEW.md).
 
 This repository contains the new independent six-design collection. It contains no original MakerWorld frame meshes, earlier restricted remixes or personal photo references.
 
-**Models, drawings, renders, parameters and documentation: [CC0 1.0](LICENSES/CC0-1.0.txt). Code: [MIT](LICENSES/MIT.txt).** You may make, modify, share and sell prints under those terms. Attribution is appreciated for the CC0 materials but is not required. The MIT notice must be retained with redistributed code. See [LICENSE](LICENSE) for scope and the AI provenance qualification.
+**Models, drawings, renders, parameters and documentation: [CC0 1.0](LICENSE). Code: [MIT](LICENSES/MIT.txt).** You may make, modify, share and sell prints under those terms. Attribution is appreciated for the CC0 materials but is not required. The MIT notice must be retained with redistributed code. See [LICENSING.md](LICENSING.md) for scope and the AI provenance qualification.
 
 Instax and Bambu names identify compatible film and printing tools. This project is not affiliated with their manufacturers.
