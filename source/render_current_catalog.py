@@ -62,7 +62,7 @@ def single(record):
     # vertical on screen, as it would be when mounted on a vertical surface.
     for view,items,elev,azim in [('front',assembly,90,-90),('angle',assembly,30,0),('back',rear,-90,90),('fit',assembly,-90,90)]:
         if os.environ.get('BAROQUE_RENDER_VIEW') not in (None,view):continue
-        renderer.BG=np.array([.72,.77,.81]) if view in ('back','fit') else BG
+        renderer.BG=BG
         fig,ax=plt.subplots(figsize=(6,6),dpi=150)
         fig.patch.set_facecolor(renderer.BG)
         renderer.render(ax,items,elev,azim,limits=SIDE_LIMITS if view=='angle' else LIMITS,width=850,relief_shadows=True,camera_roll=90 if view=='angle' else 0,perspective_distance=220 if view=='angle' else None)
@@ -82,7 +82,7 @@ def single(record):
 
 
 def overview(concealment=False):
-    renderer.BG=np.array([.72,.77,.81]) if concealment else BG
+    renderer.BG=BG
     fig,axes=plt.subplots(2,4,figsize=(18,11.3),dpi=170)
     fig.patch.set_facecolor(renderer.BG)
     for ax,r in zip(axes.flat,CAT['frames']):

@@ -31,3 +31,10 @@ The back previews now use a darker blue-gray background. Fresh inspection of Can
 The five-step sequence, catalog scanning, concealment explanation, example material treatment and fridge-relative scale are accepted. No remaining must-fix UX issue was found in the inspected local files. The final published GitHub table still needs the planned host-rendering check; this local review does not claim that an unpublished page has already been inspected online.
 
 Reviewed: `README.md`, `renders/Eight-frames-current.png`, `renders/Full-film-concealment.png`, all three `docs/assembly/` PNG sheets, Botanical Garland and Portrait Oval angled views, Landscape Oval back and photo-fit views, and the linked printing/assembly text.
+
+## Website background follow-up
+
+Later on 2026-11-17, the rear and photo-fit renders were regenerated on the same
+warm `#f6f4ee` canvas as the front views and website, replacing the earlier
+blue-gray treatment above. Actual carrier edge outlines, film markings, entry
+arrows and magnet discs remain visible. This is a rendering change only.

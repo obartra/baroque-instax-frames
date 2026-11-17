@@ -31,7 +31,7 @@ Open `http://localhost:8000`. The generated `dist/` folder is ignored by Git.
 The build validates image files, section anchors and all eight model links.
 Only the used image assets are packaged, as lossless WebP derivatives; original
 renders and model files remain unchanged. The page paper is the same
-`#f6f4ee` as the front/angled render canvases. Assembly and rear-fit illustrations
+`#f6f4ee` as the front/angled render canvases. Rear and rear-fit views use that same canvas; assembly illustrations
 have their own matching surrounds. No image is recolored to match the theme.
 
 ## Automatic publishing

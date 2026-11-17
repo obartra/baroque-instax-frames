@@ -26,7 +26,7 @@
     "source/refine_period_catalog.py": "adc679e84687647bd889420cf6272e16946ebde5cad364d1a5c6ea2df2ddf089",
     "source/refine_period_oval.py": "903b6f1f6f928d3237e770117fa843e9a60fe6f1ba300439d902e5f380f199cc",
     "source/relief_lighting.py": "649469b5a0f5cd4d397ad2afba0964bb08ce8851baffb1b2753b0dd94fb10191",
-    "source/render_current_catalog.py": "53027e5f6516eebaccdb6145936c21c88abaa99c1275112b2f60d719a3f06f98",
+    "source/render_current_catalog.py": "e8cb61789a3ac0fe09d675ece29028d792919ecc775629514ba8c51bbc180fec",
     "source/render_floral_rococo.py": "aaf491b036b417ced07efe2a5764112863683a80aa61c06424ac9f79113b193e",
     "source/render_floral_utils.py": "48a4f78826b59182890d9044b523e190a749fa81b5e0cae81d62c9772cd2d199",
     "source/render_project_icon.py": "ca332387695b3f7ab6bbe83e9dbb8c6ae488af578c5b586fd8015a1bc7538d2b",
@@ -36,7 +36,7 @@
     "source/sculpt_botanical_petals.py": "bcfd5d2e280fbc5d8dfa6b90a08ce4f7e5c0f14ba4944e490dc4bb80206e2e50",
     "source/validate_floral_slices.py": "3d9cf42540a57222c7a818eedd37ec05c6ec14cc1c2a7f1dd7b57be562f69015",
     "source/verify_back_toolpaths.py": "1bca1143f76dbb8c0439975e15da53482a6738df4f95a7e390f55783bf37fade",
-    "source/write_current_readme.py": "88e426f3596aed2ee581b45c4d1845e94fa2af47f16595b61ee179bda6a53a7b",
+    "source/write_current_readme.py": "0bbe4baa972505fd09d77acb9106f3acb523ed1c2a2de17d86270bbd7eda18ec",
     "studies/botanical-sculpture-v2/historian-review.md": "9ea0748058372fa1bbc967b97618eda79335ec30079315ec61a957dcf1bb95e3",
     "studies/botanical-sculpture-v2/printing-review.md": "0bc81fc7620a1c32f61b9e6ba2aee4cec7a71bc4f793815ef61b9610ad962b9d",
     "studies/botanical-sculpture-v3/16-Rocaille-Botanical-Garland-Sculpted-v3-final-height.npy": "d1e6bc69e9bed357c38b97de74412346720b37f12d69de59e43691b2dc1453fe",
@@ -89,11 +89,11 @@
     "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg": "bd0fa3b921a0f67f1ad7341b95315d34ac443980e3ff51be5634c1205905ef67",
     "studies/period-grounded-ovals/sculpture-master-v1.png": "7cdb7b24d82b8ccc0f09b3eb8c7d228a84ec48417fa550fd9d4c4da065438d85",
     "studies/period-grounded-ovals/sculpture-normals-v1.png": "2628e92a3f27dccbca38bb6e872ada4b5e3922159f4bf611e92595e8fec3b246",
-    "tools/build_pages.py": "b959062364124a0cc2315044c04ce9c6cfdbfe0a4735f8a0e0995c47bcfae345",
-    "website/README.md": "e0b85e406ced187ff1e07f1a39be4ea2040ef70ee182a70c1e7a1febc12366ee",
+    "tools/build_pages.py": "dc02a45b97acdbbd043f334745fec7bd157e4c58c61e993f5392e007bd904f27",
+    "website/README.md": "117a3709ada6434874caa6367cde6a145a86b2e6c618ae77998a7a12af804647",
     "website/catalog.js": "983408ec6cc0b4cde3bb87e8a167212d94db46798e37e985a016fa650f5cad6c",
-    "website/index.template.html": "57cee8892ca91b4e581630c125fdb3306fba68c43909e81494e4bd4a1c11401b",
+    "website/index.template.html": "29be87481859d653cbb4b8f0cd7b633d9106adc7d2f0d1560d5bb7d5f02358e9",
     "website/requirements.txt": "70e64550ca5a770e6ab742574a48b51000065016c4087b2f7ec4fd94ca6aff0c",
-    "website/style.css": "f4f831baf67da6c61963b70d27620fbe365fe3bed49ddf845cd50d72f27adde5"
+    "website/style.css": "455675abd864ea88b0180d86f256ec10b4b82ba4a09ea84474ab3c88c2420ce1"
   }
 }

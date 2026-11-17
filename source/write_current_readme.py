@@ -19,7 +19,7 @@ def main():
   <br><sub>Segmental Arch · actual frame mesh, simulated photo</sub>
 </p>
 
-Eight floral frames for **whole, uncut Instax Mini photos**. Print a front and
+Eight floral frames for **whole, [uncut Instax Mini photos](https://www.instaxus.com/film/mini-white-film/)**. Print a front and
 matching back, slide in your photo, and display it on a magnetic surface.
 Each frame holds **three Ø6 × 3 mm magnets**. Choose your own print colors.
 
@@ -105,20 +105,6 @@ Using another printer or nozzle? Choose its profile and reslice before printing.
 **Let the plate cool**, then flex it away from the frame. Avoid pulling on the
 inner mat or projecting flowers.
 
-**Prototype status:** fit, adhesive hold and fine surface detail are still being
-tested. Opening a file never starts a print.
-
-<details>
-<summary>✅ What has been checked?</summary>
-
-Closed meshes, one fused front, four clip/socket engagements, photo clearance,
-front-view concealment and three magnet pockets. Every back layer has an
-extrusion-path check. These digital checks do not establish physical durability.
-
-[Build and review notes](docs/CURRENT-CATALOG.md) · [Geometry and slicer records](validation/current/)
-
-</details>
-
 <a name="design-source-and-license"></a>
 
 ## 🌿 Design, source and license
@@ -140,6 +126,8 @@ CC0 applies to the rights we can waive. [License scope & third-party materials](
 <summary>🛠️ Explore the source and earlier releases</summary>
 
 - [Current CAD inputs](source/designs-current.json)
+- [Build and review notes](docs/CURRENT-CATALOG.md)
+- [Geometry and slicer records](validation/current/)
 - [Rebuild the frames](docs/CURRENT-CATALOG.md#rebuild)
 - [Creation and provenance record](PROVENANCE.txt)
 - [Project icon & simulated photo](assets/brand/README.md)

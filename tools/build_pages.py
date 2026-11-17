@@ -69,7 +69,8 @@ def build():
             target = REPO.replace('github.com', 'raw.githubusercontent.com') + '/main/' + quote(path)
             attrs += ' class="download-link"'
         else:
-            target = REPO + '/blob/main/' + quote(path, safe='/#')
+            kind = 'tree' if (ROOT / path.split('#', 1)[0]).is_dir() else 'blob'
+            target = REPO + '/' + kind + '/main/' + quote(path, safe='/#')
         attrs = attrs[:found.start(1)] + escape(target, quote=True) + attrs[found.end(1):]
         return f'<{tag}{attrs}>'
 
