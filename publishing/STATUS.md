@@ -13,9 +13,9 @@ Updated 2026-11-17.
 - Public files page checked: all eight named folders present; Segmental Arch expanded and its four expected parts verified.
 - Added three original photos of the printed Botanical Garland: the front, rear with magnets and an Instax darkslide demonstrating insertion, and clip/socket assembly. The description distinguishes these photographs from the renders.
 
-## MakerWorld — submitted, verifying
+## MakerWorld — saved, final submission paused
 
-The collection was submitted on 2026-11-17 and appears under [Verifying](https://makerworld.com/en/@obartra/verifying). It is awaiting MakerWorld review; it is not yet a confirmed public listing.
+The first submission was accepted into review on 2026-11-17. It was returned to a draft to put the three actual photographs into the public-facing model gallery as well as the site's separate review-photo field. The updated gallery contains nine images. Final resubmission is paused at a Cloudflare “Verify you are human” challenge, awaiting the user. There is no confirmed public listing yet.
 
 The submission includes the complete eight-design archive, formatted description, category, tags, six gallery illustrations, separate covers and three real print photos. CC0 and public visibility are selected; raw model downloads remain enabled.
 
