@@ -59,7 +59,10 @@ Open `http://localhost:8000`. The generated `dist/` folder is ignored by Git.
 The build validates image files, section anchors and all eight model links.
 Image, video, CSS and JavaScript filenames include their content hashes to avoid
 serving an older cached version after a new deployment.
-Only the used image assets are packaged, as lossless WebP derivatives; original
+Only the used image assets are packaged, as lossless WebP derivatives. Responsive
+480, 640 and 960 pixel variants let phones and catalog cards load smaller previews;
+enlargement links still open the full-size site image. The shared view selector
+updates these responsive sources along with each preview. Original
 renders and model files remain unchanged. The page paper is the same
 `#f6f4ee` as the front/angled render canvases. Rear and rear-fit views use that same canvas; assembly illustrations
 have their own matching surrounds. No image is recolored to match the theme.

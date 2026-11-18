@@ -37,6 +37,7 @@ document.querySelectorAll('.frame-catalog').forEach(catalog => {
       if (!input.checked) return;
       frames.forEach(({image, preview, name, views}) => {
         const view = views[index];
+        image.srcset = view.dataset.srcset;
         image.src = view.href;
         image.style.setProperty('--canvas', view.dataset.canvas);
         image.alt = `${name}, ${view.textContent.toLowerCase()} view`;

@@ -40,6 +40,7 @@ def build():
     OUT.mkdir()
     images = {}
     frames = json.loads((ROOT / 'catalog/current.json').read_text())['frames']
+    frame_images = {path for frame in frames for path in frame['views'].values()}
     notes = json.loads((ROOT / 'website/frame-notes.json').read_text())
     assert set(notes) == {f['slug'] for f in frames}, 'Missing design-page copy'
 
@@ -59,6 +60,16 @@ def build():
             # Lossless export keeps the exact flat background color.
             im.save(OUT / target, 'WEBP', lossless=True, method=4)
             info = dict(url=target.as_posix(), width=im.width, height=im.height, canvas=canvas)
+            variants = []
+            for width in (480, 640, 960):
+                if width >= im.width:
+                    continue
+                small = im.resize((width, round(im.height * width / im.width)), Image.Resampling.LANCZOS)
+                variant = target.with_stem(target.stem + f'-{width}w')
+                small.save(OUT / variant, 'WEBP', lossless=True, method=4)
+                variants.append((variant.as_posix(), width))
+            variants.append((info['url'], info['width']))
+            info['variants'] = variants
         images[path] = info
         return info
 
@@ -75,9 +86,15 @@ def build():
             info = asset(path)
             target = info['url']
             attrs += f' data-canvas="{info["canvas"]}"'
+            srcset = ', '.join(f'{url} {width}w' for url, width in info['variants'])
+            if tag == 'a':
+                attrs += f' data-srcset="{srcset}"'
             if tag == 'img':
                 attrs = re.sub(r'\swidth="[^"]*"', '', attrs)
                 attrs += f' width="{info["width"]}" height="{info["height"]}" loading="lazy" decoding="async" style="--canvas:{info["canvas"]}"'
+                sizes = ('(max-width: 700px) 44vw, (max-width: 1000px) 29vw, 280px'
+                         if path in frame_images else '(max-width: 1320px) 92vw, 1215px')
+                attrs += f' srcset="{srcset}" sizes="{sizes}"'
                 if path.endswith('project-icon.png'):
                     attrs = attrs.replace('loading="lazy"', 'fetchpriority="high"')
         elif path.endswith(('.3mf', '-stl.zip')):
@@ -199,7 +216,10 @@ def write_frame_page(frame, notes, asset, resources):
     def image(key, alt, eager=False):
         info = view_info[key]
         loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
-        return f'<a href="../../{info["url"]}"><img src="../../{info["url"]}" alt="{escape(alt)}" width="{info["width"]}" height="{info["height"]}" {loading} decoding="async" style="--canvas:{info["canvas"]}"></a>'
+        srcset = ', '.join(f'../../{url} {width}w' for url, width in info['variants'])
+        sizes = ('(max-width: 700px) 88vw, 560px' if eager
+                 else '(max-width: 700px) 88vw, 400px')
+        return f'<a href="../../{info["url"]}"><img src="../../{info["url"]}" srcset="{srcset}" sizes="{sizes}" alt="{escape(alt)}" width="{info["width"]}" height="{info["height"]}" {loading} decoding="async" style="--canvas:{info["canvas"]}"></a>'
 
     def duration(minutes):
         minutes = round(minutes)
@@ -263,13 +283,22 @@ def verify():
             if 'id' in attrs: self.ids.add(attrs['id'])
             for key in ('src', 'href', 'poster'):
                 if key in attrs: self.targets.append(attrs[key])
+            for key in ('srcset', 'data-srcset'):
+                if key in attrs:
+                    for candidate in attrs[key].split(','):
+                        target, width = candidate.strip().rsplit(' ', 1)
+                        assert re.fullmatch(r'[1-9][0-9]*w', width), 'Invalid responsive image width'
+                        self.targets.append(target)
             if attrs.get('href','').endswith('.3mf'): self.downloads.append(attrs['href'])
             if attrs.get('href','').endswith('-stl.zip'): self.stls.append(attrs['href'])
             if tag=='link' and attrs.get('rel')=='canonical': self.canonicals.append(attrs['href'])
             if tag=='meta': self.metas[attrs.get('name',attrs.get('property',''))]=attrs.get('content','')
             if tag=='title': self.in_title=True
             if tag=='script' and attrs.get('type')=='application/ld+json': self.in_schema=True
-            if tag=='img': assert attrs.get('alt'), 'Image without alt text'
+            if tag=='img':
+                assert attrs.get('alt'), 'Image without alt text'
+                assert attrs.get('width') and attrs.get('height'), 'Image without layout dimensions'
+                assert attrs.get('srcset') and attrs.get('sizes'), 'Image without responsive sources'
         def handle_endtag(self,tag):
             if tag=='title': self.in_title=False
             if tag=='script': self.in_schema=False
