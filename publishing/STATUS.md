@@ -1,6 +1,6 @@
 # Publication status
 
-Updated 2026-11-17.
+Updated 2026-11-18.
 
 ## Printables — published
 
@@ -13,17 +13,19 @@ Updated 2026-11-17.
 - Public files page checked: all eight named folders present; Segmental Arch expanded and its four expected parts verified.
 - Added three original photos of the printed Botanical Garland: the front, rear with magnets and an Instax darkslide demonstrating insertion, and clip/socket assembly. The description distinguishes these photographs from the renders.
 
-## MakerWorld — saved, final submission paused
+## MakerWorld — published
 
-The first submission was accepted into review on 2026-11-17. It was returned to a draft to put the three actual photographs into the public-facing model gallery as well as the site's separate review-photo field. The updated gallery contains nine images. Final resubmission is paused at a Cloudflare “Verify you are human” challenge, awaiting the user. There is no confirmed public listing yet.
+[Rococo Instax Mini Magnetic Frames – 8 Designs](https://makerworld.com/en/models/3636176-rococo-instax-mini-magnetic-frames-8-designs)
 
-The submission includes the complete eight-design archive, formatted description, category, tags, six gallery illustrations, separate covers and three real print photos. CC0 and public visibility are selected; raw model downloads remain enabled.
+Public listing verified on 2026-11-18: the collection and its Botanical Garland print profile are published, with no submission awaiting review. The gallery includes the actual print photos alongside labeled renders and assembly illustrations. The full eight-design archive is available, and the license is Creative Commons Public Domain (CC0).
+
+[Botanical Garland print profile](https://makerworld.com/en/models/3636176-rococo-instax-mini-magnetic-frames-8-designs#profileId-4170210)
 
 The print profile is scoped to **Botanical Garland**, matching the physical example. It includes the front and back on two plates, with a gray mat and black ornament/back. Material assignments were updated without changing mesh data. Local Bambu Studio slicing passed with two plates, one front color change, no back color changes and no warnings. Three original printed-result photos accompany the profile. See `botanical-profile-validation.json`.
 
 ## Article — published
 
-[Floral frames for Instax Mini](https://github.com/obartra/notes/tree/master/baroqueInstaxFrames), with images, the design process, download options and project links. The Printables link is included in the project README/site and article.
+[Floral frames for Instax Mini](https://github.com/obartra/notes/tree/master/baroqueInstaxFrames), with images, the design process, download options and project links. The MakerWorld and Printables links are included in the project README/site and article.
 
 ## Photo notes
 
