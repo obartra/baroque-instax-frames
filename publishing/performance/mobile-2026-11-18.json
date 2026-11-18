@@ -21,7 +21,26 @@
     "estimated_image_savings_kib": 798,
     "field_data": "No Data"
   },
-  "after": null,
+  "after": {
+    "report_url": "https://pagespeed.web.dev/analysis/https-obartra-github-io-baroque-instax-frames/414adl04hs?form_factor=mobile",
+    "captured_local": "2026-11-18 16:34 America/New_York",
+    "commit": "135c831",
+    "lighthouse_version": "13.6.0",
+    "device": "Emulated Moto G Power",
+    "network": "Slow 4G throttling",
+    "performance": 97,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 100,
+    "first_contentful_paint_seconds": 0.8,
+    "largest_contentful_paint_seconds": 2.6,
+    "total_blocking_time_ms": 0,
+    "cumulative_layout_shift": 0,
+    "speed_index_seconds": 0.8,
+    "total_payload_kib": 3214,
+    "estimated_image_savings_kib": 439,
+    "field_data": "No Data"
+  },
   "notes": [
     "Scores are estimates and vary between runs. SEO score covers basic automated checks and does not establish indexing or search ranking.",
     "GitHub Pages controls the static host cache headers; no hosting change is planned."
@@ -39,5 +58,11 @@
       "estimated_image_savings_kib": 439,
       "finding": "A focusable fallback link inside the aria-hidden decorative video failed accessibility and agent-tree checks. Removed before the final audit."
     }
-  ]
+  ],
+  "comparison": {
+    "total_payload_reduction_kib": 339,
+    "total_payload_reduction_percent": 9.5,
+    "performance_score_change": 0,
+    "interpretation": "Less transferred data in this lab comparison, with the same reported performance score and rounded timing metrics. No ranking or real-user speed gain established."
+  }
 }

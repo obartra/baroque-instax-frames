@@ -47,7 +47,7 @@
     "source/sculpt_botanical_petals.py": "bcfd5d2e280fbc5d8dfa6b90a08ce4f7e5c0f14ba4944e490dc4bb80206e2e50",
     "source/validate_floral_slices.py": "3d9cf42540a57222c7a818eedd37ec05c6ec14cc1c2a7f1dd7b57be562f69015",
     "source/verify_back_toolpaths.py": "1bca1143f76dbb8c0439975e15da53482a6738df4f95a7e390f55783bf37fade",
-    "source/write_current_readme.py": "8a6d797963967724be7cb4a85062a5e641690bf04e492aaac609721eda596aff",
+    "source/write_current_readme.py": "d159574f2978b2621a8834bdc5ae08ef958aa79c64dea78aa948eaebc684001a",
     "studies/botanical-sculpture-v2/historian-review.md": "9ea0748058372fa1bbc967b97618eda79335ec30079315ec61a957dcf1bb95e3",
     "studies/botanical-sculpture-v2/printing-review.md": "0bc81fc7620a1c32f61b9e6ba2aee4cec7a71bc4f793815ef61b9610ad962b9d",
     "studies/botanical-sculpture-v3/16-Rocaille-Botanical-Garland-Sculpted-v3-final-height.npy": "d1e6bc69e9bed357c38b97de74412346720b37f12d69de59e43691b2dc1453fe",
@@ -107,6 +107,6 @@
     "website/frame-notes.json": "64943fbf618768ea4a58e9313169838046bc08c9626238ca3def3d5f7bb5d3fb",
     "website/index.template.html": "1c54eb6e1465e712271bc3b9cd0dc28a56c73f7c1e9a459a5635d481546e20b0",
     "website/requirements.txt": "70e64550ca5a770e6ab742574a48b51000065016c4087b2f7ec4fd94ca6aff0c",
-    "website/style.css": "0b7444c0dcff070fc1613622a5e8187f1bc6ade05dc696c867e39d472e2392f0"
+    "website/style.css": "2dca8512ba2cb1949f2d7b6cad4ee4ceae1a514a2c3fe52f2cfd7d43840a9857"
   }
 }

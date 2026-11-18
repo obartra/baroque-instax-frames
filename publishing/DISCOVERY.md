@@ -27,6 +27,12 @@ actual content width and card gaps, preloads the hero still, and defers video
 sources until visible with motion allowed. The eight 320 px default previews
 total 211,664 bytes versus 406,730 bytes at 480 px (48% less); the browser still
 chooses larger variants when its display needs them. Full-size links stay intact.
+The final follow-up audit kept performance 97 and restored accessibility 100,
+with best practices 100 and basic SEO 100. Total payload fell from 3,553 to
+3,214 KiB (339 KiB / 9.5% less). Rounded timing metrics stayed the same; this
+is a data-transfer improvement, not an established real-user speed or ranking
+gain. An intermediate audit caught a focusable hidden fallback link; it was
+removed and the final audit passed. Both reports and that iteration are recorded.
 GitHub Pages controls the host cache headers; the hosting remains unchanged.
 
 The README/site and all design pages also link to print sharing on the model
