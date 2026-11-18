@@ -1,0 +1,234 @@
+[
+  {
+    "slug": "canted-octagon",
+    "name": "Canted Octagon",
+    "source": "models/current/12-Rocaille-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "0d15817e44362653f350cc70b224114f7c88853545ccbea291d406efc785b58f",
+    "project": "canted-octagon/canted-octagon-P2S-2-Color.3mf",
+    "project_sha256": "78789cafaa20c609edaba8806ac25c896b89bf4249662826b96e4c7c32507b50",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      129.2,
+      54.7
+    ],
+    "material_g": [
+      12.06,
+      5.86
+    ],
+    "sliced_sha256": "d6a1979c636b717eae7665624623979cb0c8e740dd9357ca9fdef77c18ef8895",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "segmental-arch",
+    "name": "Segmental Arch",
+    "source": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "fdc77998a07e4fc0259b65eca4fbab76aca84645aec31fa05b634ace9f162c1a",
+    "project": "segmental-arch/segmental-arch-P2S-2-Color.3mf",
+    "project_sha256": "6d3a00e47af243aec1f4115d930e6bc41569d79db5c2a58c9ba53903849ef962",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      206.8,
+      58.9
+    ],
+    "material_g": [
+      21.04,
+      6.93
+    ],
+    "sliced_sha256": "cc975a8ca5e0e7124e0c4c6a39541587535684d8ee60681150bc0f7246ea162f",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "cushion-cartouche",
+    "name": "Cushion Cartouche",
+    "source": "models/current/14-Rocaille-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "97e0999c18874260aeedfb01e38f49f8eb1bb2b3e447abb645db9867240ac037",
+    "project": "cushion-cartouche/cushion-cartouche-P2S-2-Color.3mf",
+    "project_sha256": "9f0e6cba9f774ccb4d2c7985bb0ceda5749cf6d139ca476ee9f8847f7c3fa813",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      175.3,
+      56.3
+    ],
+    "material_g": [
+      18.04,
+      6.62
+    ],
+    "sliced_sha256": "e50e382e47936b1d7cf86ab9a80c16779af494eaec91be576a3d5d3bf95a1951",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "floral-corners",
+    "name": "Floral Corners",
+    "source": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "89fdb0fe91720c598258cb9e25ba71904056c3b2f5d368937bf9394ee5058916",
+    "project": "floral-corners/floral-corners-P2S-2-Color.3mf",
+    "project_sha256": "d550f67b4ff2020e06007903abb8b98440988d41618045febd8437d0e320fa29",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      180.1,
+      56.3
+    ],
+    "material_g": [
+      17.69,
+      6.62
+    ],
+    "sliced_sha256": "a0829b0d2c3c236c1a87d5a3300bfb7575109bdda0cbcba84a5fc92eace8a5df",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "botanical-garland",
+    "name": "Botanical Garland",
+    "source": "models/current/16-Rocaille-Botanical-Garland-Sculpted-v3-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "570f25c17ba57ef735c038b28fb3ffcd3cb1e7db142554f1f79823d00904f8ca",
+    "project": "botanical-garland/botanical-garland-P2S-2-Color.3mf",
+    "project_sha256": "e00d8dbf5f785a9a83514b1fd2727033da19ccfd6a718f85ecccefcd8b787628",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      168.5,
+      56.3
+    ],
+    "material_g": [
+      17.16,
+      6.62
+    ],
+    "sliced_sha256": "f1be2c08dafc1cf8016a3d571ead52472658f2fd91e4809fd1a83682ee7a3641",
+    "publication_status": "existing Botanical Garland profile is published; this rebuild not uploaded",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "acanthus-gallery",
+    "name": "Acanthus Gallery",
+    "source": "models/current/17-Rocaille-Acanthus-Gallery-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "b38a16892d1a0516d91320f1a289a94fc3d8d98b83d7177fb38dc7b3875fe837",
+    "project": "acanthus-gallery/acanthus-gallery-P2S-2-Color.3mf",
+    "project_sha256": "cf538ed4f78162ce61683ac7339476ac73c76160c6044d7418a08d62f85f9e43",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      170.5,
+      56.3
+    ],
+    "material_g": [
+      16.63,
+      6.62
+    ],
+    "sliced_sha256": "2e6f0662891051b937101328ee778b7d3e68996e79cbff33e307ec7ffd014a82",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "portrait-oval",
+    "name": "Portrait Oval",
+    "source": "models/current/11-Period-Floral-Portrait-Oval-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "e5472ce692a8760fe03829cfccbac9c5c894c1803685e9bef046fc875cf8c2b4",
+    "project": "portrait-oval/portrait-oval-P2S-2-Color.3mf",
+    "project_sha256": "328294f31b5a420a1545342c73716e486c22d5486484842bec4a219d686e143a",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      193.7,
+      55.2
+    ],
+    "material_g": [
+      19.34,
+      6.02
+    ],
+    "sliced_sha256": "c12479955676665ed9a139eb382aa1df5fb208da74498871a215c03038818456",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  },
+  {
+    "slug": "landscape-oval",
+    "name": "Landscape Oval",
+    "source": "models/current/18-Rocaille-Landscape-Oval-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "1e66aa90217a75013e67fc88b43d3e7351f9f8e2733fc6dfcedb4392ef939bc7",
+    "project": "landscape-oval/landscape-oval-P2S-2-Color.3mf",
+    "project_sha256": "c45922801a4df74faa08c6438e78464eaa2ac5be80b1889fa8eb3973ec565efe",
+    "geometry_and_placement_unchanged": true,
+    "printer": "Bambu P2S 0.4 mm",
+    "plates": 2,
+    "filament_changes": [
+      1,
+      0
+    ],
+    "warnings": [],
+    "estimated_minutes": [
+      160.7,
+      54.7
+    ],
+    "material_g": [
+      17.17,
+      6.02
+    ],
+    "sliced_sha256": "9b3201af1df5737efe1a44066be9a85f4f1c8104b9df9b84ebf6104a5bce9aa6",
+    "publication_status": "awaiting matching physical-print photos",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false,
+    "settings_match_published_botanical_profile": true
+  }
+]
