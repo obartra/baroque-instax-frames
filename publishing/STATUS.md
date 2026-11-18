@@ -36,3 +36,5 @@ The print profile is scoped to **Botanical Garland**, matching the physical exam
 ## Photo notes
 
 The uploaded originals are user photos 6, 1 and 4, respectively. The insertion view uses an Instax darkslide, not a developed photo. The photographs document Botanical Garland; they do not establish physical testing of every design. The labeled render remains the collection cover. A future clean assembled front photograph with an actual photo inserted would make a stronger photographic cover.
+
+Google’s live URL inspection of the sitemap on 2026-11-18 confirmed crawl allowed, page fetch successful and indexing allowed. The earlier sitemap-report fetch error is not reproduced by this live Google test; the submitted sitemap still needs processing.

@@ -34,3 +34,5 @@ Keep a record of cover/title changes and their dates. These are practical experi
 - [Google Search Console](https://developers.google.com/search/docs/monitor-debug/search-console-start)
 - [Google sitemap submission](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
 - [MakerWorld's published real-photo recommendation update](https://forum.bambulab.com/t/makerworld-release-note-08-29/95806)
+
+Google’s live URL inspection of the sitemap on 2026-11-18 confirmed crawl allowed, page fetch successful and indexing allowed. The earlier sitemap-report fetch error is not reproduced by this live Google test; the submitted sitemap still needs processing.
