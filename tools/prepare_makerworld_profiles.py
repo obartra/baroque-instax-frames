@@ -11,6 +11,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import re
+import shutil
 import subprocess
 from xml.etree import ElementTree as ET
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -88,10 +89,21 @@ def prepare(frame, output):
         gcode = (sliced / f'plate_{index}.gcode').read_text()
         heights = [float(z) for z in re.findall(r'^; Z_HEIGHT: ([\d.]+)', gcode, re.M)]
         assert heights[:8] == [0.2, 0.28, 0.36, 0.44, 0.52, 0.6, 0.68, 0.76]
+    # Bambu's full exported project contains editable geometry plus plate
+    # thumbnails and slicing metadata that MakerWorld can display immediately.
+    upload = folder / (frame['slug'] + '-MakerWorld-Upload.3mf')
+    shutil.copyfile(sliced / (frame['slug'] + '-P2S-Sliced.3mf'), upload)
+    with ZipFile(upload) as archive:
+        assert len([name for name in archive.namelist() if name.endswith('.gcode')]) == 2
+        model = ET.fromstring(archive.read('3D/3dmodel.model'))
+        ns = {'m': 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
+        assert len(model.findall('m:build/m:item', ns)) == 2
+    shutil.copyfile(ROOT / frame['views']['front'], folder / 'CAD-preview-not-print-photo.png')
     record = {
         'slug': frame['slug'], 'name': frame['name'], 'source': frame['model'],
         'source_sha256': frame['sha256'], 'project': str(project.relative_to(output)),
         'project_sha256': digest(project), 'geometry_and_placement_unchanged': True,
+        'upload_project': str(upload.relative_to(output)), 'upload_sha256': digest(upload),
         'printer': 'Bambu P2S 0.4 mm', 'plates': 2, 'filament_changes': [1, 0],
         'warnings': [], 'estimated_minutes': [round(p['total_predication']/60, 1) for p in plates],
         'material_g': [round(sum(f['total_used_g'] for f in p['filaments']), 2) for p in plates],

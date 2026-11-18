@@ -31,7 +31,7 @@ Public listing verified on 2026-11-18: the collection and its Botanical Garland 
 
 The print profile is scoped to **Botanical Garland**, matching the physical example. It includes the front and back on two plates, with a gray mat and black ornament/back. Material assignments were updated without changing mesh data. Local Bambu Studio slicing passed with two plates, one front color change, no back color changes and no warnings. Three original printed-result photos accompany the profile. See `botanical-profile-validation.json`.
 
-The remaining seven designs now have two-color profile candidates and prepared descriptions. Fresh local slicing passed for all eight designs, preserving current geometry and reinforced mats. They are not seven newly published or physically verified profiles: publication awaits matching photographs of each completed print. See [profile preparation and publication gates](PRINT-PROFILES.md) and [validation records](profile-candidates-validation.json).
+The remaining seven designs now have two-color profile candidates and prepared descriptions, saved as unpublished MakerWorld drafts with two plate previews each. Fresh local slicing passed for all eight designs, preserving current geometry and reinforced mats. They are not seven newly published or physically verified profiles: publication awaits matching photographs of each completed print. See [profile preparation and publication gates](PRINT-PROFILES.md) and [validation records](profile-candidates-validation.json).
 
 ## Article — published
 

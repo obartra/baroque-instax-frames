@@ -1,8 +1,9 @@
 # MakerWorld profile preparation
 
 Updated 2026-11-18. Botanical Garland remains the only published print profile.
-The other seven designs now have locally prepared and sliced upload candidates.
-They are awaiting matching physical-print photographs, not additional CAD work.
+The other seven designs now have locally prepared and sliced upload candidates,
+saved as seven unpublished MakerWorld drafts with their descriptions and two
+plate previews. They are awaiting matching physical-print photographs.
 
 ## Prepared candidates
 
@@ -42,14 +43,16 @@ Before publishing each candidate:
 1. Confirm its printed front and matching back assemble and accept an uncut film sheet.
 2. Add original matching print photos, including both parts. Keep the CAD preview identified as a render.
 3. Remove the preparation note from the supplied description.
-4. Upload the complete editable two-plate native project, not a front-only or back-only G-code job.
+4. Use the complete `MakerWorld-Upload.3mf` Bambu export, with editable geometry and two plate previews; never use a front-only or back-only G-code job.
 5. Verify the published design name, plates, photographs and download. Record its profile URL here.
 
-No new profile was published in this pass. The Segmental Arch upload reached
-draft URL `10630376`, but the subsequent page stalled at automatic security
-verification, so its saved contents have not been independently confirmed.
-The complete files and descriptions are also saved locally; no draft state is
-required to recover them.
+No new profile was published in this pass. Automatic security verification
+eventually cleared, and all seven drafts were saved. The Segmental Arch draft
+was reloaded to verify the full Bambu export and two plates persisted. The final
+Landscape Oval draft was also reloaded and checked. All other saves navigated
+to distinct draft URLs with the expected filename and two plates visible.
+Private draft links are saved with the local delivery, alongside the complete
+files and descriptions; no draft state is required to recover the candidates.
 
 ## Rebuild
 

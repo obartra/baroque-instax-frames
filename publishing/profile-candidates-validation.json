@@ -26,7 +26,9 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "canted-octagon/canted-octagon-MakerWorld-Upload.3mf",
+    "upload_sha256": "d6a1979c636b717eae7665624623979cb0c8e740dd9357ca9fdef77c18ef8895"
   },
   {
     "slug": "segmental-arch",
@@ -55,7 +57,9 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "segmental-arch/segmental-arch-MakerWorld-Upload.3mf",
+    "upload_sha256": "cc975a8ca5e0e7124e0c4c6a39541587535684d8ee60681150bc0f7246ea162f"
   },
   {
     "slug": "cushion-cartouche",
@@ -84,7 +88,9 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "cushion-cartouche/cushion-cartouche-MakerWorld-Upload.3mf",
+    "upload_sha256": "e50e382e47936b1d7cf86ab9a80c16779af494eaec91be576a3d5d3bf95a1951"
   },
   {
     "slug": "floral-corners",
@@ -113,7 +119,9 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "floral-corners/floral-corners-MakerWorld-Upload.3mf",
+    "upload_sha256": "a0829b0d2c3c236c1a87d5a3300bfb7575109bdda0cbcba84a5fc92eace8a5df"
   },
   {
     "slug": "botanical-garland",
@@ -142,7 +150,9 @@
     "publication_status": "existing Botanical Garland profile is published; this rebuild not uploaded",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "botanical-garland/botanical-garland-MakerWorld-Upload.3mf",
+    "upload_sha256": "f1be2c08dafc1cf8016a3d571ead52472658f2fd91e4809fd1a83682ee7a3641"
   },
   {
     "slug": "acanthus-gallery",
@@ -171,7 +181,9 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "acanthus-gallery/acanthus-gallery-MakerWorld-Upload.3mf",
+    "upload_sha256": "2e6f0662891051b937101328ee778b7d3e68996e79cbff33e307ec7ffd014a82"
   },
   {
     "slug": "portrait-oval",
@@ -200,7 +212,9 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "portrait-oval/portrait-oval-MakerWorld-Upload.3mf",
+    "upload_sha256": "c12479955676665ed9a139eb382aa1df5fb208da74498871a215c03038818456"
   },
   {
     "slug": "landscape-oval",
@@ -229,6 +243,8 @@
     "publication_status": "awaiting matching physical-print photos",
     "physical_print_verified_by_this_run": false,
     "print_submitted": false,
-    "settings_match_published_botanical_profile": true
+    "settings_match_published_botanical_profile": true,
+    "upload_project": "landscape-oval/landscape-oval-MakerWorld-Upload.3mf",
+    "upload_sha256": "9b3201af1df5737efe1a44066be9a85f4f1c8104b9df9b84ebf6104a5bce9aa6"
   }
 ]
