@@ -43,6 +43,11 @@ def build():
     frame_images = {path for frame in frames for path in frame['views'].values()}
     notes = json.loads((ROOT / 'website/frame-notes.json').read_text())
     assert set(notes) == {f['slug'] for f in frames}, 'Missing design-page copy'
+    for slug, note in notes.items():
+        choices=note['related']
+        slugs={choice['slug'] for choice in choices}
+        assert len(choices)==len(slugs)==3 and slug not in slugs and slugs<=set(notes), 'Invalid related frame choices'
+        assert all(choice['reason'].strip() for choice in choices), 'Missing comparison context'
 
     def asset(path):
         if path in images:
@@ -145,7 +150,7 @@ def build():
         html = render(text)
         if anchor == 'choose-a-frame':
             html = html.replace('<table>', '<table class="frame-catalog">', 1)
-            html = html.replace('Click to enlarge, or use the view links for straight-on, rear\nand photo-fit views.',
+            html = html.replace('Click a preview to enlarge; use the view links for other angles.',
                                 'Choose a view to compare all eight frames from the same angle. Click any preview to enlarge.')
             for frame in frames:
                 name = escape(frame['name'])
@@ -164,6 +169,7 @@ def build():
     structured = {'@context': 'https://schema.org', '@type': 'CollectionPage',
                   '@id': URL, 'url': URL, 'name': SEO_TITLE, 'description': DESCRIPTION,
                   'image': URL + 'social-preview.png',
+                  'primaryImageOfPage': URL + 'social-preview.png',
                   'mainEntity': {'@type': 'ItemList', 'numberOfItems': count,
                                  'itemListElement': [{'@type': 'ListItem', 'position': i,
                                                       'name': frame['name'], 'url': frame_url(frame)}
@@ -186,8 +192,10 @@ def build():
     (OUT / '.nojekyll').touch()
     (OUT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {URL}sitemap.xml\n')
     urls = [URL] + [frame_url(frame) for frame in frames]
-    (OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-                                   + ''.join(f'<url><loc>{escape(url)}</loc></url>' for url in urls) + '</urlset>\n')
+    page_images = {URL: [URL + asset('renders/Eight-frames-current.png')['url'], URL + poster['url']]}
+    page_images.update({frame_url(frame): [URL + asset(path)['url'] for path in frame['views'].values()] for frame in frames})
+    (OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+                                   + ''.join(f'<url><loc>{escape(url)}</loc>' + ''.join(f'<image:image><image:loc>{escape(src)}</image:loc></image:image>' for src in page_images[url]) + '</url>' for url in urls) + '</urlset>\n')
     (OUT / 'build-info.json').write_text(json.dumps({'readme_sha256': hashlib.sha256(source.encode()).hexdigest(),
                                                    'catalog_sha256': hashlib.sha256((ROOT/'catalog/current.json').read_bytes()).hexdigest(),
                                                    'frames': count, 'image_count': len(images)}, indent=2) + '\n')
@@ -209,6 +217,7 @@ def write_frame_page(frame, notes, asset, resources):
                   'url': url, 'name': f'{name} Instax Mini magnetic photo frame',
                   'description': notes['intro'], 'image': image_url,
                   'license': 'https://creativecommons.org/publicdomain/zero/1.0/',
+                  'mainEntityOfPage': {'@type': 'WebPage', '@id': url, 'primaryImageOfPage': image_url},
                   'isPartOf': {'@id': URL},
                   'encoding': [{'@type': 'MediaObject', 'encodingFormat': 'model/3mf', 'contentUrl': model_url},
                                {'@type': 'MediaObject', 'encodingFormat': 'application/zip', 'contentUrl': stl_url}]}
@@ -227,9 +236,14 @@ def write_frame_page(frame, notes, asset, resources):
 
     width, height = frame['dimensions_mm'][:2]
     orientation = frame['orientation'].capitalize()
-    related = ''.join(f'<li><a href="../{other["slug"]}/">{escape(other["name"])}</a></li>'
-                      for other in json.loads((ROOT/'catalog/current.json').read_text())['frames']
-                      if other['slug'] != frame['slug'])
+    catalog = {f['slug']: f for f in json.loads((ROOT/'catalog/current.json').read_text())['frames']}
+    related = []
+    for choice in notes['related']:
+        other = catalog[choice['slug']]
+        info = asset(other['views']['front'])
+        srcset = ', '.join(f'../../{url} {width}w' for url, width in info['variants'])
+        related.append(f'''<li><a href="../{other['slug']}/"><img src="../../{info['url']}" srcset="{srcset}" sizes="(max-width: 700px) 42vw, 360px" width="{info['width']}" height="{info['height']}" alt="{escape(other['name'])} front render" loading="lazy" decoding="async"><strong>{escape(other['name'])}</strong><span>{escape(choice['reason'])}</span></a></li>''')
+    related = ''.join(related)
     document = f'''<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -239,7 +253,8 @@ def write_frame_page(frame, notes, asset, resources):
 <meta property="og:type" content="website"><meta property="og:title" content="{escape(page_title)}">
 <meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{url}">
 <meta property="og:image" content="{image_url}"><meta property="og:image:alt" content="{escape(name)} actual CAD front render">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{image_url}">
+<meta property="og:image:width" content="{view_info['front']['width']}"><meta property="og:image:height" content="{view_info['front']['height']}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{escape(page_title)}"><meta name="twitter:description" content="{escape(description)}"><meta name="twitter:image" content="{image_url}"><meta name="twitter:image:alt" content="{escape(name)} actual CAD front render">
 <link rel="stylesheet" href="../../{resources['style.css']}">
 <script type="application/ld+json">{json_script(structured)}</script>
 </head><body>
@@ -255,6 +270,7 @@ def write_frame_page(frame, notes, asset, resources):
 <p><a href="../../#before-you-print">Print settings and filament changes</a> · <a href="{REPO}/releases/latest">Download all eight designs</a></p></div>
 <figure>{image('angle', name + ' Instax Mini frame, upright side perspective showing its thickness', True)}<figcaption>Actual CAD render · example materials</figcaption></figure></section>
 <section class="detail-section"><h2>Photo fit and dimensions</h2><p>{escape(notes['fit'])}</p>
+<p class="detail-crop">About <strong>{frame['image_visible_percent']:.0f}% of the image area</strong> remains visible through this opening. The complete film sheet stays uncut.</p>
 <dl class="frame-specs"><div><dt>Film</dt><dd>Instax Mini · 86 × 54 mm, uncut</dd></div><div><dt>Overall size</dt><dd>{width:.1f} × {height:.1f} mm</dd></div>
 <div><dt>Assembled depth</dt><dd>{frame['depth_mm']:.1f} mm</dd></div><div><dt>Magnets</dt><dd>Three <a href="https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets">6 × 3 mm disc magnets</a></dd></div>
 <div><dt>Inner mat</dt><dd>{frame['mat_height_mm']:.2f} mm · {frame['mat_layers']} supplied layers</dd></div><div><dt>Estimated print time</dt><dd>Front {duration(frame['front_minutes'])} · back {duration(frame['back_minutes'])}</dd></div></dl>
@@ -265,7 +281,7 @@ def write_frame_page(frame, notes, asset, resources):
 <figure>{image('fit', name + ' rear drawing showing the complete uncut Instax Mini film behind the frame')}<figcaption>Rear photo-fit drawing · full film sheet</figcaption></figure></div></section>
 <section class="detail-section"><h2>Make this frame</h2><ol><li>Print the front and its matching back.</li><li>Glue three magnets into the back pockets.</li><li>Snap the front and back together; the clips may also be glued.</li><li>Slide in the whole photo, narrow-border edge first.</li><li>Place it on a magnetic surface.</li></ol><p><a href="../../#print-and-assemble">Follow the illustrated assembly guide →</a></p>
 <p>For other slicers, import the mat and ornament together as parts of one object, preserving their coordinates. Print the back separately. <a href="{REPO}/blob/main/docs/PRINTING.md#using-the-stl-downloads">STL alignment and color-change guide</a>.</p></section>
-<section class="detail-section"><h2>Explore the collection</h2><ul class="related-frames">{related}</ul><p>New Rococo-inspired compositions developed with AI-assisted carving studies and custom CAD. Models are free under <a href="{REPO}/blob/main/LICENSING.md">CC0, within the documented license scope</a>.</p></section>
+<section class="detail-section"><h2>Compare other shapes</h2><ul class="related-frames">{related}</ul><p><a href="../../#choose-a-frame">See all eight designs →</a></p><p>New Rococo-inspired compositions developed with AI-assisted carving studies and custom CAD. Models are free under <a href="{REPO}/blob/main/LICENSING.md">CC0, within the documented license scope</a>.</p></section>
 </main><footer><a href="../../">Floral Instax Frames</a><small>Instax is a FUJIFILM trademark; this is an independent project.</small></footer>
 </body></html>'''
     target = OUT/'frames'/frame['slug']
@@ -349,6 +365,12 @@ def verify():
     sitemap=ET.fromstring((OUT/'sitemap.xml').read_text())
     urls={node.text for node in sitemap.findall('{*}url/{*}loc')}
     assert urls==canonicals, 'Sitemap differs from canonical page URLs'
+    for node in sitemap.findall('{*}url'):
+        page_url=node.find('{*}loc').text
+        images=node.findall('{http://www.google.com/schemas/sitemap-image/1.1}image/{http://www.google.com/schemas/sitemap-image/1.1}loc')
+        assert len(images)==(2 if page_url==URL else 4), 'Missing sitemap views'
+        for image in images:
+            assert image.text.startswith(URL) and (OUT/image.text[len(URL):]).is_file(), 'Missing sitemap image'
     print('PASS nine unique searchable pages, structured data, sharing metadata, sitemap, internal assets and current downloads')
 
 

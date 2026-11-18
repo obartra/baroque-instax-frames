@@ -10,9 +10,9 @@ assignees: ''
 **Printer / nozzle:**
 **Filament:**
 **Layer height / profile changes:**
-**Clip coupon result:**
+**Assembly (snapped once, glued, or other):**
 **Photo insertion and magnet stability:**
-**Any cracking, and assembly cycles tried:**
+**Any cracking during assembly or removal from the plate:**
 
 Photos or measurements:
 

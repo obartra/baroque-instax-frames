@@ -47,7 +47,7 @@
     "source/sculpt_botanical_petals.py": "bcfd5d2e280fbc5d8dfa6b90a08ce4f7e5c0f14ba4944e490dc4bb80206e2e50",
     "source/validate_floral_slices.py": "3d9cf42540a57222c7a818eedd37ec05c6ec14cc1c2a7f1dd7b57be562f69015",
     "source/verify_back_toolpaths.py": "1bca1143f76dbb8c0439975e15da53482a6738df4f95a7e390f55783bf37fade",
-    "source/write_current_readme.py": "bf557cddb46a77c0dd8f27a72779c98544a120c06c94fdfb6441eb19e327639a",
+    "source/write_current_readme.py": "0de1e155acf43633bb9943b085c7c94021bf96dd837473f49e64cddaa323a17c",
     "studies/botanical-sculpture-v2/historian-review.md": "9ea0748058372fa1bbc967b97618eda79335ec30079315ec61a957dcf1bb95e3",
     "studies/botanical-sculpture-v2/printing-review.md": "0bc81fc7620a1c32f61b9e6ba2aee4cec7a71bc4f793815ef61b9610ad962b9d",
     "studies/botanical-sculpture-v3/16-Rocaille-Botanical-Garland-Sculpted-v3-final-height.npy": "d1e6bc69e9bed357c38b97de74412346720b37f12d69de59e43691b2dc1453fe",
@@ -100,13 +100,13 @@
     "studies/period-grounded-ovals/references/Met-1971.206.34-front.jpg": "bd0fa3b921a0f67f1ad7341b95315d34ac443980e3ff51be5634c1205905ef67",
     "studies/period-grounded-ovals/sculpture-master-v1.png": "7cdb7b24d82b8ccc0f09b3eb8c7d228a84ec48417fa550fd9d4c4da065438d85",
     "studies/period-grounded-ovals/sculpture-normals-v1.png": "2628e92a3f27dccbca38bb6e872ada4b5e3922159f4bf611e92595e8fec3b246",
-    "tools/build_pages.py": "2acae7eeaeffa21e515741e431d30ee01f9a20dabf37fdcdcec2a0d8750b7540",
+    "tools/build_pages.py": "ec7fd5e11888fc923dc623dafaf5b0277457792820e0c809f1cb1053201a3329",
     "tools/export_stl_downloads.py": "5baac6e4573800d36b11e32363c1f63efc3c7d671f782aadae6f1c38234ecf78",
-    "website/README.md": "4d3f900fb801ba169b35922cbb65541b453ed7c2a0b8101b8efe5d1a2c848481",
+    "website/README.md": "7204218c4f62400b9bd003e69200ffbf6913e3fd6e23e5e2ecbb940a3069ff78",
     "website/catalog.js": "40fb59e6210d6b551166eafe1b56df1a8479ae456b35ced3cdb88ddef03b40fe",
-    "website/frame-notes.json": "9cba7326638de83a2f5e3894227f553c205b4d74817404bf0606dd2bc94836e1",
+    "website/frame-notes.json": "64943fbf618768ea4a58e9313169838046bc08c9626238ca3def3d5f7bb5d3fb",
     "website/index.template.html": "b38919267602e0610ec54886b329d3901e38cdf49bda3b6919102e6bbcc2aab6",
     "website/requirements.txt": "70e64550ca5a770e6ab742574a48b51000065016c4087b2f7ec4fd94ca6aff0c",
-    "website/style.css": "9e595ad6c6a5aa62be8233c6e3bd1d7268f529578e77b1a95923fd7ff8b04054"
+    "website/style.css": "d49c62e0c9aa3a3b4daa448032d961aa87a264e036641a88bc34b013955615fc"
   }
 }

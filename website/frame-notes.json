@@ -1,34 +1,146 @@
 {
   "canted-octagon": {
     "intro": "A landscape frame with clipped corners, a stepped inner surround and floral scrollwork. The eight-sided opening gives it a distinct outline within the collection.",
-    "fit": "The clipped opening crops the image corners. Choose a photograph with its important details away from those corners. The full rectangular film sheet stays intact behind the frame."
+    "fit": "The clipped opening crops the image corners. Choose a photograph with its important details away from those corners. The full rectangular film sheet stays intact behind the frame.",
+    "related": [
+      {
+        "slug": "cushion-cartouche",
+        "reason": "A softer landscape opening with rounded corners."
+      },
+      {
+        "slug": "floral-corners",
+        "reason": "A rectangular opening that preserves more corner detail."
+      },
+      {
+        "slug": "landscape-oval",
+        "reason": "A curved landscape opening for centered subjects."
+      }
+    ]
   },
   "segmental-arch": {
     "intro": "A portrait frame with an arched upper rail and an ornamental crest. Its upright composition gives extra room above the photograph for the carving.",
-    "fit": "The arched top crops the upper image corners. Keep faces and other important details below the arch. The photo loads from the bottom, with its wide caption border trailing."
+    "fit": "The arched top crops the upper image corners. Keep faces and other important details below the arch. The photo loads from the bottom, with its wide caption border trailing.",
+    "related": [
+      {
+        "slug": "portrait-oval",
+        "reason": "The other upright option, with an oval opening."
+      },
+      {
+        "slug": "floral-corners",
+        "reason": "A rectangular landscape opening for a wider composition."
+      },
+      {
+        "slug": "canted-octagon",
+        "reason": "Clipped corners in a landscape orientation."
+      }
+    ]
   },
   "cushion-cartouche": {
     "intro": "A landscape frame with a broad, swelling outer silhouette and rounded image corners. Its cushion outline offers a softer surround than the straight rectangular designs.",
-    "fit": "The rounded opening crops the image corners. Check the rear photo-fit drawing before choosing a photograph with details near its edges."
+    "fit": "The rounded opening crops the image corners. Check the rear photo-fit drawing before choosing a photograph with details near its edges.",
+    "related": [
+      {
+        "slug": "canted-octagon",
+        "reason": "A landscape alternative with clipped corners."
+      },
+      {
+        "slug": "landscape-oval",
+        "reason": "More corner cropping and a fully curved opening."
+      },
+      {
+        "slug": "floral-corners",
+        "reason": "A rectangular opening that shows more of the image."
+      }
+    ]
   },
   "floral-corners": {
     "intro": "A rectangular landscape frame with flowers gathered around the corners. The clear rectangular opening leaves a regular area for the photograph within the floral surround.",
-    "fit": "The rectangular opening keeps more corner content than an oval. A small overlap around the image helps conceal alignment differences and the film border."
+    "fit": "The rectangular opening keeps more corner content than an oval. A small overlap around the image helps conceal alignment differences and the film border.",
+    "related": [
+      {
+        "slug": "botanical-garland",
+        "reason": "The same rectangular crop with sculpted botanical carving."
+      },
+      {
+        "slug": "acanthus-gallery",
+        "reason": "The same rectangular crop with a leafy scroll surround."
+      },
+      {
+        "slug": "canted-octagon",
+        "reason": "A landscape opening with clipped corners."
+      }
+    ]
   },
   "botanical-garland": {
     "intro": "A rectangular landscape frame with sculpted petals and botanical carving around the opening. This version includes the revised flower centers and the reinforced inner mat.",
-    "fit": "The rectangular opening suits landscape photographs with details spread across the image. Load the whole film sheet from the left when viewed from the front, with the wide caption border trailing."
+    "fit": "The rectangular opening suits landscape photographs with details spread across the image. Load the whole film sheet from the left when viewed from the front, with the wide caption border trailing.",
+    "related": [
+      {
+        "slug": "floral-corners",
+        "reason": "The same rectangular crop with flowers gathered at the corners."
+      },
+      {
+        "slug": "acanthus-gallery",
+        "reason": "The same rectangular crop with scrolling foliage."
+      },
+      {
+        "slug": "cushion-cartouche",
+        "reason": "A softer silhouette with rounded image corners."
+      }
+    ]
   },
   "acanthus-gallery": {
     "intro": "A rectangular landscape frame with a leafy, scrolling surround. It offers a different ornamental rhythm while keeping the collection's common mat and hidden magnetic mounting.",
-    "fit": "The rectangular aperture preserves the basic shape of the image. The rear drawing shows how the full film sheet sits behind the carving and mat."
+    "fit": "The rectangular aperture preserves the basic shape of the image. The rear drawing shows how the full film sheet sits behind the carving and mat.",
+    "related": [
+      {
+        "slug": "floral-corners",
+        "reason": "The same rectangular crop with prominent corner flowers."
+      },
+      {
+        "slug": "botanical-garland",
+        "reason": "The same rectangular crop with sculpted petals."
+      },
+      {
+        "slug": "landscape-oval",
+        "reason": "An oval alternative for a centered composition."
+      }
+    ]
   },
   "portrait-oval": {
     "intro": "An upright oval frame with a floral surround composed for portrait photographs. Its curved opening gives centered subjects a different setting from the rectangular frames.",
-    "fit": "An oval crops all four corners of the image. Centered portraits work well; check the photo-fit drawing for faces or details near the edges. The film itself remains whole and loads from below."
+    "fit": "An oval crops all four corners of the image. Centered portraits work well; check the photo-fit drawing for faces or details near the edges. The film itself remains whole and loads from below.",
+    "related": [
+      {
+        "slug": "segmental-arch",
+        "reason": "A portrait alternative that shows more image area."
+      },
+      {
+        "slug": "landscape-oval",
+        "reason": "A separate floral composition for horizontal photos."
+      },
+      {
+        "slug": "cushion-cartouche",
+        "reason": "A landscape option with gently rounded image corners."
+      }
+    ]
   },
   "landscape-oval": {
     "intro": "A horizontal oval frame with its own floral composition. The broad curved opening is designed for landscape photographs and provides a distinct companion to the portrait oval.",
-    "fit": "The oval opening crops the image corners. Keep the main subjects toward the center, especially in group photographs. The full film sheet loads from the left and stays hidden behind the surround."
+    "fit": "The oval opening crops the image corners. Keep the main subjects toward the center, especially in group photographs. The full film sheet loads from the left and stays hidden behind the surround.",
+    "related": [
+      {
+        "slug": "portrait-oval",
+        "reason": "A separate floral composition for upright photos."
+      },
+      {
+        "slug": "cushion-cartouche",
+        "reason": "A landscape alternative that shows more corner detail."
+      },
+      {
+        "slug": "canted-octagon",
+        "reason": "A landscape opening with clipped corners."
+      }
+    ]
   }
 }

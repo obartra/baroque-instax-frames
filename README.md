@@ -24,15 +24,24 @@ Each frame holds **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+
 ## 🖼️ Choose a frame
 
 Each **3MF includes both matching parts on two plates**. Open it as a project
-in Bambu Studio to retain the assembly and material assignments. The previews
-use example materials; the model dimensions and geometry are the actual files.
-The previews show each frame upright, viewed from the side in perspective to show the
-carving and depth. Click to enlarge, or use the view links for straight-on, rear
-and photo-fit views.
+in Bambu Studio to retain the assembly and material assignments.
 
 For other slicers, download the **STL ZIP**: ornament, mat and matching back.
 Keep the mat and ornament aligned as one front, and choose your own print
 settings. [STL import and color-change guide](docs/PRINTING.md#using-the-stl-downloads).
+
+<details>
+<summary>Match the frame to your photo</summary>
+
+- **Details near the edges:** the three rectangular designs—Floral Corners, Botanical Garland and Acanthus Gallery—show about **93% of the image area**.
+- **A shaped opening with a smaller crop:** Canted Octagon, Segmental Arch and Cushion Cartouche show about **91%**. Keep important details away from the shaped corners.
+- **Centered subjects:** Portrait Oval and Landscape Oval show about **73%**, masking all four corners. Choose the orientation that matches your photo.
+
+These percentages describe the visible image area. The full film sheet stays uncut in every design.
+
+</details>
+
+Click a preview to enlarge; use the view links for other angles.
 
 | Preview | Design & files | More views |
 | --- | --- | --- |

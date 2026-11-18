@@ -7,6 +7,8 @@ Updated 2026-11-18.
 - Exact Instax Mini wording in the collection's search title and description.
 - Eight linked design pages, each with its own canonical URL, useful shape/fit notes, current downloads, dimensions and views. Shared facts come from the catalog.
 - A nine-URL sitemap; collection and design structured data describe the actual free files without invented prices or ratings.
+- A photo-led shape guide in the README/site, with rounded visible-image area from the catalog: about 93% for rectangles, 91% for the other shaped corners and 73% for ovals. Design pages show their own crop and three relevant, illustrated alternatives with orientation/crop context.
+- Image sitemap entries for 34 current views, checked against the built assets, plus explicit representative-image and social preview metadata on the design pages. This follows Google's image discovery guidance; it does not guarantee indexing or ranking.
 - A 1200 × 630 sharing card rendered from the current Segmental Arch CAD. It is labeled as a render with a simulated photo.
 - A current eight-design release with separate 3MF, STL and complete downloads, checksums, instructions and license details.
 - Responsive lossless WebP previews at 480/640/960 pixels, with full-size enlargement links retained. The eight default angled previews total 407 KB at 480 px or 644 KB at 640 px, compared with 823 KB previously (51% / 22% less image data). Browser checks cover all four shared views and individual design pages. These are file-transfer measurements, not a measured ranking or page-speed gain.
@@ -38,6 +40,14 @@ Keep a record of cover/title changes and their dates. These are practical experi
 - [Google title-link guidance](https://developers.google.com/search/docs/appearance/title-link)
 - [Google Search Console](https://developers.google.com/search/docs/monitor-debug/search-console-start)
 - [Google sitemap submission](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+- [Google image discovery and landing-page guidance](https://developers.google.com/search/docs/appearance/google-images)
+- [Google contextual internal-link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
 - [MakerWorld's published real-photo recommendation update](https://forum.bambulab.com/t/makerworld-release-note-08-29/95806)
 
 Google’s live URL inspection of the sitemap on 2026-11-18 confirmed crawl allowed, page fetch successful and indexing allowed. The earlier sitemap-report fetch error is not reproduced by this live Google test; the submitted sitemap still needs processing.
+
+A later check on 2026-11-18 still showed “couldn't fetch” in the sitemap report,
+with no last-read date. No repeat submission was made. Both public model listings
+were audited again: current descriptions, film compatibility, magnet size,
+license, source links and the Botanical Garland photographs are present. The
+photo/video additions above remain waiting on the user's physical examples.

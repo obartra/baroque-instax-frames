@@ -33,6 +33,12 @@ Open Graph and large-card sharing metadata, and CollectionPage / ItemList
 structured data. The wide sharing preview is rendered from the unchanged
 Segmental Arch model by `source/render_social_preview.py`.
 
+The README's shape guide compares the visible image area for rectangles, shaped
+corners and ovals; its rounded percentages come from the checked catalog. Each
+design page gives its own crop percentage and three visual alternatives, with
+context about orientation and crop rather than a list of every other design.
+Comparison choices live in `frame-notes.json` and are checked for valid targets.
+
 Eight static design pages under `frames/<slug>/` are generated from
 `catalog/current.json` and the design-specific notes in `frame-notes.json`.
 Dimensions, depth, print-time estimates, file links and views come from the
@@ -40,6 +46,11 @@ catalog. These pages have distinct titles, descriptions and CreativeWork file
 metadata; they do not claim commercial offers or review ratings. The catalog
 links to them, and `sitemap.xml` includes all nine canonical URLs. The build
 checks metadata, JSON-LD, internal page/asset links, downloads and the sitemap.
+The sitemap also lists the current four render views on each design page and
+the collection overview and intro still. These 34 image entries point to the
+same full-size assets shown on the site. Builds check that each asset exists.
+Page metadata identifies a representative image, with explicit social image
+dimensions and alternative text for the design pages.
 
 The Google Search Console verification meta tag lives in the home template and
 must remain present after verification. The site's project-directory

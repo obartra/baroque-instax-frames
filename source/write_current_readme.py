@@ -12,6 +12,11 @@ def main():
         w,h=r['dimensions_mm'][:2]
         rows.append(f'| [<img src="{angle}" width="200" alt="{r["name"]} angled view">]({angle}) | **{r["name"]}**<br>{r["orientation"].title()} · {w:.1f} × {h:.1f} mm<br>**[Download 3MF]({r["model"]})** · [STL ZIP]({r["stl"]["archive"]}) | [Front]({front}) · [Angled]({angle})<br>[Back]({back}) · [Photo fit]({fit}) |')
     table='\n'.join(rows)
+    by_slug={r['slug']:r for r in c['frames']}
+    rectangles=['floral-corners','botanical-garland','acanthus-gallery']
+    shaped=['canted-octagon','segmental-arch','cushion-cartouche']
+    ovals=['portrait-oval','landscape-oval']
+    visible=lambda slugs:round(min(by_slug[s]['image_visible_percent'] for s in slugs))
     text=f'''# Floral Instax Frames
 
 <p align="center">
@@ -38,15 +43,24 @@ Each frame holds **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+
 ## 🖼️ Choose a frame
 
 Each **3MF includes both matching parts on two plates**. Open it as a project
-in Bambu Studio to retain the assembly and material assignments. The previews
-use example materials; the model dimensions and geometry are the actual files.
-The previews show each frame upright, viewed from the side in perspective to show the
-carving and depth. Click to enlarge, or use the view links for straight-on, rear
-and photo-fit views.
+in Bambu Studio to retain the assembly and material assignments.
 
 For other slicers, download the **STL ZIP**: ornament, mat and matching back.
 Keep the mat and ornament aligned as one front, and choose your own print
 settings. [STL import and color-change guide](docs/PRINTING.md#using-the-stl-downloads).
+
+<details>
+<summary>Match the frame to your photo</summary>
+
+- **Details near the edges:** the three rectangular designs—Floral Corners, Botanical Garland and Acanthus Gallery—show about **{visible(rectangles)}% of the image area**.
+- **A shaped opening with a smaller crop:** Canted Octagon, Segmental Arch and Cushion Cartouche show about **{visible(shaped)}%**. Keep important details away from the shaped corners.
+- **Centered subjects:** Portrait Oval and Landscape Oval show about **{visible(ovals)}%**, masking all four corners. Choose the orientation that matches your photo.
+
+These percentages describe the visible image area. The full film sheet stays uncut in every design.
+
+</details>
+
+Click a preview to enlarge; use the view links for other angles.
 
 | Preview | Design & files | More views |
 | --- | --- | --- |
