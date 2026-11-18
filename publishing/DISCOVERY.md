@@ -9,7 +9,7 @@ Updated 2026-11-18.
 - A nine-URL sitemap; collection and design structured data describe the actual free files without invented prices or ratings.
 - A 1200 × 630 sharing card rendered from the current Segmental Arch CAD. It is labeled as a render with a simulated photo.
 - A current eight-design release with separate 3MF, STL and complete downloads, checksums, instructions and license details.
-- Google Search Console URL-prefix setup for the project website. The verification tag is retained in the home template. Check the live Search Console property for the verification and indexing state; a verification tag alone does not establish either.
+- Google Search Console URL-prefix ownership verified with the personal Google account. The work account and its verification token were removed. The personal verification tag remains in the home template. The nine-page sitemap was submitted; the initial Google fetch reported “couldn’t fetch” although live HTTP/XML checks passed. The homepage indexing request was accepted into the priority crawl queue. Check Search Console for the next processing result; neither submission establishes indexing.
 
 ## Next, when more prints and photos are available
 
