@@ -7,7 +7,7 @@ packaged; models/source/docs link to this repository. Original images are kept
 unchanged; WebP derivatives preserve the canvas color in the site's surrounds.
 """
 from pathlib import Path
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote, urlencode, urlsplit
 from html import escape
 from html.parser import HTMLParser
 from xml.etree import ElementTree as ET
@@ -66,7 +66,7 @@ def build():
             im.save(OUT / target, 'WEBP', lossless=True, method=4)
             info = dict(url=target.as_posix(), width=im.width, height=im.height, canvas=canvas)
             variants = []
-            for width in (480, 640, 960):
+            for width in (320, 480, 640, 960):
                 if width >= im.width:
                     continue
                 small = im.resize((width, round(im.height * width / im.width)), Image.Resampling.LANCZOS)
@@ -97,8 +97,8 @@ def build():
             if tag == 'img':
                 attrs = re.sub(r'\swidth="[^"]*"', '', attrs)
                 attrs += f' width="{info["width"]}" height="{info["height"]}" loading="lazy" decoding="async" style="--canvas:{info["canvas"]}"'
-                sizes = ('(max-width: 700px) 44vw, (max-width: 1000px) 29vw, 280px'
-                         if path in frame_images else '(max-width: 1320px) 92vw, 1215px')
+                sizes = ('(max-width: 700px) calc(44vw - 9px), (max-width: 1000px) calc(30.667vw - 18.667px), (max-width: 1320px) calc(23vw - 21px), 283px'
+                         if path in frame_images else '(max-width: 700px) 88vw, (max-width: 1320px) 92vw, 1215px')
                 attrs += f' srcset="{srcset}" sizes="{sizes}"'
                 if path.endswith('project-icon.png'):
                     attrs = attrs.replace('loading="lazy"', 'fetchpriority="high"')
@@ -132,9 +132,9 @@ def build():
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(original, target)
         videos[name] = target.relative_to(OUT).as_posix()
-    video = f'''<span class="insertion-scene"><video id="insertion-demo" class="insertion-video" width="720" height="720" muted playsinline preload="metadata" poster="{poster['url']}" aria-label="The frame pulls back and turns around; a whole Instax Mini photo slides out and back in before the frame returns to the same close front view">
-      <source src="{videos['photo-insertion.webm']}" type="video/webm">
-      <source src="{videos['photo-insertion.mp4']}" type="video/mp4">
+    video = f'''<span class="insertion-scene" role="img" aria-label="Segmental Arch frame holding an uncut Instax Mini photo; the rear channel lets the whole photo slide out and back in."><video id="insertion-demo" class="insertion-video" width="720" height="720" muted playsinline preload="none" poster="{poster['url']}" aria-hidden="true">
+      <source data-src="{videos['photo-insertion.webm']}" type="video/webm">
+      <source data-src="{videos['photo-insertion.mp4']}" type="video/mp4">
       <a href="{videos['photo-insertion.mp4']}">Watch the photo insertion animation</a>
     </video><img class="insertion-poster" src="{poster['url']}" srcset="{poster['url']} 720w" sizes="(max-width: 700px) 88vw, 540px" width="720" height="720" alt="" aria-hidden="true" fetchpriority="high"></span>'''
     hero = re.sub(r'<img[^>]*>', lambda _: video, hero, count=1)
@@ -148,6 +148,8 @@ def build():
     content = '<section class="overview" aria-label="All eight frames">' + render(sections[0]) + '</section>'
     for anchor, text in zip(sections[1::2], sections[2::2]):
         html = render(text)
+        if anchor == 'print-and-assemble':
+            html = html.replace('<p><strong>Printed one?</strong>', '<p class="print-feedback"><strong>Printed one?</strong>')
         if anchor == 'choose-a-frame':
             html = html.replace('<table>', '<table class="frame-catalog">', 1)
             html = html.replace('Click a preview to enlarge; use the view links for other angles.',
@@ -174,7 +176,7 @@ def build():
                                  'itemListElement': [{'@type': 'ListItem', 'position': i,
                                                       'name': frame['name'], 'url': frame_url(frame)}
                                                      for i, frame in enumerate(frames, 1)]}}
-    for key, value in {'TITLE': escape(title), 'HEADING': escape(title).replace('Instax Frames', '<br><em>Instax Frames.</em>'), 'HERO': hero, 'INTRO': intro_html, 'CONTENT': content,
+    for key, value in {'TITLE': escape(title), 'HEADING': escape(title).replace('Instax Frames', '<br><em>Instax Frames.</em>'), 'HERO': hero, 'INTRO': intro_html, 'CONTENT': content, 'HERO_POSTER': poster['url'],
                        'REPO': REPO, 'URL': URL, 'COUNT': str(count), 'STYLE': resources['style.css'], 'SCRIPT': resources['catalog.js'],
                        'SEO_TITLE': escape(SEO_TITLE), 'DESCRIPTION': escape(DESCRIPTION),
                        'STRUCTURED_DATA': json_script(structured)}.items():
@@ -213,6 +215,7 @@ def write_frame_page(frame, notes, asset, resources):
     raw = REPO.replace('github.com', 'raw.githubusercontent.com') + '/main/'
     model_url = raw + quote(frame['model'])
     stl_url = raw + quote(frame['stl']['archive'])
+    report_url = REPO + '/issues/new?' + urlencode({'template':'print-report.md', 'title':f'[Print report] {name}'})
     structured = {'@context': 'https://schema.org', '@type': 'CreativeWork', '@id': url,
                   'url': url, 'name': f'{name} Instax Mini magnetic photo frame',
                   'description': notes['intro'], 'image': image_url,
@@ -281,6 +284,7 @@ def write_frame_page(frame, notes, asset, resources):
 <figure>{image('fit', name + ' rear drawing showing the complete uncut Instax Mini film behind the frame')}<figcaption>Rear photo-fit drawing · full film sheet</figcaption></figure></div></section>
 <section class="detail-section"><h2>Make this frame</h2><ol><li>Print the front and its matching back.</li><li>Glue three magnets into the back pockets.</li><li>Snap the front and back together; the clips may also be glued.</li><li>Slide in the whole photo, narrow-border edge first.</li><li>Place it on a magnetic surface.</li></ol><p><a href="../../#print-and-assemble">Follow the illustrated assembly guide →</a></p>
 <p>For other slicers, import the mat and ornament together as parts of one object, preserving their coordinates. Print the back separately. <a href="{REPO}/blob/main/docs/PRINTING.md#using-the-stl-downloads">STL alignment and color-change guide</a>.</p></section>
+<aside class="print-feedback"><strong>Printed this frame?</strong><a href="https://www.printables.com/model/1920140-rococo-instax-mini-magnetic-frames-8-designs/comments">Share a make on Printables</a><a href="https://makerworld.com/en/models/3636176-rococo-instax-mini-magnetic-frames-8-designs">Share on MakerWorld</a><a href="{escape(report_url,quote=True)}">Report a print or fit issue</a></aside>
 <section class="detail-section"><h2>Compare other shapes</h2><ul class="related-frames">{related}</ul><p><a href="../../#choose-a-frame">See all eight designs →</a></p><p>New Rococo-inspired compositions developed with AI-assisted carving studies and custom CAD. Models are free under <a href="{REPO}/blob/main/LICENSING.md">CC0, within the documented license scope</a>.</p></section>
 </main><footer><a href="../../">Floral Instax Frames</a><small>Instax is a FUJIFILM trademark; this is an independent project.</small></footer>
 </body></html>'''
@@ -297,7 +301,7 @@ def verify():
             attrs=dict(pairs)
             assert '/' not in attrs, 'Malformed self-closing image'
             if 'id' in attrs: self.ids.add(attrs['id'])
-            for key in ('src', 'href', 'poster'):
+            for key in ('src', 'href', 'poster', 'data-src'):
                 if key in attrs: self.targets.append(attrs[key])
             for key in ('srcset', 'data-srcset'):
                 if key in attrs:

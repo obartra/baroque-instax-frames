@@ -17,4 +17,4 @@ assignees: ''
 Photos or measurements:
 
 If you would like a photo included in the repository, please state your
-credit and permission/license. See photos/README.md.
+credit and permission/license. See [photo permissions](https://github.com/obartra/baroque-instax-frames/blob/main/photos/README.md).

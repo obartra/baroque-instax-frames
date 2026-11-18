@@ -21,7 +21,9 @@ deformation, overshoot or invented photo latch.
 The poster and first/last unencoded frames are pixel-identical, checked during
 rendering. The website keeps the poster over the video until a decoded frame is
 ready, crossfades into playback, and restores the same poster at the end.
-It plays once when visible. Reduced-motion visitors see the still poster.
+It plays once when visible. The video sources are attached only when needed;
+offscreen and reduced-motion visitors do not load video data. Reduced-motion
+visitors see the still poster.
 There are no animation buttons or native video controls. The video has no audio.
 
 Rebuild in the project's CAD Python environment, with FFmpeg installed:

@@ -1,0 +1,29 @@
+{
+  "page": "https://obartra.github.io/baroque-instax-frames/",
+  "kind": "PageSpeed Insights mobile lab audit; not field traffic or ranking data",
+  "before": {
+    "report_url": "https://pagespeed.web.dev/analysis/https-obartra-github-io-baroque-instax-frames/u1l1aiya9s?form_factor=mobile",
+    "captured_local": "2026-11-18 16:20 America/New_York",
+    "commit": "485bca8",
+    "lighthouse_version": "13.6.0",
+    "device": "Emulated Moto G Power",
+    "network": "Slow 4G throttling",
+    "performance": 97,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 100,
+    "first_contentful_paint_seconds": 0.8,
+    "largest_contentful_paint_seconds": 2.6,
+    "total_blocking_time_ms": 0,
+    "cumulative_layout_shift": 0,
+    "speed_index_seconds": 0.8,
+    "total_payload_kib": 3553,
+    "estimated_image_savings_kib": 798,
+    "field_data": "No Data"
+  },
+  "after": null,
+  "notes": [
+    "Scores are estimates and vary between runs. SEO score covers basic automated checks and does not establish indexing or search ranking.",
+    "GitHub Pages controls the static host cache headers; no hosting change is planned."
+  ]
+}

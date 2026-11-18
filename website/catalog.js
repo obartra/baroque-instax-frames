@@ -60,6 +60,7 @@ if (demo) {
   const scene = demo.closest('.insertion-scene');
   let visible = false;
   let waitingForFrame = false;
+  let sourcesLoaded = false;
   const revealFrame = () => {
     waitingForFrame = false;
     if (!demo.paused && !reduced.matches) scene.classList.add('is-playing');
@@ -74,8 +75,16 @@ if (demo) {
   demo.addEventListener('ended', () => scene.classList.remove('is-playing'));
   const syncPlayback = () => {
     if (reduced.matches) scene.classList.remove('is-playing');
-    if (visible && !reduced.matches && !demo.ended) demo.play().catch(() => {});
-    else demo.pause();
+    if (visible && !reduced.matches && !demo.ended) {
+      if (!sourcesLoaded) {
+        demo.querySelectorAll('source[data-src]').forEach(source => {
+          source.src = source.dataset.src;
+        });
+        sourcesLoaded = true;
+        demo.load();
+      }
+      demo.play().catch(() => {});
+    } else demo.pause();
   };
   reduced.addEventListener('change', syncPlayback);
   new IntersectionObserver(entries => {

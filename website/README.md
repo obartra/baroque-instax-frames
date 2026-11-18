@@ -24,7 +24,13 @@ JavaScript turns the README's individual view links into one shared selector
 above the collection. Front, Angled, Back and Photo fit update all eight previews
 and their enlargement links together. Native radio controls support keyboard
 navigation. Without JavaScript, the individual image links and downloads remain
-available. JavaScript also starts the intro animation.
+available. JavaScript attaches the video sources only when the intro is visible and reduced
+motion is not requested. The still has a high-priority image preload; offscreen
+and reduced-motion visits do not fetch the video. The animation remains unchanged.
+
+The assembly guide and each design page link to public print-sharing pages
+and the repository print/fit template. Design-specific report links prefill
+the issue title; opening a link does not submit anything.
 
 ## Search and sharing
 
@@ -74,8 +80,9 @@ The build validates image files, section anchors and all eight model links.
 Image, video, CSS and JavaScript filenames include their content hashes to avoid
 serving an older cached version after a new deployment.
 Only the used image assets are packaged, as lossless WebP derivatives. Responsive
-480, 640 and 960 pixel variants let phones and catalog cards load smaller previews;
-enlargement links still open the full-size site image. The shared view selector
+320, 480, 640 and 960 pixel variants let phones and catalog cards load smaller previews;
+Mobile `sizes` values follow the actual 88% content width and two-column card
+gaps; enlargement links still open the full-size site image. The shared view selector
 updates these responsive sources along with each preview. Original
 renders and model files remain unchanged. The page paper is the same
 `#f6f4ee` as the front/angled render canvases. Rear and rear-fit views use that same canvas; assembly illustrations

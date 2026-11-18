@@ -90,6 +90,8 @@ The joints only need to engage once and may be glued after seating; let adhesive
 cure before loading the photo. [Print settings and assembly details](docs/PRINTING.md)
 · [Editable diagrams](docs/assembly/README.md).
 
+**Printed one?** [Share a make on Printables](https://www.printables.com/model/1920140-rococo-instax-mini-magnetic-frames-8-designs/comments) · [Share on MakerWorld](https://makerworld.com/en/models/3636176-rococo-instax-mini-magnetic-frames-8-designs) · [Report a print or fit issue](https://github.com/obartra/baroque-instax-frames/issues/new?template=print-report.md).
+
 <a name="how-the-whole-photo-fits"></a>
 
 ## 📷 How the whole photo fits
