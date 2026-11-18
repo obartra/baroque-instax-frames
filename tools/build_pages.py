@@ -269,6 +269,7 @@ def write_frame_page(frame, notes, asset, resources):
 <h1>{escape(name)}<br><em>Instax Mini frame</em></h1><p>{escape(notes['intro'])}</p>
 <div class="hero-actions"><a class="button primary" href="{model_url}">Download 3MF</a><a class="button secondary" href="{stl_url}">Download STL ZIP</a></div>
 <p class="detail-download-note">3MF: matching front and back on two plates.<br>STL ZIP: mat, ornament, back and import guide.</p>
+<p><a href="{REPO}/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip">Two-color P2S pack · all eight designs with plate previews</a></p>
 <p><a href="../../#before-you-print">Print settings and filament changes</a> · <a href="{REPO}/releases/latest">Download all eight designs</a></p></div>
 <figure>{image('angle', name + ' Instax Mini frame, upright side perspective showing its thickness', True)}<figcaption>Actual CAD render · example materials</figcaption></figure></section>
 <section class="detail-section"><h2>Photo fit and dimensions</h2><p>{escape(notes['fit'])}</p>

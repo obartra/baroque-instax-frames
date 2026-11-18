@@ -4,6 +4,12 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 
 ## Materials and profile
 
+The [two-color P2S project pack](https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip)
+includes all eight frames with plate previews: mat in slot 1, ornament and back
+in slot 2. Each project contains both matching pieces on two plates. The original
+individual catalog projects retain a separate back-material slot; assign that
+back to the ornament filament to use the same two-color arrangement.
+
 | Item | Supplied project setting or requirement |
 | --- | --- |
 | 3MF printer profile | Supplied Bambu P2S, 0.4 mm nozzle settings |

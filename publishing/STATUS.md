@@ -33,6 +33,16 @@ The print profile is scoped to **Botanical Garland**, matching the physical exam
 
 The remaining seven designs now have two-color profile candidates and prepared descriptions, saved as unpublished MakerWorld drafts with two plate previews each. Fresh local slicing passed for all eight designs, preserving current geometry and reinforced mats. They are not seven newly published or physically verified profiles: publication awaits matching photographs of each completed print. See [profile preparation and publication gates](PRINT-PROFILES.md) and [validation records](profile-candidates-validation.json).
 
+All eight two-color projects are also publicly available in the supplemental
+[Two-Color P2S release pack](https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip),
+with full editable geometry, plate previews, instructions and checksums.
+GitHub's asset digest matches the local pack. The same ZIP is published under
+Other Files on Printables (42 total files, including the original model folders).
+MakerWorld accepted it as an additional open raw-model file and submitted the
+model edit for review. The app-profile publication attempt was rejected for
+missing print photographs; those seven drafts remain saved. See
+[the two-color publication record](two-color-publication.json).
+
 ## Article — published
 
 [Floral frames for Instax Mini](https://github.com/obartra/notes/tree/master/baroqueInstaxFrames), with images, the design process, download options and project links. The MakerWorld and Printables links are included in the project README/site and article.

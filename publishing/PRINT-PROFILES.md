@@ -5,6 +5,13 @@ The other seven designs now have locally prepared and sliced upload candidates,
 saved as seven unpublished MakerWorld drafts with their descriptions and two
 plate previews. They are awaiting matching physical-print photographs.
 
+The complete [two-color P2S project pack is publicly downloadable](https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip),
+including all eight editable projects, two plate previews per frame, assembly
+illustrations, licenses and a SHA-256 manifest. It is also live under Other Files
+on the Printables listing. The same pack was submitted as an additional open
+raw-model download on MakerWorld; that model edit entered review. These public
+file downloads are distinct from MakerWorld's photo-dependent app profiles.
+
 ## Prepared candidates
 
 | Design | Front / back estimate | Status |
@@ -53,6 +60,12 @@ Landscape Oval draft was also reloaded and checked. All other saves navigated
 to distinct draft URLs with the expected filename and two plates visible.
 Private draft links are saved with the local delivery, alongside the complete
 files and descriptions; no draft state is required to recover the candidates.
+
+On the subsequent publication attempt, MakerWorld rejected the Landscape Oval
+profile with “Please select or upload pictures.” No render was presented as a
+real photograph and no claim of full guideline compliance was submitted.
+All seven app drafts remain unpublished; the public pack makes their files
+available meanwhile. See [publication records](two-color-publication.json).
 
 ## Rebuild
 

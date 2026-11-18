@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-18",
+  "pack_name": "Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip",
+  "sha256": "9ffe6686af48f125db9fcf43a3d8b8312828a9393ac937469ef41893538ebbb8",
+  "bytes": 152631460,
+  "designs": 8,
+  "plates_per_design": 2,
+  "filament_slots": 2,
+  "geometry_changed": false,
+  "github": {
+    "status": "published",
+    "release": "https://github.com/obartra/baroque-instax-frames/releases/tag/v0.2.0",
+    "download": "https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip",
+    "remote_asset_digest_verified": true
+  },
+  "printables": {
+    "status": "published",
+    "url": "https://www.printables.com/model/1920140-rococo-instax-mini-magnetic-frames-8-designs/files",
+    "location": "Other Files",
+    "total_files_after_update": 42,
+    "visible_pack_size": "146 MB"
+  },
+  "makerworld": {
+    "raw_model_update": "submitted; verifying (1)",
+    "url": "https://makerworld.com/en/models/3636176-rococo-instax-mini-magnetic-frames-8-designs",
+    "app_profiles_published": 1,
+    "app_profiles_saved_as_drafts": 7,
+    "publication_error": "Please select or upload pictures",
+    "matching_print_photos_missing": true
+  },
+  "public_pack_contains_private_draft_links": false
+}

@@ -19,6 +19,10 @@ Each frame holds **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+
 
 [Download all eight designs — 3MF, STL or complete pack](https://github.com/obartra/baroque-instax-frames/releases/latest)
 
+[Two-color P2S project pack — all eight frames](https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip):
+two plates per frame, with the mat in one filament slot and ornament/back in the other.
+Includes plate previews, illustrated instructions and checked slicing settings.
+
 <a name="choose-a-frame"></a>
 
 ## 🖼️ Choose a frame
