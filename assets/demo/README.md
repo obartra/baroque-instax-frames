@@ -11,15 +11,18 @@ its front plane is depth-tested against the assembled model. The narrow border
 leads and the wide border trails. The photograph is the cached
 [AI-simulated coastal image](../brand/README.md).
 
-The camera starts 30° away from a straight rear view. The full-thickness sheet
-is fully seated before the frame turns to a front three-quarter view and the
-camera moves closer. Each orbit view is rendered from the actual model, with
-the front photo, paper back and sheet edges depth-tested against the assembly.
-The motion has no deformation, overshoot or invented photo latch.
+The 16-second sequence opens on a close front three-quarter pose, holds, moves
+back and turns to the rear. The film slides out, pauses, and slides back in.
+The camera then turns forward and moves closer to the exact opening pose.
+Each orbit view is rendered from the actual model, with the front photo, paper
+back and sheet edges depth-tested against the assembly. The motion has no
+deformation, overshoot or invented photo latch.
 
-The website plays once when visible and holds the final view. Reduced-motion
-visitors see a still poster. There are no animation buttons or native video
-controls. The video has no audio.
+The poster and first/last unencoded frames are pixel-identical, checked during
+rendering. The website keeps the poster over the video until a decoded frame is
+ready, crossfades into playback, and restores the same poster at the end.
+It plays once when visible. Reduced-motion visitors see the still poster.
+There are no animation buttons or native video controls. The video has no audio.
 
 Rebuild in the project's CAD Python environment, with FFmpeg installed:
 

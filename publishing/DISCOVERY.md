@@ -14,6 +14,10 @@ Updated 2026-11-18.
 
 ## Next, when more prints and photos are available
 
+The user is still printing examples and making assembly videos; these assets
+are intentionally pending, with no immediate delivery date required. The CAD
+intro remains explicitly labeled as a simulated-photo render in the meantime.
+
 1. Photograph two or three complete frames containing real photos, on a plain magnetic surface in indirect daylight. Include a close relief view and a rear loading view. Use the strongest assembled photograph for the collection's web and app covers; keep the renders as the comparison gallery.
 2. Add a matching photographed MakerWorld profile for Portrait Oval, then the other designs as they are physically printed. Keep each profile's scope and photos aligned with the design it contains.
 3. Film a short loading-and-display demonstration: intact film, slide, turn, magnet attachment. Reuse it in the listings and a small number of relevant community posts, following each community's rules. Publish only with the user's authorization.

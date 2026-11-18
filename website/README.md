@@ -14,9 +14,12 @@ project's generated documentation; a direct README edit is also reflected in
 the next site build.
 
 The theme and navigation live here. The hero uses a small pre-rendered actual-mesh
-video: the photo loads at a rear angle, then the frame turns to a close front view.
-It plays once when visible and holds the finished frame. Reduced-motion visitors
-get a still poster. There are no animation buttons or native video controls.
+video: it starts on the still poster, pulls back and turns around, removes and
+reinserts the photo, then returns to the identical close front pose. The 16-second
+sequence plays once when visible. A still overlay stays in place until a decoded
+video frame is ready and returns at the end, avoiding a blank loading swap.
+The poster and first/last source frames are pixel-identical. Reduced-motion
+visitors get the still poster. There are no animation buttons or native video controls.
 JavaScript turns the README's individual view links into one shared selector
 above the collection. Front, Angled, Back and Photo fit update all eight previews
 and their enlargement links together. Native radio controls support keyboard

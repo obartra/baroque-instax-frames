@@ -57,8 +57,23 @@ document.querySelectorAll('.frame-catalog').forEach(catalog => {
 const demo = document.querySelector('#insertion-demo');
 if (demo) {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const scene = demo.closest('.insertion-scene');
   let visible = false;
+  let waitingForFrame = false;
+  const revealFrame = () => {
+    waitingForFrame = false;
+    if (!demo.paused && !reduced.matches) scene.classList.add('is-playing');
+  };
+  demo.addEventListener('playing', () => {
+    if (waitingForFrame) return;
+    waitingForFrame = true;
+    // Keep the identical still over the video until a decoded frame is ready.
+    if (demo.requestVideoFrameCallback) demo.requestVideoFrameCallback(revealFrame);
+    else requestAnimationFrame(() => requestAnimationFrame(revealFrame));
+  });
+  demo.addEventListener('ended', () => scene.classList.remove('is-playing'));
   const syncPlayback = () => {
+    if (reduced.matches) scene.classList.remove('is-playing');
     if (visible && !reduced.matches && !demo.ended) demo.play().catch(() => {});
     else demo.pause();
   };

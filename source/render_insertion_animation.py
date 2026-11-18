@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-"""Render loading at a rear angle, then orbit to a close front view.
+"""Render a closed camera journey from the poster pose back to that pose.
 
 Every orbit view is rasterized from the actual unchanged front/back meshes.
 The translating film is a 54 x 86 x 1.02 mm box, depth-tested against them.
@@ -25,11 +25,11 @@ import render_floral_utils as renderer
 OUT=ROOT/'assets/demo'
 CACHE=ROOT/'build/insertion-animation/rear-orbit'
 FPS=30
-SECONDS=7.2
+SECONDS=16
 SIZE=720
 BG=np.array([246,244,238])/255
-INITIAL_ANGLE=150.0
-FINAL_ANGLE=15.0
+FRONT_ANGLE=15.0
+REAR_ANGLE=150.0
 SCENE=None
 
 
@@ -103,8 +103,32 @@ def orbit_view(job):
     return path
 
 
+def pose(t):
+    """Hold, pull back, turn, unload/reload, turn forward, and move closer."""
+    if t < 3:
+        angle=FRONT_ANGLE
+    elif t < 5:
+        angle=FRONT_ANGLE+(REAR_ANGLE-FRONT_ANGLE)*ease((t-3)/2)
+    elif t < 10.5:
+        angle=REAR_ANGLE
+    else:
+        angle=REAR_ANGLE+(FRONT_ANGLE-REAR_ANGLE)*ease((t-10.5)/2)
+    if t < 5.4:
+        offset=0
+    elif t < 7.4:
+        offset=-105*ease((t-5.4)/2)
+    elif t < 7.8:
+        offset=-105
+    elif t < 10:
+        offset=-105*(1-ease((t-7.8)/2.2))
+    else:
+        offset=0
+    zoom=1-ease((t-1.2)/1.8) if t < 3 else ease((t-12.5)/2)
+    return round(angle,4),offset,zoom
+
+
 def crop(image,t):
-    zoom=ease((t-3.15)/2.45)
+    _,_,zoom=pose(t)
     center_y=-40*(1-zoom)+4*zoom
     half=125*(1-zoom)+67*zoom
     width,height=image.size
@@ -123,40 +147,37 @@ def main():
     script_digest=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     key=hashlib.sha256((digest+script_digest+hashlib.sha256((ROOT/'source/render_floral_utils.py').read_bytes()).hexdigest()).encode()).hexdigest()[:16]
     cameras=CACHE/key;cameras.mkdir(exist_ok=True)
-    initial_cache=cameras/'initial.npz'
-    if initial_cache.exists():data=dict(np.load(initial_cache))
-    else:data=buffers(INITIAL_ANGLE);np.savez_compressed(initial_cache,**data)
+    rear_cache=cameras/'rear.npz'
+    if rear_cache.exists():data=dict(np.load(rear_cache))
+    else:data=buffers(REAR_ANGLE);np.savez_compressed(rear_cache,**data)
     angles={}
     for i in range(round(FPS*SECONDS)):
         t=i/FPS
-        if t>=3.1:
-            angle=round(INITIAL_ANGLE+(FINAL_ANGLE-INITIAL_ANGLE)*ease((t-3.1)/2),4)
-            angles[angle]=cameras/f'angle-{angle:.4f}.png'
+        angle,_,_=pose(t)
+        angles[angle]=cameras/f'angle-{angle:.4f}.png'
     jobs=[(angle,path) for angle,path in angles.items() if not path.exists()]
     print(f'Rendering {len(jobs)} actual-mesh orbit views',flush=True)
     with ProcessPoolExecutor(max_workers=3,initializer=init_scene) as pool:
         for n,future in enumerate(as_completed([pool.submit(orbit_view,job) for job in jobs]),1):
             future.result()
             if n%10==0 or n==len(jobs):print(f'Orbit {n}/{len(jobs)}',flush=True)
-    first=compose(data,INITIAL_ANGLE,-105)
-    loaded=compose(data,INITIAL_ANGLE,0)
     shots={}
     for i in range(round(FPS*SECONDS)):
         t=i/FPS
-        if t<.45:im=first
-        elif t<2.8:im=compose(data,INITIAL_ANGLE,-105*(1-ease((t-.45)/2.35)))
-        elif t<3.1:im=loaded
+        angle,offset,_=pose(t)
+        if offset:
+            im=compose(data,REAR_ANGLE,offset)
         else:
-            angle=round(INITIAL_ANGLE+(FINAL_ANGLE-INITIAL_ANGLE)*ease((t-3.1)/2),4)
             im=Image.open(angles[angle]).convert('RGB')
         result=crop(im,t)
-        encoded=np.asarray(result).copy()
-        encoded[np.all(encoded==np.array([246,244,238]),axis=2)]=[249,247,241]
-        Image.fromarray(encoded).save(frames/f'{i:04}.png')
-        if i in (0,45,87,114,132,180):shots[i]=result.copy()
+        result.save(frames/f'{i:04}.png')
+        if i in (0,90,162,228,285,360,479):shots[i]=result.copy()
         if i%30==0:print(f'Composited {i}/{round(FPS*SECONDS)}',flush=True)
-    final=Image.open(angles[FINAL_ANGLE]).convert('RGB')
-    crop(final,SECONDS).save(OUT/'photo-insertion-poster.png')
+    # One exact source image supplies the poster and both animation endpoints.
+    first=Image.open(frames/'0000.png').convert('RGB')
+    last=Image.open(frames/f'{round(FPS*SECONDS)-1:04}.png').convert('RGB')
+    assert np.array_equal(np.asarray(first),np.asarray(last))
+    first.save(OUT/'photo-insertion-poster.png')
     strip=Image.new('RGB',(SIZE*len(shots),SIZE),(246,244,238))
     for n,(_,im) in enumerate(sorted(shots.items())):strip.paste(im,(n*SIZE,0))
     strip.resize((2160,360),Image.Resampling.LANCZOS).save(CACHE/'contact-sheet.png')
@@ -166,13 +187,14 @@ def main():
     subprocess.run(common+['-c:v','libvpx-vp9','-crf','28','-b:v','0','-pix_fmt','yuv420p',str(OUT/'photo-insertion.webm')],check=True)
     assert hashlib.sha256(native.read_bytes()).hexdigest()==digest
     provenance={'model':record['model'],'model_sha256':digest,'geometry_changes':False,
-                'camera':{'projection':'orthographic','upright_y_axis':True,'initial_yaw_degrees':INITIAL_ANGLE,'final_yaw_degrees':FINAL_ANGLE,'orbit_start_seconds':3.1,'orbit_end_seconds':5.1,'zoom_end_seconds':5.6},
+                'camera':{'projection':'orthographic','upright_y_axis':True,'initial_yaw_degrees':FRONT_ANGLE,'rear_yaw_degrees':REAR_ANGLE,'final_yaw_degrees':FRONT_ANGLE,'zoom_out_seconds':[1.2,3],'turn_back_seconds':[3,5],'turn_front_seconds':[10.5,12.5],'zoom_in_seconds':[12.5,14.5]},
                 'film_mm':[54,86,1.02],'film_z_bounds_mm':[2.485,3.505],'film_y_translation_mm':[-105,0],
-                'entry':'from below, narrow border first; wide border trails below','film_fully_seated_seconds':2.8,
-                'display_canvas_rgb':[246,244,238],'video_encoding_matte_rgb':[249,247,241],'video_css_blend':'darken against page paper',
+                'entry':'from below, narrow border first; wide border trails below','film_removal_seconds':[5.4,7.4],'film_insertion_seconds':[7.8,10],'film_fully_seated_seconds':10,
+                'display_canvas_rgb':[246,244,238],'video_encoding_matte_rgb':[246,244,238],'video_css_blend':'darken against page paper',
+                'poster_matches_first_and_last_source_frames':True,
                 'duration_seconds':SECONDS,'fps':FPS,'image_material':'assets/brand/simulated-coastal-photo.png','render_source':'source/render_insertion_animation.py',
                 'occlusion':'Full-thickness film box depth-tested against actual assembled meshes at every orbit view',
-                'motion':'Load at a rear three-quarter angle, then turn to the front and move closer. No deformation, overshoot or invented latch.',
+                'motion':'Start at the poster pose, move back, turn to the rear, remove and reinsert the film, turn forward and move closer to the identical poster pose. No deformation, overshoot or invented latch.',
                 'outputs':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*') if p.suffix in ('.mp4','.webm','.png')}}
     (OUT/'render-record.json').write_text(json.dumps(provenance,indent=2)+'\n')
     print('Wrote actual-mesh rear-to-front insertion demo:',OUT,flush=True)

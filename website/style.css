@@ -9,6 +9,10 @@ footer{text-align:center;border-top:1px solid var(--line);padding:55px 5% 35px;m
 /* The demo uses the actual render canvas; motion remains optional. */
 .hero-image{position:relative}
 .insertion-video{mix-blend-mode:darken;display:block;width:100%;max-width:540px;height:auto;margin:auto;background:var(--paper)}
+.insertion-scene{position:relative;display:block;width:100%;max-width:540px;margin:auto;isolation:isolate}
+.hero-image .insertion-poster{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;mix-blend-mode:darken;opacity:1;transition:opacity .2s ease;pointer-events:none}
+.insertion-scene.is-playing .insertion-poster{opacity:0}
+@media(prefers-reduced-motion:reduce){.hero-image .insertion-poster{transition:none}}
 
 .hero-copy a[href*="amazon"]{white-space:nowrap}
 

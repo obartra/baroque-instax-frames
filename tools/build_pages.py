@@ -127,13 +127,13 @@ def build():
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(original, target)
         videos[name] = target.relative_to(OUT).as_posix()
-    video = f'''<video id="insertion-demo" class="insertion-video" width="720" height="720" muted playsinline preload="metadata" poster="{poster['url']}" aria-label="A whole Instax Mini photo loads from below at a rear angle, then the frame turns to a close front view">
+    video = f'''<span class="insertion-scene"><video id="insertion-demo" class="insertion-video" width="720" height="720" muted playsinline preload="metadata" poster="{poster['url']}" aria-label="The frame pulls back and turns around; a whole Instax Mini photo slides out and back in before the frame returns to the same close front view">
       <source src="{videos['photo-insertion.webm']}" type="video/webm">
       <source src="{videos['photo-insertion.mp4']}" type="video/mp4">
       <a href="{videos['photo-insertion.mp4']}">Watch the photo insertion animation</a>
-    </video>'''
+    </video><img class="insertion-poster" src="{poster['url']}" srcset="{poster['url']} 720w" sizes="(max-width: 700px) 88vw, 540px" width="720" height="720" alt="" aria-hidden="true" fetchpriority="high"></span>'''
     hero = re.sub(r'<img[^>]*>', lambda _: video, hero, count=1)
-    hero = hero.replace('Segmental Arch · actual frame mesh, simulated photo', 'Actual 3D model · rear loading view to front display')
+    hero = hero.replace('Segmental Arch · actual frame mesh, simulated photo', 'Actual 3D model · simulated photo')
     intro_html = render(intro)
     # The README supplies section headings, text, tables, illustrations, licenses
     # and download/view links. Site-specific content is presentation/navigation.
@@ -296,7 +296,7 @@ def verify():
             if tag=='title': self.in_title=True
             if tag=='script' and attrs.get('type')=='application/ld+json': self.in_schema=True
             if tag=='img':
-                assert attrs.get('alt'), 'Image without alt text'
+                assert attrs.get('alt') or (attrs.get('aria-hidden')=='true' and attrs.get('alt')==''), 'Image without alt text'
                 assert attrs.get('width') and attrs.get('height'), 'Image without layout dimensions'
                 assert attrs.get('srcset') and attrs.get('sizes'), 'Image without responsive sources'
         def handle_endtag(self,tag):
