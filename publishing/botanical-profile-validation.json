@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "design": "Botanical Garland v3",
+  "changes": "Gray mat; black ornament and back share filament 2. Geometry unchanged from current native project.",
+  "geometry_identical": true,
+  "printer": "Bambu P2S 0.4 mm",
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warnings": [],
+  "print_submitted": false,
+  "profile_file_sha256": "445de06e8a3c6d8bb6b69bb5f56997d520e04cbdbe20f173fe1eb9f210f88104"
+}

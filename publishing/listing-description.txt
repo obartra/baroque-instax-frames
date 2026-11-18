@@ -27,7 +27,7 @@ Assign colors by part if your slicer supports multi-material printing. For a man
 ABOUT THE DESIGNS
 These are new, historically informed compositions, developed with AI-assisted carving studies and custom CAD. They are not antique scans or reproductions. The current eight designs do not reuse the earlier WLM/MakerWorld ornamental meshes. Models and project artwork are released under CC0 to the extent rights can be waived; code is MIT. Detailed provenance and license scope are in the source repository.
 
-Gallery images are CAD renders and assembly illustrations; the cover photo is simulated. Actual print photos will be added as they become available. The collection has digital geometry and slicing checks; this is not a claim that every design has been physically tested.
+The gallery includes actual Botanical Garland print photos alongside CAD renders and assembly illustrations. The cover uses a simulated photo. The real photos show the printed front, the rear with three magnets and an Instax darkslide demonstrating insertion, and the clip/socket assembly. The printed example uses a black frame and gray mat. These photos document Botanical Garland, not physical testing of every design.
 
 PROJECT, DOWNLOADS AND ILLUSTRATED INSTRUCTIONS
 https://obartra.github.io/baroque-instax-frames/
