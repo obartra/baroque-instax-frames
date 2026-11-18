@@ -2,6 +2,12 @@
 
 Updated 2026-11-18.
 
+## GitHub release and website — published
+
+[v0.2.0 — Eight floral Instax Mini magnetic frames](https://github.com/obartra/baroque-instax-frames/releases/tag/v0.2.0) is the latest public release. It provides 3MF-only, STL-only and complete packs, with assembly illustrations, license details and checksums. All eight native projects and 24 STL parts were checked against the current catalog; remote asset digests match the prepared downloads.
+
+The website has a descriptive Instax Mini search title, a wide sharing card, structured data and eight individual design pages. All nine canonical pages are included in the sitemap. Local checks, browser navigation/view checks and GitHub's Python 3.12 verification and Pages workflows passed. Google Search Console verification is prepared; the final ownership confirmation is pending.
+
 ## Printables — published
 
 [Rococo Instax Mini Magnetic Frames – 8 Designs](https://www.printables.com/model/1920140-rococo-instax-mini-magnetic-frames-8-designs)

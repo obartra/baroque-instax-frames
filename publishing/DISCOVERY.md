@@ -26,7 +26,7 @@ After enough visits accumulate, compare website search impressions, queries and 
 - Views but few downloads: improve the cover's clarity and make fit, required magnets and file choice easier to understand.
 - Downloads but few prints: prioritize the missing photographed print profiles and investigate any assembly feedback.
 
-Keep a record of cover/title changes and their dates. These are practical experiments, not guarantees about a platform's private ranking algorithm. No purchased engagement, duplicate model uploads or requests for positive ratings are part of this plan.
+Keep a record of cover/title changes and their dates. These are practical experiments, not guarantees about a platform's private ranking algorithm.
 
 ## References
 

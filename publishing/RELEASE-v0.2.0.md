@@ -1,5 +1,7 @@
 Eight floral magnetic frames for full, uncut Instax Mini photos, with matching backs and three concealed 6 × 3 mm magnets per frame.
 
+![All eight floral Instax Mini magnetic frames, rendered from the actual models](https://raw.githubusercontent.com/obartra/baroque-instax-frames/v0.2.0/renders/Eight-frames-current.png)
+
 Choose a download:
 
 - **3MF:** eight Bambu Studio projects, each with its front and back on two plates.
