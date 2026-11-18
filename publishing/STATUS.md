@@ -8,6 +8,8 @@ Updated 2026-11-18.
 
 The website has a descriptive Instax Mini search title, a wide sharing card, structured data and eight individual design pages. All nine canonical pages are included in the sitemap. Local checks, browser navigation/view checks and GitHub's Python 3.12 verification and Pages workflows passed. Google Search Console ownership is verified with the personal Google account. The work account was removed from the property and its HTML verification token was replaced. The nine-page sitemap was submitted; its initial Search Console fetch reported “couldn’t fetch” despite successful HTTP 200 XML checks. The homepage passed Google’s indexing-request live test and was added to the priority crawl queue. Indexing is not yet established.
 
+GitHub also uses the prepared 1200 × 630 Segmental Arch sharing card as its custom repository social preview. The image is `assets/brand/social-preview.png`, labeled as an actual CAD render with a simulated photo. The settings page and GitHub API both confirmed that the custom preview was saved on 2026-11-18.
+
 ## Printables — published
 
 [Rococo Instax Mini Magnetic Frames – 8 Designs](https://www.printables.com/model/1920140-rococo-instax-mini-magnetic-frames-8-designs)
