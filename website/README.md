@@ -22,6 +22,26 @@ above the collection. Front, Angled, Back and Photo fit update all eight preview
 and their enlargement links together. Native radio controls support keyboard
 navigation. Without JavaScript, the individual image links and downloads remain
 available. JavaScript also starts the intro animation.
+
+## Search and sharing
+
+The collection has a descriptive Instax Mini search title, a canonical URL,
+Open Graph and large-card sharing metadata, and CollectionPage / ItemList
+structured data. The wide sharing preview is rendered from the unchanged
+Segmental Arch model by `source/render_social_preview.py`.
+
+Eight static design pages under `frames/<slug>/` are generated from
+`catalog/current.json` and the design-specific notes in `frame-notes.json`.
+Dimensions, depth, print-time estimates, file links and views come from the
+catalog. These pages have distinct titles, descriptions and CreativeWork file
+metadata; they do not claim commercial offers or review ratings. The catalog
+links to them, and `sitemap.xml` includes all nine canonical URLs. The build
+checks metadata, JSON-LD, internal page/asset links, downloads and the sitemap.
+
+The Google Search Console verification meta tag lives in the home template and
+must remain present after verification. The site's project-directory
+`robots.txt` is not the host-root robots file; submit the sitemap in Search
+Console to make discovery explicit. The site adds no visitor-tracking script.
 3MF downloads always point to `models/current/` on `main`; the matching STL ZIPs
 point to `models/current/stl/`. Both use direct file links. Source and detailed
 documentation links open the corresponding repository files.
