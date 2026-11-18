@@ -25,5 +25,19 @@
   "notes": [
     "Scores are estimates and vary between runs. SEO score covers basic automated checks and does not establish indexing or search ranking.",
     "GitHub Pages controls the static host cache headers; no hosting change is planned."
+  ],
+  "iterations": [
+    {
+      "report_url": "https://pagespeed.web.dev/analysis/https-obartra-github-io-baroque-instax-frames/l5ssf0xk1m?form_factor=mobile",
+      "captured_local": "2026-11-18 16:30 America/New_York",
+      "commit": "cfe1b4e",
+      "performance": 97,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 100,
+      "total_payload_kib": 3214,
+      "estimated_image_savings_kib": 439,
+      "finding": "A focusable fallback link inside the aria-hidden decorative video failed accessibility and agent-tree checks. Removed before the final audit."
+    }
   ]
 }

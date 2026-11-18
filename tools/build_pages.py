@@ -135,7 +135,6 @@ def build():
     video = f'''<span class="insertion-scene" role="img" aria-label="Segmental Arch frame holding an uncut Instax Mini photo; the rear channel lets the whole photo slide out and back in."><video id="insertion-demo" class="insertion-video" width="720" height="720" muted playsinline preload="none" poster="{poster['url']}" aria-hidden="true">
       <source data-src="{videos['photo-insertion.webm']}" type="video/webm">
       <source data-src="{videos['photo-insertion.mp4']}" type="video/mp4">
-      <a href="{videos['photo-insertion.mp4']}">Watch the photo insertion animation</a>
     </video><img class="insertion-poster" src="{poster['url']}" srcset="{poster['url']} 720w" sizes="(max-width: 700px) 88vw, 540px" width="720" height="720" alt="" aria-hidden="true" fetchpriority="high"></span>'''
     hero = re.sub(r'<img[^>]*>', lambda _: video, hero, count=1)
     hero = hero.replace('Segmental Arch · actual frame mesh, simulated photo', 'Actual 3D model · simulated photo')
