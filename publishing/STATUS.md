@@ -6,7 +6,9 @@ Updated 2026-11-20. v0.3.0 restores mat-overflow ornament in six fronts. Segment
 
 The exact canonical models, aligned STLs, previews, compatibility evidence, source inputs and changelog are prepared. All canonical revised projects and all-eight two-color exports passed local slicing; the 27 restored contour regions receive first-ornament-layer extrusion, and layerwise back checks pass. Revised physical tests are pending.
 
-Release publication is in progress. Public destination states and verification will be recorded here after upload. The [upgrade guide](../docs/UPGRADING-v0.3.0.md), [changelog](../CHANGELOG.md), [compatibility/path evidence](../validation/overflow-v0.3.0.json) and [profile validation](profile-candidates-validation.json) describe the exact update.
+The [GitHub v0.3.0 release](https://github.com/obartra/baroque-instax-frames/releases/tag/v0.3.0) is public, with all four download packs and `SHA256SUMS`. All five remote asset digests and sizes match the locally validated files. The merged source passed GitHub verification. GitHub Pages deployed successfully; all nine live pages and their referenced image pixels match the validated build, and the latest-release and direct v0.3.0 two-color download links are current. See the [publication record](publication-v0.3.0.json) for exact artifacts and destination states.
+
+MakerWorld and Printables updates are prepared but **not submitted**. The user requested finishing GitHub first while using Chrome. Their existing files and app profiles must not be mistaken for the revised release. The [upgrade guide](../docs/UPGRADING-v0.3.0.md), [changelog](../CHANGELOG.md), [compatibility/path evidence](../validation/overflow-v0.3.0.json) and [profile validation](profile-candidates-validation.json) describe the exact update.
 
 - GitHub release target: https://github.com/obartra/baroque-instax-frames/releases/tag/v0.3.0
 - Website: https://obartra.github.io/baroque-instax-frames/

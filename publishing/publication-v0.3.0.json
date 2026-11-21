@@ -1,0 +1,112 @@
+{
+  "version": "v0.3.0",
+  "published_at": "2026-11-21T03:34:05Z",
+  "release_url": "https://github.com/obartra/baroque-instax-frames/releases/tag/v0.3.0",
+  "release_commit": "36e655796829acfb6c6afb10914bf3ffee34b5e4",
+  "pull_request": "https://github.com/obartra/baroque-instax-frames/pull/1",
+  "assets_verified_at": "2026-11-21T03:35:00.008790+00:00",
+  "asset_verification": "All remote SHA-256 digests and sizes match the locally validated archives.",
+  "assets": [
+    {
+      "name": "Floral-Instax-Frames-v0.3.0-3MF.zip",
+      "size": 94799661,
+      "digest": "sha256:2d57450de855e812f6b2f17624c91ebb5439ebef45c0deda9fdad3fdc1a4c53f",
+      "browser_download_url": "https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-3MF.zip"
+    },
+    {
+      "name": "Floral-Instax-Frames-v0.3.0-Complete.zip",
+      "size": 236114148,
+      "digest": "sha256:339dbedf025d9335c5e37051c8b23b7029c018cdbe0e365a8e56dd6acc0fe897",
+      "browser_download_url": "https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-Complete.zip"
+    },
+    {
+      "name": "Floral-Instax-Frames-v0.3.0-STL.zip",
+      "size": 139989774,
+      "digest": "sha256:0bf44f986d8f9a418ec0df4dc6c253d42a65db6ab16c7c514150978128cc8f7d",
+      "browser_download_url": "https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-STL.zip"
+    },
+    {
+      "name": "Floral-Instax-Frames-v0.3.0-Two-Color-P2S.zip",
+      "size": 156673259,
+      "digest": "sha256:6e8b45a2689255a91e062403c59d230a87ebee38f6b36ad51467c325e0ba1bed",
+      "browser_download_url": "https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-Two-Color-P2S.zip"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 423,
+      "digest": "sha256:8201c5ab7574ec98f92e098943767b60889adfbb5b2ae08d9b4795e25e8188c0",
+      "browser_download_url": "https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/SHA256SUMS"
+    }
+  ],
+  "ci": {
+    "verify_collection": "https://github.com/obartra/baroque-instax-frames/actions/runs/44861777535",
+    "status": "success"
+  },
+  "website": {
+    "url": "https://obartra.github.io/baroque-instax-frames/",
+    "status": "live; verified",
+    "verified_at": "2026-11-21T03:36:42.315917+00:00",
+    "deployment": "https://github.com/obartra/baroque-instax-frames/actions/runs/44861777540",
+    "page_count": 9,
+    "image_count": 38,
+    "verification": "All nine live HTML pages match the validated local build byte for byte. All referenced images match dimensions and decoded RGB pixels (WebP container bytes vary between encoders). The latest-release link resolves to v0.3.0 (verified via GitHub API); the direct two-color v0.3.0 pack link is present.",
+    "pages": [
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/",
+        "status": 200,
+        "sha256": "92aeef30b4d5462ee0150b89f0aed7267b6da903032caa857210516eb7cfb509"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/canted-octagon/",
+        "status": 200,
+        "sha256": "a03559ed5204a22bec947ffc162d08f003d8e0a5be6540a599caf642b40e661c"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/segmental-arch/",
+        "status": 200,
+        "sha256": "0fe8cb614a8588aef277a4c9e0f58fd4a971602cc402f293d467a37bba81cc3f"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/cushion-cartouche/",
+        "status": 200,
+        "sha256": "d5f6d5d0422b0d973c67166df85399dab5f0192fecdd9faeddf0f78a8796f280"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/floral-corners/",
+        "status": 200,
+        "sha256": "f629b9a026925184f3a18a0d7676b1ee385e6ddb6828eb0c5e9f07631b8b9d28"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/botanical-garland/",
+        "status": 200,
+        "sha256": "fad87732b62affeed374a589449ac861359d80656174ae1d359c3dd5b166c771"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/acanthus-gallery/",
+        "status": 200,
+        "sha256": "d7be75f84c1c537d0edaab99e7b5567e8d5438ec7020a9d3b2d5fcc48cc6d17d"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/portrait-oval/",
+        "status": 200,
+        "sha256": "d5c479e6d8908f6ff233c2073e06638d512c1a7e39a92d4f043fdd2d82776984"
+      },
+      {
+        "url": "https://obartra.github.io/baroque-instax-frames/frames/landscape-oval/",
+        "status": 200,
+        "sha256": "f12197a06ce786a5015d39cd55535cd9aa063b6e0a676d2df28fbb49f12da605"
+      }
+    ]
+  },
+  "platforms": {
+    "makerworld": {
+      "status": "v0.3.0 update prepared; not submitted; user is using Chrome"
+    },
+    "printables": {
+      "status": "v0.3.0 update prepared; not submitted; user is using Chrome"
+    }
+  },
+  "revised_physical_tests": "pending",
+  "legacy_photos_and_app_profiles": "pre-v0.3.0; not revised print evidence",
+  "public_downloads": "All five public asset URLs return HTTP 200 and expected sizes; downloaded SHA256SUMS matches local manifest."
+}
