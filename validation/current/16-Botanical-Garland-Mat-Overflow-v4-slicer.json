@@ -1,0 +1,30 @@
+{
+  "id": "16-Botanical-Garland-Mat-Overflow-v4",
+  "file": "16-Botanical-Garland-Mat-Overflow-v4-Instax-Mini-3-Magnets.3mf",
+  "sha256": "9cfc24e95b5d036570425a379901ac40cd7878d19f7619b94163e304b5e1f6de",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    170.8,
+    56.3
+  ],
+  "material_g": [
+    17.22,
+    6.62
+  ],
+  "sliced_project": "16-Botanical-Garland-Mat-Overflow-v4/slice-final/16-Botanical-Garland-Mat-Overflow-v4-P2S-Sliced.3mf",
+  "sliced_sha256": "8e1b340da4251af1f1ba0e6c5a5974d0563a428721a15129a1ff778633afb0bc",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}

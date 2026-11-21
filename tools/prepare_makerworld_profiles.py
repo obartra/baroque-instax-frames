@@ -109,14 +109,14 @@ def prepare(frame, output):
         'material_g': [round(sum(f['total_used_g'] for f in p['filaments']), 2) for p in plates],
         'sliced_sha256': digest(sliced / (frame['slug'] + '-P2S-Sliced.3mf')),
         'settings_match_published_botanical_profile': True,
-        'publication_status': ('existing Botanical Garland profile is published; this rebuild not uploaded'
-            if frame['slug'] == 'botanical-garland' else 'awaiting matching physical-print photos'),
+        'publication_status': 'v0.3.0 raw files ready; revised app profile awaits matching physical-print photos',
+        'release': 'v0.3.0',
         'physical_print_verified_by_this_run': False,
         'print_submitted': False,
     }
     (folder / 'validation.json').write_text(json.dumps(record, indent=2) + '\n')
     direction = 'left edge, viewed from the front' if frame['orientation'] == 'landscape' else 'bottom edge'
-    description = f"""{frame['name']} · 2 plates · 0.08 mm · reinforced mat
+    description = f"""{frame['name']} · v0.3.0 · 2 plates · 0.08 mm · reinforced mat
 
 Matching front and three-magnet back for a full, uncut 86 × 54 mm Instax Mini photo.
 Plate 1: gray mat, then black ornament; one color change. Plate 2: black back.

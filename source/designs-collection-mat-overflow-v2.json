@@ -1,0 +1,2323 @@
+[
+  {
+    "id": "12-Rocaille-Canted-Octagon-Mat-Overflow-v2",
+    "name": "Rocaille Canted Octagon",
+    "orientation": "landscape",
+    "shape": "octagon",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-master-v1.png",
+    "depth_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-master-v1.png",
+    "normal_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -34,
+        -29.5
+      ],
+      [
+        -34,
+        29.5
+      ],
+      [
+        34,
+        -29.5
+      ],
+      [
+        34,
+        29.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.06,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 35,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New octagon floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Canted Octagon \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New octagon composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Genuinely eight-sided landscape silhouette with long horizontal and vertical rails and four equal diagonal clipped corners; eight-sided aperture. Diagonal corner lands part of continuous octagonal moulding. Unequal large floral/acanthus clusters bridge the clipped corners, long rails carry tapered scrolling stems and recessed grounds. A single broad low curled shell near the top, a smaller foliated curl beneath; no crown. Clearly an octagon, never an oval.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.16,
+          0.5,
+          0.075,
+          0.1
+        ],
+        "feature": "left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.275,
+          0.15,
+          0.055,
+          0.07
+        ],
+        "feature": "upper left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.79,
+          0.23,
+          0.075,
+          0.11
+        ],
+        "feature": "upper right flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.2,
+          0.8,
+          0.07,
+          0.08
+        ],
+        "feature": "lower left bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.09,
+          0.12,
+          0.085
+        ],
+        "feature": "curled upper shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/collection-overflow-revision/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/12-Rocaille-Canted-Octagon-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true,
+    "mat_height_mm": 0.68,
+    "petal_overlap_regions_mm": [
+      [
+        -29,
+        30,
+        8
+      ],
+      [
+        38,
+        24,
+        10
+      ],
+      [
+        -38,
+        -25,
+        11
+      ],
+      [
+        37,
+        -24,
+        8
+      ],
+      [
+        -20,
+        30,
+        4
+      ],
+      [
+        20.5,
+        30,
+        4
+      ],
+      [
+        -38.5,
+        19,
+        4
+      ],
+      [
+        -23,
+        -30,
+        4
+      ],
+      [
+        25,
+        -30,
+        4
+      ]
+    ],
+    "petal_overlap_outline_regions_mm": [
+      [
+        [
+          -37,
+          38
+        ],
+        [
+          -21,
+          38
+        ],
+        [
+          -21,
+          29
+        ],
+        [
+          -24,
+          28.4
+        ],
+        [
+          -24.7,
+          27.6
+        ],
+        [
+          -25.4,
+          27
+        ],
+        [
+          -25.6,
+          26
+        ],
+        [
+          -26.3,
+          25.2
+        ],
+        [
+          -27.5,
+          25.1
+        ],
+        [
+          -28.7,
+          25.5
+        ],
+        [
+          -29.4,
+          25.5
+        ],
+        [
+          -30.3,
+          25.1
+        ],
+        [
+          -31.3,
+          25.3
+        ],
+        [
+          -33,
+          26
+        ]
+      ],
+      [
+        [
+          30,
+          35
+        ],
+        [
+          49,
+          35
+        ],
+        [
+          49,
+          18
+        ],
+        [
+          41,
+          18
+        ],
+        [
+          39.4,
+          17.6
+        ],
+        [
+          37,
+          17.6
+        ],
+        [
+          35.8,
+          18.1
+        ],
+        [
+          35.1,
+          19.2
+        ],
+        [
+          34.8,
+          20.5
+        ],
+        [
+          34,
+          21.1
+        ],
+        [
+          33,
+          20.8
+        ],
+        [
+          32,
+          21.1
+        ],
+        [
+          31.3,
+          22
+        ],
+        [
+          30,
+          22.5
+        ]
+      ],
+      [
+        [
+          -49,
+          -17
+        ],
+        [
+          -37,
+          -17
+        ],
+        [
+          -35.6,
+          -20.8
+        ],
+        [
+          -34.7,
+          -20.1
+        ],
+        [
+          -33.4,
+          -19.9
+        ],
+        [
+          -32.4,
+          -20.2
+        ],
+        [
+          -31.9,
+          -21.2
+        ],
+        [
+          -30.8,
+          -21.6
+        ],
+        [
+          -29.8,
+          -22.1
+        ],
+        [
+          -29.2,
+          -23
+        ],
+        [
+          -29,
+          -23.7
+        ],
+        [
+          -29.4,
+          -24.3
+        ],
+        [
+          -30.2,
+          -24.6
+        ],
+        [
+          -30.4,
+          -25.2
+        ],
+        [
+          -30,
+          -26.1
+        ],
+        [
+          -30.2,
+          -26.8
+        ],
+        [
+          -31,
+          -27.4
+        ],
+        [
+          -32.4,
+          -26.9
+        ],
+        [
+          -33,
+          -26.5
+        ],
+        [
+          -33,
+          -34
+        ],
+        [
+          -49,
+          -34
+        ]
+      ],
+      [
+        [
+          32,
+          -30
+        ],
+        [
+          45,
+          -30
+        ],
+        [
+          45,
+          -18
+        ],
+        [
+          38,
+          -18
+        ],
+        [
+          37,
+          -19
+        ],
+        [
+          36,
+          -19.1
+        ],
+        [
+          35,
+          -19.6
+        ],
+        [
+          34,
+          -20.4
+        ],
+        [
+          33,
+          -21.4
+        ],
+        [
+          32.5,
+          -22.5
+        ],
+        [
+          31.9,
+          -24.4
+        ],
+        [
+          31.9,
+          -25.5
+        ]
+      ],
+      [
+        [
+          -24,
+          35
+        ],
+        [
+          -16,
+          35
+        ],
+        [
+          -16,
+          29.4
+        ],
+        [
+          -18,
+          29.4
+        ],
+        [
+          -18.5,
+          28.6
+        ],
+        [
+          -19,
+          28
+        ],
+        [
+          -19.6,
+          27.8
+        ],
+        [
+          -20.1,
+          28.1
+        ],
+        [
+          -20.4,
+          28.4
+        ],
+        [
+          -20.8,
+          28
+        ],
+        [
+          -21.4,
+          27.8
+        ],
+        [
+          -21.9,
+          28.2
+        ],
+        [
+          -22.2,
+          29
+        ],
+        [
+          -24,
+          29.5
+        ]
+      ],
+      [
+        [
+          16,
+          35
+        ],
+        [
+          25,
+          35
+        ],
+        [
+          25,
+          29.2
+        ],
+        [
+          23,
+          29.1
+        ],
+        [
+          22.8,
+          28.4
+        ],
+        [
+          22.2,
+          27.7
+        ],
+        [
+          21.6,
+          27.4
+        ],
+        [
+          21,
+          27.5
+        ],
+        [
+          20.7,
+          28
+        ],
+        [
+          20.4,
+          27.7
+        ],
+        [
+          20,
+          27.3
+        ],
+        [
+          19.3,
+          27.2
+        ],
+        [
+          18.7,
+          27.6
+        ],
+        [
+          18.4,
+          28.2
+        ],
+        [
+          18.5,
+          29.1
+        ],
+        [
+          16,
+          29.2
+        ]
+      ],
+      [
+        [
+          -43,
+          23
+        ],
+        [
+          -38,
+          23
+        ],
+        [
+          -37.5,
+          21
+        ],
+        [
+          -36.7,
+          21
+        ],
+        [
+          -36.2,
+          20.6
+        ],
+        [
+          -35.5,
+          20
+        ],
+        [
+          -35.3,
+          19.2
+        ],
+        [
+          -35.7,
+          18.5
+        ],
+        [
+          -36.5,
+          18.3
+        ],
+        [
+          -36,
+          17.8
+        ],
+        [
+          -35.7,
+          17.1
+        ],
+        [
+          -35.8,
+          16.5
+        ],
+        [
+          -36.3,
+          15.9
+        ],
+        [
+          -37,
+          15.7
+        ],
+        [
+          -38,
+          16
+        ],
+        [
+          -43,
+          16
+        ]
+      ],
+      [
+        [
+          -27,
+          -35
+        ],
+        [
+          -19,
+          -35
+        ],
+        [
+          -19,
+          -29.2
+        ],
+        [
+          -21.8,
+          -29.3
+        ],
+        [
+          -21.7,
+          -28.6
+        ],
+        [
+          -22,
+          -28
+        ],
+        [
+          -22.6,
+          -27.6
+        ],
+        [
+          -23.3,
+          -27.6
+        ],
+        [
+          -24,
+          -27.8
+        ],
+        [
+          -24.4,
+          -28.5
+        ],
+        [
+          -24.4,
+          -29.1
+        ],
+        [
+          -27,
+          -29
+        ]
+      ],
+      [
+        [
+          21,
+          -35
+        ],
+        [
+          29,
+          -35
+        ],
+        [
+          29,
+          -29
+        ],
+        [
+          28,
+          -28.6
+        ],
+        [
+          27.9,
+          -28.1
+        ],
+        [
+          27.2,
+          -27.8
+        ],
+        [
+          26.4,
+          -27.8
+        ],
+        [
+          25.6,
+          -28.1
+        ],
+        [
+          25.2,
+          -27.7
+        ],
+        [
+          24.4,
+          -27.5
+        ],
+        [
+          23.8,
+          -27.7
+        ],
+        [
+          23.3,
+          -28.2
+        ],
+        [
+          23.3,
+          -29.1
+        ],
+        [
+          21,
+          -29.4
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2",
+    "name": "Rocaille Cushion Cartouche",
+    "orientation": "landscape",
+    "shape": "cushion",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-master-v2.png",
+    "depth_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-master-v2.png",
+    "normal_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 0.96,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New cushion floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Cushion Cartouche \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New cushion composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape four-shouldered cushion cartouche, almost rectangular with convex swelling corners linked by continuous concave and convex sweeps. Rounded rectangular aperture with four identical circular corner radii and near-straight sides. Two diagonal large blooms and two varied smaller floral groups grow from scrolling rails. Off-folded upper shell, lower foliated curl. Neither ellipse nor pointed diamond, no pillow with pasted flowers.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.15,
+          0.66,
+          0.095,
+          0.12
+        ],
+        "feature": "lower left flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.85,
+          0.31,
+          0.105,
+          0.105
+        ],
+        "feature": "upper right flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.13,
+          0.23,
+          0.07,
+          0.08
+        ],
+        "feature": "upper left turned bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.86,
+          0.61,
+          0.065,
+          0.08
+        ],
+        "feature": "lower right closed flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.16,
+          0.12,
+          0.105
+        ],
+        "feature": "curled upper shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.51,
+          0.79,
+          0.12,
+          0.11
+        ],
+        "feature": "lower foliate curl",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/collection-overflow-revision/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/14-Rocaille-Cushion-Cartouche-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true,
+    "mat_height_mm": 0.68,
+    "petal_overlap_regions_mm": [
+      [
+        43,
+        21,
+        13
+      ],
+      [
+        -43,
+        -23,
+        13
+      ],
+      [
+        0.5,
+        29,
+        4
+      ],
+      [
+        1,
+        -29,
+        5
+      ]
+    ],
+    "petal_overlap_outline_regions_mm": [
+      [
+        [
+          33,
+          36
+        ],
+        [
+          56,
+          36
+        ],
+        [
+          56,
+          12
+        ],
+        [
+          38,
+          12
+        ],
+        [
+          37,
+          16.1
+        ],
+        [
+          36.1,
+          16.5
+        ],
+        [
+          36.2,
+          17.6
+        ],
+        [
+          37,
+          18.3
+        ],
+        [
+          38,
+          18.4
+        ],
+        [
+          39.8,
+          16.8
+        ],
+        [
+          39,
+          18.2
+        ],
+        [
+          38.3,
+          19.1
+        ],
+        [
+          37,
+          20.1
+        ],
+        [
+          36.2,
+          20.3
+        ],
+        [
+          35,
+          21
+        ],
+        [
+          34,
+          21.3
+        ],
+        [
+          33.3,
+          22.1
+        ],
+        [
+          33.1,
+          23
+        ],
+        [
+          33.6,
+          23.8
+        ],
+        [
+          32.5,
+          24.9
+        ],
+        [
+          32,
+          26
+        ],
+        [
+          32.3,
+          27
+        ],
+        [
+          33,
+          28
+        ]
+      ],
+      [
+        [
+          -55,
+          -34
+        ],
+        [
+          -31,
+          -34
+        ],
+        [
+          -31.7,
+          -28
+        ],
+        [
+          -31.6,
+          -26.8
+        ],
+        [
+          -32,
+          -25.1
+        ],
+        [
+          -33,
+          -24
+        ],
+        [
+          -34.2,
+          -22.4
+        ],
+        [
+          -35.3,
+          -22.1
+        ],
+        [
+          -35.5,
+          -21.7
+        ],
+        [
+          -34.6,
+          -21.2
+        ],
+        [
+          -34.6,
+          -20.3
+        ],
+        [
+          -35.4,
+          -19.5
+        ],
+        [
+          -35.7,
+          -18.1
+        ],
+        [
+          -36.2,
+          -17.6
+        ],
+        [
+          -36.1,
+          -16
+        ],
+        [
+          -55,
+          -16
+        ]
+      ],
+      [
+        [
+          -1.4,
+          33
+        ],
+        [
+          3.2,
+          33
+        ],
+        [
+          3.2,
+          28.1
+        ],
+        [
+          1.9,
+          28
+        ],
+        [
+          1.8,
+          27.1
+        ],
+        [
+          1,
+          26.7
+        ],
+        [
+          0,
+          26.8
+        ],
+        [
+          -0.6,
+          27.3
+        ],
+        [
+          -0.9,
+          28
+        ],
+        [
+          -1.4,
+          28.3
+        ]
+      ],
+      [
+        [
+          -3.5,
+          -33
+        ],
+        [
+          5.4,
+          -33
+        ],
+        [
+          5.2,
+          -27.1
+        ],
+        [
+          4.3,
+          -26.6
+        ],
+        [
+          3.2,
+          -26.6
+        ],
+        [
+          2.4,
+          -26.8
+        ],
+        [
+          1.5,
+          -27.1
+        ],
+        [
+          0.6,
+          -26.6
+        ],
+        [
+          -0.3,
+          -26.2
+        ],
+        [
+          -1.1,
+          -26.2
+        ],
+        [
+          -1.9,
+          -26.6
+        ],
+        [
+          -2,
+          -27
+        ],
+        [
+          -3,
+          -27.2
+        ],
+        [
+          -3.5,
+          -28
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "15-Rocaille-Floral-Corners-Mat-Overflow-v2",
+    "name": "Rocaille Floral Corners",
+    "orientation": "landscape",
+    "shape": "rectangle",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v2.png",
+    "depth_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-master-v2.png",
+    "normal_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/15-Rocaille-Floral-Corners-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -44,
+        -31.5
+      ],
+      [
+        -44,
+        31.5
+      ],
+      [
+        44,
+        -31.5
+      ],
+      [
+        44,
+        31.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 0.96,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 220,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New rectangle floral composition informed by The Met public-domain photograph of frame1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Floral Corners \u2014 Instax Mini",
+    "project_description": "Historically grounded French floral Rococo miniature; uncut Instax Mini, modern supported relief, four rounded-root PLA clips and three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art,1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New rectangle composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "brief": "Landscape rectangular inner architecture, corner-and-center composition. Four DIFFERENT flower-and-leaf groups: upper-left open broad bloom, upper-right turned irregular bloom, lower-right smaller open flower, lower-left folded leaf and bud. Petals extend enough to hide every circular mounting base. Linked tapering tendrils and textured recessed rail fields. Low modest shell at top, not tall crown. Busy detailed carving with clear hierarchy and rested stretches of rail, not equal repeated badges.",
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.17,
+          0.22,
+          0.105,
+          0.12
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.83,
+          0.24,
+          0.09,
+          0.11
+        ],
+        "feature": "upper right turned bloom",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.85,
+          0.74,
+          0.07,
+          0.075
+        ],
+        "feature": "lower right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.16,
+          0.09,
+          0.065
+        ],
+        "feature": "upper modest shell",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.5,
+          0.79,
+          0.1,
+          0.08
+        ],
+        "feature": "lower foliate curl",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/collection-overflow-revision/15-Rocaille-Floral-Corners-Mat-Overflow-v2-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/15-Rocaille-Floral-Corners-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "integrated_socket_roofs": true,
+    "mat_height_mm": 0.68,
+    "petal_overlap_regions_mm": [
+      [
+        -39,
+        33,
+        15
+      ],
+      [
+        43,
+        30,
+        13
+      ],
+      [
+        0.5,
+        -29,
+        5
+      ]
+    ],
+    "petal_overlap_outline_regions_mm": [
+      [
+        [
+          -53,
+          47
+        ],
+        [
+          -25,
+          47
+        ],
+        [
+          -25,
+          32
+        ],
+        [
+          -31,
+          28
+        ],
+        [
+          -31.9,
+          27
+        ],
+        [
+          -33,
+          26.7
+        ],
+        [
+          -34.5,
+          27.1
+        ],
+        [
+          -34.3,
+          25.9
+        ],
+        [
+          -35,
+          25.1
+        ],
+        [
+          -35.5,
+          24.9
+        ],
+        [
+          -35.5,
+          24.1
+        ],
+        [
+          -36.2,
+          23.1
+        ],
+        [
+          -37,
+          22.8
+        ],
+        [
+          -37.8,
+          22.8
+        ],
+        [
+          -38.1,
+          21.8
+        ],
+        [
+          -39,
+          21.1
+        ],
+        [
+          -40,
+          21.2
+        ],
+        [
+          -41,
+          21.7
+        ],
+        [
+          -41.3,
+          22.9
+        ],
+        [
+          -42,
+          23.3
+        ],
+        [
+          -43,
+          22.8
+        ],
+        [
+          -53,
+          23
+        ]
+      ],
+      [
+        [
+          31,
+          39
+        ],
+        [
+          55,
+          39
+        ],
+        [
+          55,
+          19
+        ],
+        [
+          43,
+          19
+        ],
+        [
+          41,
+          20
+        ],
+        [
+          39,
+          20
+        ],
+        [
+          38,
+          20.8
+        ],
+        [
+          37.5,
+          21.7
+        ],
+        [
+          36.8,
+          22.1
+        ],
+        [
+          36.6,
+          23
+        ],
+        [
+          36.8,
+          24.2
+        ],
+        [
+          37.5,
+          25.2
+        ],
+        [
+          38,
+          26.1
+        ],
+        [
+          38,
+          26.7
+        ],
+        [
+          37.1,
+          27.4
+        ],
+        [
+          35.7,
+          27.5
+        ],
+        [
+          35,
+          27.9
+        ],
+        [
+          34.7,
+          28.4
+        ],
+        [
+          33.5,
+          28.6
+        ],
+        [
+          33,
+          29.1
+        ],
+        [
+          33,
+          30
+        ]
+      ],
+      [
+        [
+          -4,
+          -32
+        ],
+        [
+          5,
+          -32
+        ],
+        [
+          4,
+          -28.8
+        ],
+        [
+          3,
+          -28.2
+        ],
+        [
+          1.5,
+          -28
+        ],
+        [
+          0.5,
+          -27.6
+        ],
+        [
+          -1,
+          -27.3
+        ],
+        [
+          -2.3,
+          -27.5
+        ],
+        [
+          -3,
+          -28
+        ],
+        [
+          -3.5,
+          -28.7
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "11-Period-Floral-Portrait-Oval-Mat-Overflow-v2",
+    "name": "Period Floral Portrait Oval",
+    "orientation": "portrait",
+    "shape": "oval",
+    "opening": [
+      44,
+      60
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/period-grounded-ovals/portrait-oval-period-study-v1.png",
+    "depth_file": "studies/period-grounded-ovals/sculpture-master-v1.png",
+    "normal_file": "studies/period-grounded-ovals/sculpture-normals-v1.png",
+    "surface_file": "studies/period-grounded-ovals/11-Period-Floral-Portrait-Oval-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -38.5,
+        -30
+      ],
+      [
+        -38.5,
+        30
+      ],
+      [
+        38.5,
+        -30
+      ],
+      [
+        38.5,
+        30
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        45
+      ],
+      [
+        -32.5,
+        -27
+      ],
+      [
+        32.5,
+        -27
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.04,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 60,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New floral oval composition informed by The Met public-domain photograph of frame 1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Period Floral Portrait Oval \u2014 Instax Mini frame",
+    "project_description": "Historically grounded French floral Rococo oval adapted for uncut Instax Mini. Modern supported sculptural relief, four rounded-root PLA clips, three concealed 6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art, 1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New oval composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "final_surface_file": "studies/collection-overflow-revision/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/11-Period-Floral-Portrait-Oval-roof-refinement.json",
+    "relief_method": "Replace the single exposed upper-left flat socket cap with existing leaf/scroll folds over a smooth oval support envelope; preserve all other final sculpture",
+    "max_relief_mm": 12,
+    "integrated_socket_roofs": true,
+    "mat_height_mm": 0.68,
+    "petal_overlap_regions_mm": [
+      [
+        -34,
+        2,
+        16
+      ],
+      [
+        36,
+        -1,
+        16
+      ],
+      [
+        -28,
+        -20,
+        6
+      ]
+    ],
+    "petal_overlap_outline_regions_mm": [
+      [
+        [
+          -49,
+          18
+        ],
+        [
+          -31,
+          18
+        ],
+        [
+          -30,
+          13
+        ],
+        [
+          -28.2,
+          10
+        ],
+        [
+          -27.1,
+          9.5
+        ],
+        [
+          -26.3,
+          8.2
+        ],
+        [
+          -25.8,
+          6.9
+        ],
+        [
+          -24.7,
+          6.2
+        ],
+        [
+          -24.4,
+          5.4
+        ],
+        [
+          -25.1,
+          4.5
+        ],
+        [
+          -24.6,
+          3.5
+        ],
+        [
+          -24.3,
+          2.5
+        ],
+        [
+          -24.8,
+          1.5
+        ],
+        [
+          -25.8,
+          1
+        ],
+        [
+          -25.7,
+          -0.4
+        ],
+        [
+          -26.4,
+          -2.4
+        ],
+        [
+          -27.1,
+          -3.2
+        ],
+        [
+          -28.1,
+          -3.5
+        ],
+        [
+          -28.6,
+          -4.9
+        ],
+        [
+          -30,
+          -5.5
+        ],
+        [
+          -33,
+          -5.7
+        ],
+        [
+          -49,
+          -6
+        ]
+      ],
+      [
+        [
+          27,
+          12
+        ],
+        [
+          50,
+          12
+        ],
+        [
+          50,
+          -16
+        ],
+        [
+          31,
+          -16
+        ],
+        [
+          30,
+          -11.7
+        ],
+        [
+          28.5,
+          -11.1
+        ],
+        [
+          27.6,
+          -10.4
+        ],
+        [
+          27.2,
+          -8.6
+        ],
+        [
+          27.5,
+          -7
+        ],
+        [
+          26.5,
+          -6.5
+        ],
+        [
+          25.8,
+          -5.4
+        ],
+        [
+          25.3,
+          -4
+        ],
+        [
+          24.6,
+          -2.9
+        ],
+        [
+          24.5,
+          -1.8
+        ],
+        [
+          25,
+          -0.6
+        ],
+        [
+          25.6,
+          0.7
+        ],
+        [
+          24.6,
+          1.0
+        ],
+        [
+          24.5,
+          1.8
+        ],
+        [
+          24.9,
+          2.8
+        ],
+        [
+          25.6,
+          3.3
+        ],
+        [
+          25.8,
+          4.3
+        ],
+        [
+          25.6,
+          5.5
+        ],
+        [
+          26.2,
+          6.7
+        ],
+        [
+          26.8,
+          7.4
+        ],
+        [
+          27.7,
+          8.2
+        ]
+      ],
+      [
+        [
+          -34,
+          -26
+        ],
+        [
+          -25,
+          -26
+        ],
+        [
+          -25,
+          -23.7
+        ],
+        [
+          -23.9,
+          -22.3
+        ],
+        [
+          -23.4,
+          -21.5
+        ],
+        [
+          -23.5,
+          -20.4
+        ],
+        [
+          -24.2,
+          -19.5
+        ],
+        [
+          -24.9,
+          -19.2
+        ],
+        [
+          -24.5,
+          -18.4
+        ],
+        [
+          -24.5,
+          -17.6
+        ],
+        [
+          -25,
+          -16.9
+        ],
+        [
+          -26,
+          -16.2
+        ],
+        [
+          -27,
+          -16
+        ],
+        [
+          -34,
+          -15
+        ]
+      ]
+    ],
+    "relief_footprint_precision_mm": 1e-06
+  },
+  {
+    "id": "18-Rocaille-Landscape-Oval-Mat-Overflow-v2",
+    "name": "Rocaille Landscape Oval",
+    "orientation": "landscape",
+    "shape": "oval",
+    "opening": [
+      60,
+      44
+    ],
+    "mat": 6.5,
+    "concept_file": "studies/independent-horizontal-oval/horizontal-oval-diagonal-v1.png",
+    "depth_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-master-v1.png",
+    "normal_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-normals-v1.png",
+    "surface_file": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-surface-height.npy",
+    "snap_positions_mm": [
+      [
+        -39,
+        -29.5
+      ],
+      [
+        -39,
+        29.5
+      ],
+      [
+        39,
+        -29.5
+      ],
+      [
+        39,
+        29.5
+      ]
+    ],
+    "magnet_centers_mm": [
+      [
+        0,
+        33
+      ],
+      [
+        -24,
+        -32.2
+      ],
+      [
+        24,
+        -32.2
+      ]
+    ],
+    "neutral_chroma_tolerance": 36,
+    "allow_underlay_islands": true,
+    "ornament_blend_start_mm": 0.4,
+    "ornament_blend_span_mm": 1.1,
+    "historical_direction": "French floral Rococo design study informed by documented early/mid Louis XV carving",
+    "physical_test": false,
+    "art_scale_multiplier": 1.04,
+    "local_cover_repair": true,
+    "max_local_cover_area_mm2": 90,
+    "max_outer_dimension_mm": 120,
+    "front_material_label": "Black frame / gray mat / white back",
+    "provenance": "New floral oval composition informed by The Met public-domain photograph of frame 1971.206.34, design attributed to Meissonnier ca.1735, and Getty Louis XV frame documentation. No MakerWorld mesh used.",
+    "project_title": "Rocaille Landscape Oval \u2014 Instax Mini",
+    "project_description": "Approved independent diagonal landscape-oval composition in French floral Rococo vocabulary; full uncut Instax Mini, supported relief, four PLA clips, three6x3mm magnets.",
+    "project_provenance": "Historical carving reference: The Metropolitan Museum of Art, 1971.206.34, ca.1735, https://www.metmuseum.org/art/collection/search/209073 (public-domain photograph). New oval composition, not a facsimile. Getty Louis Style guide also informed ornament. No MakerWorld mesh used.",
+    "socket_cover_radius_mm": 1.0,
+    "moulding_profile": [
+      [
+        0,
+        1.65
+      ],
+      [
+        0.25,
+        1.65
+      ],
+      [
+        0.5,
+        2.0
+      ],
+      [
+        0.8,
+        2.35
+      ],
+      [
+        1.1,
+        2.0
+      ],
+      [
+        1.4,
+        1.6
+      ],
+      [
+        1.8,
+        1.301
+      ]
+    ],
+    "max_relief_mm": 12,
+    "integrated_socket_roofs": true,
+    "refine_regions": [
+      {
+        "ellipse": [
+          0.2,
+          0.26,
+          0.13,
+          0.14
+        ],
+        "feature": "upper left open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.34,
+          0.11,
+          0.1,
+          0.095
+        ],
+        "feature": "upper turned flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.82,
+          0.74,
+          0.12,
+          0.12
+        ],
+        "feature": "lower right open flower",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.19,
+          0.73,
+          0.08,
+          0.08
+        ],
+        "feature": "lower left small cup",
+        "fold_gain": 0.35
+      },
+      {
+        "ellipse": [
+          0.39,
+          0.88,
+          0.12,
+          0.09
+        ],
+        "feature": "low off-center shell",
+        "fold_gain": 0.35
+      }
+    ],
+    "final_surface_file": "studies/collection-overflow-revision/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-final-height.npy",
+    "authored_surface": true,
+    "refinement_record": "studies/period-catalog-six/18-Rocaille-Landscape-Oval-sculpture-refinement.json",
+    "relief_method": "Local articulation of existing folds and rolling-sphere roundover of selected petal/shell lips and exterior tips over depth/normal relief",
+    "mat_height_mm": 0.68,
+    "petal_overlap_regions_mm": [
+      [
+        -35,
+        22,
+        17
+      ],
+      [
+        37,
+        -23,
+        15
+      ]
+    ],
+    "petal_overlap_outline_regions_mm": [
+      [
+        [
+          -56,
+          40
+        ],
+        [
+          -20,
+          40
+        ],
+        [
+          -20,
+          25
+        ],
+        [
+          -24,
+          23.5
+        ],
+        [
+          -25.3,
+          22.5
+        ],
+        [
+          -26.3,
+          22.4
+        ],
+        [
+          -27.1,
+          23.2
+        ],
+        [
+          -28.2,
+          23.6
+        ],
+        [
+          -29,
+          23.3
+        ],
+        [
+          -29.6,
+          22.1
+        ],
+        [
+          -29.4,
+          21
+        ],
+        [
+          -29.5,
+          19.9
+        ],
+        [
+          -30.1,
+          18.9
+        ],
+        [
+          -31.5,
+          17.7
+        ],
+        [
+          -32.9,
+          17.3
+        ],
+        [
+          -33.9,
+          17.8
+        ],
+        [
+          -34.5,
+          17.9
+        ],
+        [
+          -35.3,
+          17.6
+        ],
+        [
+          -35.8,
+          16.6
+        ],
+        [
+          -35.7,
+          15.7
+        ],
+        [
+          -36.1,
+          14.4
+        ],
+        [
+          -37,
+          13
+        ],
+        [
+          -38.5,
+          12
+        ],
+        [
+          -40,
+          11.7
+        ],
+        [
+          -56,
+          12
+        ]
+      ],
+      [
+        [
+          23,
+          -34
+        ],
+        [
+          56,
+          -34
+        ],
+        [
+          56,
+          -9
+        ],
+        [
+          37,
+          -9
+        ],
+        [
+          36.4,
+          -13
+        ],
+        [
+          35.4,
+          -12.8
+        ],
+        [
+          34,
+          -13
+        ],
+        [
+          32.6,
+          -13.6
+        ],
+        [
+          32,
+          -14.3
+        ],
+        [
+          32.2,
+          -15.1
+        ],
+        [
+          32.1,
+          -16.2
+        ],
+        [
+          31.4,
+          -17.1
+        ],
+        [
+          30.1,
+          -17.7
+        ],
+        [
+          29,
+          -17.8
+        ],
+        [
+          28.3,
+          -17.6
+        ],
+        [
+          27.6,
+          -17.9
+        ],
+        [
+          26.2,
+          -18.4
+        ],
+        [
+          25.9,
+          -19.1
+        ],
+        [
+          25.6,
+          -19.5
+        ],
+        [
+          24.6,
+          -19.8
+        ],
+        [
+          24.4,
+          -20.6
+        ],
+        [
+          23.8,
+          -21.3
+        ],
+        [
+          22,
+          -23.3
+        ]
+      ]
+    ]
+  }
+]

@@ -7,8 +7,11 @@ remain the earlier release; their integrity records are unchanged.
 
 The current set comprises Canted Octagon, Segmental Arch, Cushion Cartouche,
 Floral Corners, Botanical Garland, Acanthus Gallery, Portrait Oval and Landscape
-Oval. Botanical Garland uses the latest explicit sculpted-petal v3 revision.
-The mat reinforcement preserves each design's preceding matching back geometry.
+Oval. v0.3.0 restores source-art flowers and ornaments overflowing onto the mat
+in six fronts, including Botanical Garland's sculpted petals. Segmental Arch
+and Acanthus Gallery retain their v0.2.0 geometry. See the
+[upgrade guide](UPGRADING-v0.3.0.md) and [changelog](../CHANGELOG.md).
+All matching back and mat geometry is unchanged from v0.2.0.
 Keep fronts and backs paired by design.
 
 ## Fit and manufacturing
@@ -65,7 +68,11 @@ actual-sculpture pass: v2 clarified the petal bowls but introduced button-like
 centers; v3 lowered and blended irregular seed relief and softened doubled
 petal margins. Both reviewers accepted v3 for a physical prototype. The
 [before/after comparison](../renders/current/Botanical-Garland-Before-After.png)
-uses identical cameras, scale and lighting. These are AI design assessments,
+uses identical cameras, scale and lighting. The v0.3.0 restoration additionally
+compares each revised front with its exact preceding distributed mesh; it is
+additive within numerical tolerance and keeps the exact mat and back volumes.
+The restored petals are supported directly on the mat and preserve the photo
+aperture. Revised physical surface checks remain pending. These are AI design assessments,
 not human historical authentication or physical test results.
 
 ## Historical basis

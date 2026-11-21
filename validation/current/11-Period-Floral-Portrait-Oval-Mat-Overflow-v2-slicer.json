@@ -1,0 +1,30 @@
+{
+  "id": "11-Period-Floral-Portrait-Oval-Mat-Overflow-v2",
+  "file": "11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+  "sha256": "d829933bd1e8da13208c2dd770380ad6d218017c264b3d17c26f4308b840b885",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    200.1,
+    55.2
+  ],
+  "material_g": [
+    19.7,
+    6.02
+  ],
+  "sliced_project": "11-Period-Floral-Portrait-Oval-Mat-Overflow-v2/slice-final/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-P2S-Sliced.3mf",
+  "sliced_sha256": "6d89b84863e7ac925b889278ef55815e52f8e69dd7b0a0f0747c80b7097b2011",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}

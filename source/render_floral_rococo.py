@@ -15,7 +15,7 @@ render = partial(render, relief_shadows=True)
 from build_catalog import read_project_mesh
 from paths import ROOT, P
 
-DS = json.loads(Path(os.environ.get("BAROQUE_DESIGNS_FILE", ROOT / "source/designs-floral-rococo.json")).read_text())
+DS = json.loads(Path(os.environ.get("BAROQUE_DESIGNS_FILE", ROOT / "source/designs-current.json")).read_text())
 GOLD = np.array([.82, .57, .22])
 CHARCOAL = np.array([.22, .23, .24])
 

@@ -23,3 +23,8 @@ python source/make_assembly_instructions.py
 [Geometry sources, hashes and sequence record](sources.json) · [Detailed printing instructions](../PRINTING.md)
 
 The repository's CC0-1.0 dedication applies to these diagrams and documentation; the generator uses MIT.
+
+The v0.3.0 guide was regenerated from the current Floral Corners and unchanged
+Segmental Arch projects. These are simplified assembly silhouettes, not
+photographs or detailed surface previews. See [revision comparisons](../UPGRADING-v0.3.0.md)
+for the restored ornament.

@@ -1,0 +1,80 @@
+{
+  "release": "v0.3.0",
+  "baseline": "v0.2.0",
+  "revised": [
+    {
+      "name": "Canted Octagon",
+      "id": "12-Rocaille-Canted-Octagon-Mat-Overflow-v2",
+      "project_sha256": "92ac8a6b46a6c34f77a46bd816e8838c971c2d7b182ca78fde58a921429d5691",
+      "previous_release": "v0.2.0",
+      "previous_model": "models/current/12-Rocaille-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
+      "previous_project_sha256": "0d15817e44362653f350cc70b224114f7c88853545ccbea291d406efc785b58f",
+      "front_toolpaths": "validation/current/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-front-overflow-toolpaths.json",
+      "existing_matching_back_compatible": true
+    },
+    {
+      "name": "Cushion Cartouche",
+      "id": "14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2",
+      "project_sha256": "69c75a127dbf309e6a2534958b04ccf6bfa93c25c6fec3e986654f668e6f3e4b",
+      "previous_release": "v0.2.0",
+      "previous_model": "models/current/14-Rocaille-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
+      "previous_project_sha256": "97e0999c18874260aeedfb01e38f49f8eb1bb2b3e447abb645db9867240ac037",
+      "front_toolpaths": "validation/current/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-front-overflow-toolpaths.json",
+      "existing_matching_back_compatible": true
+    },
+    {
+      "name": "Floral Corners",
+      "id": "15-Rocaille-Floral-Corners-Mat-Overflow-v2",
+      "project_sha256": "6642c9268641acf04c77777f03c8a6faa47caef55bdd851bf640d141dd08e204",
+      "previous_release": "v0.2.0",
+      "previous_model": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
+      "previous_project_sha256": "89fdb0fe91720c598258cb9e25ba71904056c3b2f5d368937bf9394ee5058916",
+      "front_toolpaths": "validation/current/15-Rocaille-Floral-Corners-Mat-Overflow-v2-front-overflow-toolpaths.json",
+      "existing_matching_back_compatible": true
+    },
+    {
+      "name": "Botanical Garland",
+      "id": "16-Botanical-Garland-Mat-Overflow-v4",
+      "project_sha256": "9cfc24e95b5d036570425a379901ac40cd7878d19f7619b94163e304b5e1f6de",
+      "previous_release": "v0.2.0",
+      "previous_model": "models/current/16-Rocaille-Botanical-Garland-Sculpted-v3-Instax-Mini-3-Magnets.3mf",
+      "previous_project_sha256": "570f25c17ba57ef735c038b28fb3ffcd3cb1e7db142554f1f79823d00904f8ca",
+      "front_toolpaths": "validation/current/16-Botanical-Garland-Mat-Overflow-v4-front-overflow-toolpaths.json",
+      "existing_matching_back_compatible": true
+    },
+    {
+      "name": "Portrait Oval",
+      "id": "11-Period-Floral-Portrait-Oval-Mat-Overflow-v2",
+      "project_sha256": "d829933bd1e8da13208c2dd770380ad6d218017c264b3d17c26f4308b840b885",
+      "previous_release": "v0.2.0",
+      "previous_model": "models/current/11-Period-Floral-Portrait-Oval-Instax-Mini-3-Magnets.3mf",
+      "previous_project_sha256": "e5472ce692a8760fe03829cfccbac9c5c894c1803685e9bef046fc875cf8c2b4",
+      "front_toolpaths": "validation/current/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-front-overflow-toolpaths.json",
+      "existing_matching_back_compatible": true
+    },
+    {
+      "name": "Landscape Oval",
+      "id": "18-Rocaille-Landscape-Oval-Mat-Overflow-v2",
+      "project_sha256": "fa03bfd24437ed36a2658a6265944d69ac9f1f2c5fe609b88a078cd8cfe4a09b",
+      "previous_release": "v0.2.0",
+      "previous_model": "models/current/18-Rocaille-Landscape-Oval-Instax-Mini-3-Magnets.3mf",
+      "previous_project_sha256": "1e66aa90217a75013e67fc88b43d3e7351f9f8e2733fc6dfcedb4392ef939bc7",
+      "front_toolpaths": "validation/current/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-front-overflow-toolpaths.json",
+      "existing_matching_back_compatible": true
+    }
+  ],
+  "unchanged": [
+    {
+      "name": "Segmental Arch",
+      "v0_2_0_model": "models/current/13-Rocaille-Segmental-Arch-Instax-Mini-3-Magnets.3mf",
+      "v0.2.0_project_sha256": "fdc77998a07e4fc0259b65eca4fbab76aca84645aec31fa05b634ace9f162c1a"
+    },
+    {
+      "name": "Acanthus Gallery",
+      "v0_2_0_model": "models/current/17-Rocaille-Acanthus-Gallery-Instax-Mini-3-Magnets.3mf",
+      "v0.2.0_project_sha256": "b38a16892d1a0516d91320f1a289a94fc3d8d98b83d7177fb38dc7b3875fe837"
+    }
+  ],
+  "method": "Exact indexed-mesh boolean comparisons, assembly/insertion gates, canonical slicing, source-contour front extrusion and layerwise back extrusion checks",
+  "revised_physical_test": false
+}

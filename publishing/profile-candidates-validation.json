@@ -2,11 +2,13 @@
   {
     "slug": "canted-octagon",
     "name": "Canted Octagon",
-    "source": "models/current/12-Rocaille-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
-    "source_sha256": "0d15817e44362653f350cc70b224114f7c88853545ccbea291d406efc785b58f",
+    "source": "models/current/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "92ac8a6b46a6c34f77a46bd816e8838c971c2d7b182ca78fde58a921429d5691",
     "project": "canted-octagon/canted-octagon-P2S-2-Color.3mf",
-    "project_sha256": "78789cafaa20c609edaba8806ac25c896b89bf4249662826b96e4c7c32507b50",
+    "project_sha256": "0417163dd1cb772791b5cb10735989c321a74d1f5e1114da78664a2df65c3bfe",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "canted-octagon/canted-octagon-MakerWorld-Upload.3mf",
+    "upload_sha256": "1a15ed57b77df6c3686d6b83f0226547e369f9d1129b184239c40cc95a26533a",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -15,20 +17,19 @@
     ],
     "warnings": [],
     "estimated_minutes": [
-      129.2,
+      136.7,
       54.7
     ],
     "material_g": [
-      12.06,
+      12.37,
       5.86
     ],
-    "sliced_sha256": "d6a1979c636b717eae7665624623979cb0c8e740dd9357ca9fdef77c18ef8895",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "1a15ed57b77df6c3686d6b83f0226547e369f9d1129b184239c40cc95a26533a",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "canted-octagon/canted-octagon-MakerWorld-Upload.3mf",
-    "upload_sha256": "d6a1979c636b717eae7665624623979cb0c8e740dd9357ca9fdef77c18ef8895"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "segmental-arch",
@@ -38,6 +39,8 @@
     "project": "segmental-arch/segmental-arch-P2S-2-Color.3mf",
     "project_sha256": "6d3a00e47af243aec1f4115d930e6bc41569d79db5c2a58c9ba53903849ef962",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "segmental-arch/segmental-arch-MakerWorld-Upload.3mf",
+    "upload_sha256": "6a88be2425c6c62892ecb789c2b4a6b94090faf8884144396a8d8d1bfd1cd172",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -53,22 +56,23 @@
       21.04,
       6.93
     ],
-    "sliced_sha256": "cc975a8ca5e0e7124e0c4c6a39541587535684d8ee60681150bc0f7246ea162f",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "6a88be2425c6c62892ecb789c2b4a6b94090faf8884144396a8d8d1bfd1cd172",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "segmental-arch/segmental-arch-MakerWorld-Upload.3mf",
-    "upload_sha256": "cc975a8ca5e0e7124e0c4c6a39541587535684d8ee60681150bc0f7246ea162f"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "cushion-cartouche",
     "name": "Cushion Cartouche",
-    "source": "models/current/14-Rocaille-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
-    "source_sha256": "97e0999c18874260aeedfb01e38f49f8eb1bb2b3e447abb645db9867240ac037",
+    "source": "models/current/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "69c75a127dbf309e6a2534958b04ccf6bfa93c25c6fec3e986654f668e6f3e4b",
     "project": "cushion-cartouche/cushion-cartouche-P2S-2-Color.3mf",
-    "project_sha256": "9f0e6cba9f774ccb4d2c7985bb0ceda5749cf6d139ca476ee9f8847f7c3fa813",
+    "project_sha256": "a8e3f44a559b200cff0c536aa1df17190405750b4fc7df3caaec94a9ae39233e",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "cushion-cartouche/cushion-cartouche-MakerWorld-Upload.3mf",
+    "upload_sha256": "a5b5230ebf888ceafad1e92bf677572a5b30a7b5bbcd8760ad4c52a4a7c93625",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -77,29 +81,30 @@
     ],
     "warnings": [],
     "estimated_minutes": [
-      175.3,
+      179.5,
       56.3
     ],
     "material_g": [
-      18.04,
+      18.16,
       6.62
     ],
-    "sliced_sha256": "e50e382e47936b1d7cf86ab9a80c16779af494eaec91be576a3d5d3bf95a1951",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "a5b5230ebf888ceafad1e92bf677572a5b30a7b5bbcd8760ad4c52a4a7c93625",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "cushion-cartouche/cushion-cartouche-MakerWorld-Upload.3mf",
-    "upload_sha256": "e50e382e47936b1d7cf86ab9a80c16779af494eaec91be576a3d5d3bf95a1951"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "floral-corners",
     "name": "Floral Corners",
-    "source": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
-    "source_sha256": "89fdb0fe91720c598258cb9e25ba71904056c3b2f5d368937bf9394ee5058916",
+    "source": "models/current/15-Rocaille-Floral-Corners-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "6642c9268641acf04c77777f03c8a6faa47caef55bdd851bf640d141dd08e204",
     "project": "floral-corners/floral-corners-P2S-2-Color.3mf",
-    "project_sha256": "d550f67b4ff2020e06007903abb8b98440988d41618045febd8437d0e320fa29",
+    "project_sha256": "4e9369a5dfe844ad9469d680beac2694d80e0a3c6b2033914fa452d51d359b90",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "floral-corners/floral-corners-MakerWorld-Upload.3mf",
+    "upload_sha256": "4d95a8799a1dbdfd6fb9cae738eae8f9701076e0cf253c302ad3394af9dc7db3",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -108,29 +113,30 @@
     ],
     "warnings": [],
     "estimated_minutes": [
-      180.1,
+      182.6,
       56.3
     ],
     "material_g": [
-      17.69,
+      17.72,
       6.62
     ],
-    "sliced_sha256": "a0829b0d2c3c236c1a87d5a3300bfb7575109bdda0cbcba84a5fc92eace8a5df",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "4d95a8799a1dbdfd6fb9cae738eae8f9701076e0cf253c302ad3394af9dc7db3",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "floral-corners/floral-corners-MakerWorld-Upload.3mf",
-    "upload_sha256": "a0829b0d2c3c236c1a87d5a3300bfb7575109bdda0cbcba84a5fc92eace8a5df"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "botanical-garland",
     "name": "Botanical Garland",
-    "source": "models/current/16-Rocaille-Botanical-Garland-Sculpted-v3-Instax-Mini-3-Magnets.3mf",
-    "source_sha256": "570f25c17ba57ef735c038b28fb3ffcd3cb1e7db142554f1f79823d00904f8ca",
+    "source": "models/current/16-Botanical-Garland-Mat-Overflow-v4-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "9cfc24e95b5d036570425a379901ac40cd7878d19f7619b94163e304b5e1f6de",
     "project": "botanical-garland/botanical-garland-P2S-2-Color.3mf",
-    "project_sha256": "e00d8dbf5f785a9a83514b1fd2727033da19ccfd6a718f85ecccefcd8b787628",
+    "project_sha256": "c462343cbd7da7c2c9c92578a5300e658e9923133095fb255efce4385f54d52e",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "botanical-garland/botanical-garland-MakerWorld-Upload.3mf",
+    "upload_sha256": "5da9b708cb8f21a9073ea7e48eca5c58193f64833e2404d1746a069e8694fd53",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -139,20 +145,19 @@
     ],
     "warnings": [],
     "estimated_minutes": [
-      168.5,
+      170.8,
       56.3
     ],
     "material_g": [
-      17.16,
+      17.22,
       6.62
     ],
-    "sliced_sha256": "f1be2c08dafc1cf8016a3d571ead52472658f2fd91e4809fd1a83682ee7a3641",
-    "publication_status": "existing Botanical Garland profile is published; this rebuild not uploaded",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "5da9b708cb8f21a9073ea7e48eca5c58193f64833e2404d1746a069e8694fd53",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "botanical-garland/botanical-garland-MakerWorld-Upload.3mf",
-    "upload_sha256": "f1be2c08dafc1cf8016a3d571ead52472658f2fd91e4809fd1a83682ee7a3641"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "acanthus-gallery",
@@ -162,6 +167,8 @@
     "project": "acanthus-gallery/acanthus-gallery-P2S-2-Color.3mf",
     "project_sha256": "cf538ed4f78162ce61683ac7339476ac73c76160c6044d7418a08d62f85f9e43",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "acanthus-gallery/acanthus-gallery-MakerWorld-Upload.3mf",
+    "upload_sha256": "3f7571a4f7ba5cf8123a810d9ddfa43266d8fbdbd0235f47a299c5339b086e9d",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -177,22 +184,23 @@
       16.63,
       6.62
     ],
-    "sliced_sha256": "2e6f0662891051b937101328ee778b7d3e68996e79cbff33e307ec7ffd014a82",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "3f7571a4f7ba5cf8123a810d9ddfa43266d8fbdbd0235f47a299c5339b086e9d",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "acanthus-gallery/acanthus-gallery-MakerWorld-Upload.3mf",
-    "upload_sha256": "2e6f0662891051b937101328ee778b7d3e68996e79cbff33e307ec7ffd014a82"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "portrait-oval",
     "name": "Portrait Oval",
-    "source": "models/current/11-Period-Floral-Portrait-Oval-Instax-Mini-3-Magnets.3mf",
-    "source_sha256": "e5472ce692a8760fe03829cfccbac9c5c894c1803685e9bef046fc875cf8c2b4",
+    "source": "models/current/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "d829933bd1e8da13208c2dd770380ad6d218017c264b3d17c26f4308b840b885",
     "project": "portrait-oval/portrait-oval-P2S-2-Color.3mf",
-    "project_sha256": "328294f31b5a420a1545342c73716e486c22d5486484842bec4a219d686e143a",
+    "project_sha256": "28e1e96754c1a4dfbdc62f812eb2d536b4691e7b7b97645b7b2729130ef72153",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "portrait-oval/portrait-oval-MakerWorld-Upload.3mf",
+    "upload_sha256": "dd8e7a44fbdb7127d886b57a614921091f2148a79ade882334b8d6e4849ceb87",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -201,29 +209,30 @@
     ],
     "warnings": [],
     "estimated_minutes": [
-      193.7,
+      200.1,
       55.2
     ],
     "material_g": [
-      19.34,
+      19.7,
       6.02
     ],
-    "sliced_sha256": "c12479955676665ed9a139eb382aa1df5fb208da74498871a215c03038818456",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "dd8e7a44fbdb7127d886b57a614921091f2148a79ade882334b8d6e4849ceb87",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "portrait-oval/portrait-oval-MakerWorld-Upload.3mf",
-    "upload_sha256": "c12479955676665ed9a139eb382aa1df5fb208da74498871a215c03038818456"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   },
   {
     "slug": "landscape-oval",
     "name": "Landscape Oval",
-    "source": "models/current/18-Rocaille-Landscape-Oval-Instax-Mini-3-Magnets.3mf",
-    "source_sha256": "1e66aa90217a75013e67fc88b43d3e7351f9f8e2733fc6dfcedb4392ef939bc7",
+    "source": "models/current/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+    "source_sha256": "fa03bfd24437ed36a2658a6265944d69ac9f1f2c5fe609b88a078cd8cfe4a09b",
     "project": "landscape-oval/landscape-oval-P2S-2-Color.3mf",
-    "project_sha256": "c45922801a4df74faa08c6438e78464eaa2ac5be80b1889fa8eb3973ec565efe",
+    "project_sha256": "857b127379b3e95cd69548b4b5bbaa359f602fa4231009f7414b6fe46a48409a",
     "geometry_and_placement_unchanged": true,
+    "upload_project": "landscape-oval/landscape-oval-MakerWorld-Upload.3mf",
+    "upload_sha256": "c955aadee43c5656698ac0bf71fff69ffbf30309a7b1c9afd78fa7c228970f08",
     "printer": "Bambu P2S 0.4 mm",
     "plates": 2,
     "filament_changes": [
@@ -232,19 +241,18 @@
     ],
     "warnings": [],
     "estimated_minutes": [
-      160.7,
+      161.5,
       54.7
     ],
     "material_g": [
-      17.17,
+      17.2,
       6.02
     ],
-    "sliced_sha256": "9b3201af1df5737efe1a44066be9a85f4f1c8104b9df9b84ebf6104a5bce9aa6",
-    "publication_status": "awaiting matching physical-print photos",
-    "physical_print_verified_by_this_run": false,
-    "print_submitted": false,
+    "sliced_sha256": "c955aadee43c5656698ac0bf71fff69ffbf30309a7b1c9afd78fa7c228970f08",
     "settings_match_published_botanical_profile": true,
-    "upload_project": "landscape-oval/landscape-oval-MakerWorld-Upload.3mf",
-    "upload_sha256": "9b3201af1df5737efe1a44066be9a85f4f1c8104b9df9b84ebf6104a5bce9aa6"
+    "publication_status": "v0.3.0 raw files ready; revised app profile awaits matching physical-print photos",
+    "release": "v0.3.0",
+    "physical_print_verified_by_this_run": false,
+    "print_submitted": false
   }
 ]

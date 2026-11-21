@@ -63,7 +63,7 @@ These are local slicing checks, not a claim that every design was physically tes
                 'plates': 2, 'filament_changes': [1, 0], 'warnings': [],
                 'estimated_minutes': record['estimated_minutes'],
             })
-        archive.writestr('START-HERE.txt', """Eight floral Instax Mini frames — two-color Bambu Studio projects
+        archive.writestr('START-HERE.txt', """Eight floral Instax Mini frames — v0.3.0 two-color Bambu Studio projects
 
 Open a project from the projects folder in Bambu Studio as a project.
 Each contains both matching pieces on two named plates, with previews.
@@ -75,7 +75,11 @@ For a different printer or material, select its settings and re-slice.
 First layer 0.20 mm, then 0.08 mm; mat thickness 0.68 mm / seven layers.
 The front has one color change; the back has none. No supports.
 
-Print the two plates. Glue three 6 × 3 mm magnets into the rear pockets.
+If upgrading from v0.2.0, reprint only the six affected fronts to restore their
+ornament overlap. Reuse each design's existing matching back. Segmental Arch
+and Acanthus Gallery are unchanged. See CHANGELOG.md and the upgrade guide.
+
+For a new frame, print the two plates. Glue three 6 × 3 mm magnets into the rear pockets.
 Align and snap the two pieces together; glue the joints if needed.
 After adhesive cures, slide in the whole uncut Instax Mini photo.
 Display on a magnetic surface. See the included illustrated instructions.
@@ -91,11 +95,13 @@ Source, STL downloads and licenses: https://github.com/obartra/baroque-instax-fr
 Models, project artwork and documentation: CC0 within LICENSING.md scope.
 Code: MIT. Personal photographs are not included in this pack.
 """)
-        for relative in ['LICENSING.md', 'LICENSES/CC0-1.0.txt', 'LICENSES/MIT.txt',
+        for relative in ['CHANGELOG.md', 'docs/UPGRADING-v0.3.0.md', 'docs/PRINTING.md', 'LICENSING.md', 'LICENSES/CC0-1.0.txt', 'LICENSES/MIT.txt',
                          'docs/assembly/01-print-and-magnets-v3.png',
                          'docs/assembly/02-snap-and-load-v3.png',
                          'docs/assembly/03-magnetic-display-v3.png']:
             archive.write(ROOT / relative, relative)
+        for image in sorted((ROOT/'docs/revisions/v0.3.0').glob('*.png')):
+            archive.write(image,image.relative_to(ROOT).as_posix())
         archive.writestr('manifest.json', json.dumps(manifest, indent=2) + '\n')
     with ZipFile(args.output) as archive:
         assert archive.testzip() is None

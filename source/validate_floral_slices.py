@@ -13,7 +13,7 @@ from paths import ROOT, P
 
 APP = os.environ.get('BAMBU_STUDIO', '/Applications/BambuStudio.app/Contents/MacOS/BambuStudio')
 assert Path(APP).is_file(), 'Set BAMBU_STUDIO to your local slicer executable.'
-DESIGNS = json.loads(Path(os.environ.get('BAROQUE_DESIGNS_FILE', ROOT/'source/designs-floral-rococo.json')).read_text())
+DESIGNS = json.loads(Path(os.environ.get('BAROQUE_DESIGNS_FILE', ROOT/'source/designs-current.json')).read_text())
 
 
 def one(d):

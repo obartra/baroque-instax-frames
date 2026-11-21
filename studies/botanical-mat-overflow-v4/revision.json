@@ -1,0 +1,11 @@
+{
+  "request": "Restore flower petals overflowing onto the mat; preserve printability without clipping petals at the straight mat boundary.",
+  "parent": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+  "root_cause": "sculpt() clips artwork footprint to outer minus inner mat rectangle unless petal_overlap_regions_mm is supplied; v3 omitted these regions.",
+  "approach": "Restore selected original raster petal silhouettes through existing supported-petal geometry; print every restored petal from the top of the reinforced mat. Retain sculpted v3 heights, photo aperture, outer outline, sockets and matching back.",
+  "physical_test": false,
+  "additional_root_cause": "sculpt_botanical_petals.py also freezes the full inner rail/mat zone, leaving formerly clipped petal regions flat in the saved height field.",
+  "height_repair": "Restore the same traced v3 petal bowls within the locked region, blend over 1.5 mm, retain existing outside geometry and avoid cutting original ornament.",
+  "height_changed_area_mm2": 42.68621636058871,
+  "maximum_height_added_mm": 6.784608450631779
+}

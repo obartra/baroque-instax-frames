@@ -1,3 +1,19 @@
+v0.3.0 — RESTORED FLOWER OVERLAP (2026-11-20)
+Flowers and ornaments now overflow onto the mat as intended in Canted Octagon, Cushion Cartouche, Floral Corners, Botanical Garland, Portrait Oval and Landscape Oval. Earlier printable geometry clipped these details at the mat boundary. The restored relief is supported directly on the mat; the photo aperture stays clear. All six revised fronts passed digital geometry and slicing checks without supports or per-plate warnings. Revised physical print checks are pending.
+
+ALREADY PRINTED ONE? Reprint only the affected front to recover the ornament. Reuse its existing matching back if it can be separated without damaging the one-assembly PLA clips; do not force glued joints. Segmental Arch and Acanthus Gallery are unchanged. Previous fronts remain usable.
+
+CURRENT v0.3.0 DOWNLOADS: use the clearly versioned v0.3.0 archives or the current release:
+https://github.com/obartra/baroque-instax-frames/releases/tag/v0.3.0
+Two-color P2S projects (all eight, editable, with two plate previews each):
+https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-Two-Color-P2S.zip
+Upgrade guide and actual-CAD before/after views:
+https://github.com/obartra/baroque-instax-frames/blob/main/docs/UPGRADING-v0.3.0.md
+Changelog:
+https://github.com/obartra/baroque-instax-frames/blob/main/CHANGELOG.md
+
+The existing Botanical Garland Handy/app print profile and real photographs document the earlier v0.2.0 geometry, not the restored front. Use the v0.3.0 editable projects for this update. Revised app profiles will follow matching physical-print checks and photographs. Any older unversioned files or v0.2.0 packs retained in the listing are legacy downloads; the v0.3.0 packs supersede them.
+
 Eight floral Rococo-inspired magnetic frames for full, uncut Instax Mini photos. Choose a rectangular, oval, arch, octagon or cushion silhouette; the film border stays hidden behind the frame and inner mat.
 
 WHAT YOU GET
@@ -27,7 +43,7 @@ Assign colors by part if your slicer supports multi-material printing. For a man
 ABOUT THE DESIGNS
 These are new, historically informed compositions, developed with AI-assisted carving studies and custom CAD. They are not antique scans or reproductions. The current eight designs do not reuse the earlier WLM/MakerWorld ornamental meshes. Models and project artwork are released under CC0 to the extent rights can be waived; code is MIT. Detailed provenance and license scope are in the source repository.
 
-The gallery includes actual Botanical Garland print photos alongside CAD renders and assembly illustrations. The cover uses a simulated photo. The real photos show the printed front, the rear with three magnets and an Instax darkslide demonstrating insertion, and the clip/socket assembly. The printed example uses a black frame and gray mat. These photos document Botanical Garland, not physical testing of every design.
+The gallery includes actual Botanical Garland print photos alongside CAD renders and assembly illustrations. The cover uses a simulated photo. The real photos show the printed front, the rear with three magnets and an Instax darkslide demonstrating insertion, and the clip/socket assembly. The printed example uses a black frame and gray mat. These photographs document pre-v0.3.0 Botanical Garland, not the restored front or physical testing of every design.
 
 PROJECT, DOWNLOADS AND ILLUSTRATED INSTRUCTIONS
 https://obartra.github.io/baroque-instax-frames/
