@@ -269,7 +269,7 @@ def write_frame_page(frame, notes, asset, resources):
 <h1>{escape(name)}<br><em>Instax Mini frame</em></h1><p>{escape(notes['intro'])}</p>
 <div class="hero-actions"><a class="button primary" href="{model_url}">Download 3MF</a><a class="button secondary" href="{stl_url}">Download STL ZIP</a></div>
 <p class="detail-download-note">3MF: matching front and back on two plates.<br>STL ZIP: mat, ornament, back and import guide.</p>
-<p><a href="{REPO}/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip">Two-color P2S pack · all eight designs with plate previews</a></p>
+<p><a href="{REPO}/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-Two-Color-P2S.zip">Two-color P2S pack · all eight designs with plate previews</a></p>
 <p><a href="../../#before-you-print">Print settings and filament changes</a> · <a href="{REPO}/releases/latest">Download all eight designs</a></p></div>
 <figure>{image('angle', name + ' Instax Mini frame, upright side perspective showing its thickness', True)}<figcaption>Actual CAD render · example materials</figcaption></figure></section>
 <section class="detail-section"><h2>Photo fit and dimensions</h2><p>{escape(notes['fit'])}</p>
@@ -277,6 +277,7 @@ def write_frame_page(frame, notes, asset, resources):
 <dl class="frame-specs"><div><dt>Film</dt><dd>Instax Mini · 86 × 54 mm, uncut</dd></div><div><dt>Overall size</dt><dd>{width:.1f} × {height:.1f} mm</dd></div>
 <div><dt>Assembled depth</dt><dd>{frame['depth_mm']:.1f} mm</dd></div><div><dt>Magnets</dt><dd>Three <a href="https://www.amazon.com/s?k=6x3mm+neodymium+disc+magnets">6 × 3 mm disc magnets</a></dd></div>
 <div><dt>Inner mat</dt><dd>{frame['mat_height_mm']:.2f} mm · {frame['mat_layers']} supplied layers</dd></div><div><dt>Estimated print time</dt><dd>Front {duration(frame['front_minutes'])} · back {duration(frame['back_minutes'])}</dd></div></dl>
+<p class="detail-small">{escape(frame.get("revision", "Current catalog"))}. <a href="{REPO}/blob/main/docs/UPGRADING-v0.3.0.md">v0.3.0 upgrade guide</a>. Revised fronts are digitally validated; physical checks are pending.</p>
 <p class="detail-small">Times are slicer estimates for the supplied Bambu P2S / 0.4 mm profile. The shaped opening crops the photograph; the instant film stays whole.</p></section>
 <section class="detail-section"><h2>Front, back and full-film fit</h2><div class="detail-gallery">
 <figure>{image('front', name + ' magnetic Instax Mini frame front view')}<figcaption>Front · actual CAD render</figcaption></figure>

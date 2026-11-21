@@ -38,9 +38,15 @@ Each frame holds **[three Ø6 × 3 mm magnets](https://www.amazon.com/s?k=6x3mm+
 
 [Download all eight designs — 3MF, STL or complete pack](https://github.com/obartra/baroque-instax-frames/releases/latest)
 
-[Two-color P2S project pack — all eight frames](https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip):
+[Two-color P2S project pack — all eight frames](https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-Two-Color-P2S.zip):
 two plates per frame, with the mat in one filament slot and ornament/back in the other.
 Includes plate previews, illustrated instructions and checked slicing settings.
+
+**v0.3.0 restores flowers overflowing onto the mat in six designs.** Existing
+matching backs still fit; only the affected fronts need reprinting to recover
+the detail. [Upgrade guide and before/after views](docs/UPGRADING-v0.3.0.md) ·
+[Changelog](CHANGELOG.md). Revised fronts passed digital checks; physical
+checks of this revision are pending.
 
 <a name="choose-a-frame"></a>
 
@@ -70,9 +76,9 @@ Click a preview to enlarge; use the view links for other angles.
 | --- | --- | --- |
 {table}
 
-The Botanical Garland includes the latest sculpted petal and flower-center
-revision. Its preceding matching three-magnet back remains compatible.
-Always keep each of the other designs with its own matching back.
+Six fronts include restored sculpted flowers and ornaments overflowing onto
+the mat. All existing matching three-magnet backs remain compatible.
+Keep fronts and backs paired by design.
 
 <a name="print-and-assemble"></a>
 

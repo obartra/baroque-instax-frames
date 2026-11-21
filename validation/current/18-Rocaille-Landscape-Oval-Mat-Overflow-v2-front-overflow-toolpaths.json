@@ -1,0 +1,27 @@
+{
+  "id": "18-Rocaille-Landscape-Oval-Mat-Overflow-v2",
+  "project_sha256": "fa03bfd24437ed36a2658a6265944d69ac9f1f2c5fe609b88a078cd8cfe4a09b",
+  "geometry_report_sha256": "661903ffe71c5bdd31a95393b7a5cfb186ae71bb76fa6d642828b2de97550933",
+  "gcode_sha256": "e740d746043d84aca39c7abf0968b89efc17ebcb46ebf278274015607e9987c9",
+  "restored_overlap_area_mm2": 5.651023077297476,
+  "checked_layer": 8,
+  "checked_layer_top_mm": 0.76,
+  "supported_from_mat_top_mm": 0.68,
+  "minimum_component_coverage": 0.9621839176374418,
+  "components": [
+    {
+      "bounds_mm": [
+        23.148646496392942,
+        -22.054289448876425,
+        28.734450806235277,
+        -17.450323120347132
+      ],
+      "area_mm2": 5.651023077297476,
+      "first_ornament_layer_coverage": 0.9621839176374418
+    }
+  ],
+  "missing_components": [],
+  "physical_test": false,
+  "method": "Source-traced restored footprints intersected with actual linear extrusion paths buffered 0.27 mm; layer 8 immediately follows the seven-layer mat.",
+  "limitation": "Checks path presence and support footprint, not physical surface quality, extrusion strength or exact deposited volume."
+}

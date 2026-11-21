@@ -1,0 +1,47 @@
+{
+  "id": "15-Rocaille-Floral-Corners-Mat-Overflow-v2",
+  "project_sha256": "6642c9268641acf04c77777f03c8a6faa47caef55bdd851bf640d141dd08e204",
+  "geometry_report_sha256": "3e5a4dd443b7513355df312f62f7851b9c00cc0b1aaca9df5c5205a741f643fc",
+  "gcode_sha256": "6133b34eeb2ccc8f6413b28fdea09d87a9fec19431fcf093243da0d8ccbb23ef",
+  "restored_overlap_area_mm2": 22.73944631312765,
+  "checked_layer": 8,
+  "checked_layer_top_mm": 0.76,
+  "supported_from_mat_top_mm": 0.68,
+  "minimum_component_coverage": 0.7434900921457249,
+  "components": [
+    {
+      "bounds_mm": [
+        -3.391316885220499,
+        -28.5,
+        3.4874830834145443,
+        -27.2061047854606
+      ],
+      "area_mm2": 5.927246386312493,
+      "first_ornament_layer_coverage": 0.9702381340493154
+    },
+    {
+      "bounds_mm": [
+        -36.5,
+        22.876446039324144,
+        -30.189054479793587,
+        28.5
+      ],
+      "area_mm2": 14.990033136452242,
+      "first_ornament_layer_coverage": 0.7434900921457249
+    },
+    {
+      "bounds_mm": [
+        34.422676347675136,
+        27.302441656920728,
+        36.5,
+        28.5
+      ],
+      "area_mm2": 1.822166790362915,
+      "first_ornament_layer_coverage": 0.9636505052771628
+    }
+  ],
+  "missing_components": [],
+  "physical_test": false,
+  "method": "Source-traced restored footprints intersected with actual linear extrusion paths buffered 0.27 mm; layer 8 immediately follows the seven-layer mat.",
+  "limitation": "Checks path presence and support footprint, not physical surface quality, extrusion strength or exact deposited volume."
+}

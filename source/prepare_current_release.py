@@ -26,10 +26,12 @@ def main():
         bundles[kind]=args.output/filename
         with ZipFile(bundles[kind],'w',ZIP_DEFLATED,compresslevel=1) as out:
             out.writestr('START-HERE.txt',guide)
-            for name in ('LICENSE','LICENSING.md','PROVENANCE.txt'):
+            for name in ('LICENSE','LICENSING.md','PROVENANCE.txt','CHANGELOG.md','docs/UPGRADING-v0.3.0.md'):
                 out.write(ROOT/name,name)
             for p in sorted((ROOT/'LICENSES').glob('*.txt')):out.write(p,p.relative_to(ROOT).as_posix())
             for p in sorted((ROOT/'docs/assembly').glob('*-v3.png')):out.write(p,'assembly/'+p.name)
+            out.write(ROOT/'docs/PRINTING.md','docs/PRINTING.md')
+            for p in sorted((ROOT/'docs/revisions/v0.3.0').glob('*.png')):out.write(p,p.relative_to(ROOT).as_posix())
             for frame in frames:
                 model=ROOT/frame['model'];stl=ROOT/frame['stl']['archive']
                 assert hashlib.sha256(model.read_bytes()).hexdigest()==frame['sha256']

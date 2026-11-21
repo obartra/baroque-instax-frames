@@ -1,0 +1,30 @@
+{
+  "id": "12-Rocaille-Canted-Octagon-Mat-Overflow-v2",
+  "file": "12-Rocaille-Canted-Octagon-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+  "sha256": "92ac8a6b46a6c34f77a46bd816e8838c971c2d7b182ca78fde58a921429d5691",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    136.7,
+    54.7
+  ],
+  "material_g": [
+    12.37,
+    5.86
+  ],
+  "sliced_project": "12-Rocaille-Canted-Octagon-Mat-Overflow-v2/slice-final/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-P2S-Sliced.3mf",
+  "sliced_sha256": "713da92a161cb475554e0f1c0d575ab295e149402a92736cd1954352ea8b1f7b",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}

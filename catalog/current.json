@@ -1,7 +1,7 @@
 {
   "title": "Eight floral Instax Mini frames",
   "schema_version": 1,
-  "status": "Digital prototypes; physical fit and surface detail need testing",
+  "status": "Six restored-overflow fronts digitally validated; revised physical print checks pending. Existing matching backs unchanged.",
   "film_mm": [
     86,
     54
@@ -14,14 +14,14 @@
   "illustration_palette_is_example": true,
   "frames": [
     {
-      "id": "12-Rocaille-Canted-Octagon",
+      "id": "12-Rocaille-Canted-Octagon-Mat-Overflow-v2",
       "name": "Canted Octagon",
       "slug": "canted-octagon",
-      "model": "models/current/12-Rocaille-Canted-Octagon-Instax-Mini-3-Magnets.3mf",
-      "sha256": "0d15817e44362653f350cc70b224114f7c88853545ccbea291d406efc785b58f",
-      "geometry": "validation/current/12-Rocaille-Canted-Octagon-geometry.json",
-      "slicer": "validation/current/12-Rocaille-Canted-Octagon-slicer.json",
-      "back_toolpaths": "validation/current/12-Rocaille-Canted-Octagon-back-toolpaths.json",
+      "model": "models/current/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+      "sha256": "92ac8a6b46a6c34f77a46bd816e8838c971c2d7b182ca78fde58a921429d5691",
+      "geometry": "validation/current/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-geometry.json",
+      "slicer": "validation/current/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-slicer.json",
+      "back_toolpaths": "validation/current/12-Rocaille-Canted-Octagon-Mat-Overflow-v2-back-toolpaths.json",
       "orientation": "landscape",
       "dimensions_mm": [
         104.66580200195312,
@@ -32,9 +32,9 @@
       "image_visible_percent": 90.81346423562412,
       "mat_height_mm": 0.68,
       "mat_layers": 7,
-      "front_minutes": 129.2,
+      "front_minutes": 136.7,
       "back_minutes": 54.7,
-      "revision": "Reinforced mat \u00b7 Period floral catalog",
+      "revision": "v0.3.0 \u00b7 Restored mat overflow",
       "views": {
         "front": "renders/current/canted-octagon-front.png",
         "angle": "renders/current/canted-octagon-side-perspective-v2.png",
@@ -43,8 +43,10 @@
       },
       "stl": {
         "archive": "models/current/stl/canted-octagon-stl.zip",
-        "sha256": "e5f75096b3004db2b5549d63b4d57d27c93a6cae5b4179b861f778c7fba32924"
-      }
+        "sha256": "b9a8b6d0c61590ee8c114cdc97fc2f5244657126e4b8f68368e183b1a82dbe68"
+      },
+      "existing_back_compatible": true,
+      "previous_release": "v0.2.0"
     },
     {
       "id": "13-Rocaille-Segmental-Arch",
@@ -80,14 +82,14 @@
       }
     },
     {
-      "id": "14-Rocaille-Cushion-Cartouche",
+      "id": "14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2",
       "name": "Cushion Cartouche",
       "slug": "cushion-cartouche",
-      "model": "models/current/14-Rocaille-Cushion-Cartouche-Instax-Mini-3-Magnets.3mf",
-      "sha256": "97e0999c18874260aeedfb01e38f49f8eb1bb2b3e447abb645db9867240ac037",
-      "geometry": "validation/current/14-Rocaille-Cushion-Cartouche-geometry.json",
-      "slicer": "validation/current/14-Rocaille-Cushion-Cartouche-slicer.json",
-      "back_toolpaths": "validation/current/14-Rocaille-Cushion-Cartouche-back-toolpaths.json",
+      "model": "models/current/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+      "sha256": "69c75a127dbf309e6a2534958b04ccf6bfa93c25c6fec3e986654f668e6f3e4b",
+      "geometry": "validation/current/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-geometry.json",
+      "slicer": "validation/current/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-slicer.json",
+      "back_toolpaths": "validation/current/14-Rocaille-Cushion-Cartouche-Mat-Overflow-v2-back-toolpaths.json",
       "orientation": "landscape",
       "dimensions_mm": [
         111.4495735168457,
@@ -98,9 +100,9 @@
       "image_visible_percent": 91.08794389724042,
       "mat_height_mm": 0.68,
       "mat_layers": 7,
-      "front_minutes": 175.2,
+      "front_minutes": 179.5,
       "back_minutes": 56.3,
-      "revision": "Reinforced mat \u00b7 Period floral catalog",
+      "revision": "v0.3.0 \u00b7 Restored mat overflow",
       "views": {
         "front": "renders/current/cushion-cartouche-front.png",
         "angle": "renders/current/cushion-cartouche-side-perspective-v2.png",
@@ -109,18 +111,20 @@
       },
       "stl": {
         "archive": "models/current/stl/cushion-cartouche-stl.zip",
-        "sha256": "7a03d0762cc72a9dbc2326cf7137d9166abda1f27e2c298fb373ae0bd835d58e"
-      }
+        "sha256": "bfcffb8c379a17e045612c024776ed8548ac356623b03665010d384cc6800895"
+      },
+      "existing_back_compatible": true,
+      "previous_release": "v0.2.0"
     },
     {
-      "id": "15-Rocaille-Floral-Corners",
+      "id": "15-Rocaille-Floral-Corners-Mat-Overflow-v2",
       "name": "Floral Corners",
       "slug": "floral-corners",
-      "model": "models/current/15-Rocaille-Floral-Corners-Instax-Mini-3-Magnets.3mf",
-      "sha256": "89fdb0fe91720c598258cb9e25ba71904056c3b2f5d368937bf9394ee5058916",
-      "geometry": "validation/current/15-Rocaille-Floral-Corners-geometry.json",
-      "slicer": "validation/current/15-Rocaille-Floral-Corners-slicer.json",
-      "back_toolpaths": "validation/current/15-Rocaille-Floral-Corners-back-toolpaths.json",
+      "model": "models/current/15-Rocaille-Floral-Corners-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+      "sha256": "6642c9268641acf04c77777f03c8a6faa47caef55bdd851bf640d141dd08e204",
+      "geometry": "validation/current/15-Rocaille-Floral-Corners-Mat-Overflow-v2-geometry.json",
+      "slicer": "validation/current/15-Rocaille-Floral-Corners-Mat-Overflow-v2-slicer.json",
+      "back_toolpaths": "validation/current/15-Rocaille-Floral-Corners-Mat-Overflow-v2-back-toolpaths.json",
       "orientation": "landscape",
       "dimensions_mm": [
         116.33224105834961,
@@ -131,9 +135,9 @@
       "image_visible_percent": 92.56661991584853,
       "mat_height_mm": 0.68,
       "mat_layers": 7,
-      "front_minutes": 180.1,
+      "front_minutes": 182.6,
       "back_minutes": 56.3,
-      "revision": "Reinforced mat \u00b7 Period floral catalog",
+      "revision": "v0.3.0 \u00b7 Restored mat overflow",
       "views": {
         "front": "renders/current/floral-corners-front.png",
         "angle": "renders/current/floral-corners-side-perspective-v2.png",
@@ -142,18 +146,20 @@
       },
       "stl": {
         "archive": "models/current/stl/floral-corners-stl.zip",
-        "sha256": "aed40f5bf8cfe2365adc80a10b14c72199335454709f53be1365f26df03e03c8"
-      }
+        "sha256": "7919457bfa4ac30b4ae802bb3557b109cad81324cfffca6787e66a3c9f8df007"
+      },
+      "existing_back_compatible": true,
+      "previous_release": "v0.2.0"
     },
     {
-      "id": "16-Rocaille-Botanical-Garland-Sculpted-v3",
+      "id": "16-Botanical-Garland-Mat-Overflow-v4",
       "name": "Botanical Garland",
       "slug": "botanical-garland",
-      "model": "models/current/16-Rocaille-Botanical-Garland-Sculpted-v3-Instax-Mini-3-Magnets.3mf",
-      "sha256": "570f25c17ba57ef735c038b28fb3ffcd3cb1e7db142554f1f79823d00904f8ca",
-      "geometry": "validation/current/16-Rocaille-Botanical-Garland-Sculpted-v3-geometry.json",
-      "slicer": "validation/current/16-Rocaille-Botanical-Garland-Sculpted-v3-slicer.json",
-      "back_toolpaths": "validation/current/16-Rocaille-Botanical-Garland-Sculpted-v3-back-toolpaths.json",
+      "model": "models/current/16-Botanical-Garland-Mat-Overflow-v4-Instax-Mini-3-Magnets.3mf",
+      "sha256": "9cfc24e95b5d036570425a379901ac40cd7878d19f7619b94163e304b5e1f6de",
+      "geometry": "validation/current/16-Botanical-Garland-Mat-Overflow-v4-geometry.json",
+      "slicer": "validation/current/16-Botanical-Garland-Mat-Overflow-v4-slicer.json",
+      "back_toolpaths": "validation/current/16-Botanical-Garland-Mat-Overflow-v4-back-toolpaths.json",
       "orientation": "landscape",
       "dimensions_mm": [
         114.25285720825195,
@@ -164,9 +170,9 @@
       "image_visible_percent": 92.56661991584853,
       "mat_height_mm": 0.68,
       "mat_layers": 7,
-      "front_minutes": 168.5,
+      "front_minutes": 170.8,
       "back_minutes": 56.3,
-      "revision": "Reinforced mat \u00b7 Sculpted petals v3",
+      "revision": "v0.3.0 \u00b7 Restored mat overflow",
       "views": {
         "front": "renders/current/botanical-garland-front.png",
         "angle": "renders/current/botanical-garland-side-perspective-v2.png",
@@ -175,8 +181,10 @@
       },
       "stl": {
         "archive": "models/current/stl/botanical-garland-stl.zip",
-        "sha256": "ab51dec4c19bd09cfc9cbb6f60f1f6b3542e7061e040bd5c69386bd942891719"
-      }
+        "sha256": "a1058e654e252a41c51f6667d41f1b68690931597431ba98d9653391c406ef26"
+      },
+      "existing_back_compatible": true,
+      "previous_release": "v0.2.0"
     },
     {
       "id": "17-Rocaille-Acanthus-Gallery",
@@ -212,14 +220,14 @@
       }
     },
     {
-      "id": "11-Period-Floral-Portrait-Oval",
+      "id": "11-Period-Floral-Portrait-Oval-Mat-Overflow-v2",
       "name": "Portrait Oval",
       "slug": "portrait-oval",
-      "model": "models/current/11-Period-Floral-Portrait-Oval-Instax-Mini-3-Magnets.3mf",
-      "sha256": "e5472ce692a8760fe03829cfccbac9c5c894c1803685e9bef046fc875cf8c2b4",
-      "geometry": "validation/current/11-Period-Floral-Portrait-Oval-geometry.json",
-      "slicer": "validation/current/11-Period-Floral-Portrait-Oval-slicer.json",
-      "back_toolpaths": "validation/current/11-Period-Floral-Portrait-Oval-back-toolpaths.json",
+      "model": "models/current/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+      "sha256": "d829933bd1e8da13208c2dd770380ad6d218017c264b3d17c26f4308b840b885",
+      "geometry": "validation/current/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-geometry.json",
+      "slicer": "validation/current/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-slicer.json",
+      "back_toolpaths": "validation/current/11-Period-Floral-Portrait-Oval-Mat-Overflow-v2-back-toolpaths.json",
       "orientation": "portrait",
       "dimensions_mm": [
         100.60132217407227,
@@ -230,9 +238,9 @@
       "image_visible_percent": 72.70084225882984,
       "mat_height_mm": 0.68,
       "mat_layers": 7,
-      "front_minutes": 193.7,
+      "front_minutes": 200.1,
       "back_minutes": 55.2,
-      "revision": "Reinforced mat \u00b7 Period floral catalog",
+      "revision": "v0.3.0 \u00b7 Restored mat overflow",
       "views": {
         "front": "renders/current/portrait-oval-front.png",
         "angle": "renders/current/portrait-oval-side-perspective-v2.png",
@@ -241,18 +249,20 @@
       },
       "stl": {
         "archive": "models/current/stl/portrait-oval-stl.zip",
-        "sha256": "6e3c1bd5c6b10c003f4a9f312d0458e4d7325ae979fcb5a4f39b5969c6e62b3c"
-      }
+        "sha256": "536467e26143dc61688b7ffe15e583c5444faad21d97e8a66ea9116e6110c6b4"
+      },
+      "existing_back_compatible": true,
+      "previous_release": "v0.2.0"
     },
     {
-      "id": "18-Rocaille-Landscape-Oval",
+      "id": "18-Rocaille-Landscape-Oval-Mat-Overflow-v2",
       "name": "Landscape Oval",
       "slug": "landscape-oval",
-      "model": "models/current/18-Rocaille-Landscape-Oval-Instax-Mini-3-Magnets.3mf",
-      "sha256": "1e66aa90217a75013e67fc88b43d3e7351f9f8e2733fc6dfcedb4392ef939bc7",
-      "geometry": "validation/current/18-Rocaille-Landscape-Oval-geometry.json",
-      "slicer": "validation/current/18-Rocaille-Landscape-Oval-slicer.json",
-      "back_toolpaths": "validation/current/18-Rocaille-Landscape-Oval-back-toolpaths.json",
+      "model": "models/current/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+      "sha256": "fa03bfd24437ed36a2658a6265944d69ac9f1f2c5fe609b88a078cd8cfe4a09b",
+      "geometry": "validation/current/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-geometry.json",
+      "slicer": "validation/current/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-slicer.json",
+      "back_toolpaths": "validation/current/18-Rocaille-Landscape-Oval-Mat-Overflow-v2-back-toolpaths.json",
       "orientation": "landscape",
       "dimensions_mm": [
         116.99404907226562,
@@ -263,9 +273,9 @@
       "image_visible_percent": 72.70084225882988,
       "mat_height_mm": 0.68,
       "mat_layers": 7,
-      "front_minutes": 160.7,
+      "front_minutes": 161.5,
       "back_minutes": 54.7,
-      "revision": "Reinforced mat \u00b7 Period floral catalog",
+      "revision": "v0.3.0 \u00b7 Restored mat overflow",
       "views": {
         "front": "renders/current/landscape-oval-front.png",
         "angle": "renders/current/landscape-oval-side-perspective-v2.png",
@@ -274,8 +284,11 @@
       },
       "stl": {
         "archive": "models/current/stl/landscape-oval-stl.zip",
-        "sha256": "770b9c4cb01f3ad1e4c6312e450bb0068cecbd4164b16b3a786f6f2200545b06"
-      }
+        "sha256": "53cee506a9f6bd29fc385ae708cd8f2e7720afccc93729961386c29c3d528772"
+      },
+      "existing_back_compatible": true,
+      "previous_release": "v0.2.0"
     }
-  ]
+  ],
+  "release": "v0.3.0"
 }

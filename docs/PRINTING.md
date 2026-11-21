@@ -4,7 +4,7 @@ Follow the [five-step illustrated guide](../README.md#print-and-assemble). The e
 
 ## Materials and profile
 
-The [two-color P2S project pack](https://github.com/obartra/baroque-instax-frames/releases/download/v0.2.0/Floral-Instax-Frames-v0.2.0-Two-Color-P2S.zip)
+The [two-color P2S project pack](https://github.com/obartra/baroque-instax-frames/releases/download/v0.3.0/Floral-Instax-Frames-v0.3.0-Two-Color-P2S.zip)
 includes all eight frames with plate previews: mat in slot 1, ornament and back
 in slot 2. Each project contains both matching pieces on two plates. The original
 individual catalog projects retain a separate back-material slot; assign that
@@ -109,3 +109,10 @@ Place the magnet side against a magnet-attracting surface, such as a fridge, loc
 ## Illustration sources
 
 [Editable diagrams and source records](assembly/README.md) · [Geometry reports](../validation/current/) · [Build instructions](CURRENT-CATALOG.md#rebuild)
+
+## Upgrading an existing frame
+
+v0.3.0 restores ornament overflow in six fronts. Reuse the existing matching
+back when it can be separated without damage; do not force glued or damaged
+clips. See the [upgrade guide](UPGRADING-v0.3.0.md) for the affected designs,
+before/after views and revised validation status.

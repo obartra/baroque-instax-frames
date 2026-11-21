@@ -25,7 +25,7 @@ from paths import ROOT, P
 MAT = 6.5
 UNDERLAY_INSET = .55
 MAX_RELIEF = 12.0
-DESIGNS = Path(os.environ.get("BAROQUE_DESIGNS_FILE", ROOT / "source/designs-floral-rococo.json"))
+DESIGNS = Path(os.environ.get("BAROQUE_DESIGNS_FILE", ROOT / "source/designs-current.json"))
 
 
 def aperture_for(d):
@@ -145,6 +145,14 @@ def petal_overlap(d, gold, cx, cy, factor, inner, aperture):
     region = np.zeros(gold.shape, bool)
     for px,py,radius in d["petal_overlap_regions_mm"]:
         region |= ((x-px)**2+(y-py)**2) < radius**2
+    # Optional source-traced gates separate a crossing petal from the nearby
+    # moulding. A circular height-edit region alone must not extend a strip
+    # of that moulding onto the mat alongside the flower.
+    if d.get("petal_overlap_outline_regions_mm"):
+        outlines = shapely.union_all([
+            Polygon(points).buffer(0) for points in d["petal_overlap_outline_regions_mm"]
+        ])
+        region &= shapely.contains_xy(outlines, x, y)
     mask = gold & region & shapely.contains_xy(inner,x,y)
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
@@ -306,6 +314,11 @@ def sculpt(d, rgb, gold, solid, cx, cy, factor, inner, outer, positions, height_
     footprint = outer.difference(inner)
     if petals is not None and not petals.is_empty:
         footprint = footprint.union(petals)
+    if d.get("relief_footprint_precision_mm"):
+        # Source contours can meet the curved inner rail at almost identical
+        # coordinates. Snap only this extrusion footprint to a microscopic
+        # grid so its cap triangulates as a closed volume.
+        footprint = shapely.set_precision(footprint, d["relief_footprint_precision_mm"])
     return b.check(b.inter(raw, b.extrude(footprint, 1.3, ceiling + 1)), "floral relief")
 
 

@@ -1,0 +1,30 @@
+{
+  "id": "15-Rocaille-Floral-Corners-Mat-Overflow-v2",
+  "file": "15-Rocaille-Floral-Corners-Mat-Overflow-v2-Instax-Mini-3-Magnets.3mf",
+  "sha256": "6642c9268641acf04c77777f03c8a6faa47caef55bdd851bf640d141dd08e204",
+  "slicer": "BambuStudio local CLI",
+  "printer": "Bambu P2S 0.4 mm",
+  "return_code": 0,
+  "plates": 2,
+  "filament_changes": [
+    1,
+    0
+  ],
+  "warning_messages": [
+    "",
+    ""
+  ],
+  "estimated_minutes": [
+    182.6,
+    56.3
+  ],
+  "material_g": [
+    17.72,
+    6.62
+  ],
+  "sliced_project": "15-Rocaille-Floral-Corners-Mat-Overflow-v2/slice-final/15-Rocaille-Floral-Corners-Mat-Overflow-v2-P2S-Sliced.3mf",
+  "sliced_sha256": "4e82bb2e0f820495ad141c8e9932893c610a32662dbe67ff06b6dcac72b62a7a",
+  "print_submitted": false,
+  "print_started": false,
+  "physical_test": false
+}
